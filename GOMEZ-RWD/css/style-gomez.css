@@ -10,6 +10,7 @@ body {
 /* Style the header */
 header {
   background-color: #666;
+  background-color: #4a9fd4;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -22,6 +23,7 @@ nav {
   width: 30%;
   height: 300px; /* only for demonstration, should be removed */
   background: #ccc;
+  background: #171381;
   padding: 20px;
 }
 
@@ -36,6 +38,7 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #85aaf3;
+  background-color: #6f9df9;
   height: 300px; /* only for demonstration, should be removed */
 }
 
@@ -53,6 +56,11 @@ footer {
   padding: 10px;
   text-align: center;
   color: rgb(72, 155, 207);
+footer {
+  background-color: #18506e;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
