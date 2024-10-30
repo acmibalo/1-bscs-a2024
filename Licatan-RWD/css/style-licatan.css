@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,7 +17,7 @@ header {
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: right;
+  float: left;
   width: 30%;
   height: 300px; /* only for demonstration, should be removed */
   background: #ff0000;
@@ -27,7 +31,7 @@ nav ul {
 }
 
 article {
-  float: right;
+  float: left;
   padding: 20px;
   width: 70%;
   background-color: #00ff15;
