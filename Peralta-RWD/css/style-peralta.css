@@ -5,23 +5,25 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-
-  header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
+    background-color: #312c1f;
   }
   
  
+  header {
+    font-family: fantasy;
+    background-color: #479c67;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(5, 16, 3);
+  }
+  
+  
   nav {
     float: left;
     width: 30%;
     height: 300px; 
-    background: #ccc;
+    background: #283050;
     padding: 20px;
   }
   
@@ -35,7 +37,7 @@
     float: left;
     padding: 20px;
     width: 70%;
-    background-color: #f1f1f1;
+    background-color: #6698c3;
     height: 300px; 
   }
   
@@ -45,7 +47,7 @@
     display: table;
     clear: both;
   }
-img {
+  img {
     
         display: block;
         margin-left: auto;
@@ -55,11 +57,12 @@ img {
       
   }
   
+
   footer {
-    background-color: #777;
+    background-color: #332760;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: rgb(27, 38, 92);
   }
   
   
