@@ -10,9 +10,10 @@ body {
 /* Style the header */
 header {
   background-color: #FFAB85; /* updated the color than the original */
+  text-shadow: 3px 3px 6px black; /* adding shadow for enhancement */
   padding: 30px;
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   color: white;
 }
 
@@ -49,7 +50,7 @@ section::after {
 /* Style the footer */
 footer {
   background-color: #FFAAEE;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   color: white;
 }
