@@ -1,75 +1,70 @@
-
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #312c1f;
-  }
-  
- 
-  header {
-    font-family: fantasy;
-    background-color: #479c67;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: rgb(5, 16, 3);
-  }
-  
-  
-  nav {
-    float: left;
-    width: 30%;
-    height: 300px; 
-    background: #283050;
-    padding: 20px;
-  }
-  
-
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #6698c3;
-    height: 300px; 
-  }
-  
-
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  img {
-    
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        height: 50%;
-      
-  }
-  
-
-  footer {
-    background-color: #332760;
-    padding: 10px;
-    text-align: center;
-    color: rgb(27, 38, 92);
-  }
-  
-  
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
+ * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f0e1; /* Light beige */
+        }
+        
+        header {
+            font-family: fantasy;
+            background-color: #8cbd93; /* Soft green */
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #2d2a24; /* Darker brown */
+        }
+        
+        nav {
+            float: left;
+            width: 30%;
+            height: auto; 
+            background: #d8c8b2; /* Light tan */
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #ffffff; /* White for contrast */
+            height: auto; 
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #8cbd93; /* Soft green */
+            padding: 10px;
+            text-align: center;
+            color: #2d2a24; /* Darker brown */
+        }
+        
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
