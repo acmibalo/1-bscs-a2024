@@ -1,0 +1,35 @@
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.indiv-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+a{
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.indiv-wrapper:hover{
+    background-color: white;
+}
+.indiv-wrapper:hover a{
+    color: black;
+}
+nav{
+background-color: black; 
+width: 100%;
+}
