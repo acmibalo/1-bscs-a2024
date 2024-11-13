@@ -1,0 +1,131 @@
+html{
+    min-height: 100%;
+}
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+#image-container{
+    display: grid;
+    place-items: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    width: 71vw;
+}
+.images{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+.images:hover img{
+    transform: scale(1.2);
+} 
+.main-text{
+    position: absolute;
+    width: 20%;
+    overflow: hidden;
+    transform-origin: center bottom;
+}
+h1 {
+    font-family: system-ui;
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    padding: 0 6rem;
+    animation: rtl 6000ms linear infinite;
+    mix-blend-mode: difference;
+}
+.marquee{
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    top: 0;
+    mix-blend-mode: difference;
+}
+.profile{
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    width: max(7vw, 80px);
+    height: max(7vw, 80px);
+    mix-blend-mode: difference;
+}
+.circle-text{
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 6000ms linear infinite;
+    mix-blend-mode: difference;
+}
+.profile-pic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+}
+.profile:hover .profile-pic{
+    animation: crop 500ms ease both;
+}
+
+
+@keyframes crop{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 60%;
+        height: 60%;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rtl {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+@media(min-width: 1500px){
+    #image-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 980px){
+    .header-text1, .header-text2{
+    align-self: center;
+    transform: translateX(0px);
+    }
+}

@@ -1,0 +1,47 @@
+.cursor{
+    opacity: 0;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 1;
+    top: -100px;
+    left: -100px;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: opacity 0.5s ease;
+    transition-timing-function: ease-out;
+}
+.cursor-hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+.horizontal{
+    opacity: 0;
+    position: fixed;
+    height: 1px;
+    width: 15px;
+    left: -100px;
+    top: -100px;
+    background-color: white;
+    mix-blend-mode: difference;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+.vertical{
+    opacity: 0;
+    position: fixed;
+    height: 15px;
+    width: 1px;
+    left: -100px;
+    top: -100px;
+    background-color: white;
+    mix-blend-mode: difference;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+.cross-hover{
+    transform: rotate(90deg) scale(1.2);
+    transition: transform 0.5s ease;
+}
