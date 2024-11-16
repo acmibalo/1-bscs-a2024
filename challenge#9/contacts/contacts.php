@@ -10,3 +10,4 @@ if(isset($_POST['submit'])){
     mail("carlo.castro.320401@gmail.com", "contact-website", $text);
     header("Location: contacts.php?mailsent");
 }
+?>
