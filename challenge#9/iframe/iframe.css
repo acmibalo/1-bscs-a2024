@@ -1,0 +1,9 @@
+body{
+    display:flex;
+    justify-content: center;
+}
+iframe{
+    width: 70vw;
+    height: max(400px, 40vw);
+    border: 3px solid rgb(0, 0, 0);
+}

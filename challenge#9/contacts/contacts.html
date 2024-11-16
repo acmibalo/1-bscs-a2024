@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contacts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <Link rel="stylesheet" href="contacts.css">
+    </head>
+    <body>
+        <form action="contacts.php" method="post">
+            <div class="container">
+                <div class="items">
+                    <label for="first">first name</label>
+                    <input type="text" id="first" name="firstname" placeholder="first name" required>
+                </div>
+                <div class="items">
+                    <label for="last">last name</label>
+                    <input type="text" id="last" name="lastname" placeholder="last name" required>
+                </div>
+                <div class="items">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="type message"></textarea>
+                </div>
+                <button type="submit">Send</button>
+             </div>
+        </form>
+    </body>
+</html>
