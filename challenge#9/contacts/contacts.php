@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
             <h1>Thanks for messaging</h1>
         </body>
     </html>
-    '
+    ';
 
 }
 ?>
