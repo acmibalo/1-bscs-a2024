@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(232,238,241);
+    background: radial-gradient(circle, rgba(232,238,241,1) 0%, rgba(149,205,238,1) 100%);
+}
+
+section {
+    width: 100%;
+    height:50vh;
+    background-size: cover;
+    background-image: url(img/manstanding.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+section nav{
+    width: 100%;
+    height: 12vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px black;
+    background: rgb(190,197,201);
+    background: radial-gradient(circle, rgba(190,197,201,1) 7%, rgba(232,238,241,1) 88%);
+    position: fixed;
+    z-index: 100;
+}
+section nav .logo img{
+    width: 150px;
+    cursor: pointer;
+    
+  }
+  section nav ul{
+    list-style: none;
+    margin-right: 60%;
+  }
+  section nav li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 23px;
+  }
+  section nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+    padding:15px;
+  }
+  section nav li a:hover{
+    color:  rgb(247, 248, 248);
+    background-color: #43b0f1;
+    border-bottom:  3px solid #032133;
+  }
+
+
+
+
+
+
+
+section .author .abt-us h1{
+
+        position: relative;
+        font-size: 90px;
+        text-shadow: 10px 10px 15px rgb(137, 146, 153);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        top:120px;
+        left: 25px;
+        color: #bdcde7;
+        text-align: center;
+        align-items: center;
+        font-weight: 900;
+    }
+
+    .content{
+        width: 90%;
+        height: auto;
+        background-color:rgba(152,181,170,0.5);
+        margin:5% 5% 5% 5%;
+        padding-top:2%;
+        padding-bottom: 2%;
+        border-radius: 70px;
+
+    }
+    .content .our-origins{
+        width: 80%;
+        margin: 0% 10% 0% 10%;
+        
+    }
+    .content .our-origins h1{
+        text-align: center;
+        margin-bottom: 3%;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .content .our-origins p{
+        text-align: justify;
+        margin-bottom: 5%;
+        justify-content: space-around;
+        font-size: 15px;
+        line-height: 23px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+
+    
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 8px black;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #071d2a;
+        border-radius: 10px;
+    }
+    
+
+
+
+
+
+
+
+
+     /* Media Query */
+     @media only screen and (max-width: 768px) {
+        html, body{
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        section nav{
+            width: 100%;
+            height: 8.5vh;
+        }
+
+        section nav .logo img {
+            width: 50px;
+        }
+        
+        section nav ul {
+            display:flex;
+            margin-right: 20%;
+        }
+
+        section nav li{
+            font-size: 15px;
+            padding: 0 3px;
+        }
+        
+        section nav li a{
+            padding:10px;
+          }
+        
+
+        section .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding-top: 0;
+    }
+
+
+        section .main h1 {
+            position: relative;
+            font-size: 30px;
+            top: 100px;
+            left: 30px;
+            text-align: left;
+        }
+
+        section .main h1 span{
+            font-size: 45px;
+        }
+
+        section .main p {
+            width: 85%;
+            top: 100px;
+            position: relative;
+            font-size: 15px;
+            
+           
+        }
+
+        section .main .main-tag .main-btn {
+            padding: 10px;
+            font-size: 15px;
+            position: relative;
+            top: 120px;
+
+        }
+
+
+        section .main .row {
+/*                 margin: 0;
+            padding: 20px; */
+            display: none;
+        }
+
+        section .main .row img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
+
+        section .author .abt-us h1{
+            font-size: 45px;
+            text-align: center;
+        }
+
+        .content .our-origins h1{
+            font-size: 30px;
+            margin-bottom: 10%;
+            margin-top: 10%;
+        }
+    }
+
+
+
