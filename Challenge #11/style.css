@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: darkgrey;
+}
+
+.w3-dropdown-hover{
+    margin: 5em auto;
+    
+
+}
+
+.w3-button{
+   color: #cbddec;
+   background-color: #3d1a1a;
+}
+
+.w3-tooltip{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+

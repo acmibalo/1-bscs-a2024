@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Tabbed Navigation Buttons -->
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Home')">Home</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'About')">About</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Services')">Services</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Contact')">Contact</button>
+  </div>
+  
+  <!-- Tab Content -->
+  <div id="Home" class="w3-container w3-border tab-content" style="display:block">
+    <h3>Welcome to my website</h3>
+    <p>This website explores the different kinds of horror genres</p>
+  </div>
+  
+  <div id="About" class="w3-container w3-border tab-content" style="display:none">
+    <h3>About</h3>
+    <p>Here you can learn more about us.</p>
+  </div>
+  
+  <div id="Services" class="w3-container w3-border tab-content" style="display:none">
+    <h3>Services</h3>
+    <p>Check out our range of services.</p>
+  </div>
+  
+  <div id="Contact" class="w3-container w3-border tab-content" style="display:none">
+    <h3>Contact</h3>
+    <p>Feel free to contact us anytime!</p>
+  </div>
+    <div class="w3-dropdown-hover container">
+        <button class="w3-button">Get Started</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+      </div>
+      <p class="w3-tooltip">London
+        <span class="w3-text">(<em>9 million inhabitants</em>)</span>
+        is the capital of England.</p>
+
+
+        <div class="w3-container w3-orange">
+            <h2>Input Form</h2>
+          </div>
+          
+          <form class="w3-container">
+            <p>
+            <input class="w3-input" type="text">
+            <label>First Name</label></p>
+          
+            <p>
+            <input class="w3-input" type="text">
+            <label>Last Name</label></p>
+          
+            <p>
+            <input class="w3-input" type="text">
+            <label>Email</label></p>
+          </form>
+</body>
+</html>
