@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FFCCEA; /* Light pink background color */
+    font-family: Arial, sans-serif;
+}
+
+.navigation ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to new lines if needed */
+}
+
+.navigation li {
+    margin: 28.5px;
+}
+
+.navigation a {
+    color: #fff;
+    text-shadow: 1px 1px 2px black; /* Add shadow to the text */
+    background-color: rgba(255, 182, 193, 0.5); /* Light pink background color */
+    border: 2px solid #ff69b4; /* Pink border */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; 
+}
+
+.navigation a:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.center-content {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+
+.center-content h1 {
+    font-size: 6em; /* Make "Petal Journey" big */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+    margin-bottom: 10px;
+    font-family: 'Brush Script MT', cursive; /* Add cursive font */
+}
+
+.center-content h2 {
+    font-size: 2.5em; /* Slightly larger subheading */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.center-content p {
+    font-size: 1.5em; /* Larger paragraph font size */
+    margin-top: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: center; /* Corrected to center */
+}
+
+.social-icons a:hover {
+    color: #ff69b4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation a {
+        padding: 8px 15px;
+        margin-bottom: 7px;
+    }
+
+    .center-content h1 {
+        font-size: 3em;
+    }
+
+    .center-content h2 {
+        font-size: 1.5em;
+    }
+
+    .center-content p {
+        font-size: 1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        margin-right: 30px;
+        text-align: center; /* Corrected to center */
+    }
+}
+
+/* Adding images */
+.image-section {
+    display: flex;
+    justify-content: center; /* Center images */
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-section img {
+    width: 80%; /* Make images larger to fit content */
+    height: auto;
+    margin: 0 15px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the images */
+    background-color: #fff; /* Change image background to white */
+}
