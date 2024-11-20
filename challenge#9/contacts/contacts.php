@@ -11,17 +11,7 @@ if(isset($_POST['submit'])){
     header("Location: contacts.php?mailsent");
 
     echo'
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>done</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
-        </head>
-        <body>
-            <h1>Thanks for messaging</h1>
-        </body>
-    </html>
+    thanks for messaging
     ';
 
 }
