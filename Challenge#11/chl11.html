@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='author' content="Don Ricardo III M. Peralta, 1-BSCS-A">
+  <meta name='keywords' content="website, challenge, webchallenge2024-2025, 1stSemUSM">
+  <link rel="stylesheet" href="chl11.css">
+  <link href="data:image/x-icon;base64,...your-icon..." rel="icon" type="image/x-icon">
+  <title>Minecraft Pastry</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="navCont">
+        <nav>
+          <a href="#h">Home</a>
+          <a href="#a">About</a>
+          <a href="#f">Contact</a>
+        </nav>
+      </div>
+      <div class="heroSection" id="h">
+        <h1>CakeCraft</h1>
+      </div>
+    </header>
+
+    <section class="aboutSect" id="a">
+      <h2>About</h2>
+      <button class="accordion">How To Make A Cake</button>
+      <div class="panel">
+        <p>Cake is a type of sweet dessert made from flour, sugar, and other ingredients, that is often baked. Cakes come in a variety of forms, shapes, and flavors, and can be decorated with icing, frosting, or fruit.</p>
+        <section class="containerA">
+          <h1>Types of Cake</h1>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </section>
+    
+        <section class="recipeSect">
+          <p>recipe</p>
+        </section>
+    
+        <section class="recipeBox">
+          <div class="picRec"></div>
+          <div class="picRec"></div>
+          <div class="picRec"></div>
+          <div class="picRec"></div>
+          <div class="picRec"></div>
+        </section>
+    
+        <section class="farewellSect">
+          <h1>Video Tutorial</h1>
+          <iframe src="cake.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    
+       
+    
+      </div>
+    </section>
+
+  
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+    
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+    
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.display = "block";
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+<section class="cakechoose">
+  <h1>Wanna make a cake</h1>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <label for="cake">Cake</label>
+  <select id="cake" name="cake">
+    <option value="cake1">Vanilla</option>
+    <option value="cake2">Chocolate</option>
+    <option value="cake3">Banana</option>
+  </select>
+  <input type="submit" value="Submit">
+</section>
+
+    <footer id="f">
+      <h4>Contact: 09623935453</h4>
+      <h5>Email: peraltadonricardo@gmail.com</h5>
+    </footer>
+  </div>
+</body>
+</html>
