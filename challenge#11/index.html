@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How Tos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="script/sidebar.js" defer></script>
+    </head>
+    <body>
+        <section>
+            <header>
+                <div class="profile">
+                    <div class="profile-container">
+                        <img src="images/sjw.jpg" alt="profile"></img>
+                    </div>
+                </div>
+                <div class="links onPC"><a href="#">HOME</a></div>
+                <div class="links onPC"><a href="#">ABOUT</a></div>
+                <div class="links onPC"><a href="#">CONTACTS</a></div>
+                <div class="links onMob"><svg onclick=showSideBar() xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                <div class="onMob" id="dropdown">
+                    <svg onclick=hideSideBar() xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">CONTACTS</a>
+                </div>
+            </header>
+
+            <h1>HOW TOs</h1>
+
+            <img id="bg-img" src="images/background.png"></img>
+            <div id="scroll-text">scroll down</div>
+        </section>
+
+        <section id="page2">
+            <div class="text-container">
+                <h2>THIS PAGE IS FOR DEMONSTRATION</h2>
+            </div>
+        </section>
+
+    </body>
+</html>
