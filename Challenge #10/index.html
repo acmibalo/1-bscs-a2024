@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Diva - Home</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        header {
+            background-color: #00bfff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3vw;
+        }
+
+        nav {
+            background-color: #ff66cc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 1.5vw;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ff3385;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #ff66cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Layouts */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .content {
+            flex: 1;
+            margin: 10px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6vw;
+            }
+
+            nav a {
+                font-size: 4vw;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .content {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Virtual Diva - Celebrating Hatsune Miku!</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#songs">Songs</a>
+        <a href="#credits">Credits</a>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <div class="content">
+                <h2>Who is Hatsune Miku?</h2>
+                <p>Hatsune Miku is a virtual singer and the first Vocaloid software voicebank developed by Crypton
+                    Future Media. She has become a symbol of the power of technology in music and has a massive
+                    following worldwide.</p>
+                <picture>
+                    <source srcset="img_miku_small.jfif" media="(max-width: 600px)">
+                    <source srcset="img_miku_large.jfif" media="(min-width: 601px)">
+                    <img src="img_miku_large.jfif" alt="Hatsune Miku">
+                </picture>
+            </div>
+            <div class="content">
+                <h2>Discover the Magic of Miku's Music</h2>
+                <p>Explore her iconic songs and immerse yourself in her world.</p>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=EuJ6UR_pD5s">World is Mine</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Mqps4anhz0Q">Senbonzakura</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=fmrA-gxJxgQ">Tell Your World</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created with ❤️ by Rodnee</p>
+    </footer>
+
+</body>
+
+</html>
