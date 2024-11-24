@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePedia</title>
+    <link rel="android-chrome" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    <link rel="android-chrome" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles\index_styles.css">
+
+
+    <!-- W3 CSS RESPONSIVE FRAMEWORK -->
+    <link rel="stylesheet" href="styles\w3.css">
+    <!-- W3 CSS RESPONSIVE FRAMEWORK -->
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GamePedia</div>
+            <div class="menu-toggle">
+                <svg viewBox="0 0 100 80" width="30" height="30" fill="var(--text)">
+                    <rect width="100" height="15" rx="8"></rect>
+                    <rect y="30" width="100" height="15" rx="8"></rect>
+                    <rect y="60" width="100" height="15" rx="8"></rect>
+                </svg>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="https://example.com/about">About</a>
+                <a href="https://example.com/games">GamesList</a>
+                <a href="https://example.com/login">Login</a>
+                <a href="./credits.html">Credits</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search games...">
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="game-grid">
+            <!-- Dota 2 -->
+            <a href="https://www.dota2.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Dota 2</h2>
+                        <div class="tags">
+                            <span class="tag">MOBA</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Competitive</span>
+                        </div>
+                        <p class="game-description">A deeply complex MOBA featuring over 100 unique heroes, where two teams compete to destroy the enemy's Ancient.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Genshin Impact -->
+            <a href="https://genshin.hoyoverse.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://th.bing.com/th/id/OIP.mIWCOWxyK1aKmtOG1tpjzgHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Genshin Impact</h2>
+                        <div class="tags">
+                            <span class="tag">RPG</span>
+                            <span class="tag">Open World</span>
+                            <span class="tag">Gacha</span>
+                        </div>
+                        <p class="game-description">An open-world action RPG with anime-style graphics and elemental combat system.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Honor of Kings -->
+            <a href="https://www.tencent.com/en-us/business.html#games" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://revolutionarena.com/pt-br/wp-content/uploads/sites/2/2024/03/Honor-of-Kings.jpg')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Honor of Kings</h2>
+                        <div class="tags">
+                            <span class="tag">MOBA</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Action</span>
+                        </div>
+                        <p class="game-description">A mobile MOBA game with rich Chinese mythology-inspired characters and fast-paced gameplay.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Honkai Impact 3rd -->
+            <a href="https://honkaiimpact3.hoyoverse.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://img2.tapimg.net/post/etag/FpSix8-nIw-2VIqVLBcSRvXhTeSw.jpg?imageMogr2/thumbnail/720x9999%3E/quality/80/format/jpg/interlace/1/ignore-error/1')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Honkai Impact 3rd</h2>
+                        <div class="tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">RPG</span>
+                            <span class="tag">Gacha</span>
+                        </div>
+                        <p class="game-description">An action-packed RPG featuring intense combat and stunning anime visuals.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Honkai: Star Rail -->
+            <a href="https://hsr.hoyoverse.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://cdn1.epicgames.com/offer/a2dcbb9e34204bda9da8415f97b3f4ea/2560x1440_EN_2560x1440-1295c4399099873d0d329e1c39d12ed5')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Honkai: Star Rail</h2>
+                        <div class="tags">
+                            <span class="tag">Turn-based</span>
+                            <span class="tag">RPG</span>
+                            <span class="tag">Space</span>
+                        </div>
+                        <p class="game-description">A space fantasy RPG with turn-based combat and cosmic adventure.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Minecraft -->
+            <a href="https://www.minecraft.net" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/bedrock_header.jpg')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Minecraft</h2>
+                        <div class="tags">
+                            <span class="tag">Sandbox</span>
+                            <span class="tag">Survival</span>
+                            <span class="tag">Multiplayer</span>
+                        </div>
+                        <p class="game-description">A block-building sandbox game where players can create, explore, and survive in procedurally generated worlds.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Mobile Legends: Bang Bang -->
+            <a href="https://www.mobilelegends.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://dailyspin.id/wp-content/uploads/2024/02/jucqgcb14o.jpg')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Mobile Legends: Bang Bang</h2>
+                        <div class="tags">
+                            <span class="tag">MOBA</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Strategy</span>
+                        </div>
+                        <p class="game-description">A mobile MOBA game featuring 5v5 battles with unique heroes and real-time combat.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!--Roblox-->
+            <a href="https://www.roblox.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://techcrunch.com/wp-content/uploads/2021/07/roblox-logo.png')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Roblox</h2>
+                        <div class="tags">
+                            <span class="tag">Sandbox</span>
+                            <span class="tag">Multiplayer</span>
+                            <span class="tag">Creativity</span>
+                        </div>
+                        <p class="game-description">An online game platform and game creation system that allows users to program and play games created by themselves or other users.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Terraria -->
+            <a href="https://terraria.org" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltdba49ca0a895ae36/669163d6e6031cd88be0f15b/terraria.jpg')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Terraria</h2>
+                        <div class="tags">
+                            <span class="tag">Sandbox</span>
+                            <span class="tag">Adventure</span>
+                            <span class="tag">2D</span>
+                        </div>
+                        <p class="game-description">A 2D sandbox adventure game with crafting, building, and combat elements.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Valorant -->
+            <a href="https://playvalorant.com" class="game-link" target="_blank">
+                <div class="game-card">
+                    <div class="game-image" style="background-image: url('https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg')"></div>
+                    <div class="game-info">
+                        <h2 class="game-title">Valorant</h2>
+                        <div class="tags">
+                            <span class="tag">FPS</span>
+                            <span class="tag">Tactical</span>
+                            <span class="tag">Competitive</span>
+                        </div>
+                        <p class="game-description">A tactical shooter combining precise gunplay with unique character abilities.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="scripts\index_scripts.js"></script>
+</body>
+</html>
