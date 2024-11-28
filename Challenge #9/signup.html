@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>TopHorrorGeek</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1>Sign Up</h1>
+    <form method="post" action='index.html'>
+      <fieldset>
+        <label for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Name" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Email" required /></label>
+        <label for="new-password">  Create a Password: <input id="new-password" name="new-password" type="password" placeholder="Password" required /></label>
+        <label for="new-password">  Confirm your Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Confirm Password" required /></label>
+      </fieldset>
+      
+         
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.google.com/intl/en_ph/chrome/terms/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Log In" />
+      <div class="signup-link"><a href="login.html">Already have an account?</a></div>
+    </form>
+  </div>
+  </body>
+</html>
