@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="android-chrome" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+      <link rel="android-chrome" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="images/favicon/site.webmanifest">
+
+      <!--=============== REMIXICONS CSS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="login_files/css/styles.css">
+      <link rel="stylesheet" href="login_files/css/login_header.css">
+      <title>Gamepedia Login</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+             <div class="logo">GamePedia</div>
+             <div class="menu-toggle">
+                 <svg viewBox="0 0 100 80" width="30" height="30" fill="var(--text)">
+                     <rect width="100" height="15" rx="8"></rect>
+                     <rect y="30" width="100" height="15" rx="8"></rect>
+                     <rect y="60" width="100" height="15" rx="8"></rect>
+                 </svg>
+             </div>
+             <div class="nav-links">
+                 <a href="./index.html">Home</a>
+                 <a href="https://example.com/about">About</a>
+                 <a href="https://example.com/games">GamesList</a>
+                 <a href="./login.html">Login</a>
+                 <a href="./credits.html">Credits</a>
+             </div>
+         </nav>
+     </header>
+   
+      <div class="login">
+         <img src="login_files/img/login-bg.png" alt="image" class="login__bg">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="email" placeholder="Email ID" required class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+               Don't have an account? <a href="#">Register</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

@@ -23,6 +23,22 @@
   margin: 0;
 }
 
+html, body {
+  background: none; /* Removes any default background */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100vh; /* Full height for the viewport */
+  margin: 0; /* No margin to avoid gaps */
+  padding: 0;
+  display: flex; /* Ensures full page layout includes header */
+  flex-direction: column;
+}
+
 body,
 input,
 button {
@@ -42,6 +58,7 @@ img {
 
 /*=============== LOGIN ===============*/
 .login {
+  flex: 1; 
   position: relative;
   height: 100vh;
   display: grid;
@@ -49,11 +66,13 @@ img {
 }
 
 .login__bg {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  z-index: -1;
 }
 
 .login__form {
