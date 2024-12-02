@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head> 
+<base href="." /></head>
+<html lang="en">
+<link rel="stylesheet" href="/styles.css">
+<script src="./scripts.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 9: Video and Forms</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Challenge 9: Video and Forms</h1>
+        
+        <div class="button-container">
+            <button onclick="showVideo('local')">Show Local Video</button>
+            <button onclick="showVideo('youtube')">Show YouTube Video</button>
+        </div>
+
+        <div id="localVideo" class="video-container">
+            <video controls>
+                <source src="/Arcane season 1 in a nutshell.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+      
+
+  
+        <div id="youtubeVideo" class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/tYoO9XkCCHg" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
