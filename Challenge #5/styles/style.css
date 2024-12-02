@@ -1,0 +1,47 @@
+/* General Body Styling */
+body {
+    background-color: #f4f4f9; /* Light gray background for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #0066cc; /* Blue background for the header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+p {
+    color: #333; /* Dark gray text for readability */
+    margin: 20px;
+    line-height: 1.8; /* Slightly increased for better spacing */
+}
+
+/* Links */
+a {
+    color: #0066cc; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

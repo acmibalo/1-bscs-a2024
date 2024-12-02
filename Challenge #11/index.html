@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Diva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="hatsune-miku-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content Overlay -->
+    <div class="content">
+        <h1>Welcome to Virtual Diva</h1>
+        <p>Explore the vibrant world of Hatsune Miku.</p>
+    </div>
+    
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="miku1.jpg" alt="Hatsune Miku 1">
+            </div>
+            <div class="mySlides">
+                <img src="miku2.jpg" alt="Hatsune Miku 2">
+            </div>
+            <div class="mySlides">
+                <img src="miku3.jpg" alt="Hatsune Miku 3">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!-- Buttons -->
+        <button class="btn success" onclick="showAlert('Play Music')">Play Music</button>
+        <button class="btn info" onclick="showAlert('Visit Games')">Visit Games</button>
+        <button class="btn warning" onclick="showAlert('About Miku')">About Miku</button>
+        <button class="btn danger" onclick="showAlert('Contact Us')">Contact Us</button>
+    </div>
+
+    <!-- Copy Text -->
+    <div>
+        <input type="text" value="Welcome to Virtual Diva!" id="myInput" readonly>
+        <button class="btn info" onclick="copyText()">Copy Welcome Message</button>
+    </div>
+    </div>
+
+    <!-- Icon Bar -->
+    <div class="icon-bar">
+        <a href="#" class="active"><i class="fa fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-music"></i> Songs</a>
+        <a href="#"><i class="fa fa-gamepad"></i> Games</a>
+        <a href="#"><i class="fa fa-info-circle"></i> About</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
