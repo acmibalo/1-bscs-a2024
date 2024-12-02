@@ -1,0 +1,52 @@
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #40b1dd;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #7a93a7;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation menu styles */
+        nav {
+            background-color: #8271cc;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #2523c7;
+        }
+
+        /* Main content area styles */
+        .main-content {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #0c3285;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
