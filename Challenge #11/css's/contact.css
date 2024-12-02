@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url('bimage.webp');
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #bb00ff;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .logo {
+        width: 115px; 
+        height: 115px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .logo-container{
+        display: flex;
+        align-items: center;
+    }
+}
+.title{
+    color:#fff;
+    font-size: 42px;
+}
+nav{
+    display: flex;
+    padding: 2% 1%;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darkened background */
+  border-radius: 10px; /* Smooth rounded corners */
+}
+
+/* Social icons styles */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between icons */
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%; /* Circular shape */
+  background: linear-gradient(135deg, #6a0dad, #0003); /* Gradient for icons */
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.socials a:hover {
+  transform: scale(1.2); /* Enlarge slightly on hover */
+  box-shadow: 0 6px 15px rgba(133, 90, 145); /* More prominent shadow */
+}
+
+/* Text below icons */
+.social-text {
+    color: #ffffff;
+    font-size: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.8; /* Comfortable line spacing */
+    font-weight: 400; /* Normal weight for a clean look */
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 700px; /* Keep the text block contained */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a soft shadow */
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+  }
+  .social-text:hover {
+    color: #000; /* Vibrant hover color */
+    background: rgb(133, 90, 145); /* Change background on hover */
+    transition: all 0.3s ease-in-out; /* Smooth hover transition */
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .socials a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .social-text {
+    font-size: 16px;
+  }
+}
