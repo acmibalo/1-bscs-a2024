@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>TWICE</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="AbouTheGroup.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">TWICE</a>
+        <nav>
+            <div class="menu-button" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </div>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="index.html">Home</a></li>
+                <li onclick="hideSidebar()"><a href="AboutTheGroup.html" class="active">ABOUT THE GROUP</a></li>
+                <li onclick="hideSidebar()"><a href="PROFILE.html">PROFILE</a></li>
+                <li onclick="hideSidebar()"><a href="DISCOGRAPHY.html">DISCOGRAPHY</a></li>
+                <li onclick="hideSidebar()"><a href="News&Updates.html">NEWS & UPDATES</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="AboutTheGroup.html" class="active">ABOUT THE GROUP</a></li>
+                <li><a href="PROFILE.html">PROFILE</a></li>
+                <li><a href="DISCOGRAPHY.html">DISCOGRAPHY</a></li>
+                <li><a href="News&Updates.html">NEWS & UPDATES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <div class="content">
+        <h2>About the Group</h2>
+        <p>
+            TWICE is a popular K-pop girl group formed by JYP Entertainment in 2015 through the reality show "Sixteen." The group consists of nine members: Jihyo, Nayeon, Jeongyeon, Momo, Sana, Mina, Dahyun, Chaeyoung, and Tzuyu.
+            <br><br>
+            <strong>Group Name Meaning</strong>
+            <br>
+            The name "TWICE" signifies that the group aims to touch people's hearts twice: once through their music and once through their visuals.
+            <br><br>
+            The fandom name is "ONCE," meaning that if fans love them even once, TWICE will repay that love with twice the affection.
+            <br><br>
+            <strong>Debut and Achievements</strong>
+            <br>
+            TWICE debuted on October 20, 2015, with their first mini-album, "The Story Begins," featuring the hit single "Like OOH-AHH."
+            <br><br>
+            They have released multiple albums, EPs, and singles, becoming one of the best-selling K-pop girl groups of all time, with over 10 million albums sold and nearly 6 billion streams on Spotify.
+            <br><br>
+            Their breakthrough single "Cheer Up" won "Song of the Year" at major South Korean music award shows.
+            <br><br>
+            <strong>Recent Activities</strong>
+            <br>
+            In March 2023, TWICE released their mini-album "Ready to Be," which includes the pre-released track "Moonlight Sunrise."
+            <br><br>
+            They embarked on their fifth world tour, making history as the first female K-pop group to headline MLB and NFL stadiums in the U.S.
+            <br><br>
+            The group has received numerous awards, including the "Breakthrough Award" at the Billboard Women in Music awards in 2023.
+            <br><br>
+            <strong>Member Profiles</strong>
+            <br>
+            Jihyo: Leader and main vocalist, known for her strong vocals and leadership skills.
+            <br>
+            Nayeon: Lead vocalist and face of the group, recognized for her charm and stage presence.
+            <br>
+            Jeongyeon: Lead vocalist, known for her unique voice and versatility.
+            <br>
+            Momo: Main dancer and sub-vocalist, celebrated for her exceptional dance skills.
+            <br>
+            Sana: Sub-vocalist, known for her cute personality and strong fan connection.
+            <br>
+            Mina: Main dancer and sub-vocalist, recognized for her elegance and grace.
+            <br>
+            Dahyun: Lead rapper and sub-vocalist, known for her lively personality and rap skills.
+            <br>
+            Chaeyoung: Main rapper and sub-vocalist, recognized for her artistic talents.
+            <br>
+            Tzuyu: Lead dancer and visual, known for her stunning visuals and stage presence.
+            <br><br>
+            <strong>Global Impact</strong>
+            <br>
+            TWICE has a massive following, with millions of fans worldwide, and they have significantly contributed to the global popularity of K-pop.
+            <br><br>
+            They have broken records on platforms like YouTube and Spotify, showcasing their influence in the music industry.
+            <br><br>
+            TWICE continues to evolve and expand their reach, captivating audiences with their music, performances, and personalities.
+        </p>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@TWICE" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/JYPETWICE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/twicetagram/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = sidebar.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
