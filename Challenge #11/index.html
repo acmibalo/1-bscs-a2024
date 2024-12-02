@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <base href="." />
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>W3Schools How To Features Demo</h1>
+
+    <div class="feature">
+      <h2>1. Snackbar / Toast Notification</h2>
+      <button onclick="showSnackbar()">Show Snackbar</button>
+      <div id="snackbar">This is a snackbar notification!</div>
+    </div>
+
+    <div class="feature">
+      <h2>2. Custom Range Slider</h2>
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <p>Value: <span id="rangeValue">50</span></p>
+    </div>
+
+    <div class="feature">
+      <h2>3. Animated Search Input</h2>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+      </div>
+    </div>
+
+    <div class="feature">
+      <h2>4. Custom Checkbox</h2>
+      <label class="custom-checkbox">
+        Option 1
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <label class="custom-checkbox">
+        Option 2
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+    <div class="feature">
+      <h2>5. Read More/Less</h2>
+      <p>This is the visible content...
+        <span id="dots">...</span>
+        <span id="more" class="read-more-content">
+          This is the hidden content.
+          Jhon Kierve Gardonia.
+        </span>
+      </p>
+      <button onclick="toggleReadMore()" class="read-more-btn" id="readMoreBtn">Read More</button>
+    </div>
+  </div>
+</body>
+</html>
