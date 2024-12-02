@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    width: 65%;  /* Section and article combined width */
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+section, article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+}
+
+article {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.right-column {
+    width: 30%;  /* Aside width */
+    background-color: #fdfd96;
+    border: 1px solid #f7f7c6;
+    padding: 15px;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    float: right;
+    height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.products-aside{
+    width: 45%;
+    height: 45%;
+    float: right;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.article-pic{
+    width:20%;
+    height: 50%;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.section-sel{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 10%;
+    height: 10%;
+    float: left;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
