@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to My Video Page</h1>
+
+    <div class="video-container">
+        <h2>Local Video</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-container">
+        <h2>Embedded YouTube Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Sz_wWzgh-vQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
