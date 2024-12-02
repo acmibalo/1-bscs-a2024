@@ -109,7 +109,7 @@ const games = [
     developer: "Roblox Corporation",
     releaseYear: 2006,
     platforms: ["Windows", "Mobile", "Xbox", "macOS"],
-    trailerUrl: "https://www.youtube.com/embed/eAvXhNlO-rE" // Roblox trailer
+    trailerUrl: "https://www.youtube.com/embed/sme76WoJ_-U" // Roblox trailer
   },
   {
     id: 9,
