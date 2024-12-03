@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  background-color: #f1f1f1;
+  padding: 10px;                  /* Increased padding for better touch targets */
+  display: flex;                  /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: left;     
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);       /* Center items vertically */
+  margin-bottom: 20px;
+}
+
+#logtitle{
+  position: relative;
+  color: #000000;
+  top: 15px;
+}
+
+.menu-container {
+  display: flex;              /* Use flexbox for the menu items */
+  align-items: center;        /* Center menu items vertically */
+}
+
+.link {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 15px;             /* Reduced margin for smaller screens */
+  position: relative;
+  padding: 5px;               /* Added padding for touch targets */
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;               /* Position slightly below the text */
+  width: 0;
+  height: 3px;
+  background-color: #000000;
+  transition: width 0.5s ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%; /* Expands to full width on hover */
+}
+
+.btn-link {
+  margin: 10px;
+  background-color: #000000;
+  color: #fff6f6;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+.btn-link:hover {
+  background-color: #68497c;
+  color: #000000;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+@media (max-width: 730px) {
+  nav {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the left */
+  }
+
+  .menu-container {
+      width: 100%; /* Full width for the menu on small screens */
+      justify-content: space-around; /* Evenly space items */
+      margin-top: 10px; /* Space above menu */
+  }
+
+  .link {
+      margin: 5px 0; /* Stack links with margin */
+  }
+
+  #logotitle {
+      margin-left: 0; /* Remove margin on smaller screens */
+      left: 200px;
+  }
+
+}
+
+  body{
+    font-family: monospace;
+  }
+
+  .menu {
+    float: left;
+    width: 20%;
+  }
+
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+
+  .right {
+    background-color: rgb(176, 179, 180);
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+
+  #div1{
+    background-color:#f1f1f1;
+    padding:15px;
+  }
+
+  #div2{
+    overflow:auto;
+  }
+
+  #div3{
+    position: relative;
+    background-color:#f1f1f1;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+    font-size:12px;
+    bottom: -33px;
+  }
+
+  #Nis{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 20px;
+  }
+  
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
