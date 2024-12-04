@@ -1,207 +1,304 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
 *{
-box-sizing: border-box;
-font-family: 'Minecraft', sans-serif;
-border-radius: 5px;
-box-shadow: 0px 0px 10px chartreuse;
-box-shadow: inset 0px 0px 10px black;
-}
-
-.wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-html{
-  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Minecraft';
 }
 
 header{
-  outline: 1px solid black;
-  width: 95vw;
-  padding: 0px 0px 200px 0px;
-  background-color: #00CC25;
+ outline: 2px solid black;
+ height: 500px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ overflow: hidden;
+}
+header h1{
+ font-size: 5em;
+ animation: slide 1s ease-in-out infinite both;
 }
 
-.navCont{
-  outline: 1px solid black;
-  width: 95vw;
+@keyframes slide{
+  0%{
+    transform: translateY(); 
+  }
+  50%{
+    transform: translateY(25%); 
+  }
+  100%{
+    transform: translateY(); 
+  }
+}
+
+body{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  background-color: #00CC25;
+ align-items: center;
+ flex-direction: column;
 }
 
-.navCont nav{
-  outline: 1px solid black;
-  display: flex;
-  gap: 45px
+.first-body{
+ display: flex;
+ flex-wrap: wrap;
+ height: 100%;
+}
+.about-cake, .types-of-cake{
+  outline: 2px solid black;
+  width: 50%;
 }
 
-.navCont a{
-  text-decoration: none
-}
-.heroSection{
-  outline: 1px solid black;
-  width: 95vw;
-  margin: 200px 0px 0px 0px;
-  background-color: #00CC25;
-}
+.t
 
-.heroSection h1{
+.about-cake{
+  padding: 20px;
+}
+.about-cake p{
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-weight: 4;
+  font-size: 1em;
   text-align: center;
-  font-size: 4em
 }
 
-.aboutSect{
-  outline: 1px solid black;
-  width: 95vw;
-  display: flex;
-  margin: 20px 0px;
-  background-color: #00CC25;
-}
-
-.textHere{
-  outline: 1px solid black;
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.textHere p{
-  text-align: center;
-}
-
-.containerA{
-  width: 95vw;
-  margin: 20px 0px;
-  outline: 1px solid black;
-  padding: 20% 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  background-color: #00CC25;
-}
-
-.card{
-  outline: 1px solid black;
-  padding: 50px;
-  width: 70%;
-  height: 250px;
-  border-radius: 10px;
-  background-color: #00CC25;
-}
-.recipeSect{
-  outline: 1px solid black;
-  width: 95vw;
-  margin: 20px 0px;
-  padding: 10% 0;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #00CC25;
-}
-
-.recipeBox{
-  outline: 1px solid black;
-  width: 95vw;
-  margin: 20px 0px;
-  padding: 20% 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #00CC25;
-}
-
-.picRec{
-  outline: 1px solid black;
-  padding: 50px;
-  width: 70%;
-  height: 150px;
-  border-radius: 10px;
-  background-color: #00CC25;
-}
-
-.farewellSect{
-  outline: 1px solid black;
-  width: 95vw;
-  margin: 20px 0px;
-  padding: 20% 0;
-  background-color: #00CC25;
+.cake-container{
+  outline: 2px solid;
+  padding: 20%;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
 }
 
-.farewellSect h1{
-  font-size: 5em;
+.cake-container:hover{
+  padding: 50% 0px;
+ 
 }
 
-.cakechoose {
-  margin: 20px 0px;
-  padding: 5% 0;
-  width: 95vw;
-  max-width: 500px;
+.cake-container img{
+  height: 5px;
+}
+
+.cake-instructions{
+  outline: 2px solid;
+  margin: 10px 0px
+}
+
+.toggle-btn {
+  font-size: 18px;
+  background-color: #008542;
+  color: #fff;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+.toggle-btn:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  z-index: -1;
+  background-color: #008542 !important;
+  box-shadow: 0 -4px rgb(21 108 0 / 50%) inset,
+    0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset,
+    4px 0 rgb(21 108 0 / 50%) inset;
+}
+
+.toggle-btn:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+.toggle-btn:hover:before {
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset,
+    -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.toggle-btn:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+.toggle-btn:active {
+  transform: translateY(4px);
+}
+
+.toggle-btn:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+
+.cake-instructions{
   display: flex;
-  height: auto;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.description{
+  outline: 2px solid;
+  transition: 0.5s ease;
+  padding: 5px;
+}
+.description p{
+  font-family: 'Minecraft';
+}
+
+
+@media (max-width: 480px){
+  header h1{
+    font-size: 2em;
+   }
+   .first-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+   }
+   .about-cake, .types-of-cake{
+    outline: 2px solid black;
+    width: 100%;
+  }
+  .about-cake p{
+    font-size: 1em;
+  }
+}
+
+.third-body{
+  display: flex;
+ flex-wrap: wrap;
+ height: 100%;
+}
+.order-cake, .contact-section{
+  outline: 2px solid black;
+  width: 50%;
+}
+
+.order-cake{
+ display: flex;
+ justify-content: center;
+}
+#orderBtn{
+  width: 100%;
+  font-size: 3em;
+}
+
+.contact-section{
+ padding: 50px;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  background-image: url('https://e0.pxfuel.com/wallpapers/254/706/desktop-wallpaper-minecraft-stone-block-texture.jpg');
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
-  background-color: #00CC25;
-  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 10px black;
 }
 
-.cakechoose input,
-.cakechoose select {
-  width: 75%;
-  padding: 8px;
-  box-sizing: border-box;
+.close {
+  color: #aaa;
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  left: -420px;
 }
 
-.cakechoose h1 {
-  text-align: center;
-}
-iframe{
-  border-radius: 50px;
-  width: 1000px;
-  height: 750px;
-  background-color: #00CC25;
-  box-shadow: 0px 0px 10px snow;
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-footer{
-  outline: 1px solid black;
-  width: 95vw;
-  padding: 0px 5px 5% 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00CC25;
-}
-body{
-  background-color: #000000;
+
+#orderCakeBtn {
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media (min-width: 1024px){
-    .heroSection h1{
-        text-align: center;
-        font-size: 10em
-      }
-      .textHere p{
-        text-align: center;
-        font-size: 3em
-      }
+#orderCakeBtn:hover {
+  background-color: #0b7dda;
+}
+
+@media (min-width: 1080px){
+  header{
+    height:95vh;
+  }
+  header h1{
+    font-size: 15em;
+   }
+   .about-cake p{
+    font-size: 3em;
+  }
+  .toggle-btn{
+    font-size: 3em;
+  }
+  .description{
+    width: 100  vw;
+  }
+  .description p{
+    font-size: 2em;
+  }
+  .modal-content h2{
+    font-size: 5em;
+  }
+  #cakeSelection{
+    font-size: 2em;
+  }
 }
