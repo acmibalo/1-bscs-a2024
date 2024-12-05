@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #FFCCEA; /* Light pink background color */
+    background-color: #FFCCEA; 
     font-family: Arial, sans-serif;
 }
 
@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to new lines if needed */
+    flex-wrap: wrap; 
 }
 
 .navigation li {
@@ -20,9 +20,9 @@ body {
 
 .navigation a {
     color: #fff;
-    text-shadow: 1px 1px 2px black; /* Add shadow to the text */
-    background-color: rgba(255, 182, 193, 0.5); /* Light pink background color */
-    border: 2px solid #ff69b4; /* Pink border */
+    text-shadow: 1px 1px 2px black; 
+    background-color: rgba(255, 182, 193, 0.5);
+    border: 2px solid #ff69b4;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 10px;
@@ -48,20 +48,20 @@ body {
 }
 
 .center-content h1 {
-    font-size: 6em; /* Make "Petal Journey" big */
+    font-size: 6em; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
     margin-bottom: 10px;
-    font-family: 'Brush Script MT', cursive; /* Add cursive font */
+    font-family: 'Brush Script MT', cursive; 
 }
 
 .center-content h2 {
-    font-size: 2.5em; /* Slightly larger subheading */
+    font-size: 2.5em;
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 .center-content p {
-    font-size: 1.5em; /* Larger paragraph font size */
+    font-size: 1.5em; 
     margin-top: 10px;
 }
 
@@ -75,7 +75,7 @@ body {
     margin-right: 20px;
     text-decoration: none;
     transition: color 0.3s;
-    text-align: center; /* Corrected to center */
+    text-align: center; 
 }
 
 .social-icons a:hover {
@@ -109,20 +109,20 @@ body {
     .social-icons a {
         font-size: 1.5em;
         margin-right: 30px;
-        text-align: center; /* Corrected to center */
+        text-align: center; 
     }
 }
 
 /* Adding images */
 .image-section {
     display: flex;
-    justify-content: center; /* Center images */
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
 
 .image-section img {
-    width: 80%; /* Make images larger to fit content */
+    width: 80%; 
     height: auto;
     margin: 0 15px;
     border: 2px solid #ff69b4;
