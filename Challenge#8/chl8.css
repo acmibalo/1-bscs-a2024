@@ -1,0 +1,164 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+*{
+box-sizing: border-box;
+font-family: 'Minecraft', sans-serif;
+border-radius: 5px;
+box-shadow: 0px 0px 10px chartreuse;
+box-shadow: inset 0px 0px 10px black;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  outline: 1px solid black;
+  width: 95vw;
+  padding: 0px 0px 200px 0px;
+  background-color: #00CC25;
+}
+
+.navCont{
+  outline: 1px solid black;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00CC25;
+}
+
+.navCont nav{
+  outline: 1px solid black;
+  display: flex;
+  gap: 45px
+}
+
+.navCont a{
+  text-decoration: none
+}
+.heroSection{
+  outline: 1px solid black;
+  width: 95vw;
+  margin: 200px 0px 0px 0px;
+  background-color: #00CC25;
+}
+
+.heroSection h1{
+  text-align: center;
+  font-size: 4em
+}
+
+.aboutSect{
+  outline: 1px solid black;
+  width: 95vw;
+  display: flex;
+  margin: 20px 0px;
+  background-color: #00CC25;
+}
+
+.textHere{
+  outline: 1px solid black;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.textHere p{
+  text-align: center;
+}
+
+.containerA{
+  width: 95vw;
+  margin: 20px 0px;
+  outline: 1px solid black;
+  padding: 20% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #00CC25;
+}
+
+.card{
+  outline: 1px solid black;
+  padding: 50px;
+  width: 70%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #00CC25;
+}
+.recipeSect{
+  outline: 1px solid black;
+  width: 95vw;
+  margin: 20px 0px;
+  padding: 10% 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00CC25;
+}
+
+.recipeBox{
+  outline: 1px solid black;
+  width: 95vw;
+  margin: 20px 0px;
+  padding: 20% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #00CC25;
+}
+
+.picRec{
+  outline: 1px solid black;
+  padding: 50px;
+  width: 70%;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #00CC25;
+}
+
+.farewellSect{
+  outline: 1px solid black;
+  width: 95vw;
+  margin: 20px 0px;
+  padding: 20% 0;
+  background-color: #00CC25;
+}
+
+footer{
+  outline: 1px solid black;
+  width: 95vw;
+  padding: 0px 5px 5% 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00CC25;
+}
+body{
+  background-color: #000000;
+}
+
+@media (min-width: 1024px){
+    .heroSection h1{
+        text-align: center;
+        font-size: 10em
+      }
+      .textHere p{
+        text-align: center;
+        font-size: 3em
+      }
+}

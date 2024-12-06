@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Don Ricardo III M. Peralta, 1-BSCS-A" />
+  <meta name="keywords" content="website, challenge, webchallenge2024-2025, 1stSemUSM" />
+  <title>Minecraft Pastry</title>
+  <link rel="stylesheet" type="text/css" href="chl10.css">
+</head>
+
+<header>
+  <h1>CAKECRAFT</h1>
+</header>
+
+<body>
+<div class="first-body">
+  
+  <div class="about-cake">
+    <h1>ABOUT CAKE</h1>
+    <p>
+      In the popular video game Minecraft, the cake is a consumable item that provides the player with food and health benefits. While the cake itself is not the most powerful food item in the game, it holds a special place due to its unique properties. When consumed, a Minecraft cake heals the player by restoring health. The cake is particularly interesting because it can be placed on a block and eaten in slices, which makes it one of the few interactive food items in the game.
+      The Minecraft cake has become an iconic symbol of the game and is often associated with celebrations within the community. It can be crafted using basic ingredients found in the game world, making it an accessible item to create for players of all skill levels. In this website, we explore the in-game cake, its crafting process, and how to bring this pixelated pastry into the real world with delicious, themed cakes inspired by Minecraft.
+    </p>
+   </div>
+      <div class="types-of-cake">
+        <div class="cake-container">
+          <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/53/Cake_JE4.png/revision/latest/scale-to-width/360?cb=20200518185831" alt="Cake 2" />
+          <p></p>
+        </div>
+        <div class="cake-container">
+          <img src="https://preview.redd.it/o4amfl6c9gb61.png?width=640&crop=smart&auto=webp&s=69a1a3f1764212c0ea255d11c390ad3723256d9e" alt="Cake 1" />
+          <p></p>
+        </div>
+        <div class="cake-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZRAvTRcEhTGBHK80Fd2rxIn2fMbJUC9N-DLekllQ8sy_AH7efCxUepxI&s=10" alt="Cake 3" />
+          <p></p>
+        </div>
+   </div> 
+   
+</div>
+<div class="cake-instructions">
+  <button class="toggle-btn" onclick="toggleDescription()">Cake Instructions</button>
+  <div class="description" id="cake-description" style="display: none;">
+      <p>
+          1. <strong>Gather Ingredients:</strong>  
+          To make a cake in Minecraft, you will need the following ingredients: 3 Wheat, 3 Buckets of Milk, 2 Sugar, and 1 Egg.
+
+          <br><br>
+
+          2. <strong>How to Obtain Ingredients:</strong>  
+          - <strong>Wheat:</strong> Harvest wheat from fully-grown wheat plants.
+          - <strong>Milk:</strong> Use a bucket to collect milk from a cow. Right-click on a cow with the bucket.
+          - <strong>Sugar:</strong> Craft sugar from sugar cane.
+          - <strong>Egg:</strong> Collect eggs from chickens.
+
+          <br><br>
+
+          3. <strong>Craft the Cake:</strong>  
+          Open your crafting table (3x3 grid). Place the ingredients in the following arrangement:  
+          - Top row: Wheat, Sugar, Wheat  
+          - Middle row: Milk, Egg, Milk  
+          - Bottom row: Milk, Sugar, Milk  
+
+          When placed correctly, a cake will appear in the result box.
+
+          <br><br>
+
+          4. <strong>Collect the Cake:</strong>  
+          Drag the cake into your inventory.
+
+          <br><br>
+
+          5. <strong>Enjoy the Cake:</strong>  
+          To eat the cake, right-click to place it on the ground, and right-click on the placed cake to eat a slice. Each slice restores 2 hunger points, and the cake has 7 slices in total.
+      </p>
+  </div>
+</div>
+
+
+<div class="third-body">
+  <div class="order-cake">
+    <button id="orderBtn" onclick="openModal()">Order a Cake</button>
+</div>
+<div id="orderModal" class="modal" style="display: none;">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Choose a Cake</h2>
+      <select id="cakeSelection">
+          <option value="chocolate">Chocolate Cake</option>
+          <option value="vanilla">Vanilla Cake</option>
+          <option value="triple">Triple Cake</option>
+      </select>
+      <br><br>
+      <!-- Link for Order Cake Button -->
+      <a href="https://your-order-page.com" id="orderCakeLink">
+          <button class="toggle-btn">Order</button>
+      </a>
+  </div>
+</div>
+
+<div class="contact-section">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum veniam, nisi voluptate autem hic sit vitae obcaecati rerum sed amet nihil exercitationem explicabo reiciendis est tempora esse cumque excepturi!</p>
+</div>
+</div>
+
+<footer>
+  <p>Final Challenge 10</p>
+</footer>
+<script>
+  
+  function toggleDescription() {
+      const description = document.getElementById("cake-description");
+      if (description.style.display === "none" || description.style.display === "") {
+          description.style.display = "block"; 
+      } else {
+          description.style.display = "none"; 
+      }
+  }
+  function openModal() {
+            document.getElementById("orderModal").style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("orderModal").style.display = "none";
+        }
+
+        // Close the modal if the user clicks outside the modal content
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("orderModal")) {
+                closeModal();
+            }
+        }
+</script>
+</body>
+</html>
