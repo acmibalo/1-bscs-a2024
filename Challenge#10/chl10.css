@@ -7,28 +7,47 @@
 
 header{
  outline: 2px solid black;
- height: 500px;
+ height: 350px;
  width: 100%;
  display: flex;
  justify-content: center;
  align-items: center;
  flex-wrap: wrap;
  overflow: hidden;
+ border-top: 100px solid #03540B;
+ border-bottom: 100px inset #03540B ;
+ border-left: 100px solid ;
+ border-right: 100px solid ;
+ box-shadow: inset 0px 0px 100px black;
+ animation: borderCont 1s ease-in-out 1 both;
+ background-color: #0fca22;
+
 }
 header h1{
- font-size: 5em;
- animation: slide 1s ease-in-out infinite both;
+ font-size: 3em;
+ animation: slide 1s ease-in-out 1 both;
 }
 
 @keyframes slide{
   0%{
-    transform: translateY(); 
+    transform: translateY(300%);
   }
   50%{
-    transform: translateY(25%); 
+    transform: translateY(-75%);
   }
   100%{
-    transform: translateY(); 
+    transform: translateY(0);
+    text-shadow: 0px 0px 50px greenyellow;
+    color: #d2ffd7;
+    
+  }
+}
+@keyframes borderCont{
+  0%{
+    border-bottom: 0px inset #03540B ;
+    border-top: 750px solid #03540B;
+    border-radius: 59% 41% 52% 48% / 0% 0% 100% 100%;  
+    opacity: 0
   }
 }
 
@@ -38,29 +57,56 @@ body{
   justify-content: center;
  align-items: center;
  flex-direction: column;
+ animation: circlec 5s ease-in-out infinite both;
+}
+@keyframes circlec{
+  0%{
+    background-color: #000000;
+  }
+  50%{
+    background-color: #0b271a
+  }
+  100%{
+    background-color: #000000;
+  }
 }
 
 .first-body{
  display: flex;
  flex-wrap: wrap;
  height: 100%;
+ background-color: #000000;
 }
-.about-cake, .types-of-cake{
-  outline: 2px solid black;
+
+.types-of-cake{
   width: 50%;
 }
 
-.t
-
 .about-cake{
   padding: 20px;
+  width: 50%;
+  background-color: #2A1C21;
+  border-radius: 5px ;
+  border-top: 0px solid;
+  border-right:  100px double rgba(4, 250, 4, 0.869);
+  border-bottom: 0px solid;
+  border-left: 0px solid;
+  box-shadow: inset 0px 0px 100px black;
 }
 .about-cake p{
   font-family: 'Minecraft';
   font-style: normal;
   font-weight: 4;
   font-size: 1em;
+  text-align: justify ;
+  color: #00FD8B;
+  padding: 10px;
+  text-shadow: 0px 0px 10px ;
+}
+.about-cake h1{
   text-align: center;
+  color: whitesmoke;
+  font-size: 3em;
 }
 
 .cake-container{
@@ -174,31 +220,11 @@ body{
   font-family: 'Minecraft';
 }
 
-
-@media (max-width: 480px){
-  header h1{
-    font-size: 2em;
-   }
-   .first-body{
-    display: flex;
-    flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-   }
-   .about-cake, .types-of-cake{
-    outline: 2px solid black;
-    width: 100%;
-  }
-  .about-cake p{
-    font-size: 1em;
-  }
-}
-
 .third-body{
   display: flex;
  flex-wrap: wrap;
  height: 100%;
+ background-color: #0F1610;
 }
 .order-cake, .contact-section{
   outline: 2px solid black;
@@ -212,10 +238,15 @@ body{
 #orderBtn{
   width: 100%;
   font-size: 3em;
+  background-color: #000000;
+  color: #00E47D
 }
 
 .contact-section{
  padding: 50px;
+}
+.contact-section p{
+  color: #00E47D
 }
 .modal {
   display: none; 
@@ -275,10 +306,53 @@ body{
 #orderCakeBtn:hover {
   background-color: #0b7dda;
 }
+@media (max-width:480px){
+  header{
+    border-top: 50px solid #03540B;
+    border-bottom: 50px inset #03540B ;
+    border-left: 10px solid ;
+    border-right: 10px solid ;
+  }
+  header h1{
+    font-size: 2em;
+   }
+   .first-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+   }
+   .about-cake, .types-of-cake{
+    outline: 2px solid black;
+    width: 100%;
+  }
+  .about-cake p{
+    font-size: 1em;
+  }
+ .third-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+ }
+ .order-cake, .contact-section{
+  width: 100%
+ }
+ .order-cake{
+  height: 250px
+ }
+}
 
 @media (min-width: 1080px){
   header{
     height:95vh;
+    border-top: 200px solid #03540B;
+    border-bottom: 200px inset #03540B ;
+    border-left: 200px solid ;
+    border-right: 200px solid ;
   }
   header h1{
     font-size: 15em;
