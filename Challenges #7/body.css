@@ -1,0 +1,60 @@
+
+    .note {
+        font-size: 120;
+        color: black;
+
+    } 
+     
+     body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(226, 255, 148);
+            margin: 0;
+        }
+
+        header {
+            background-color: #3399FF;
+            color: rgb(193, 213, 255);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #4700b9;
+        }
+
+        .navbar {
+            background-color: #a100af;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #666;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+
+        footer {
+            background-color: #00ff95;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
