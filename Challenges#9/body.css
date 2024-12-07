@@ -64,6 +64,11 @@
             text-align: center;
             padding: 10px; 
         }
+        iframe{
+            background-color: #a100af;
+            text-align: center;
+            padding: 10px;
+        }
         form {
             background-color: #fff;
             padding: 20px;
@@ -93,9 +98,4 @@
             text-align: center;
             padding: 40px;
             color: blue;
-        }
-        iframe{
-            background-color: #a100af;
-            text-align: center;
-            padding: 10px;
         }
