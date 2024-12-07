@@ -9,7 +9,7 @@
         const gamesData = [
             {
                 name: "Dota 2",
-                image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
+                image:"/images/games_banner/Dota2.webp",
                 description: "A multiplayer online battle arena (MOBA) game developed by Valve Corporation",
                 developer: "Valve Corporation",
                 releaseDate: "July 9, 2013",
@@ -26,7 +26,7 @@
             },
             {
                 name: "Genshin Impact",
-                image: "https://th.bing.com/th/id/OIP.mIWCOWxyK1aKmtOG1tpjzgHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain",
+                image: "/images/games_banner/genshinimpact.jpeg",
                 description: "An open-world action RPG developed by miHoYo featuring anime-style characters and elemental combat",
                 developer: "miHoYo",
                 releaseDate: "September 28, 2020",
@@ -43,7 +43,7 @@
             },
             {
                 name: "Honor of Kings",
-                image: "https://revolutionarena.com/pt-br/wp-content/uploads/sites/2/2024/03/Honor-of-Kings.jpg",
+                image: "/images/games_banner/HOK.jpg",
                 description: "A mobile MOBA game developed by TiMi Studio Group and published by Tencent Games",
                 developer: "TiMi Studio Group",
                 releaseDate: "November 26, 2015",
@@ -59,7 +59,7 @@
             },
             {
                 name: "Honkai Impact 3rd",
-                image: "https://img2.tapimg.net/post/etag/FpSix8-nIw-2VIqVLBcSRvXhTeSw.jpg?imageMogr2/thumbnail/720x9999%3E/quality/80/format/jpg/interlace/1/ignore-error/1",
+                image: "/images/games_banner/hi3rd.webp",
                 description: "An action RPG developed by miHoYo featuring dynamic combat and anime-style graphics",
                 developer: "miHoYo",
                 releaseDate: "March 28, 2018",
@@ -75,7 +75,7 @@
             },
             {
                 name: "Honkai: Star Rail",
-                image: "https://cdn1.epicgames.com/offer/a2dcbb9e34204bda9da8415f97b3f4ea/2560x1440_EN_2560x1440-1295c4399099873d0d329e1c39d12ed5",
+                image: "/images/games_banner/Star_rail.jpeg",
                 description: "A space fantasy RPG with turn-based combat system, developed by miHoYo",
                 developer: "miHoYo",
                 releaseDate: "April 26, 2023",
@@ -91,7 +91,7 @@
             },
             {
                 name: "Minecraft",
-                image: "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/bedrock_header.jpg",
+                image: "/images/games_banner/minecraft.jpg",
                 description: "A sandbox game focused on building and exploration, developed by Mojang Studios",
                 developer: "Mojang Studios",
                 releaseDate: "November 18, 2011",
@@ -107,7 +107,7 @@
             },
             {
                 name: "Mobile Legends: Bang Bang",
-                image: "https://dailyspin.id/wp-content/uploads/2024/02/jucqgcb14o.jpg",
+                image: "/images/games_banner/mlbb.png",
                 description: "A mobile MOBA game developed by Moonton featuring 5v5 battles",
                 developer: "Moonton",
                 releaseDate: "July 14, 2016",
@@ -123,7 +123,7 @@
             },
             {
                 name: "Roblox",
-                image: "https://techcrunch.com/wp-content/uploads/2021/07/roblox-logo.png",
+                image: "/images/games_banner/roblox.jpg",
                 description: "An online game platform and game creation system that allows users to program games",
                 developer: "Roblox Corporation",
                 releaseDate: "September 1, 2006",
@@ -139,7 +139,7 @@
             },
             {
                 name: "Terraria",
-                image: "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltdba49ca0a895ae36/669163d6e6031cd88be0f15b/terraria.jpg",
+                image: "/images/games_banner/terraria.jpg",
                 description: "A 2D sandbox action-adventure game developed by Re-Logic featuring exploration, crafting, and combat",
                 developer: "Re-Logic",
                 releaseDate: "May 16, 2011",
@@ -155,7 +155,7 @@
             },
             {
                 name: "Valorant",
-                image: "https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg",
+                image: "/images/games_banner/valo.jpg",
                 description: "A free-to-play tactical first-person shooter developed by Riot Games",
                 developer: "Riot Games",
                 releaseDate: "June 2, 2020",

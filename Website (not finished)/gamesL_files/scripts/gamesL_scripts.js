@@ -67,7 +67,7 @@ const games = [
     developer: "TiMi Studio Group",
     releaseYear: 2015,
     platforms: ["Mobile"],
-    trailerUrl: "https://www.youtube.com/embed/tqxe-y7x_pk" // Honor of Kings trailer
+    trailerUrl: "https://www.youtube.com/embed/1uRhM96nDYI" // Honor of Kings trailer
   },
   {
     id: 6,
