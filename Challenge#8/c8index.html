@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website where you can see and listen to my music type">
+    <title>SB Soundtrack: My Music, Your Vibe</title>
+    <link rel="stylesheet" href="c8style.css">
+    <link rel="icon" href="images/favicon bluegreen.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="mywebsite.html">HOME</a></li>
+                    <li><a target="_blank" href="about.html">ABOUT</a></li>
+                    <li><a target="_blank" href="favorites.html">FAVORITES</a></li>
+                    <li><a target="_blank" href="categories.html">CATEGORIES</a></li>
+                    <li><a target="_blank" href="contactus.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <div class="content-section">
+            <h1 class="homeheading">Let the Music Move You</h1>
+            <p class="par">This isn’t just a website it’s an open door to my musical universe, where every sound has meaning and every melody tells a story. Every melody carries a piece of my heart. It's a curated collection of the rhythms that move me, the lyrics that inspire me, and the harmonies that make me feel alive. Through these songs, I'm opening up a window to my soul, sharing the beats and tunes that have shaped my journey. Whether you're here to find your next favorite track, relive memories tied to music, or simply lose yourself in the magic of sound, this space is for you. I believe music is a universal language a bridge that connects us all. So, come in, explore, discover something new, and let the music ignite your passions, stir your emotions, and bring us closer together.</p>
+        </div>
+        <div class="polaroid-gallery">
+            <div class="polaroid">
+                <img src="images/BRUNOMARS.jpg" alt="BRUNO MARS">
+                <p class="polaroid-text"><a target="_blank" href="1BRUNOMARS.html">BRUNO MARS</a></p>
+                <a target="_blank" href="1BRUNOMARS.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+            <div class="polaroid">
+                <img src="images/COLDPLAY.jpg" alt="COLDPLAY">
+                <p class="polaroid-text"><a target="_blank" href="COLDPLAY.html">COLDPLAY</a></p>
+                <a target="_blank" href="COLDPLAY.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+            <div class="polaroid">
+                <img src="images/DEANLEWIS.jpg" alt="DEAN LEWIS">
+                <p class="polaroid-text"><a target="_blank" href="DeanLewis.html">DEAN LEWIS</a></p>
+                <a target="_blank" href="DeanLewis.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+            <div class="polaroid">
+                <img src="images/ED SHEERAN.jpg" alt="ED SHEERAN">
+                <p class="polaroid-text"><a target="_blank" href="EdSheeran.html">ED SHEERAN</a></p>
+                <a target="_blank" href="EdSheeran.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+            <div class="polaroid">
+                <img src="images/HARRYSTYLES.jpg" alt="HARRY STYLES">
+                <p class="polaroid-text"><a  target="_blank"href="HARRYSTYLES.html">HARRY STYLES</a></p>
+                <a target="_blank" href="HARRYSTYLES.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+            <div class="polaroid">
+                <img src="images/IMAGINE DRAGONS.jpg" alt="IMAGINE DRAGONS">
+                <p class="polaroid-text"><a target="_blank" href="ImagineDragons.html">IMAGINE DRAGONS</a></p>
+                <a target="_blank" href="ImagineDragons.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+            <div class="polaroid">
+                <img src="images/billieeilish.jpg" alt="billieeilish">
+                <p class="polaroid-text"><a target="_blank" href="BillieEilish.html">BILLIE EILISH</a></p>
+                <a target="_blank" href="BillieEilish.html"><button class="play-btn"><i class="fa-solid fa-play"></i></button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 SBSOUNDTRACK. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="https://web.facebook.com/shanagravebesto/" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/shaunbuu/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    <script>
+    // Select the elements
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+// Toggle the menu when the hamburger is clicked
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+// Automatically hide the menu when the screen is resized to larger than 768px
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    menu.classList.remove('show');
+  }
+});
+      </script>      
+      
+</body>
+</html>
