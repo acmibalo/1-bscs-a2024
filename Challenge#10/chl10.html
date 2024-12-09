@@ -14,6 +14,7 @@
 </header>
 
 <body>
+      <div class="transition-overlay" id="overlay"><h1>CakeCraft</h1></div>
 <div class="first-body">
   
   <div class="about-cake">
@@ -73,6 +74,7 @@
 
           5. <strong>Enjoy the Cake:</strong>  
           To eat the cake, right-click to place it on the ground, and right-click on the placed cake to eat a slice. Each slice restores 2 hunger points, and the cake has 7 slices in total.
+         <a href="s.html" id="transition-link" class="toggle-btn">Click to learn how</a>
       </p>
   </div>
 </div>
@@ -92,15 +94,14 @@
           <option value="triple">Triple Cake</option>
       </select>
       <br><br>
-      <!-- Link for Order Cake Button -->
-      <a href="https://your-order-page.com" id="orderCakeLink">
+      <a href="s.html" id="orderCakeLink">
           <button class="toggle-btn">Order</button>
       </a>
   </div>
 </div>
 
 <div class="contact-section">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum veniam, nisi voluptate autem hic sit vitae obcaecati rerum sed amet nihil exercitationem explicabo reiciendis est tempora esse cumque excepturi!</p>
+  <p>email: peraltadonricardo@gmail.com</p>
 </div>
 </div>
 
@@ -121,16 +122,32 @@
             document.getElementById("orderModal").style.display = "block";
         }
 
-        // Function to close the modal
+        
         function closeModal() {
             document.getElementById("orderModal").style.display = "none";
         }
 
-        // Close the modal if the user clicks outside the modal content
+
         window.onclick = function(event) {
             if (event.target == document.getElementById("orderModal")) {
                 closeModal();
             }
+             const links = document.querySelectorAll('#transition-link');
+        const overlay = document.getElementById('overlay');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); 
+
+               
+                overlay.classList.add('active');
+
+               
+                setTimeout(() => {
+                    window.location.href = link.href; 
+                }, 2000); 
+            });
+        });
         }
 </script>
 </body>
