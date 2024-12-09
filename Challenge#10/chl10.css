@@ -347,7 +347,7 @@ body{
 #orderCakeBtn:hover {
   background-color: #0b7dda;
 }
-@media (max-width:480px){
+@media (max-width:689px){
   header{
     border-top: 50px solid #03540B;
     border-bottom: 50px inset #03540B ;
