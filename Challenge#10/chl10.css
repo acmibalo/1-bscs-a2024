@@ -252,7 +252,13 @@ body{
 .description p{
   font-family: 'Minecraft';
   color: #008542;
+  margin: 5px;
   text-shadow: 0px 0px 20px #008542 ;
+}
+
+.description p a{
+  font-size: 1em;
+  margin: 10px
 }
 
 .third-body{
