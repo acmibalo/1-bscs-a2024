@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name='author' content="Don Ricardo III M. Peralta, 1-BSCS-A">
-  <meta name='keywords' content="website, challenge, webchallenge2024-2025, 1stSemUSM">
-  <title>Minecraft Pastry</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Don Ricardo III M. Peralta, 1-BSCS-A" />
+  <meta name="keywords" content="website, Minecraft cake, order cake" />
+  <title>CakeCraft</title>
 </head>
-<header>
-  <div class="navCont">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
-  <div class="heroSection">
-    <h1>Website Activity</h1>
-  </div>
-</header>
-<body>
-  <div class="aboutSect">
-    <div class="textHere">
-      <p>cake recipe</p>
-    </div>
-  </div>
-  <div class="containerA">
-    <div class ="card"></div>
-    <div class ="card"></div>
-    <div class ="card"></div>
-  </div>
-  <div class="recipeSect">
-    <p>recipe</p>
-  </div>
-  <div class="recipeBox">
-        <div class="picRec"></div>
-        <div class="picRec"></div>
-        <div class="picRec"></div>
-        <div class="picRec"></div>
-        <div class="picRec"></div>
-  </div>
-  <div class="farewellSect">
-    
-  </div>
-</body>
 
-<footer>
-  <h4>Contact: 09623935453</h4>
-  <h5>Email: peraltadonricardo@gmail.com</h5>
-</footer>
+<body>
+  <header>
+    <h1>CakeCraft</h1>
+  </header>
+
+  <section>
+    <h2>About the Minecraft Cake</h2>
+    <p>
+      In Minecraft, the cake is a food item that players can craft and eat. It provides health and hunger benefits in the game. This cake can be placed on the ground and eaten in slices, making it a unique item. In this website, we explore how to craft the cake in Minecraft and how you can create similar cakes in real life.
+    </p>
+  </section>
+
+  <section>
+    <h2>How to Make the Cake in Minecraft</h2>
+    <p>Follow these steps to craft the cake:</p>
+    <ol>
+      <li>Gather ingredients: 3 Wheat, 3 Buckets of Milk, 2 Sugar, 1 Egg.</li>
+      <li>Use the crafting table to arrange the ingredients as follows:
+        <ul>
+          <li>Top row: Wheat, Sugar, Wheat</li>
+          <li>Middle row: Milk, Egg, Milk</li>
+          <li>Bottom row: Milk, Sugar, Milk</li>
+        </ul>
+      </li>
+      <li>Drag the cake into your inventory when it's crafted.</li>
+      <li>Place the cake on the ground and eat slices by right-clicking on it.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Order a Real-Life Minecraft Cake</h2>
+    <p>If you'd like to order a Minecraft-inspired cake, please choose one of the following options:</p>
+    <form action="order.php" method="post">
+      <label for="cakeType">Choose a cake flavor:</label>
+      <select id="cakeType" name="cakeType">
+        <option value="chocolate">Chocolate Cake</option>
+        <option value="vanilla">Vanilla Cake</option>
+        <option value="triple">Triple Cake</option>
+      </select>
+      <br />
+      <input type="submit" value="Order Cake" />
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact: peraltadonricardo@gmail.com</p>
+    <p>&copy; 2024 CakeCraft</p>
+  </footer>
+</body>
 </html>
