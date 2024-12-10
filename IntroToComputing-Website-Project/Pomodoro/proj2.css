@@ -9,23 +9,25 @@ body {
     color: white;
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     text-align: center;
     width: 100%;
-    padding: 10px 0;
+    padding: 50px 0;
 }
 
 .timer {
     display: inline-block;
-    padding: 10px;
+    padding: 25px;
     width: 600px;
     box-sizing: border-box;
 }
 
 h1 {
-    font-size: 6em;
     width: 12ch;
     margin: 20px auto;
 }
@@ -133,7 +135,6 @@ footer a {
     margin: 06px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .timer {
         width: 100%;

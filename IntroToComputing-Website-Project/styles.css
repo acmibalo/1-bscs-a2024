@@ -33,6 +33,7 @@ html{
 }
 
 body{
+  overflow-x:hidden;
   background-color: #e0e0e0;
   background-size: cover;
   backdrop-filter: blur(5px);
@@ -86,6 +87,16 @@ body{
   font-weight: 3;
   text-shadow: 5px 5px 9px #aaaaaa,
              -5px -5px 9px #ffffff;
+  animation-delay: 2s;
+  animation: flicker 1s ease-in-out infinite both;
+}
+
+@keyframes flicker{
+  0%{
+    color: white;
+    opacity: 50%;
+    text-shadow: 0px 0px 50px #aaaaaa,
+  }
 }
 .card h4{
   text-align: center;
@@ -145,22 +156,35 @@ body {
 .boxw {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 43px 43px 86px #aaaaaa, -43px -43px 86px #ffffff;
   padding: 20px;
   margin: 20px 0px;
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
+  height: 500px;
   max-width: 800px;
   gap: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.boxw:hover{
+  transform: scale(1.09);
+  backdrop-filter: blur(5px);
 }
 
 .img img {
-  width: 100%;
+  width: 100px;
   height: auto;
   border-radius: 10px;
 }
 
+.boxw img{
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+}
 .text p {
   font-size: 1em;
   color: grey;
@@ -423,4 +447,20 @@ button {
   outline: none;
   border: none;
   background: transparent;
+}
+
+@media (max-width: 570px){
+  .boxw{
+    flex-direction: column;
+  }
+  .boxw:hover{
+    transform: scale(1.1);
+  }
+  .boxw img{
+    width: 150px;
+    height: 100%
+  }
+  .card h1{
+    font-size: 2em;
+  }
 }

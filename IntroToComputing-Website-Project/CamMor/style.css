@@ -40,12 +40,15 @@ p{
     font-family: "Jaro", sans-serif;
 }
 
-.t{
+.t {
     position: fixed;
     display: flex;
     justify-content: center;
-    width: 100vh;
-    right: 500px;
+    width: auto; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .t h1{
@@ -66,3 +69,4 @@ p{
         transform: translateY(0%);
     }
 }
+
