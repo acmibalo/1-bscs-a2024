@@ -1,0 +1,219 @@
+body {
+    background-color: white;
+    overflow: auto;
+    text-align: center;
+    background-image: none;
+    margin: 10px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    gap: 10px;
+    /* Added gap for spacing */
+}
+
+.show {
+    display: block;
+    transition: 1s;
+    animation: fadeEffect 1s;
+    box-sizing: border-box;
+}
+
+.active {
+    background-color: var(--pink);
+    color: white;
+}
+
+.tags {
+    padding: 10px;
+    text-align: left;
+    border-left: var(--bw) var(--bt) var(--bc);
+    border-bottom: var(--bw) var(--bt) var(--bc);
+    border-right: var(--bw) var(--bt) var(--bc);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bideocontain {
+    width: 100%;
+    max-width: 900px;
+    /* Adjust as needed */
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    /* Maintains 16:9 aspect ratio */
+    box-sizing: border-box;
+    border-left: var(--bw) var(--bt) var(--bc);
+    border-bottom: var(--bw) var(--bt) var(--bc);
+    border-right: var(--bw) var(--bt) var(--bc);
+}
+
+.bideocontain img {
+    position: absolute; /* Keeps the image contained */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border: none;
+}
+
+.bideocontain iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Collapsible menu styles (if applicable) */
+.collapsible {
+    width: 100%;
+    transition: 0.5s;
+    font-family: var(--hfont);
+    font-size: 27px;
+    letter-spacing: 3px;
+    padding: 10px;
+    line-height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.collapsible:hover {
+    background-color: var(--pink);
+    color: var(--pink);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible:hover:after {
+    color: white;
+}
+
+.activated {
+    background-color: var(--pink);
+}
+
+.activated:after {
+    content: "\2212";
+    color: white;
+}
+
+#myBtnContainer {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: var(--bw) var(--bt) var(--bc);
+    border-top: none;
+}
+
+.genre{
+    display:flex; 
+    flex-wrap:wrap; 
+    align-items:baseline; 
+    gap:10px;
+}
+
+.producer{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: baseline; 
+    gap: 10px;
+}
+
+.featuring{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: baseline; 
+    gap: 10px;
+}
+
+.other{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: baseline; 
+    gap: 10px;
+}
+
+.meiko-classical{
+    display: none;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contain div {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Main header styles */
+.mainheader {
+    color: var(--pink);
+    font-family: var(--hfont);
+    font-size: 27px;
+    letter-spacing: 3px;
+    border: var(--bw) var(--bt) var(--bc);
+    outline: var(--bw) var(--bt) white;
+    outline-offset: -8px;
+    padding: 10px;
+    background-color: var(--h);
+    line-height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mainheader>header {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 590px) {
+    .bideocontain {
+        width: auto;
+        padding-top: 56.25%;
+        /* Keep aspect ratio */
+    }
+
+    .tags {
+        width: auto;
+    }
+}
