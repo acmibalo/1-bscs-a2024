@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Block Element Styles */
+  .block-section {
+    padding: 2rem;
+    background-color: #e3f2fd;
+  }
+  
+  .block-title {
+    font-size: 2rem;
+    color: #1e88e5;
+    margin-bottom: 1rem;
+  }
+  
+  .block-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .block-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e88e5;
+    color: #fff;
+  }
+  
+  /* Inline Element Styles */
+  .inline-text {
+    padding: 1rem;
+  }
+  
+  .inline-text .highlight {
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .inline-link {
+    color: #1e88e5;
+    text-decoration: none;
+  }
+  
+  .inline-link:hover {
+    text-decoration: underline;
+  }
+  
