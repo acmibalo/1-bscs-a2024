@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felix Joseph Dinopol">
+    <meta name="description" content="Your Literary Universe">
+    <meta name="keywords" content="Books, Publishers, Fiction, Drama, Wisdom, Author,">
+    <title>BookVerse - Video Showcase</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo-section">
+          <a href="homepage.html" class="logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            BookVerse
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="author.html">Authors</a>
+          <a href="publishers.html">Publishers</a>
+          <a href="categories.html">Categories</a>
+          <a href="contacts.html">Contact</a>
+          <a href="login.html" class="login-btn">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section class="video-section">
+        <h2 class="section-title">Explore Videos</h2>
+
+        <!-- Embedded Video using Iframe -->
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/eTFy8RnUkoU?si=OoXUOQWhMrprFCHj"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Local MP4 Video -->
+        <div class="video-container">
+          <video controls>
+            <source src="video/local-vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About BookVerse</h4>
+          <p>BookVerse is your premier destination for discovering and exploring the world of literature. We connect readers with publishers, authors, and amazing books.</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 BookVerse. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

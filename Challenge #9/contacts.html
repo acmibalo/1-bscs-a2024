@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="contacts.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felix Joseph Dinopol">
+    <meta name="description" content="Your Literary Universe">
+    <meta name="keywords" content="Books, Publishers, Fiction, Drama, Wisdom, Author,">
+    <title>BookVerse - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="css/homepage-2.css" rel="stylesheet">
+    <link href="css/contacts.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script src="js/contacts.js"></script>
+    <script src="js/homepage.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo-section">
+          <a href="homepage.html" class="logo">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            BookVerse
+          </a>
+          <a href="books.html" class="books-btn">Books</a>
+        </div>
+        <div class="nav-links">
+          <a href="author.html">Authors</a>
+          <a href="publishers.html">Publishers</a>
+          <a href="categories.html">Categories</a>
+          <a href="contacts.html">Contact</a>
+          <a href="login.html" class="login-btn">Login</a>
+        </div>
+        <div class="mobile-menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h1>Get in Touch</h1>
+      
+        <div class="info-block">
+          <h3>Visit Us</h3>
+          <div class="info-content">
+            <div class="info-icon">📍</div>
+            <div>
+              <p>University of Southern Mindanao</p>
+              <p>University Learning Resource Center</p>
+              <p>4R9J+W4 Kabacan, Cotabato</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <h3>Contact Information</h3>
+          <div class="info-content">
+            <div class="info-icon">📞</div>
+            <div>
+              <p>Phone: (064) 248 2308</p>
+              <p>Email: op@usm.edu.ph</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <h3>Business Hours</h3>
+          <div class="info-content">
+            <div class="info-icon">🕒</div>
+            <div>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday: 10:00 AM - 4:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/theUSMofficial" class="social-link">📘</a>
+          <a href="https://twitter.com" class="social-link">🐦</a>
+          <a href="https://instagram.com" class="social-link">📸</a>
+          <a href="https://www.usm.edu.ph/" class="social-link">💼</a>
+        </div>
+
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7632932387893!2d124.8302994!3d7.119836699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f88d7acf6a04eb%3A0xfe0a2104b23347b9!2sUniversity%20Learning%20Resource%20Center!5e0!3m2!1sen!2sph!4v1733395716192!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Customer Support</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+          <div class="success-message" id="successMessage">
+            Thank you for your message! We'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About BookVerse</h4>
+          <p>BookVerse is your premier destination for discovering and exploring the world of literature. We connect readers with publishers, authors, and amazing books.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/theUSMofficial" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <p>FAQ</p>
+            <p>Membership</p>
+            <li><a href="contacts.html">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookie Policy</p>
+            <p>Copyright Notice</p>
+            <p>Accessibility</p>
+          </ul>
+        </div>
+      </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2023 BookVerse. All rights reserved. | Designed with ❤️ for book lovers</p>
+        </div>
+      </footer>
+
+  </body>
+</html>
