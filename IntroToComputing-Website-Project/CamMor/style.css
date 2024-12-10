@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+
+body {
+    height:100vh;
+    width:100vh;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 25px white;
+    transition: 0.5s ease-in-out
+}
+
+#image-track > .image:hover {
+   transform: scale(1.2);
+}
+
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none;
+    
+}
+
+p{
+    color: white;
+    font-family: "Jaro", sans-serif;
+}
+
+.t{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    right: 500px;
+}
+
+.t h1{
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-size: 5em;
+    animation: move 2s ease-in-out infinite both;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}

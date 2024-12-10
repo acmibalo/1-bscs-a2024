@@ -1,0 +1,190 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+*{
+    font-family: 'Minecraft', sans-serif;
+}
+
+body {
+    background-color: #034159;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.timer {
+    display: inline-block;
+    padding: 10px;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 6em;
+    width: 12ch;
+    margin: 20px auto;
+}
+
+.timer h1{
+    font-size: 2em;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: #038C3E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #0CF25D;
+}
+
+.hidden {
+    display: block;
+}
+
+.timer-display {
+    font-size: 5em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+#start, #stop {
+    background-color: #02735E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#stop:hover {
+    background-color: tomato;
+}
+
+#start:hover {
+    background-color: #0CF25D;
+}
+
+#timer-message {
+    color: white;
+    background-color: #025951 ;
+    display: none;
+    padding: .5em;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.total-time {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#reset {
+    background-color: #025951;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #0CF25D;
+}
+
+.total-time-box {
+    background-color: #025951;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid gray;
+    border-radius: 24px;
+}
+
+footer a {
+    color: white;
+    margin: 06px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .timer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button {
+        padding: 12px 25px;
+        width: 100%;
+    }
+
+    .timer-display {
+        font-size: 4em;
+    }
+
+    #start, #stop, #reset {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .timer-display {
+        font-size: 3em;
+    }
+
+    .total-time-box {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    .total-time {
+        font-size: 1em;
+    }
+
+    footer a {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden; 
+    overflow-x: auto;   
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/564x/f1/f7/3a/f1f73a329f0c4eb57db75d381a4c4836.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+    scrollbar-width: none;
+}
+
+
+.wrapper{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.head-cont{
+  width: 100%;
+  margin: 10px 0px ;
+  padding: 1px 20px;
+  border-radius: 40px;
+  overflow: hidden;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 10px black;
+  background: linear-gradient(135deg, rgba(226, 0, 0, 0.1), rgba(39, 69, 55, 0.619));
+}
+
+.navMenu{
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Logo{
+   background-image: url('https://seeklogo.com/images/K/k-on-anime-logo-B15D455180-seeklogo.com.png');
+   background-size: cover;
+   background-position: center;
+   padding:20px 70px;
+   margin: 5px 0px;
+   transform: rotate(-20deg);
+}
+
+
+.navToolsCont{
+    display: flex;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.boxNav{
+ padding: 10px;
+}
+
+.boxNav a{
+    padding: 10px;
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    
+    
+   }
+   
+.btn{
+    
+    display:flex;
+    min-width: 1vw;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+
+.btnCalls{
+    padding: 5px;
+}
+.btn1{
+    padding: 10px 20px;
+    background: none;
+    border-radius: 100px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    outline: px solid white ;
+}
+.btn2{
+    padding: 10px 20px;
+    background: lightskyblue;
+    color: white;
+    border-radius: 100px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    outline: 2px solid ;
+}
+
+.HeroDiv{
+    transform: rotate(3deg);
+    padding: 60px 0px;
+    border-radius: 40px;
+    background-image: url('https://i.pinimg.com/736x/2a/2d/14/2a2d14864ad7de86c0b93424f68e5dd9.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+   
+
+.sideText{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 5px;
+    
+}
+.titleText{
+    font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+    padding: 0px 20px;
+}
+.smallText{
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px 20px;
+    
+   
+}
+.imgCute {
+    padding: 0px 0px;
+    height: 1px;
+    right: 400px;
+    overflow: visible;
+    animation: upDown 3s ease-in-out infinite both;
+}
+img{
+    position: relative;
+    bottom: 150px;
+}
+
+@keyframes upDown {
+    0%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+
+

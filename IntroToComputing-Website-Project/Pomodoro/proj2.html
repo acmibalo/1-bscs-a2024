@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="proj2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="timer-message">Please select a timer before starting.</div>
+
+    <div class="container">
+        <div class="timer">
+            <h1>pomodoro.</h1>
+
+            <div class="button-container">
+                <button class="button" id="pomodoro-session">Pomodoro</button>
+                <button class="button" id="short-break">Short Break</button>
+                <button class="button" id="long-break">Long break</button>
+            </div>
+
+            <div id="pomodoro-timer" class="timer-display" data-duration="25.00">
+                25:00
+            </div>
+
+            <div id="short-timer" class="timer-display" data-duration="5.00">
+                5:00
+            </div>
+
+            <div id="long-timer" class="timer-display" data-duration="10.00">
+                10:00
+            </div>
+
+            <div id="buttons">
+                <button id="start">START</button>
+                <button id="stop">STOP</button>
+                <button id="reset">RESET</button> 
+            </div>
+
+         
+            
+            
+        </div>
+    </div>
+
+    <footer></footer> 
+
+    <script src="proj2.js"></script>
+</body>
+</html>
