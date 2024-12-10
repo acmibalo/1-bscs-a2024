@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    overflow: hidden; /* Hide overflow to avoid scrolling */
+    text-align: center;
+    background-image: none;
+    margin: 10px; /* Reduce margin to save space */
+    font-size: 1rem; /* Set a moderate font size for body */
+    line-height: 1.4; /* Reduce line spacing to fit content better */
+}
+
+button {
+    border: var(--bw) var(--bt) var(--bc);
+    outline: none;
+    padding: 5px 8px; /* Reduced padding for smaller buttons */
+    background-color: var(--h);
+    font-family: var(--font);
+    font-size: 0.9rem; /* Reduced button font size */
+    margin: 2px 0px; /* Slight margin for button spacing */
+    transition: 0.2s;
+    color: #e74492;
+    text-shadow: none;
+}
+
+button:hover {
+    background-color: #e74492;
+    color: white;
+    transition: 0.2s;
+    letter-spacing: normal;
+}
+
+ul {
+    text-align: left;
+    font-size: 1.1rem; /* Decreased font size to fit within frame */
+    margin-left: 3%; /* Further reduced left margin */
+    margin-right: 3%; /* Further reduced right margin */
+    line-height: 1.4; /* Compact line height */
+}
+
+header {
+    font-size: 1.8rem; /* Reduced header font size to make it fit */
+    font-weight: bold;
+    margin-bottom: 10px; /* Less margin to save space */
+}
+
+ul li {
+    margin-bottom: 10px; /* Reduced spacing between list items */
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff; /* Custom link color */
+    transition: color 0.2s; /* Smooth transition on color change */
+}
+
+a:hover {
+    color: #0056b3; /* Link color on hover */
+}

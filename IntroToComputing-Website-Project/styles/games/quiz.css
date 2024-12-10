@@ -1,0 +1,140 @@
+:root{
+    --border:var(--bc);
+    --background:var(--h);
+    --filter:var(--bc);
+}
+
+#quiz{
+    display:flex; 
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+}
+
+form{
+    text-align:left; 
+}
+
+.question{
+    text-align:center; 
+    font-weight:bold;
+}
+
+button{
+    width:fit-content;
+}
+
+[ctr]{
+    margin:auto;
+    width:300px;
+    height:fit-content;
+    pointer-events:all;
+    user-select:all;
+}
+
+[node]{
+    border:var(--bw) var(--bt) var(--border);
+    background-color:var(--background);
+    padding:10px;
+}
+
+#flex{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center; 
+    margin-bottom:12px;
+    height:100px;
+}
+
+#flex > div > img{
+    width:100px;
+    height:fit-content;
+    border:var(--bw) var(--bt) var(--border);
+    padding:4px;
+    background-color:white;
+    display:block;
+}
+
+#flex > div:nth-child(2){
+    padding:10px 0px 10px 10px;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+#link{
+    filter:drop-shadow(0 2px var(--filter)) drop-shadow( 2px 0 var(--filter)) drop-shadow( 0 -2px var(--filter)) drop-shadow(-2px 0 var(--filter));
+}
+
+label{
+    display:flex;
+    align-content:center;
+    align-items:flex-start;
+    gap:5px;
+    position:relative;
+    width:fit-content;
+}
+
+label input{
+    opacity:0;
+    cursor:pointer;
+}
+
+.checkmark{
+    position:absolute;
+    height:15px;
+    width:15px;
+    background-color:var(--bc);
+    border-radius:50%;
+}
+
+label:hover input ~ .checkmark {
+    background-color:var(--pink);
+}
+
+label input:checked ~ .checkmark {
+    background-color:var(--pink);
+}
+
+button:disabled:hover{
+    background-color:var(--h);
+    color:var(--pink);
+}
+
+.imgwrap{
+    border:var(--bw) var(--bt) var(--bc);
+    box-sizing:border-box;
+    padding:4px;
+    background-color:white;
+    height:200px;
+    width:240px;
+    margin:0 auto;
+}
+
+.circwrap{
+    border:var(--bw) var(--bt) var(--bc);
+    box-sizing:border-box;
+    padding:4px;
+    background-color:white;
+    height:200px;
+    width:200px;
+    margin:0 auto;
+    border-radius:100%;
+}
+
+.imgwrap img, .circwrap img{
+    margin:0 auto;
+    max-width:100%;
+    max-height:100%;
+    object-fit:scale-down;
+    display:block;
+    transition:0.3s;
+}
+
+.imgwrap img:hover, .circwrap img:hover{
+    opacity:0.8;
+    transition:0.3s;
+}

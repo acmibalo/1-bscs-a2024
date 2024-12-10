@@ -1,0 +1,250 @@
+body{
+    background-color:var(--bg);
+    overflow:auto;
+    overflow-x:hidden;
+    text-align:center;
+    background-image:none;
+    margin:10px;
+    animation:fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+}
+
+.buttonsrow{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-bottom:10px;
+    margin:auto;
+    width:100%;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+img{
+    display:block;
+}
+
+#widgetcontain{
+    display:flex;
+    justify-content:center;
+}
+
+.lofl{
+    max-width:570px;
+    margin:auto;
+    border:0;
+}
+
+@media only screen and (max-width:590px){
+    .buttonsrow img{
+        max-width:85px;
+    }
+}
+
+#flex{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+}
+
+div #templateWebring{
+    background-image:none;
+    background-color:var(--h);
+    border:var(--bw) solid var(--bc);
+    padding:10px;
+    width:225px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+div #webringdescbox, div #webringlinks{
+    border:var(--bw) solid var(--bc);
+    padding:10px;
+}
+
+#webringdesc, #linkparaWebring{
+    margin:0;
+}
+
+div #iconWebring{
+    border:var(--bw) solid var(--bc);
+    width:125px;
+    height:125px;
+    box-sizing:border-box;
+}
+
+#wolwebring p{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:0;
+}
+
+#bisexualism .webring-info{
+    display:flex;
+}
+
+.about, .status, .support{
+    max-width:500px;
+    max-height:134px;
+    min-height:134px;
+    display:flex;
+    justify-content:center; 
+    gap:46px;
+    margin:auto;
+}
+
+.status{
+    flex-direction:row-reverse;
+}
+
+.about > div:nth-child(1), .status > div:nth-child(1), .support > div:nth-child(1){
+    width:135px;
+}
+
+.about > div:nth-child(2), .status > div:nth-child(2), .support > div:nth-child(2){
+    width:250px;
+}
+
+.miku img{
+    max-height:100%;
+    margin:auto;
+}
+
+.bubble{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+    position:relative;
+    background-color:var(--h);
+    border:var(--bw) var(--bt) var(--bc);
+}
+
+.bubble.left:before {
+    content:' ';
+    position:absolute;
+    width:0;
+    height:0;
+    left:-40px;
+    right:auto;
+    top:60px;
+    bottom:auto;
+    border:18px solid;
+    border-color:var(--bc) var(--bc) transparent transparent;
+}
+
+.bubble.left:after{
+    content:' ';
+    position:absolute;
+    width:0;
+    height:0;
+    left:-30px;
+    right:auto;
+    top:64px;
+    bottom:auto;
+    border:18px solid;
+    border-color:var(--h) var(--h) transparent transparent;
+}
+
+.bubble.right:before {
+    content:' ';
+    position:absolute;
+    width:0;
+    height:0;
+    right:-40px;
+    left:auto;
+    top:60px;
+    bottom:auto;
+    border:18px solid;
+    border-color:var(--bc) transparent transparent var(--bc);
+}
+
+.bubble.right:after{
+    content:' ';
+    position:absolute;
+    width:0;
+    height:0;
+    right:-30px;
+    left:auto;
+    top:64px;
+    bottom:auto;
+    border:18px solid;
+    border-color:var(--h) transparent transparent var(--h);
+}
+
+.kofi{
+    max-width:180px;
+    margin:auto;
+    transition:0.3s; 
+}
+
+.kofi:hover{
+    opacity:0.8;
+    transition:0.3s;
+    
+}
+
+#transring a img{
+    margin:auto;
+}
+
+#mobring{
+    margin:auto;
+}
+
+#mobring #s-w p{
+    margin-bottom:0;
+}
+
+.piclog{
+    margin:auto;
+    width:fit-content;
+    border:var(--bw) var(--bt) var(--bc);
+}
+
+.piclog img{
+    margin:auto;
+    max-width:150px;
+}
+
+.status-image{
+    margin:auto; 
+    border-color:var(--bc);
+}
+
+.buttons {
+    align-items:center;
+}
+
+.buttonsrow{
+    margin:auto -15px;
+}
+
+.facts-list{
+    text-align:left;
+}
+
+.interest-list{
+    text-align:left;
+}
+
+@media only screen and (max-width:400px){
+    .miku{
+        display:none;
+    }
+}
