@@ -1,0 +1,264 @@
+* {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #252A34;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.turn-container .turn-box {
+    border: 3px solid #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: transparent;
+    color: white; 
+    transition: background-color 0.3s;
+}
+.turn-container .turn-box:nth-child(1) { 
+    background-color: #007BFF; 
+}
+
+.turn-container .turn-box:nth-child(2) { 
+    background-color: #FFB3B3; 
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #FF2E63;
+    z-index: -1;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    transition: background-color 0.3s;
+}
+
+.box[data-turn="X"]:hover {
+    background-color: #D0E8FF; 
+}
+
+.box[data-turn="O"]:hover {
+    background-color: #FF4500; 
+}
+
+#play-again {
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #08D9D6;
+    color: #000;
+}
+
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-52 {
+    font-size: 20px; 
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.button-52:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+
+.button-52:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+
+.button-52.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.button-52.top-left:after {
+    
+    background-color: #FFDC67;
+
+}
+
+.button-52.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.button-52.top-right:after {
+    background-color: #FF7B6D;
+
+}
+
+.button-52.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.button-52.bottom-left:after {
+    background-color: #23E6E3; 
+}
+
+.button-52.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.button-52.bottom-right:after {
+    background-color: #8075FF; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes bgAnimate {
+    from {
+        background-color: #252A34;
+    }
+    to {
+        background-color: #3B4252;
+    }
+}
+
+
+
+.turn-container {
+    animation: slideIn 0.8s ease-in-out;
+}
+.main-grid {
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.box, .button-52 {
+    animation: fadeIn 0.5s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+
+.button-52.top-left {
+    animation-delay: 0.3s;
+}
+
+.button-52.top-right {
+    animation-delay: 0.4s;
+}
+
+.button-52.bottom-left {
+    animation-delay: 0.5s;
+}
+
+.button-52.bottom-right {
+    animation-delay: 0.6s;
+}
+
