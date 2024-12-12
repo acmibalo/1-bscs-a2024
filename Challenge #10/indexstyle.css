@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Header Styles */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.main-menu ul li a {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.main-menu ul li a:hover {
+  background-color: #575757;
+}
+/*Responsive hero section*/
+.hero-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #005f73;
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/*About and Services Sections*/
+
+.about-section,
+.services-section {
+  padding: 40px 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  padding: 20px;
+  background: #eaeaea;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*Contact Section*/
+.contact-section {
+  padding: 40px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-section button {
+  padding: 10px;
+  background-color: #005f73;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #028090;
+}
+
+/*Responsive Media Queries*/
+
+/* Adjust for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+  .main-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
