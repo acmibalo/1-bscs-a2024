@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Info Hub</title>
+    <link rel="icon" type="image/x-icon" href="./images/valorant-icon.ico"> 
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('images/valorant-bg1.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        body:hover .cursor {
+            box-shadow: 0 0 25px 10px rgb(35, 132, 170);
+        }
+        
+        header {
+            background: #0F172A;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #1E293B;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3ba0cf;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 2rem 0 1rem;
+            font-size: 2rem;
+            color: #0F172A;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+        position: relative;
+        background: #F1F5F9;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden; 
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px 5px #80888b, 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(101, 107, 110, 0.7);
+        pointer-events: none;
+        box-shadow: 0 0 15px 5px rgba(129, 137, 141, 0.7);
+        animation: pulse 1.5s infinite;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    .card:hover::after {
+        opacity: 1;
+    }
+
+    /*    This is Optional Pulse animation.
+    @keyframes pulse {
+        0% {
+            transform: scale(1) translate(-50%, -50%);
+            opacity: 0.7;
+        }
+        50% {
+            transform: scale(1.5) translate(-50%, -50%);
+            opacity: 0.3;
+        }
+        100% {
+            transform: scale(1) translate(-50%, -50%);
+            opacity: 0.7;
+        }
+    }       */ 
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 1rem 0 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0F172A;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #38BDF8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #82CFFD;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Valorant Info Hub</h1>
+        <p>Explore Agents and Maps from the Valorant Universe!</p>
+    </header>
+
+    <nav>
+        <a href="#agents">Agents</a>
+        <a href="#maps">Maps</a>
+    </nav>
+
+    <div class="container">
+        <!-- Agents Section -->
+        <section id="agents">
+            <h2 class="section-title">Agents</h2>
+            <div class="card-container">
+                <!-- Agent Cards -->
+                <div class="card">
+                    <img src="images/Agents/Jett.jpg" alt="Jett">
+                    <h3>Jett</h3>
+                    <p>Swift and agile, Jett excels at outmaneuvering her opponents.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Phoenix.jpg" alt="Phoenix">
+                    <h3>Phoenix</h3>
+                    <p>A fiery duelist with flashbangs and healing flames.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Sage.jpg" alt="Sage">
+                    <h3>Sage</h3>
+                    <p>The ultimate healer, Sage protects her team with barriers and revival.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Brimstone.jpg" alt="Brimstone">
+                    <h3>Brimstone</h3>
+                    <p>Delivers precise and powerful smoke and orbital strikes.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Sova.jpg" alt="Sova">
+                    <h3>Sova</h3>
+                    <p>Find and eliminate enemies with recon arrows and drones.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Killoy.jpg" alt="Killjoy">
+                    <h3>Killjoy</h3>
+                    <p>A tactical genius who uses gadgets to control the battlefield.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Viper.jpg" alt="Killjoy">
+                    <h3>Viper</h3>
+                    <p>Toxic controller. Uses poison walls, clouds, and a large ultimate zone to control spaces.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Cypher.jpg" alt="Killjoy">
+                    <h3>Cypher</h3>
+                    <p>Surveillance. Uses tripwires, cameras, and cages to gather intel and trap enemies.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Reyna.jpg" alt="Killjoy">
+                    <h3>Reyna</h3>
+                    <p>Self-sustaining. Consumes enemy souls to heal, become invulnerable, or enter a stealth mode after getting kills.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Breach.png" alt="Killjoy">
+                    <h3>Breach</h3>
+                    <p>Disruption. Uses seismic blasts to stun enemies through walls, blind them, and clear areas.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Omen.jpg" alt="Killjoy">
+                    <h3>Omen</h3>
+                    <p>Teleportation and smokes. Creates dark zones and blinds enemies.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Raze.jpg" alt="Killjoy">
+                    <h3>Raze</h3>
+                    <p>Deception. Can teleport, create decoys, blind enemies, and become invisible while traversing the map.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Skye.jpg" alt="Killjoy">
+                    <h3>Skye</h3>
+                    <p>Healing and scouting. Deploys animal-like trinkets for scouting, blinds, and heals teammates.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Yoru.jpg" alt="Killjoy">
+                    <h3>Yoru</h3>
+                    <p>Deception. Can teleport, create decoys, blind enemies, and become invisible while traversing the map.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Astra.jpg" alt="Killjoy">
+                    <h3>Astra</h3>
+                    <p>Cosmic control. Uses stars to deploy smokes, stuns, and gravity wells.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/KAYO.jpg" alt="Killjoy">
+                    <h3>KAY/O</h3>
+                    <p>Suppression. Throws grenades and knives that suppress enemy abilities and disrupt strategies.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Chamber.jpg" alt="Killjoy">
+                    <h3>Chamber</h3>
+                    <p>Sharpshooting. Utilizes teleport anchors, powerful weapons, and slows enemies with traps.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Neon.jpg" alt="Killjoy">
+                    <h3>Neon</h3>
+                    <p>Speed-focused. Dashes, creates electric barriers, and uses an energy beam ultimate for sustained damage.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Fade.jpg" alt="Killjoy">
+                    <h3>Fade</h3>
+                    <p>Fear-based. Reveals enemies and traps them with haunting abilities to limit their movement.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Harbor.jpg" alt="Killjoy">
+                    <h3>Harbor</h3>
+                    <p>Water-based. Deploys walls, bubbles, and other barriers to block vision and protect teammates.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Gekko.jpg" alt="Killjoy">
+                    <h3>Gekko</h3>
+                    <p>Utilizes creatures for blinding enemies, planting or defusing spikes, and capturing foes with his ultimate.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Deadlock.jpg" alt="Killjoy">
+                    <h3>Deadlock</h3>
+                    <p>Specializes in trapping and controlling enemies with barriers, noise-detecting sensors, and an ultimate that drags enemies.​</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/ISO.png" alt="Killjoy">
+                    <h3>ISO</h3>
+                    <p>Designed for one-on-one combat, excels in eliminating enemies with enhanced focus abilities.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Clove.jpg" alt="Killjoy">
+                    <h3>Clove</h3>
+                    <p>Blocks vision with clouds, decays enemies, absorbs life force for buffs, and can resurrect temporarily.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Agents/Vyse.jpg" alt="Killjoy">
+                    <h3>Vyse</h3>
+                    <p>Sets traps, deploys damaging vines, blinds enemies, and jams their weapons with metal-based abilities​.</p>
+            </div>
+        </section>
+
+        <!--Maps Section -->
+        <section id="maps">
+            <h2 class="section-title">Maps</h2>
+            <div class="card-container">
+                <!-- Map Cards -->
+                <div class="card">
+                    <img src="images/Maps/Haven.jpg" alt="Haven">
+                    <h3>Haven</h3>
+                    <p>Features three bomb sites, allowing for dynamic gameplay.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Bind.jpg" alt="Bind">
+                    <h3>Bind</h3>
+                    <p>Offers teleporters that create strategic rotation opportunities.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Ascent.jpg" alt="Ascent">
+                    <h3>Ascent</h3>
+                    <p>Centered around a large open area with doors for tactical control.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Icebox.jpg" alt="Icebox">
+                    <h3>Icebox</h3>
+                    <p>A snowy map with vertical gameplay and ziplines.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Split.jpg" alt="Split">
+                    <h3>Split</h3>
+                    <p>Known for its high-ground areas and narrow choke points.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Fracture.jpg" alt="Fracture">
+                    <h3>Fracture</h3>
+                    <p>A unique map with two opposite starting points for attackers.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Pearl.jpg" alt="Fracture">
+                    <h3>Pearl</h3>
+                    <p>A submerged city-themed map with intricate lanes and vibrant underwater visuals, Pearl emphasizes tight angles and strategic site play.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Lotus.jpg" alt="Fracture">
+                    <h3>Lotus</h3>
+                    <p>Another three-site map, Lotus incorporates features like rotating doors and a destructible wall, offering unique strategic possibilities.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Abyss.jpg" alt="Fracture">
+                    <h3>Abyss</h3>
+                    <p>A dark, mysterious underwater map introduced in recent updates, Abyss challenges players with unique vertical elements and hidden pathways.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Breeze.jpg" alt="Fracture">
+                    <h3>Breeze</h3>
+                    <p>A tropical map with wide open spaces and long sightlines, ideal for long-range combat and strategic mid control.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Maps/Sunset.jpg" alt="Fracture">
+                    <h3>Sunset</h3>
+                    <p>An urban-themed map with tight corridors and medium-range sightlines, focusing on chokepoint control and tactical utility use.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p> Cabrera 1/BSCS/A | <a href="https://playvalorant.com" target="_blank">More about Valorant</a></p>
+    </footer>
+</body>
+
+</html>
