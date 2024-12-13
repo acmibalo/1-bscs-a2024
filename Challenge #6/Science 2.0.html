@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Tic-Tac-Toe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #4caf50, #81c784);
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: calc(100vh - 100px);
+    }
+
+    nav {
+      background-color: #f9f9f9;
+      width: 100%;
+      max-width: 250px;
+      padding: 1em;
+      border-right: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      display: block;
+      margin: 0.5em 0;
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 2em;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 1em auto;
+      border-radius: 8px;
+    }
+
+    main section {
+      margin-bottom: 2em;
+    }
+
+    main h2 {
+      font-size: 1.8em;
+      color: #4caf50;
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 0.2em;
+      margin-bottom: 0.5em;
+    }
+
+    main h3 {
+      font-size: 1.5em;
+      margin-top: 1em;
+      color: #388e3c;
+    }
+
+    footer {
+      background: linear-gradient(to right, #4caf50, #81c784);
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+
+    ul li {
+      margin: 0.5em 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      main {
+        padding: 1.5em;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Science Tic-Tac-Toe</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <a href="#rules">Rules</a>
+      <a href="#game-theory">Game Theory</a>
+      <a href="#state-space">State Space</a>
+      <a href="#minimax">Minimax Algorithm</a>
+      <a href="#decision-trees">Decision Trees</a>
+    </nav>
+    <main>
+      <section id="rules">
+        <h2>1. Rules of Tic-Tac-Toe</h2>
+        <ul>
+          <li>The game is played on a 3x3 grid.</li>
+          <li>Two players take turns marking spaces in the grid, one with X and the other with O.</li>
+          <li>The first player to align three of their symbols in a row (horizontal, vertical, or diagonal) wins.</li>
+          <li>If all nine squares are filled without a winner, the game is a draw.</li>
+        </ul>
+      </section>
+
+      <section id="game-theory">
+        <h2>2. Scientific Concepts in Tic-Tac-Toe</h2>
+        <h3>Game Theory</h3>
+        <p>Tic-tac-toe is a deterministic game with perfect information. All players have access to all game states, and there’s no element of randomness.</p>
+      </section>
+
+      <section id="state-space">
+        <h3>State Space</h3>
+        <p>The game's state space includes all possible board configurations, with constraints reducing the actual number of valid states.</p>
+      </section>
+
+      <section id="minimax">
+        <h3>Minimax Algorithm</h3>
+        <p>A strategy for optimizing decisions by minimizing possible losses. It calculates all moves and counter-moves to determine the best action.</p>
+      </section>
+
+      <section id="decision-trees">
+        <h3>Decision Trees</h3>
+        <p>Every game can be represented as a decision tree starting with an empty board, expanding into all possible moves, and leading to outcomes.</p>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>By understanding these principles, tic-tac-toe is always a draw between skilled players or perfect AI agents.</p>
+  </footer>
+</body>
+</html>
