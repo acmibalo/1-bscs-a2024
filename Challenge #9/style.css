@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #252A34;
+}
+.center-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  background: #313741;
+  border-radius: 6px;
+  padding: 20px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .content .left-side{
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8075FF;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #8075FF;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #8075FF;
+}
+.container .content .right-side{
+  flex: 1;
+  max-width: 700px;
+  margin-left: 20px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #8075FF;
+  margin-bottom: 20px;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #3e3e4e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #8075FF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #6b66d2;
+}
+
+@media (max-width: 950px) {
+  .container{
+    padding: 20px 30px;
+  }
+  .container .content .left-side{
+    margin-bottom: 20px;
+    max-width: none;
+    width: 100%;
+  }
+  .container .content .right-side{
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 820px) {
+  .container{
+    padding: 15px 20px;
+  }
+  .content .left-side::before{
+    display: none;
+  }
+  .container .content{
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  animation: scaleUp 0.8s ease-in-out;
+}
+
+.container .content .left-side {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.container .content .right-side {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
+.content .left-side .details {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.right-side .input-box,
+.right-side .button {
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+.video-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 20px;
+  color: #8075FF;
+  margin-bottom: 15px;
+}
+
+.iframe-video,
+.local-video {
+  margin-bottom: 30px;
+}
+
+iframe,
+video {
+  border: 2px solid #8075FF;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
