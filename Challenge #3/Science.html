@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Tictactoe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #555;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: calc(100vh - 50px);
+    }
+
+    nav {
+      background-color: #d3d3d3;
+      width: 20%;
+      padding: 1em;
+    }
+
+    nav a {
+      display: block;
+      margin: 0.5em 0;
+      color: blue;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 2em;
+      background-color: #f9f9f9;
+    }
+
+    footer {
+      background-color: #555;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-top: 1em;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Tic-Tac-Toe Science and AI</h1>
+    </header>
+    <div class="container">
+      <main>
+        <section>
+          <h2>1. Rules of Tic-Tac-Toe</h2>
+          <ul>
+            <li>The game is played on a 3x3 grid.</li>
+            <li>Two players take turns marking spaces in the grid, one with X and the other with O.</li>
+            <li>The first player to align three of their symbols in a row (horizontal, vertical, or diagonal) wins.</li>
+            <li>If all nine squares are filled without a winner, the game is a draw.</li>
+          </ul>
+        </section>
+  
+        <section>
+          <h2>2. Scientific Concepts in Tic-Tac-Toe</h2>
+          <h3>Game Theory</h3>
+          <p>Tic-tac-toe is a deterministic game with perfect information. All players have access to all game states, and there’s no element of randomness.</p>
+          <h3>State Space</h3>
+          <p>The game's state space includes all possible board configurations, with constraints reducing the actual number of valid states.</p>
+          <h3>Minimax Algorithm</h3>
+          <p>A strategy for optimizing decisions by minimizing possible losses. It calculates all moves and counter-moves to determine the best action.</p>
+          <h3>Decision Trees</h3>
+          <p>Every game can be represented as a decision tree starting with an empty board, expanding into all possible moves, and leading to outcomes.</p>
+        </section>
+  
+      </main>
+    </div>
+    <footer>
+      <p>By understanding these principles, tic-tac-toe is always a draw between skilled players or perfect AI agents.</p>
+    </footer>
+  </body>
+  </html>
