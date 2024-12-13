@@ -1,97 +1,164 @@
-<!-- Menu Section -->
-        <section class="section menu" id="menu">
-            <div class="menu-container container">
-                    <div class="meu-text">
-                            <h4 class="section-subtitle"><i>Our Menu</i></h4>
-                            <h2 class="section-title">Our Popular Menu</h2>
-                    </div>
+/*Font sizes For Small Screen 968px */
+@media screen and (max-width: 990px) {
+:root {
+  --big-font: 3.5rem;
+  --h1-font: 2.4rem;
+  --h2-font: 2rem;
+  --h3-font: 1.8rem;
+  --h4-font: 1.6rem;
+  --normal-font: 1.5rem;
+  --small-font: 1.3rem;
+  --smaller-font: 1.2rem;
+}
+}
 
-                    <div class="menu-content">
-                            <div class="menu-items">
-                                    <div class="menu-item flex">
-                                            <img src="images/menu1.jpg" alt="" class="menu-img">
+/* Responive media */
+@media screen and (max-width: 1150px) {
+  .swiper-button-prev {
+    left: 10rem;
+}
+  .swiper-button-next {
+    right: 10rem;
+}
+}
 
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Classic Black Coffee</h4>
-                                                    <p class="menuItem-des">Simply coffee that is normally brewed without the addition of additives such as sugar, milk, cream, or added flavors.</p>
-                                            </div>
+@media screen and (max-width: 1000px) {
+  .swiper-button-prev {
+    left: 3rem;
+}
+  .swiper-button-next {
+    right: 3rem;
+}
+  .section-description {
+    padding: 0 8rem;
+  }
+  .about-imageContent {
+    height: 400px;
+  }
+  .aboutImg-textBox {
+    padding: 1.5rem 2rem;
+  }
+  .menu .menu-content {
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 3rem;
+  }
+  .brand-images{
+    grid-template-columns: repeat(3,1fr);
+  }
 
-                                            <div class="menuItem-price flex">
-                                                    <span class="price">₱35.00</span>
-                                            </div>
-                                    </div>
-                                    <div class="menu-item flex">
-                                            <img src="images/menu2.jpg" alt="" class="menu-img">
+}
 
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Cafe Latte</h4>
-                                                    <p class="menuItem-des">Made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top.</p>
-                                            </div>
+@media screen and (max-width: 768px) {
+  .section.review{
+    padding: 7rem 1rem 3rem;
+  }
+  .review .swiper{
+    padding-bottom: 6.5rem;
+  }
+  .swiper-navBtn{
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet{
+    visibility: visible;
+  }
 
-                                            <div class="menuItem-price flex">
-                                                    <span class="price">₱49.00</span>
-                                            </div>
-                                    </div>
-                                    <div class="menu-item flex">
-                                            <img src="images/menu3.jpg" alt="" class="menu-img">
+  .section {
+    padding: 7rem 1rem;
+}
+.section-description,
+.review-quote{
+  padding: 0 6rem;
+}
+.about-content{
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+  justify-items: center;
+}
+.about .content-subtitle,
+.about .content-title,
+.about .content-description{
+  text-align: center;
+}
+.about-details {
+  justify-items: center;
+}
+.about-lists{
+  justify-content: center;
+}
+.menu .menu-content {
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+.footer-container{
+  row-gap: 1.5rem;
+}
+}
 
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Cappucino</h4>
-                                                    <p class="menuItem-des">Made up of perfectly balance of espresso, steamed milk and foam.</p>
-                                            </div>
+@media screen and (max-width: 600px){
+  .container{
+    padding: 0.5rem;
+  }
+  .section-description, .review-quote{
+    padding: 0;
+  }
+  .aboutImg-textBox{
+    right: -2rem
+  }
+  .menuItem-price{
+    border: none;
+  }
+  .menu-img{
+    height: 70px;
+    width: 70px;
+    margin-right: 0;
+}
+  .brand-images{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .brand-img{
+    width: 130px;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+  .footer-content{
+    justify-items: center;
+  }
+  .footer-linkContent{
+    justify-items: center;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .homeTitle{
+    font-size:3rem;
+  }
+  .menu-item{
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    row-gap: 2rem;
+  }
+  .menuItem-details{
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menuItem-price{
+    padding-left: 0;
+    flex-direction: row;
+  }
+  .menuItem-des{
+    text-align: center;
+}
+  .newsletter-input {
+    padding: 0 11rem 0 2rem;
 
-                                            <div class="menuItem-price flex">
-                                                    <span class="price">₱49.00</span>
-                                            </div>
-                                    </div>
-                                    <div class="menu-item flex">
-                                            <img src="images/menu4.jpg" alt="" class="menu-img">
+}
+  .newsletter-button {
+    padding: 1.4rem 2rem;
 
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Espresso</h4>
-                                                    <p class="menuItem-des"> Made up of concentrated form of coffee, served in shots.</p>
-                                            </div>
-
-                                            <div class="menuItem-price flex">
-                                                    <span class="price">₱30.00</span>
-                                            </div>
-                                    </div>
-                            </div>
-
-                            <div class="time-table">
-                                    <span class="time-topic">BUSINESS HOUR</span>
-
-                                    <ul class="time-lists">
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Sunday</span>
-                                                    <span class="open-time">Closed</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Monday</span>
-                                                    <span class="open-time">6.00am - 7.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Tuesday</span>
-                                                    <span class="open-time">6.00am - 7.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Wednesday</span>
-                                                    <span class="open-time">6.00am - 7.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Thursday</span>
-                                                    <span class="open-time">6.00am - 7.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Friday</span>
-                                                    <span class="open-time">6.00am - 7.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Saturday</span>
-                                                    <span class="open-time">8.00am - 5.00pm</span>
-                                            </li>
-                                    </ul>
-                            </div>
-                    </div>
-            </div>
-        </section>
+}
+}
