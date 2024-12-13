@@ -1,0 +1,21 @@
+/* styles.css */
+.container {
+    background-color: #febecc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.highlight {
+    background-color: #ffe4e1;
+    color: #8b008b;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}

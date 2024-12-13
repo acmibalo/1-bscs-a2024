@@ -1,0 +1,22 @@
+body {
+	margin-top: 10.5%;
+	margin-bottom: 10.5%;
+	margin-left: 10%;
+    padding: 0;
+    height: 10.5%;
+    background-color: #FFCCEA;
+    font-family: Arial, sans-serif;
+}
+
+.story-section img {
+    max-width: 400px; 
+    margin-right: 40px; 
+}
+
+.story-section p {
+	font-family: cursive;
+	font-size: 20.5px;
+	color: #fff;
+	position: center;
+	
+}

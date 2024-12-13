@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petal Journey | Virtual Tour</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emailjs-com/2.4.1/email.min.js"></script>
+    <script src="script/contact-form.js" defer></script>
+</head>
+<body>
+    <h1>Virtual Tour</h1>
+    
+    <iframe 
+        src="videos/Virtual_Tour_1.mp4" 
+        class="iframe-style" 
+        title="Virtual Tour 1" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <iframe 
+        src="videos/Virtual_Tour_2.mp4" 
+        class="iframe-style" 
+        title="Virtual Tour 2" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    
+    <iframe 
+        src="videos/Virtual_Tour_3.mp4" 
+        class="iframe-style" 
+        title="Virtual Tour 3" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <h2>Contact Form</h2>
+    <form id="contact-form" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" aria-label="Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" aria-label="Email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required aria-required="true" aria-label="Message"></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
