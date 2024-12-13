@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NSYNC Music List">
+    <title>NSYNC Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+            <div class="left-section">
+                <img src="images/NSYNC.jpg" alt="NSYNC" class="artist-image">
+                <h2>NSYNC</h2>
+            <p class="artist-description">
+                NSYNC is a legendary American boy band that rose to fame in the late 1990s and early 2000s, known for their infectious pop hits, harmonized vocals, and unforgettable choreography. With timeless tracks and electrifying performances, they became global icons and left an indelible mark on pop culture.
+            </p>
+            </div>
+            
+            <div class="music-section">
+                <h1>Top Songs</h1>
+                <p class="section-description">
+                    Relive NSYNC's greatest hits, featuring chart-topping anthems and soulful ballads. Their music captures the energy and spirit of an era, connecting with fans across generations through themes of love, friendship, and celebration.
+                </p>
+
+            <div class="song">
+                <img src="images/songimages/betterplace.jpeg" alt="Better Place" class="song-image">
+                <div class="song-details">
+                    <h3>Better Place</h3>
+                    <audio controls>
+                        <source src="audio/NSYNC - Better Place (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/BYEBYEBYE.jpeg" alt="Bye Bye Bye" class="song-image">
+                <div class="song-details">
+                    <h3>Bye Bye Bye</h3>
+                    <audio controls>
+                        <source src="audio/NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/idrivemyselfcraze.jpeg" alt="I Drive MySelf Crazy" class="song-image">
+                <div class="song-details">
+                    <h3>I Drive MySelf Crazy</h3>
+                    <audio controls>
+                        <source src="audio/NSYNC - I Drive MySelf Crazy (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/itsgonnebeme.jpeg" alt="It's Gonna Be Me" class="song-image">
+                <div class="song-details">
+                    <h3>It's Gonna Be Me</h3>
+                    <audio controls>
+                        <source src="audio/NSYNC - It's Gonna Be Me (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/thisipromise.jpeg" alt="This I Promise You" class="song-image">
+                <div class="song-details">
+                    <h3>This I Promise You</h3>
+                    <audio controls>
+                        <source src="audio/NSYNC - This I Promise You (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="images/songimages/tearinupmy heart.jpeg" alt="Tearin Up My Heart" class="song-image">
+                <div class="song-details">
+                    <h3>Tearin Up My Heart</h3>
+                    <audio controls>
+                        <source src="audio/Tearin Up My Heart - NSync (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

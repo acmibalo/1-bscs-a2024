@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A website where you can see and listen to my music type">
+  <title>About Us | SBSOUNDTRACK</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+  <!-- Replace the header below with your existing header code -->
+  <header>
+    <div class="container">
+        <div class="branding">
+            <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+            <h1 class="webname">SB | SOUNDTRACK</h1>
+        </div>
+        <nav>
+            <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="favorites.html">FAVORITES</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header> 
+
+  <main>
+    <section class="about-section">
+      <h2>About Us</h2>
+      <p>Welcome to SBSOUNDTRACK, the ultimate destination for music enthusiasts! This site is dedicated to sharing my personal favorite songs, artists, and bands with you. Music is more than just sound—it’s an experience that transcends boundaries and brings people together. Created out of a deep love for music, SBSOUNDTRACK is where you can discover new artists, learn about your favorite bands, and find the perfect soundtrack for your day. With curated content, interactive features, and visual galleries, I aim to make your musical journey enjoyable and effortless. Music here isn’t just something you hear—it’s something you feel. Sit back, relax, and let these sounds take you on an unforgettable journey. Thank you for visiting SBSOUNDTRACK. Let’s make music a part of your everyday life!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 SBSOUNDTRACK. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://web.facebook.com/shanagravebesto/" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/shaunbuu/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+  
+  <script>
+    // Select the elements
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+// Toggle the menu when the hamburger is clicked
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
+// Automatically hide the menu when the screen is resized to larger than 768px
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    menu.classList.remove('show');
+  }
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Olivia Rodrigo Music List">
+    <title>Olivia Rodrigo Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/oliviarod.jpeg" alt="Olivia Rodrigo" class="artist-image">
+            <h2>Olivia Rodrigo</h2>
+            <p class="artist-description">
+                Olivia Rodrigo is a Grammy-winning singer-songwriter and actress known for her emotionally raw lyrics, powerful vocals, and storytelling ability. Bursting onto the music scene with her record-breaking debut single "drivers license," Olivia has become a voice of her generation, blending pop and indie influences with themes of heartbreak, self-discovery, and resilience.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Dive into Olivia Rodrigo's chart-topping hits, featuring a mix of heartfelt ballads and edgy pop anthems. Her music captures the essence of youth and vulnerability, resonating with fans around the globe.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/dejavu.jpeg" alt="Deja Vu" class="song-image">
+                <div class="song-details">
+                    <h3>Deja Vu</h3>
+                    <audio controls>
+                        <source src="audio/Olivia Rodrigo - deja vu (Clean - Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/favoritecrime.jpeg" alt="Favorite Crime" class="song-image">
+                <div class="song-details">
+                    <h3>Favorite Crime</h3>
+                    <audio controls>
+                        <source src="audio/Olivia Rodrigo - favorite crime (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/happieroliviarodrigo.jpeg" alt="Happier" class="song-image">
+                <div class="song-details">
+                    <h3>Happier</h3>
+                    <audio controls>
+                        <source src="audio/Olivia Rodrigo - Happier.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/traitor.jpeg" alt="Traitor" class="song-image">
+                <div class="song-details">
+                    <h3>Traitor</h3>
+                    <audio controls>
+                        <source src="audio/Olivia Rodrigo - traitor (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/vampire.jpeg" alt="Vampire" class="song-image">
+                <div class="song-details">
+                    <h3>Vampire</h3>
+                    <audio controls>
+                        <source src="audio/Olivia Rodrigo - vampire.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="images/songimages/jealousy.jpeg" alt="Jealousy Jealousy" class="song-image">
+                <div class="song-details">
+                    <h3>Jealousy Jealousy</h3>
+                    <audio controls>
+                        <source src="audio/Jealousy, Jealousy - Olivia Rodrigo (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>
