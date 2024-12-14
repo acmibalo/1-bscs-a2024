@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FM Static Music List">
+    <title>FM Static Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/fmstatic.jpeg" alt="FM Static" class="artist-image">
+            <h2>FM Static</h2>
+            <p class="artist-description">
+                FM Static is a Canadian pop-punk and Christian rock duo known for their infectious energy, relatable lyrics, and uplifting themes. Formed by Trevor McNevan and Steve Augustine, the band has gained a dedicated following with their feel-good anthems and introspective ballads that connect deeply with listeners.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Explore FM Static's most memorable tracks, including the heartfelt "Tonight," the upbeat "Take Me As I Am," and the reflective "Moment of Truth." Their music blends catchy melodies with meaningful lyrics, offering anthems of hope, love, and self-discovery.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/herfathersongs.jpeg" alt="Her Father's Song" class="song-image">
+                <div class="song-details">
+                    <h3>Her Father's Song</h3>
+                    <audio controls>
+                        <source src="audio/FM Static - Her Father's Song.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/takemeasiam.jpeg" alt="Take Me As I Am" class="song-image">
+                <div class="song-details">
+                    <h3>Take Me As I Am</h3>
+                    <audio controls>
+                        <source src="audio/FM Static - Take Me As I Am (Official Music Video).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/tonight.jpeg" alt="Tonight" class="song-image">
+                <div class="song-details">
+                    <h3>Tonight</h3>
+                    <audio controls>
+                        <source src="audio/Tonight - FM Static (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/sixcandle.jpeg" alt="Six Candles" class="song-image">
+                <div class="song-details">
+                    <h3>Six Candles</h3>
+                    <audio controls>
+                        <source src="audio/Six Candles - FM Static (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/momentoftruth.jpeg" alt="Moment Of Truth" class="song-image">
+                <div class="song-details">
+                    <h3>Moment Of Truth</h3>
+                    <audio controls>
+                        <source src="audio/Moment Of Truth - FM Static (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="images/songimages/nicepieceofart.jpeg" alt="Nice Piece of Art" class="song-image">
+                <div class="song-details">
+                    <h3>Nice Piece of Art</h3>
+                    <audio controls>
+                        <source src="audio/Nice Piece of Art lyrics by Fm Static.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

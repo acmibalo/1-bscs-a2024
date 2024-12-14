@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WESLTLIFE Music List">
+    <title>WESLTLIFE Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/WESTLIFE.jpg" alt="WESLTLIFE" class="artist-image">
+            <h2>WESLTLIFE</h2>
+            <p class="artist-description">
+                Westlife is an Irish pop vocal group celebrated for their harmonized ballads, heartfelt lyrics, and timeless love songs. Known for their captivating performances and chart-topping hits, they have become one of the most iconic boy bands in the history of pop music, enchanting fans across generations.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Relive Westlife's most memorable songs, from romantic ballads to uplifting anthems. Their music, including classics like "Flying Without Wings" and "You Raise Me Up," continues to inspire and resonate with fans worldwide.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/flyingwithoutwings.jpeg" alt="Flying Without Wings" class="song-image">
+                <div class="song-details">
+                    <h3>Flying Without Wings</h3>
+                    <audio controls>
+                        <source src="audio/Westlife - Flying Without Wings (Official Video).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/ifiletyougo.jpeg" alt="If I Let You Go" class="song-image">
+                <div class="song-details">
+                    <h3>If I Let You Go</h3>
+                    <audio controls>
+                        <source src="audio/Westlife - If I Let You Go (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/mylove.jpeg" alt="My Love" class="song-image">
+                <div class="song-details">
+                    <h3>My Love</h3>
+                    <audio controls>
+                        <source src="audio/Westlife - My Love (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/soledad.jpeg" alt="Soledad" class="song-image">
+                <div class="song-details">
+                    <h3>Soledad</h3>
+                    <audio controls>
+                        <source src="audio/Westlife - Soledad (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/foolagain.jpeg" alt="Fool Again" class="song-image">
+                <div class="song-details">
+                    <h3>Fool Again</h3>
+                    <audio controls>
+                        <source src="audio/Fool Again - Westlife (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="images/songimages/swearitagain.jpeg" alt="Swear It Again" class="song-image">
+                <div class="song-details">
+                    <h3>Swear It Again</h3>
+                    <audio controls>
+                        <source src="audio/Swear It Again - Westlife (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>
