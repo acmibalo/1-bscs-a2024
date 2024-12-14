@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <base href="forgot.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felix Joseph Dinopol">
+    <meta name="description" content="Your Literary Universe">
+    <meta name="keywords" content="Books, Publishers, Fiction, Drama, Wisdom, Author,">
+    <title>Forgot Password - BookVerse</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="css/homepage-2.css" rel="stylesheet">
+    <link href="css/forgot.css" rel="stylesheet">
+    <script src="js/forgot.js"></script>
+  </head>
+  <body>
+    <div class="forgot-password-container">
+      <div class="forgot-password-card">
+        <h2>Reset Password</h2>
+        <p>Enter your email address and we'll send you instructions to reset your password.</p>
+      
+      <div class="success-message" id="successMessage">
+        Password reset instructions have been sent to your email.
+      </div>
+      
+      <div class="error-message" id="errorMessage">
+        Error: Please enter a valid email address.
+      </div>
+      
+      <form class="forgot-password-form" id="forgotPasswordForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email address"
+            required
+          >
+        </div>
+        
+        <button type="submit" class="reset-btn">Reset Password</button>
+      </form>
+      
+        <div class="back-to-login">
+          <a href="login.html">Back to Login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

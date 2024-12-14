@@ -1,0 +1,27 @@
+.back {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    width: 20%;
+}
+
+.back:hover {
+    color: var(--secondary-color);
+}
+
+.back:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.back:hover::after {
+    width: 100%;
+}

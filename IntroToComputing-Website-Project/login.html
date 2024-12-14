@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="login.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felix Joseph Dinopol">
+    <meta name="description" content="Your Literary Universe">
+    <meta name="keywords" content="Books, Publishers, Fiction, Drama, Wisdom, Author,">
+    <title>Login - BookVerse</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="css/homepage-2.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo-section">
+          <a href="index.html" class="logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            BookVerse
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="login-container">
+      <form class="login-form" onsubmit="handleLogin(event)">
+        <h2>Welcome Back!</h2>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+        >
+        </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Enter your password"
+          required
+          autocomplete="current-password"
+        >
+      </div>
+      <button type="submit" class="submit-btn">Sign In</button>
+      <div class="login-links">
+        <a href="forgot.html">Forgot Password?</a>
+        <a href="create.html">Create Account</a>
+      </div>
+      
+      <div class="social-login">
+        <p>Or continue with</p>
+        <div class="social-buttons">
+            <button type="button" class="social-btn" onclick="socialLogin('google')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#DB4437">
+                <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"/>
+              </svg>
+              Google
+            </button>
+            <button type="button" class="social-btn" onclick="socialLogin('facebook')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/>
+            </svg>
+            Facebook
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

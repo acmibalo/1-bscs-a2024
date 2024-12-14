@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <base href="create.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felix Joseph Dinopol">
+    <meta name="description" content="Your Literary Universe">
+    <meta name="keywords" content="Books, Publishers, Fiction, Drama, Wisdom, Author,">
+    <title>Create Account - BookVerse</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="css/homepage-2.css" rel="stylesheet">
+    <link href="css/create.css" rel="stylesheet">
+    <script src="js/create.js"></script>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup-card">
+        <h2>Create an Account</h2>
+
+        <div class="success-message" id="successMessage">
+          Account created successfully! Redirecting to login...
+        </div>
+      
+        <div class="error-message" id="errorMessage">
+          Error: Please check your input and try again.
+        </div>
+      
+        <form class="signup-form" id="signupForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input 
+              type="text" 
+              id="fullName" 
+              name="fullName" 
+              placeholder="Enter your full name"
+              required
+            >
+          </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email address"
+            required
+          >
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Create a password"
+            required
+            minlength="8"
+          >
+          <div class="password-requirements">
+            Password must be at least 8 characters long and include uppercase, lowercase letters, numbers, and special characters.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            name="confirmPassword" 
+            placeholder="Confirm your password"
+            required
+          >
+        </div>
+        
+          <button type="submit" class="signup-btn">Create Account</button>
+        </form>
+      
+        <div class="login-link">
+          Already have an account? <a href="login.html">Login here</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
