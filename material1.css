@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Main Layout */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Heading */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Content Grid for Images and Text */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Container */
+.text-container {
+    flex: 2;
+    max-width: 700px;
+}
+
+.text-container h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.text-container p, .text-container ul {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.text-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.text-container li {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Content Grid */
+    .content-grid {
+        flex-direction: column; /* Stack content on small screens */
+        gap: 20px;
+    }
+
+    .image-container, .text-container {
+        max-width: 100%; /* Make images and text take up full width */
+    }
+
+    /* Text and Image Styling */
+    .text-container h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-container p, .text-container ul {
+        font-size: 1rem;
+    }
+}

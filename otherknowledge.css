@@ -1,0 +1,96 @@
+  /* General Footer Styling */
+  footer {
+    background-color: #ffb6c1; /* Light pink background for girly theme */
+    color: #333; /* Dark text color for contrast */
+    text-align: center; /* Center the content */
+    padding: 40px 20px; /* Padding for spacing */
+    font-size: 20px; /* Slightly larger font size */
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    border-top: 4px solid #ff69b4; /* Slightly darker pink border on top */
+    position: relative;
+}
+
+/* Styling the links */
+footer a {
+    color: #ffffff; /* White text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make the link text bold */
+    padding: 12px 25px; /* Add padding around the links */
+    margin: 10px 15px; /* Add margin between the links */
+    background-color: #ff69b4; /* Pink background for links */
+    border-radius: 25px; /* Rounded corners for the links */
+    display: inline-block; /* Make links block level for better spacing */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+footer a:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge the link when hovered */
+}
+
+/* Active effect when link is clicked */
+footer a:active {
+    transform: scale(0.98); /* Shrink slightly when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    footer {
+        padding: 30px 15px; /* Adjust padding on smaller screens */
+    }
+
+    footer a {
+        font-size: 18px; /* Slightly smaller font size for smaller screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+  /* General Footer Styling */
+        footer {
+            background-color: #ffb6c1; /* Light pink background for girly theme */
+            color: #333; /* Dark text color for contrast */
+            text-align: center; /* Center the content */
+            padding: 40px 20px; /* Padding for spacing */
+            font-size: 20px; /* Slightly larger font size */
+            font-family: 'Arial', sans-serif; /* Clean and readable font */
+            border-top: 4px solid #ff69b4; /* Slightly darker pink border on top */
+            position: relative;
+        }
+
+        /* Styling the links */
+        footer a {
+            color: #ffffff; /* White text color for the links */
+            text-decoration: none; /* Remove underline from links */
+            font-weight: bold; /* Make the link text bold */
+            padding: 12px 25px; /* Add padding around the links */
+            margin: 10px 15px; /* Add margin between the links */
+            background-color: #ff69b4; /* Pink background for links */
+            border-radius: 25px; /* Rounded corners for the links */
+            display: inline-block; /* Make links block level for better spacing */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+        }
+        
+
+        /* Hover effect */
+        footer a:hover {
+            background-color: #ff1493; /* Darker pink on hover */
+            transform: scale(1.05); /* Slightly enlarge the link when hovered */
+        }
+
+        /* Active effect when link is clicked */
+        footer a:active {
+            transform: scale(0.98); /* Shrink slightly when clicked */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            footer {
+                padding: 30px 15px; /* Adjust padding on smaller screens */
+            }
+
+            footer a {
+                font-size: 18px; /* Slightly smaller font size for smaller screens */
+                padding: 10px 20px; /* Adjust padding for smaller screens */
+            }
+        }
