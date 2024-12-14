@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-ico" href="images/favicon.ico">
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="movies.html">MOVIES</a></li>
+                    <li><a href="Trailers.html">TRAILERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>        
+        <section class="cta">
+            <h1>HAVE QUESTIONS? CONTACT US!</h1>
+            <div class="icons">
+                <a href="https://www.facebook.com/Lararainfuentes/" target="_blank" class="fa-brands fa-facebook"></a>
+                <a href="https://www.instagram.com/xararain/?hl=en" target="_blank" class="fa-brands fa-instagram"></a>
+                <a href="mailto:lararainfuentes@gmail.com" target="_blank" class="fa-solid fa-envelope"></a>
+
+            </div>
+            <p> Made with <i class="fa-solid fa-heart"></i> by Lara Rain Fuentes</p>
+            
+        </section>
+
+
+
+
+
+
+<!-------JavaScript for Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function ShowMenu (){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+        
+    }
+   
+    </script>
+</body>
+</html>
+</script>
+</body>
+</html>
