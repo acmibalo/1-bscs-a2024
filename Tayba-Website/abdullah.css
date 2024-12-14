@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling - Pastel gradient background */
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(to bottom, #fbcfe8, #e3a9b4); /* Soft pastel pink gradient */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-attachment: fixed;
+    font-size: 18px;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Thuluth Deewanie', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow for elegance */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Content section */
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly white background with transparency */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Form container */
+.form-container {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6f61; /* Soft coral pink */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9f8b;
+}
+
+/* Calligraphy output styling */
+.calligraphy-output {
+    font-family: 'Thuluth Deewanie', cursive;
+    font-size: 2rem;
+    color: #ffeb3b; /* Goldish color for calligraphy */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    white-space: pre-wrap; /* Preserve whitespace formatting */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .form-container {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* Video Container */
+.tutorial-video {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure video is responsive */
+.tutorial-video iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
