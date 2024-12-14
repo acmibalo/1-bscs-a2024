@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+.maze {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background-color: #222;
+    border: 5px solid #000000;
+}
+
+
+
+.start {
+    position: absolute;
+    background-color: #07fe07;
+    top: 0px;
+    left: -1px;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.end {
+    position: absolute;
+    background-color: #00ff0d;
+    top: 460px;
+    left: 855px;
+    width: 35px;
+    height: 30px;
+    border: none;
+}
+
+.playerDot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: 10px; /*default is 10 for both*/
+    left: 10px; /* 440 top, 860 left (for playtesting)*/
+}
+    /*walls*/
+.wall1 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 30px;
+    left: -1px;
+    width: 100px;
+    height: 5px;
+}
+
+.wall2 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 30px;
+    left: 98px;
+    width: 5px;
+    height: 50px;
+}
+
+.wall3 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 0px;
+    left: 120px;
+    width: 5px;
+    height: 150px;
+}
+
+.wall4 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 75px;
+    left: 20px;
+    width: 80px;
+    height: 5px;
+}
+
+.wall5 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 80px;
+    left: 20px;
+    width: 5px;
+    height: 400px;
+}
+
+.wall6 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 180px;
+    left: 20px;
+    width: 150px;
+    height: 5px;
+}
+
+.wall7 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 150px;
+    left: 50px;
+    width: 150px;
+    height: 5px;
+}
+
+.wall8 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 230px;
+    width: 5px;
+    height: 145px;
+}
+
+.wall9 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 80px;
+    left: 150px;
+    width: 80px;
+    height: 5px;
+}
+
+.wall10 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 230px;
+    width: 100px;
+    height: 5px;
+}
+
+.wall11 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 330px;
+    width: 100px;
+    height: 5px;
+}
+.wall12 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 180px;
+    left: 200px;
+    width: 5px;
+    height: 100px;
+}
+.wall13 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 210px;
+    left: 140px;
+    width: 5px;
+    height: 100px;
+}
+.wall14 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 210px;
+    left: 100px;
+    width: 70px;
+    height: 5px;
+}
+.wall15 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 250px;
+    left: 70px;
+    width: 50px;
+    height: 5px;
+}
+.wall16 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 250px;
+    left: 70px;
+    width: 5px;
+    height: 160px;
+}
+.wall17 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 410px;
+    left: 70px;
+    width: 160px;
+    height: 5px;
+}
+.wall18 { 
+    position: absolute;
+    background-color: #0000b0;
+    top: 90px;
+    left: 270px;
+    width: 160px;
+    height: 5px;
+}
+.wall19 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 480px;
+    left: 20px;
+    width: 400px;
+    height: 5px;
+}
+.wall20 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 480px;
+    left: 20px;
+    width: 820px;
+    height: 5px;
+}
+.wall21 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 140px;
+    left: 300px;
+    width: 5px;
+    height: 300px;
+}
+.wall22 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 140px;
+    left: 300px;
+    width: 100px;
+    height: 5px;
+}
+.wall23 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 350px;
+    left: 100px;
+    width: 200px;
+    height: 5px;
+}
+.wall24 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 440px;
+    left: 300px;
+    width: 500px;
+    height: 5px;
+}
+.wall25 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 180px;
+    left: 350px;
+    width: 5px;
+    height: 200px;
+}
+.wall26 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 140px;
+    left: 450px;
+    width: 5px;
+    height: 200px;
+}
+.wall27 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 380px;
+    left: 350px;
+    width: 200px;
+    height: 5px;
+}
+.wall28 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 440px;
+    left: 420px;
+    width: 5px;
+    height: 45px;
+}
+.wall29 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 620px;
+    width: 5px;
+    height: 345px;
+}
+.wall30 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 100px;
+    left: 720px;
+    width: 5px;
+    height: 155px;
+}
+.wall31 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 320px;
+    left: 720px;
+    width: 5px;
+    height: 65px;
+}
+.wall31 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 270px;
+    left: 450px;
+    width: 120px;
+    height: 5px;
+}
+.wall32 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 170px;
+    left: 500px;
+    width: 120px;
+    height: 5px;
+}
+.wall33 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 420px;
+    width: 200px;
+    height: 5px;
+}
+.wall34 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 750px;
+    width: 140px;
+    height: 5px;
+}
+.wall35 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 40px;
+    left: 750px;
+    width: 5px;
+    height: 150px;
+}
+.wall36 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 380px;
+    left: 620px;
+    width: 200px;
+    height: 5px;
+}
+.wall37 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 250px;
+    left: 750px;
+    width: 120px;
+    height: 5px;
+}
+.wall38 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 250px;
+    left: 850px;
+    width: 5px;
+    height: 235px;
+}
+.wall39 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 440px;
+    left: 750px;
+    width: 100px;
+    height: 5px;
+}
+.wall40 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 140px;
+    left: 720px;
+    width: 30px;
+    height: 5px;
+}
+.wall41 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 250px;
+    left: 720px;
+    width: 5px;
+    height: 130px;
+}
+.wall42 {
+    position: absolute;
+    background-color: #0000b0;
+    top: 480px;
+    left: 750px;
+    width: 100px;
+    height: 5px;
+}
