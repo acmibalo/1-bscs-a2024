@@ -1,0 +1,24 @@
+.hfe-nav-menu .menu-item a:before,
+.hfe-nav-menu .menu-item a:after {
+  display: block;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.58, 0.3, 0.005, 1);
+          transition-timing-function: cubic-bezier(0.58, 0.3, 0.005, 1); }
+
+.hfe-nav-menu .menu-item a.hfe-menu-item:not(:hover):not(:focus):not(.current-menu-item):not(.highlighted):before, .hfe-nav-menu .menu-item a.hfe-menu-item:not(:hover):not(:focus):not(.current-menu-item):not(.highlighted):after {
+  opacity: 0; }
+
+.hfe-nav-menu .menu-item a.hfe-menu-item:hover:before,
+.hfe-nav-menu .menu-item a.hfe-menu-item:hover:after,
+.hfe-nav-menu .menu-item a.hfe-menu-item:focus:before,
+.hfe-nav-menu .menu-item a.hfe-menu-item:focus:after,
+.hfe-nav-menu .menu-item a.hfe-menu-item.highlighted:before,
+.hfe-nav-menu .menu-item a.hfe-menu-item.highlighted:after,
+.hfe-nav-menu .current-menu-item:before,
+.hfe-nav-menu .current-menu-item:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
