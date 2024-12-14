@@ -1,0 +1,439 @@
+:root{
+    --border-color: #f3511faf;
+    --transparent-color: #14141452;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    height: 200vh;
+    width: 100%;
+    background: linear-gradient(115deg, #131010 5.8%, #2e1111 112.6%);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff;
+}
+
+
+
+.main{
+    position: relative;
+    width: 100%;
+    background-position: center center;
+    height: 200vh;
+
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-image: url("pictures/image-80.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000000f1;
+    background-blend-mode: overlay;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar{
+    align-items: center;
+    margin: auto 0;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #000000cc; 
+    backdrop-filter: none;
+    box-shadow: 0 2px 10px 2px #000000be;
+    transition: backdrop-filter 0.3s ease;
+    border: 1px #5a42428e;
+    height: 64px;
+    border-bottom: 1px solid #140a0a;
+    
+}
+
+.navbar-items{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 2px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    text-align: center;
+    height: 33px;
+    width: 120px;
+    
+}
+
+
+nav ul li a {
+    width: 44px;
+    text-decoration: none;
+    color: #faebd7;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#Home{
+    
+    border-radius: 2px;
+    padding: 6px 12px 6px 12px;
+    color: #fff;
+    background-color: #0a090900;
+}
+
+#About{
+    border-radius: 2px;
+    padding: 6px 12px 6px 12px;
+    color: #fff;
+    background-color: #0a090900;
+}
+
+#Contact{
+    border-radius: 2px;
+    padding: 6px 12px 6px 12px;
+    color: #fff;
+    background-color: #0a090900;
+}
+
+#Login {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    padding: 6px 14px 6px 14px;
+    color: #ffffff;
+
+}
+
+#SignUp {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    color: #ffffff;
+}
+
+
+.navbar-menu {
+    padding-top: 16px;
+    list-style: none;
+    display: flex;
+    overflow: hidden; /* Hide overflow */
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    float: right;
+    width: 33px;
+    height: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 12px;
+    padding: 3px 4px 3px 2px;
+    border-radius: 8px;
+    border: 2px solid #444444;
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.2s ease;
+}
+
+
+    @media (max-width: 580px) {
+    .navbar-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-menu {
+        display: flex; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 64px; /* Position below the navbar */
+        left: 0;
+        right: 0;
+        background-color: #000000f5;
+        border-radius: 0 0 10px 10px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        transition: max-height 0.8s ease, opacity 0.4s ease, transform 0.8s ease;
+        transform: translateY(-10px);
+        height: 360px;
+        gap: 18px;
+    }
+
+        /* Making the Icon becomes to X */
+    .navbar-toggle.active .bar:nth-child(1) {
+        margin: 12px 0;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 18px;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0; /* Hide middle bar */
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 18px;
+        margin: 12px 0;
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show menu when active */
+        max-height: 300px; /* Set a max-height to show items */
+        opacity: 1; /* Make visible */
+        transform: translateY(0);
+    }
+
+    .navbar-toggle {
+        display: flex; /* Show hamburger icon */
+    }.navbar-items .navbar-title{
+        display: flex;
+        position: absolute;
+        left: 0;
+        transform: translate(40%, -35%); 
+    }.back-button{
+        display: none;
+    }
+}
+
+.main-container{
+    padding-top : 5em;
+    width: 100%;
+    height: 40vh;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.website{
+    height: 100vh;
+}
+
+.head1{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head1 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+}
+
+.head1 h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #fffcfc73;
+}
+
+.screenshot{
+    width: 90%;
+    max-width: 500px;
+    margin: 4em auto 0 ;
+    height: 260px;
+    border: #e0e0e0 4px inset;
+
+}
+
+.screenshot img{
+    width: 100%;
+    height: 240px;
+}
+
+.developer{
+    height: 100vh;
+    background-color: #f8caca;
+    color: #000;
+}
+
+.head2{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head2 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    padding-top: 1em;
+}
+
+.head2 h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #000000c0;
+}
+
+.profile{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+    height: 300px;
+    background-color: #f8bcbc;
+    border: 1px solid #ce9d9d;
+    box-shadow: 0 2px 12px #ce9d9d;
+}
+
+.image-container{
+    display: flex;
+    height: 280px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #f19e9e;
+    border: 1px solid #ce9d9d;
+    box-shadow: 0 2px 12px #ce9d9d;
+    margin-top: 10px;
+}
+
+.left-image{
+    height: 276px;
+    width: 40%;
+    min-width: 220px;
+    background-color: #f19e9e;
+    border: 6px solid #f87b7b;
+    box-shadow: 0 2px 12px #ce9d9d;
+    margin-top: 2px;
+}
+
+.left-image img{
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+}
+
+.right-details{
+    height: 276px;
+    width: 60%;
+    background-color: #f19e9e;
+    border: 1px solid #ce9d9d;
+    box-shadow: 0 2px 12px #ce9d9d;
+    margin-top: 2px;
+    padding-left: 12px;
+}
+
+.right-details .first-header{
+    margin: 0;
+    margin-top: 18px;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.2px;
+    
+}
+
+.right-details h4{
+    margin: 0;
+    margin-top: 9px;
+    padding: 0;
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 0.2px;
+    color: #0c0c0c;
+}
+
+.right-details h6{
+    font-size: 12px;
+    padding: 0;
+    padding-left: 12px;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #312b2b;
+}
+
+
+@media(max-width: 800px){
+    .head h1{
+        font-size: 3em;
+    } .head p{
+        font-size: 0.8em;
+    }.head{
+        margin-top: 2em;
+    }
+}
+
+@media(max-width: 660px){
+    .screenshot img{
+        width: 100%;
+        height: auto;
+    }.screenshot{
+        height: auto;
+    }.profile{
+        width: 100%;
+        margin: 0 auto;
+    }.head1 h1, .head2 h1{
+        font-size: 3.2em;
+    }.head1 h6{
+        font-size: 0.7em;
+        text-align: center;
+    }
+}
+
+/*--Custom scrollbar styles--*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #444444;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f3501f;
+    border:0.5px solid #f94008;
+    box-shadow: 0 2px 10px 2px #000000be;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f3511fb1;
+    border: 0.5px solid #f3511f80;
+    box-shadow: 0 2px 10px 2px #000000be;
+}

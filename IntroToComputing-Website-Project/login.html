@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HorrorPeak - movie information and resources</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="shortcut icon" href="skull.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <!--        Navigation Bar for screen width 580px        -->
+   <nav id="navbar" class="navbar">
+       <div class="navbar-toggle" id="navbar-toggle">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+       </div>
+       <div class="navbar-items">
+       <ul class="navbar-menu" id="navbar-menu">
+           <li><a href="index.html" class="text-hover" id="Home">Home</a></li>
+           <li><a href="about.html" class="text-hover" id="About">About </a></li>
+           <li><a href="contact.html" class="text-hover" id="Contact">Contact</a></li>
+           <li><a href="login.html" class="text-hover" id="Login" >Login</a></li>
+           <li><a href="signup.html" class="text-hover" id="SignUp" >SignUp</a></li>
+       </ul>
+   </div>
+   </nav>
+   
+</header>
+
+    <div class="main">
+    <div class="container">
+    <h1>Login</h1>
+    <form method="post" action='index.html'>
+      <fieldset>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Email" required /></label>
+        <label for="new-password">  Enter Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Password" required /></label>
+      </fieldset>
+      
+         
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.google.com/intl/en_ph/chrome/terms/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Log In" />
+      <div class="signup-link"><a href="signup.html">Don't have an account?</a></div>
+    </form>
+  </div>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
