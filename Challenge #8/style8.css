@@ -1,0 +1,102 @@
+/* about */
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+        }
+        body{
+          background-image: linear-gradient(#c0e058,#5eef67);
+        }
+        .heading{
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          margin: 20px auto;
+        }
+        .heading h1{
+      font-size: 50px;
+      color: #353434;
+      margin-bottom: 25px;
+      position: relative;
+        }
+        .heading h1::after{
+          content:"";
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          display: block;
+          margin: 0 auto;
+          background-color: #514ef9;
+        }
+        .heading h3{
+          font-size: 20px;
+          color: #994646;
+          margin-bottom: 35px;
+        }
+        .container{
+          width: 90%;
+          margin: 0 auto;
+          padding: 10px 20px;
+        }
+        .about{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .about-image{
+          flex: 1;
+          margin-right: 40px;
+          overflow: hidden;
+          width: 50%;
+        }
+        .about-image img{
+          max-width: 100%;
+          height: auto;
+          display: block;
+          transition: 0.5s ease;
+        }
+        .about-image:hover img{
+          transform: scale(1.2);
+        }
+      .about-content{
+        flex:1 ;
+      }
+      .about-content pre{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #020000;
+      }
+      @media screen and (max-width: 768px){
+      .heading{
+        padding: 0px 20px;
+      }
+      .heading h1{
+        font-size: 36px;
+      }
+      .heading pre{
+        font-size: 17px;
+        margin-bottom: 0px;
+      }
+      .container{
+        padding: 0px;
+      }
+      .about{
+        padding: 20px;
+        flex-direction: column;
+      }
+      .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+      .about-content pre{
+        padding: 0px;
+        font-size: 16px;
+      }
+      }
+  
+      
