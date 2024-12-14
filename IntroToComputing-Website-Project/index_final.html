@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petal Journey | Website🌸</title>
+  <link rel="icon" type="image/x-icon" href="Images&Videos/icon_final.ico">
+  <link rel="stylesheet" href="css/stylesheet_final.css">
+  <meta name="keywords" content="Cherry Blossom, Sakura, Petal Journey, Hana no Tabi, Bloom Tracker, Festivals, Travel Tips, Cultural Significance, Gallery, Shop, Seeds, Care, Viewing Spots, Community, Photography, Wallpapers">
+  <meta name="description" content="Petal Journey (Hana no Tabi) explores the beauty and cultural significance of cherry blossoms with guides, galleries, and a lively community for enthusiasts.">
+  <meta name="author" content="Armie Joy U. Tangalin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<!-- Background -->
+	<video id="backgroundVideo" autoplay muted loop class="video-background">
+		<source src="Images&Videos/Background_Final.mp4" type="video/mp4">
+		<source src="Images&Videos/Background_Final.webm" type="video/webm">
+		<source src="Images&Videos/Background_Final.ogv" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+
+<!-- Navigation Bar -->
+  <nav class="navigation">
+    <div class="menu-icon" onclick="toggleDropdown()">
+      <i class="fas fa-bars"></i>
+      <ul class="dropdown-content">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#cherry-blossom-guide">Cherry Blossom Guide</a></li>
+        <li><a href="#best-viewing-spots">Best Viewing Spots</a></li>
+        <li><a href="#cherry-blossom-cultural-significance">Cultural Significance</a></li>
+        <li><a href="#gallery-shop">Gallery and Shop</a></li>
+        <li><a href="#special-features">Special Features</a></li>
+		<li><a href="#Contacts">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="search-icon" onclick="toggleSearchBar()">
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search...">
+    </div>
+  </nav>
+
+<!-- All parts of the Website -->
+<main>
+	<!-- Homepage -->
+  <section id="home" class="home"> 
+    <div class="center-content">
+      <h1>🌸Petal Journey🌸</h1>
+      <h2>(Hana no Tabi)</h2>
+      <p>Explore the timeless beauty and cultural heritage of cherry blossoms, where every petal tells a story. Join us as we celebrate the splendor of sakura and uncover the secrets behind Japan's most beloved flower around the world.</p>
+      <button class="bloom-button" onclick="scrollToBloomTracker()">Show Bloom Tracker</button>
+      <div id="real-time-tracker"></div> <!-- Real-time tracker placeholder -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/armiejoy.tangalin.3/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@Akane_Lily" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/akane_lily04/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/Akane_Lily04" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+  <script src="script/script_final.js"></script>
+<hr><hr><hr>
+<br><br>
+	<!-- About Us -->
+	<section id="about-us" class="about-us w3-container">
+    <div class="about-us-content w3-center">
+        <h1>🌸About Us🌸</h1>
+	<br>
+	<section id="story" class="story w3-container">
+        <h2>🌸 The Story Behind Petal Journey 🌸</h2>
+        <div class="story-section"> 
+		<img src="Images&Videos/Logo_Final.png" alt="logo" class="story-img"> 
+		<p>Petal Journey, or "Hana no Tabi," was born out of a deep love and admiration for cherry blossoms and the timeless beauty they represent. Our journey began with a group of friends who shared a common passion: the awe-inspiring sakura blooms that paint Japan and many other parts of the world in stunning shades of pink and white each spring.</p> 
+	</div>
+		<h3>🌸 Inspirations and Beginnings 🌸</h3>
+        <p>Our founder, Akane Lily, grew up dreaming of one day experiencing the magical hanami festivals in Japan. Living in a place where cherry blossoms were a rare sight, Akane would spend hours watching documentaries and reading books about the vibrant sakura season. These blossoms became a symbol of hope and inspiration for her—a reminder that beauty can be found even in the fleeting moments of life.</p>
+        <h3>🌸 The Birth of a Community 🌸</h3>
+        <p>The spark for Petal Journey ignited when Akane realized that she was not alone in her admiration for sakura. She noticed how people from around the world shared her dream of experiencing the cherry blossoms in full bloom. Inspired by this shared passion, Akane envisioned a platform that could bring people closer to the beauty of sakura, no matter where they were.</p>
+        <p>Determined to turn this vision into reality, Akane gathered a diverse team of photographers, writers, and tech enthusiasts who shared her passion. Together, they launched Petal Journey—a space where sakura enthusiasts could come together, share their experiences, learn, and inspire each other. Akane believed that by creating this community, she could help others achieve their dream of witnessing the splendor of cherry blossoms, just as she hoped to one day.</p>
+        <h3>🌸 What We Offer 🌸</h3>
+        <ul>
+            <li>Bloom Tracker: A real-time tracker to help enthusiasts find the best times and places to view cherry blossoms.</li>
+            <li>Guides and Tips: Expert advice on the best viewing spots, travel tips, and cultural insights to make your hanami experience unforgettable.</li>
+            <li>Gallery: A collection of breathtaking photographs capturing the ephemeral beauty of sakura from around the world.</li>
+            <li>Shop: Unique sakura-themed merchandise, including seeds for those who wish to bring a piece of this beauty into their own homes.</li>
+            <li>Community: A vibrant community of cherry blossom lovers who share stories, photos, and experiences, fostering connections and friendships.</li>
+        </ul>
+		
+	<div class="w3-row-padding">
+            <div class="w3-half w3-animate-left about-us-section">
+                <h2>🌸 Our Mission 🌸</h2>
+                <p>To cultivate a deep appreciation for cherry blossoms through immersive guides, vibrant galleries, and a passionate community, celebrating the timeless beauty and cultural heritage of sakura.</p>
+            </div>
+            <div class="w3-half w3-animate-right about-us-section">
+                <h2>🌸 Our Vision 🌸</h2>
+                <p>To become the leading platform for cherry blossom enthusiasts worldwide, fostering connections and inspiring exploration through shared experiences and stories.</p>
+            </div>
+        </div>
+        <h3>🌸 Helping Others 🌸</h3>
+        <p>Through Petal Journey, we aim to spread joy and mindfulness. By bringing people closer to nature, we hope to encourage environmental stewardship and a deeper appreciation for the natural world. We also support local communities and artisans by promoting their sakura-themed crafts and products.</p>
+	<br><br>
+		<p>In every petal, there's a story. At Petal Journey, we strive to tell these stories and help others create their own. Whether you're planning a trip to Japan, looking to grow your own cherry blossoms, or simply wanting to bask in the beauty of these flowers, we're here to guide and inspire you every step of the way.</p>
+        <p>And so, Petal Journey continues to blossom, connecting hearts and minds through the delicate beauty of sakura. 🌸</p>	
+    </section>
+<!-- Team Members -->
+	 <section id="team" class="team w3-container">
+                <h2>🌸 Our Team 🌸</h2>
+                <div class="w3-row-padding w3-center">
+                    <div class="w3-third team-member">
+                        <img src="Images&Videos/Team_Member.png" alt="Team Member 1" class="team-img">
+                        <h3>Idol D. Dane</h3>
+                        <p>Photographer</p>
+                        <div class="social-links">
+						<p>For more details</p>
+                            <a href="https://www.facebook.com/profile.php?id=61557989924531" target="_blank">Click Here</a>
+                        </div>
+                    </div>
+                    <div class="w3-third team-member">
+                        <img src="Images&Videos/Team_leader.png" alt="Team Member 2" class="team-img">
+                        <h3>Akane Lily</h3>
+                        <p>Founder & Leader</p>
+                        <div class="social-links">
+						<p>For more details</p>
+                            <a href="https://www.facebook.com/profile.php/?id=61563277104873" target="_blank">Click Here</a>
+                        </div>
+                    </div>
+                    <div class="w3-third team-member">
+                        <img src="Images&Videos/Team_Assistant.png" alt="Team Member 3" class="team-img">
+                        <h3>Dino Won</h3>
+                        <p>Content Writer</p>
+                        <div class="social-links">
+						<p>For more details</p>
+                            <a href="https://www.facebook.com/dino.won.2024" target="_blank">Click Here</a>
+                        </div>
+                    </div>
+					<div class="w3-third team-member">
+                        <img src="Images&Videos/Team_blogger.jpg" alt="Team Member 4" class="team-img">
+                        <h3>Kevin Cavanaugh</h3>
+                        <p>Travel Blogger</p>
+                        <div class="social-links">
+						<p>For more details</p>
+                            <a href="https://www.facebook.com/profile.php?id=61566931772945" target="_blank">Click Here</a>
+                        </div>
+                    </div>
+					<div class="w3-third team-member">
+                        <img src="Images&Videos/Team_Support_Specialist.jpeg" alt="Team Member 5" class="team-img">
+                        <h3>Kizu</h3>
+                        <p>Customer Support Specialist</p>
+                        <div class="social-links">
+						<p>For more details</p>
+                            <a href="https://www.facebook.com/raymond.condat.79" target="_blank">Click Here</a>
+                        </div>
+                    </div>
+					<div class="w3-third team-member">
+                        <img src="Images&Videos/Team_Specialist_financial.jpg" alt="Team Member 6" class="team-img">
+                        <h3>Kateu</h3>
+                        <p>Financial Specialist</p>
+                        <div class="social-links">
+						<p>For more details</p>
+                            <a href="https://www.facebook.com/hanaojetak.alliuqitnam" target="_blank">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</div>
+	</section>
+<br><br>
+<hr><hr><hr>
+<br><br>
+	<!-- Cherry Blossom Guide -->
+<section id="cherry-blossom-guide" class="cherry-blossom-guide w3-container">
+    <div class="cherry-blossom-guide w3-center">
+        <h1>🌸Cherry Blossom Guide🌸</h1>
+	</div>
+<br>
+	<!-- Care Section -->
+<section id="planting-care" class="planting-care w3-container">
+    <h2>🌸 Expert Advice on Planting and Caring for Cherry Blossoms 🌸</h2>
+    <div class="care-section">
+        <h3>Planting Tips</h3>
+        <ul class="care-content">
+            <li>
+				<h3>Choosing the Right Location:</h3> 
+					<p>Learn how to select the ideal spot in your garden that receives ample sunlight and has well-drained soil.</p>
+			</li>
+            <li>
+				<h3>Soil Preparation:</h3> 
+					<p>Detailed instructions on testing and amending your soil to create the perfect growing environment for cherry blossoms.</p>
+			</li>
+            <li>
+				<h3>Planting Process:</h3> 
+					<p>Step-by-step guidance on how to plant cherry blossom trees, including tips on spacing, depth, and initial watering.</p>
+			</li>
+        </ul>
+        <h3>Care Instructions</h3>
+        <ul class="care-content">
+            <li>
+				<h3>Watering:</h3>
+					<p>Discover the best practices for watering cherry blossoms to ensure they thrive without over-watering or drought stress.</p>
+			</li>
+            <li>
+				<h3>Fertilizing:</h3>
+					<p>Understand the types of fertilizers that benefit cherry blossoms and the optimal times for application.</p>
+			</li>
+            <li>
+				<h3>Pruning:</h3>
+					<p>Learn how to prune your cherry blossom trees to encourage healthy growth, shape the canopy, and remove any diseased or damaged branches.</p>
+			</li>
+            <li>
+				<h3>Pest and Disease Control:</h3>
+					<p>Identify common pests and diseases that affect cherry blossoms and find natural and chemical solutions to protect your trees.</p>
+			</li>
+        </ul>
+        <h3>Climate-Specific Advice</h3>
+        <ul class="care-content">
+            <li>
+				<h3>Cold Climates:</h3>
+					<p>Tips on how to insulate and protect cherry blossom trees during harsh winters to prevent frost damage and ensure they bloom in the spring.</p>
+			</li>
+            <li>
+				<h3>Warm Climates:</h3>
+					<p>Strategies for managing heat stress and ensuring your cherry blossoms receive enough water and shade during hot summer months.</p>
+			</li>
+            <li>
+				<h3>Humidity and Rain:</h3>
+					<p>Advice on how to manage excess humidity and rain, including soil drainage solutions and fungal disease prevention.</p>
+			</li>
+        </ul>
+        <h3>Seasonal Care Calendar</h3>
+        <ul class="care-content">
+            <li>
+				<h3>Spring:</h3> 
+					<p>Preparing for bloom season with fertilizing and pest control.</p>
+			</li>
+            <li>
+				<h3>Summer:</h3> 
+					<p>Maintaining hydration and managing heat stress.</p>
+			</li>
+            <li>
+				<h3>Fall:</h3>
+					<p>Pruning and preparing trees for dormancy.</p>
+			</li>
+            <li>
+				<h3>Winter:</h3> 
+					<p>Protecting trees from frost and planning for the next growing season.</p>
+			</li>
+        </ul>
+    </div>
+	</section>
+</section>
+	<br>
+		<!-- Variety Section -->
+<section id="blossom-variety" class="blossom-variety w3-container">
+    <h2>🌸 Cherry Blossom Varieties 🌸</h2>
+    <div class="variety-section"> 
+<br>
+        <ul class="variety-content">
+		
+            <li>
+                <h3>Japanese Cherry Blossom Tree (Prunus Serrulata)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Prunus_serrulata.jpeg" alt="1st Variety" class="variety-img">
+                <p>The Japanese Cherry Blossom Tree is also called the Sakura tree. In the early to mid-spring season, it produces stunning pink blossoms. The tree has green leaves that, in the fall, turn a vivid scarlet or a warm bronze. These trees have an upright height of 25 feet with a spreading crown. They grow best in full sunlight, with moist, well-drained soil.</p>
+            </li>
+			
+            <li>
+                <h3>Yoshino Cherry Blossom Tree (Prunus yedoensis)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Prunus_yedoensis.jpg" alt="2nd Variety" class="variety-img">
+                <p>One of the more well-known cherry blossom trees due to its white and pale pink blossoms is the Yoshino cherry blossom tree, also called the Somei-Yoshino tree. In addition to these beautiful flowers, the tree features a vase-shaped crown and exquisite reddish-orange foliage that changes from green in the fall. Before planting one, make sure you have enough space in your yard because these trees grow quickly and reach a maximum height of 30 feet. It's important to remember that the tree's hard cherries are inedible, but non the summer they will draw birds to your yard.</p>
+            </li>
+
+            <li>
+                <h3>Kwanzan Cherry Blossom Tree (Prunus Serrulata)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Kwanzan.jpg" alt="3rd Variety" class="variety-img">
+                <p>In the cherry blossom family, the Kwanzan cherry blossom tree is regarded as the most ornamental. With spreading growth that resembles a vase, the flowering tree reaches a height of thirty feet. In the fall, it turns a lovely yellowish-orange color before lowering itself gradually to the ground. But this tree doesn't bear any fruit.</p>
+            </li>
+            
+            <li>
+                <h3>Bird Cherry Blossom Tree (Prunus padus)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Prunus_Padus.jpg" alt="4th Variety" class="variety-img">
+                <p>Bird Cherry Blossom Trees are beautiful. Immediately following the onset of the spring season and the emergence of leaves, clusters of fragrant white flowers bloom. The European Bird Cherry Tree is a fruit-bearing tree. But because of their bitterness, the pea-sized cherries that grow on this tree are unfit for human consumption. The tree's lengthy leaves change from green to a lovely yellow in the fall, and the cherries are black.</p>
+            </li>
+           
+            <li>
+                <h3>Okame Cherry Tree (Prunus X incam)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/okame_bloom.jpg" alt="5th Variety" class="variety-img">
+                <p>When in bloom, the five-petaled blossoms of the Okame Cherry Tree have a lovely reddish-pink hue. The crowns of these small, upright trees resemble vases and get rounder as they get older, making them ideal for small backyards. Early spring until late autumn is when they bloom.</p>
+            </li>
+           
+            <li>
+                <h3>Fuji Cherry Blossom Tree (Prunus incisa)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Prunus_Incisa.jpeg" alt="6th Variety" class="variety-img">
+                <p>The development of Fuji Cherry Blossom Trees is rounded and their foliage is abundant. These trees are little to slightly medium trees that are ideal for a small yard with lots of sunlight because they can reach a height of 26 feet. In the fall, the oval-shaped, serrated leaves of this tree turn a lovely shade of yellow or orange.</p>
+            </li>
+            
+            <li>
+                <h3>Sargent’s Cherry Blossom Tree (Prunus sargentii)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Prunus_sargentii.jpeg" alt="7th Variety" class="variety-img">
+                <p>Masses of fragrant, light-pink blooms adorn the Japanese cherry tree known as Sargent's Cherry Tree. It is also known as the North Japanese Cherry Tree and reaches a maximum height of 40 feet. The tree will have red buds in the early spring, which will later develop into pink blooms with wavy borders. This tree is the ideal choice for finding shade on a hot summer day because of its glossy mahogany bark and the way it spreads out.</p>
+            </li>
+            
+            <li>
+                <h3>Dwarf Flowering Fuji Cherry Tree (Prunus incisa)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Dwarf_fuji.jpeg" alt="8th Variety" class="variety-img">
+                <p>Dwarf Flowering Fuji Cherry Trees are trees that only reach eight-foot-tall at maturity, making them perfect for yards that have little room for trees. This mini tree can be identified with ease by its bunches of individual white flowers and the fact that its branches are in a zig-zag pattern. The leaves of the tree are green during the summer months, then turn to a gorgeous red as the autumn season approaches.</p>
+            </li>
+            
+            <li>
+                <h3>Weeping Higan Cherry Blossom Tree (Prunus subhirtella)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/Weeping_bloom.jpg" alt="9th Variety" class="variety-img">
+                <p>Weeping Cherry Blossom Trees such as the Weeping Higan Cherry Blossom Tree have branches that droop as if they’re weeping. This particular tree features green leaves and double pink flowers. It also grows up to 30 feet, so it is best suited for a larger yard. The green leaves of this weeping cherry blossom tree turn a golden yellow color as autumn rears its head.</p>
+            </li>
+            
+            <li>
+                <h3>Double Weeping Cherry Tree (Prunus X subhirtella)</h3>
+                <img src="Images&Videos/Varieties_cherry_blossom/PrunusXsubhirtella.jpeg" alt="10th Variety" class="variety-img">
+                <p>The Double Weeping Cherry Tree is an amazing sight for anyone to see in a garden, so if you have room, you’ll want to invest in planting one soon. Topping out at 25 feet, the branches drooping from this tree are amazing and gorgeous. In the middle of spring, the cascading branches of this tree burst forth with dual flowers in a few different varieties of pink.</p>
+            </li>
+        </ul>
+		</div>
+</section>
+
+<br><br><br><br><br><br><br>
+<hr><hr><hr><hr>
+<br><br>
+<!-- Viewing Spots -->
+<section id="best-viewing-spots" class="best-viewing-spots w3-container">
+    <div class="best-viewing-spots-content w3-center">
+        <h1>🌸Best Viewing Spots🌸</h1>
+    
+    <div class="spots-container">
+        <h2>🌸 Best Viewing Spots for Cherry Blossoms 🌸</h2>
+
+        <div class="spot">
+            <h2>Japan</h2>
+            <p>Japan is renowned for its stunning cherry blossom season. Some of the must-see locations include:</p>
+            
+            <h3>Tokyo:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Ueno_Park.jpg" alt="Ueno Park" class="spot-img">
+                <p class="image-label">Ueno Park</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Shinjuku_Gyoen.jpg" alt="Shinjuku Gyoen" class="spot-img">
+                <p class="image-label">Shinjuku Gyoen</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Chidorigafuchi.jpg" alt="Chidorigafuchi" class="spot-img">
+                <p class="image-label">Chidorigafuchi</p>
+            </div>
+                
+            <h3>Kyoto:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Maruyama_Park.jpeg" alt="Maruyama Park" class="spot-img">
+                <p class="image-label">Maruyama Park</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/The_Philosopher's_Path.jpg" alt="The Philosopher's Path" class="spot-img">
+                <p class="image-label">The Philosopher's Path</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Kiyomizu-dera_Temple.jpg" alt="Kiyomizu-dera Temple" class="spot-img">
+                <p class="image-label">Kiyomizu-dera Temple</p>
+            </div>
+                
+            <h3>Hokkaido:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Matsumae_Park.jpg" alt="Matsumae Park" class="spot-img">
+                <p class="image-label">Matsumae Park</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Goryokaku_Fort.jpg" alt="Goryokaku Fort" class="spot-img">
+                <p class="image-label">Goryokaku Fort</p>
+            </div>
+                
+            <p>Travel Tips: Book your accommodation early, as cherry blossom season is a popular time for tourists. Consider visiting lesser-known spots for a more serene experience.</p>
+            <a href="https://wanderwisdom.com/travel-destinations/8-Tips-For-Sakura-Viewing-In-Japan#" target="_blank" class="tips-button">More Travel Tips</a>
+        </div>
+        
+        <div class="spot">
+            <h2>Washington D.C.</h2>
+            <p>Washington D.C. is famous for its beautiful cherry blossom trees, a gift from Japan. Key viewing spots include:</p>
+            <h3>Tidal Basin:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Tidal_Basin_1.jpg" alt="Tidal Basin_1" class="spot-img">
+                <p class="image-label">Tidal Basin</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Tidal_Basin_2.jpg" alt="Tidal Basin_2" class="spot-img">
+                <p class="image-label">Tidal Basin</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Tidal_Basin_3.jpg" alt="Tidal Basin_3" class="spot-img">
+                <p class="image-label">Tidal Basin</p>
+            </div>
+            
+            <h3>National Mall and Arboretum</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/National_Mall_and_Arboretum_1.jpg" alt="National Mall and Arboretum 1" class="spot-img">
+                <p class="image-label">National Mall and Arboretum</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/National_Mall_and_Arboretum_2.jpg" alt="National Mall and Arboretum 2" class="spot-img">
+                <p class="image-label">National Mall and Arboretum</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/National_Mall_and_Arboretum_3.jpg" alt="National Mall and Arboretum 3" class="spot-img">
+                <p class="image-label">National Mall and Arboretum</p>
+            </div>
+                
+            <p>Travel Tips: Visit during the National Cherry Blossom Festival for additional activities and events. Use public transportation to navigate the city efficiently.</p>
+            <a href="https://dctravelmag.com/washington-dc-cherry-blossoms-tips/" target="_blank" class="tips-button">More Travel Tips</a>
+        </div>
+        
+        <div class="spot">
+            <h2>South Korea</h2>
+            <p>South Korea offers picturesque cherry blossom views in various locations. Notable spots include:</p>
+            
+            <h3>Seoul:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Yeouido_Park.jpeg" alt="Yeouido Park" class="spot-img">
+                <p class="image-label">Yeouido Park</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Seoul_Forest.jpg" alt="Seoul Forest" class="spot-img">
+                <p class="image-label">Seoul Forest</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Namsan_Park.jpg" alt="Namsan Park" class="spot-img">
+                <p class="image-label">Namsan Park</p>
+            </div>
+                
+            <h3>Jinhae:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Jinhae.jpeg" alt="Jinhae" class="spot-img">
+                <p class="image-label">Jinhae</p>
+            </div>
+            
+            <h3>Busan:</h3> 
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/dalmaji-hill-korea.jpg" alt="Dalmaji Hill" class="spot-img">
+                <p class="image-label">Dalmaji Hill</p>
+            </div>
+            <div class="spot-img-container">
+                <img src="Images&Videos/Spots/Haeundae.jpg" alt="Haeundae" class="spot-img">
+                <p class="image-label">Haeundae</p>
+            </div>
+                
+            <p>Travel Tips: Plan your visit according to the regional bloom times, which can vary. Join local festivals for a truly immersive experience.</p>
+            <a href="https://travellingsouthkorea.com/a-guide-to-south-koreas-cherry-blossom-festival" target="_blank" class="tips-button">More Travel Tips</a>
+        </div>
+	<br>
+
+		    <div id="virtual-tour" class="virtual-tour-container w3-container"> 
+        <h2>🌸 Virtual Tour 🌸</h2> 
+    </div>
+    <br>
+    <div class="video-container">
+    <div class="video-thumbnail" onclick="openVideo('Images&Videos/Spots/Virtual_Tour_1.mp4')">
+        <div class="thumbnail-wrapper">
+            <img src="Images&Videos/Spots/thumbnail1.png" alt="Virtual Tour 1">
+            <div class="overlay">Click Me</div>
+        </div>
+        <p>Offline Video Tour 1</p>
+    </div>
+    <div class="video-thumbnail" onclick="openVideo('Images&Videos/Spots/Virtual_Tour_2.mp4')">
+        <div class="thumbnail-wrapper">
+            <img src="Images&Videos/Spots/thumbnail2.png" alt="Virtual Tour 2">
+            <div class="overlay">Click Me</div>
+        </div>
+        <p>Offline Video Tour 2</p>
+    </div>
+    <div class="video-thumbnail" onclick="openVideo('Images&Videos/Spots/Virtual_Tour_3.mp4')">
+        <div class="thumbnail-wrapper">
+            <img src="Images&Videos/Spots/thumbnail3.png" alt="Virtual Tour 3">
+            <div class="overlay">Click Me</div>
+        </div>
+        <p>Offline Video Tour 3</p>
+    </div>
+    <div class="video-thumbnail">
+	<iframe src="https://www.youtube.com/embed/kZN2yTa1HcY" class="iframe-style" allowfullscreen></iframe>
+        <p>Online Virtual Tour</p>
+    </div>
+</div>
+	<br>	
+    <div class="more-content">
+        <h2>🌸 Explore the vibrant cherry blossom spots around the world 🌸</h2>
+        <a href="https://www.klook.com/en-US/blog/cherry-blossoms-around-the-world/" target="_blank" class="destinations-button">10 Must-Visit Cherry Blossom Spots</a>
+			<p>– Discover the top locations across the globe.</p>
+        <a href="https://retirementtravelers.com/the-seven-best-places-in-the-world-to-see-the-cherry-blossoms" target="_blank" class="destinations-button">7 Best Places to See Cherry Blossoms</a>
+			<p>– Your guide to the best viewing spots.</p>
+        <a href="https://example.com/new-cherry-blossom-destination" target="_blank" class="destinations-button">Hidden Cherry Blossom Gems</a>
+			<p>– Uncover lesser-known locations with stunning views.</p>
+    </div>
+</div>
+</div>
+</section>
+
+
+<hr><hr><hr>
+
+	<section id="cherry-blossom-cultural-significance" class="cherry-blossom-cultural-significance w3-container">
+    <div class="cherry-blossom-cultural-significance w3-center">
+        <h1>🌸Cherry Blossom Cultural Significance🌸</h1>
+<br>	
+	<div class="history">
+            <h2>🌸 History and Cultural Significance 🌸</h2>
+		<br>
+            <p>Cherry blossoms, known as "sakura" in Japan, have a rich history and hold significant cultural importance in many countries. These delicate flowers symbolize the fleeting nature of life and beauty. The tradition of hanami, or flower viewing, dates back over a thousand years to the Heian period in Japan, when the elite would celebrate the blooming of cherry blossoms with poetry and feasts. Today, hanami is enjoyed by people of all backgrounds, with picnics and gatherings under the blossoming trees becoming a cherished springtime activity.</p>
+        <br><br>    
+			<p>Beyond Japan, cherry blossoms are celebrated in many cultures around the world. In China, they represent love and the feminine mystique. In Korea, the blooming of cherry blossoms is a reminder of the transience of life and is often associated with new beginnings and renewal. The United States also has a deep connection with cherry blossoms, especially in Washington D.C., where the annual National Cherry Blossom Festival commemorates the 1912 gift of 3,000 cherry trees from the Mayor of Tokyo to the city. This event symbolizes the enduring friendship between the two nations.</p>
+        </div>
+	<br><br>
+        <div class="related-articles">
+            <h2>🌸 Related Articles 🌸</h2>
+            
+                <a href="https://mymodernmet.com/cherry-blossom-meaning/" target="_blank" class="articles-button">Cherry Blossoms in Japanese Culture</a>		
+                <a href="https://savvytokyo.com/history-of-hanami-cherry-blossom-viewing-over-the-ages/" target="_blank" class="articles-button">The History of Hanami: Cherry Blossom Viewing</a>
+                <a href="https://www.thewisetraveller.com/Articles/view/?permalink=10-best-cherry-blossom-festivals-around-the-world" target="_blank" class="articles-button">Cherry Blossom Festivals Around the World</a>
+        </div>
+	<br>
+        <div class="events-calendar">
+            <h2>🌸 Cherry Blossom Events Calendar 🌸</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+					<tr>
+                        <td>March 30, 2025</td>
+                        <td>National Cherry Blossom Festival</td>
+                        <td>Washington D.C., USA</td>
+                    </tr>
+                    <tr>
+                        <td>April 5, 2025</td>
+                        <td>Tokyo Cherry Blossom Festival</td>
+                        <td>Tokyo, Japan</td>
+                    </tr>
+                    <tr>
+                        <td>April 10, 2025</td>
+                        <td>Ueno Cherry Blossom Festival</td>
+                        <td>Tokyo, Japan</td>
+                    </tr>
+                    <tr>
+                        <td>April 15, 2025</td>
+                        <td>Vancouver Cherry Blossom Festival</td>
+                        <td>Vancouver, Canada</td>
+                    </tr>
+                    <tr>
+                        <td>April 20, 2025</td>
+                        <td>Meguro River Cherry Blossom Festival</td>
+                        <td>Tokyo, Japan</td>
+                    </tr>
+					<tr>
+						<td>🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸</td>
+						<td><a href="https://www.magical-trip.com/media/ueno-list-of-events-festivals-for-2025/" target="_blank">Click for more</a></td>
+						<td>🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸</td>
+					</tr>
+
+            </table>
+        </div>
+	</div>
+	</section>
+<br><hr><hr><hr>
+<br>
+<section id="gallery-shop" class="gallery-shop w3-container">
+    <h1>🌸Gallery and Shop🌸</h1>
+	
+<br>
+    <div class="gallery-section">
+		<h2>🌸 Gallery 🌸</h2>
+	<br>
+        <button onclick="uploadPhoto()">➕ Add Photo</button>
+	<br>
+        <div id="photo-gallery">
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_1.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_1.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_2.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_2.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_3.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_3.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_4.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_4.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_5.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_5.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_6.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_6.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_7.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_7.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_8.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_8.jpeg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_9.jpg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_9.jpg')">⬇️ Download</button>
+            </div>
+            <div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_10.jpeg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_10.jpeg')">⬇️ Download</button>
+            </div>
+			<div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_11.jpg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_11.jpg')">⬇️ Download</button>
+            </div>
+			<div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_12.jpg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_12.jpg')">⬇️ Download</button>
+            </div>
+			<div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_13.jpg" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_13.jpg')">⬇️ Download</button>
+            </div>
+			<div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_14.gif" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_14.gif')">⬇️ Download</button>
+            </div>
+			<div class="photo-item">
+                <img src="Images&Videos/Gallery&shop/image_15.gif" alt="Cherry Blossom">
+                <button onclick="downloadPhoto('Images&Videos/Gallery&shop/image_15.gif')">⬇️ Download</button>
+            </div>
+		</div>
+    </div>
+<script src="script/script_final.js"></script>
+<br>
+
+    <div id="video-popup" class="video-popup">
+        <span class="close" onclick="closeVideo()">&times;</span>
+        <video id="popup-video" controls></video>
+    </div>
+    <script src="scripts.js"></script>
+		<div class="shop-content">
+        <h2>🌸 Shop 🌸</h2>
+		</div>
+	<div id="shop-shop">
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_1.jpg" alt="Product 1">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_2.jpg" alt="Product 2">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+	   </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_3.jpg" alt="Product 3">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_4.jpg" alt="Product 4">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_5.jpg" alt="Product 5">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+	
+	<br>
+        </div>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_6.jpg" alt="Product 6">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+	<br>
+        </div>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_7.jpg" alt="Product 7">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_8.jpg" alt="Product 8">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+		</div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_9.jpg" alt="Product 9">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_10.jpg" alt="Product 10">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_11.jpg" alt="Product 11">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_12.jpg" alt="Product 12">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_13.jpg" alt="Product 13">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_14.jpg" alt="Product 14">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_15.jpg" alt="Product 15">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_16.jpg" alt="Product 16">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_17.jpg" alt="Product 17">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_18.jpg" alt="Product 18">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+	<br>
+        <div class="shop-item">
+            <img src="Images&Videos/Gallery&shop/shop_19.jpg" alt="Product 19">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+	</div>
+	<br>
+    <div class="contact-section">
+<h3>Place Your Order</h3>
+<form id="order-form">
+    <div class="form-columns">
+        <div class="left-column">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="form-group">
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">Submit Order</button>
+</form>
+
+<script src="script/form-handler.js"></script>
+
+    </div>
+</section>
+<br><hr><hr><hr><br><br>
+<section id="special-features" class="special-features">
+  <h1>🌸 Special Features 🌸</h1>
+  
+  <!-- Real-Time Bloom Tracker Section -->
+  <div class="feature">
+    <h2>Real-Time Bloom Tracker</h2>
+    <p>Discover where cherry blossoms are currently in bloom with our real-time tracker. Keep up to date with the latest blossom sightings and plan your perfect hanami experience!</p>
+    <table id="bloom-tracker-table" class="bloom-tracker-table">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Bloom Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tokyo, Japan</td>
+          <td>75%</td>
+        </tr>
+        <tr>
+          <td>Kyoto, Japan</td>
+          <td>60%</td>
+        </tr>
+        <tr>
+          <td>Osaka, Japan</td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td>Washington DC, USA</td>
+          <td>70%</td>
+        </tr>
+        <tr>
+          <td>Seoul, South Korea</td>
+          <td>85%</td>
+        </tr>
+        <tr>
+          <td>Beijing, China</td>
+          <td>65%</td>
+        </tr>
+        <tr>
+          <td>Vancouver, Canada</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Taipei, Taiwan</td>
+          <td>55%</td>
+        </tr>
+        <tr>
+          <td>Paris, France</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Berlin, Germany</td>
+          <td>45%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<br>
+<hr><hr><hr>
+<br>
+<section id="Contacts" class="contacts-section">
+
+	<!-- Social Media Integration Section -->
+  <div class="Contacts-footer">
+    <h2>Follow Us on Social Media</h2>
+    <p>Stay updated with regular posts and beautiful cherry blossom photography by following us on social media.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/armiejoy.tangalin.3/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@Akane_Lily" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/akane_lily04/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Akane_Lily04" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+ </section>
+</main>	
+		<script src="script/script_final.js"></script>	
+<footer>
+        <p>&copy; 2024 Cherry Blossom Website. All Rights Reserved.</p>
+	</footer>
+</body> 
+</html>
