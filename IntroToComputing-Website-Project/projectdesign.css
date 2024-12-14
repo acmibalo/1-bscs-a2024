@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Sour Gummy', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Newpic/wbsitebackground.jpg');
+    background-attachment: fixed;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.header {
+    box-sizing: border-box;
+   /* background: url('Newpic/wbsitebackground.jpg') no-repeat center center/cover;*/
+    padding: px;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-bar .logo a {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.nav-bar .logo img{
+    width: 15%;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.nav-bar .logo img a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu Styles */
+.menu ul {
+    display: flex;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu ul li a {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    background: #4c1f4a;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    background: linear-gradient(45deg, #3f1c1c, #ff3333);
+    box-shadow: 5px 7px 20px #000;
+}
+
+
+
+/* Section Styles */
+.home-section, .motorbike-section, .about-section, .feedback-section {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.home-section h2 {
+    font-size: 90px;
+    color: #fff;
+    text-transform: capitalize;
+}
+  
+  /* Welcome Text Animation */
+.home-section h2 span {
+    font-weight: 600;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Move the text down */
+    animation: fadeInMove 2s steps(10) infinite; /* Apply animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start with the text below */
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #4b0082, 0 0 20px #4b0082; /* Glowing effect */
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(20px); /* Slight movement up */
+        text-shadow: 0 0 10px #fff, 0 0 20px #4b0082, 0 0 30px #4b0082; /* Glowing effect stronger */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Fully visible and in original position */
+        text-shadow: 0 0 20px #fff, 0 0 30px #4b0082, 0 0 40px #4b0082; /* Glowing effect fully visible */
+    }
+}
+ 
+  
+.home-section span {
+    color: #51f9f9;
+}
+
+.home-section p {
+    color: #fff;
+}
+
+.home-section h2{
+    position: relative;
+    width: 100%;
+}
+
+.home-section h2 br.show{
+    display: inline-block;
+    position: relative;
+}
+
+.home-section h2 br .show::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 2px;
+    background-color: #4b0082;
+    animation: typing 1.5s step(1) infinite, glowEffect 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes typing{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+@keyframes glowEffect{
+    0%{
+        text-shadow: 0 0 5px #fff, 0 0 10px #4b0082, 0 0 20px #4b0082;
+    }
+    50%{
+        text-shadow: 0 0 10px #fff, 0 0 20px #4b0082, 0 0 30px #4b0082;
+    }
+    100%{
+        text-shadow: 0 0 15px #fff, 0 0 25px #4b0082, 0 0 35px #4b0082;
+    }
+}
+
+.home-section .discover-btn {
+    align-items: center;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 100px;
+    padding: 0 10px;
+    border: 3px solid #ffa918;
+    background-color: #d43242;
+    box-shadow: 5px 7px 20px #000;
+}
+
+.home-section .discover-btn a {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* Motorbike Gallery */
+
+.motorbike-gallery{
+    text-align: center;
+    margin: 20px;
+}
+
+.motorbike-gallery img {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.motorbike-section h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #51f9f9;
+}
+
+.motorbike-section .right-sec {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.motorbike-section .right-sec img {
+    width: 100%;
+}
+
+/* about */
+
+.about-section{
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.about-section h2{
+    color: #51f9f9;
+    font-weight: 300;
+}
+
+/* Feedback Form */
+
+.feedback-section h2{
+    color: #51f9f9;
+    font-weight: 300;
+}
+
+.feedback-section form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.feedback-section form label {
+    display: block;
+    margin: 10px 0 5px;
+   
+}
+
+.feedback-section form input, .feedback-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.feedback-section form button{
+    background-color: #aa4eec;
+    color: #fff;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease ease-in-out;
+}
+
+.feedback-section form button:hover{
+    background-color: #5f4076;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Footer */
+footer {
+    box-sizing: border-box;
+    background: linear-gradient(360deg, #4b0082, #000000);
+}
+.footer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 100%;
+    z-index: 1em;
+    transition: all o.3s ease-in-out;
+}
+
+.social-icon a:hover{
+    background: linear-gradient(45deg, #3f1c1c, #ff3333);
+    box-shadow: 5px 7px 20px #000;
+    border-radius: 100%; 
+}
+
+.social-icon a i{
+    color: #333;
+    font-size: 24px;
+    transition: all o.3s ease-in-out;
+}
+
+.social-icon a i:hover{
+    background: linear-gradient(45deg, #3f1c1c, #ff3333);
+    box-shadow: 5px 7px 20px #000;
+    border-radius: 100%;
+}
+.footerNav{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.footerNav a{
+    padding: 10px;  
+}
+
+.footerbottom{
+    display: flex;
+    justify-content: center;
+    
+}
+/* Responsive Menu */
+.menu-btn {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .menu ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: fixed;
+        padding: 20px;
+    }
+
+    .menu ul li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu.open ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+
+    .home-section h2 {
+        font-size: 60px;
+    }
+}
