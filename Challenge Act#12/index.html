@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Additional Features Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Image Slideshow -->
+<h2>Image Slideshow</h2>
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="https://via.placeholder.com/800x300?text=Slide+1" alt="Slide 1">
+    </div>
+    <div class="slide fade">
+        <img src="https://via.placeholder.com/800x300?text=Slide+2" alt="Slide 2">
+    </div>
+    <div class="slide fade">
+        <img src="https://via.placeholder.com/800x300?text=Slide+3" alt="Slide 3">
+    </div>
+</div>
+
+<!-- Responsive Grid Layout -->
+<h2>Responsive Grid Layout</h2>
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+</div>
+
+<!-- Form Validation -->
+<h2>Form Validation Example</h2>
+<form id="myForm">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Sticky Navbar -->
+<h2>Sticky Navbar</h2>
+<div class="navbar" id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Countdown Timer -->
+<h2>Countdown Timer</h2>
+<div id="countdown"></div>
+
+<script>
+    // Slideshow functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // Sticky Navbar functionality
+    window.onscroll = function() {stickyNavbar()};
+
+    function stickyNavbar() {
+        let navbar = document.getElementById("navbar");
+        if (window.pageYOffset >= navbar.offsetTop) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    // Countdown Timer functionality
+    let countdownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+
+    let countdownFunction = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countdownDate - now;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+    // Form Validation
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        let fname = document.getElementById("fname").value;
+        let email = document.getElementById("email").value;
+
+        if (!fname || !email) {
+            alert("Please fill out all fields!");
+            event.preventDefault();
+        }
+    });
+</script>
+
+</body>
+</html>

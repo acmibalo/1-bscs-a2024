@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Features Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Accordion -->
+<h2>Accordion Example</h2>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>This is Section 1 content.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>This is Section 2 content.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>This is Section 3 content.</p>
+</div>
+
+<!-- Modal -->
+<h2>Modal Example</h2>
+<button id="myBtn">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>This is a simple modal.</p>
+  </div>
+</div>
+
+<!-- Image Gallery with Lightbox -->
+<h2>Image Gallery</h2>
+<div class="gallery">
+    <img src="https://via.placeholder.com/300x200" alt="Image 1" onclick="openLightbox(this)">
+    <img src="https://via.placeholder.com/300x200" alt="Image 2" onclick="openLightbox(this)">
+    <img src="https://via.placeholder.com/300x200" alt="Image 3" onclick="openLightbox(this)">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg" src="">
+</div>
+
+<!-- Responsive Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Tooltip Example -->
+<h2>Tooltip Example</h2>
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<script>
+    // Accordion functionality
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+    // Modal functionality
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Lightbox functionality
+    function openLightbox(imgElement) {
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImg = document.getElementById("lightboxImg");
+        lightbox.style.display = "flex";
+        lightboxImg.src = imgElement.src;
+    }
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
