@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block, Inline, Class, and ID Example</title>
+    <style>
+        /* Block-level Element Styling */
+        .block-element {
+            display: block;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #007BFF;
+        }
+
+        /* Inline-level Element Styling */
+        .inline-element {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 2px solid #28A745;
+        }
+
+        /* Class-level Styling */
+        .highlight {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* ID-level Styling */
+        #unique-element {
+            font-size: 24px;
+            color: white;
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Block-level element -->
+    <div class="block-element">
+        <h2>This is a Block-level Element</h2>
+        <p>The block element takes up the full width and starts on a new line.</p>
+    </div>
+
+    <!-- Inline-level element -->
+    <p>This is an example of an <span class="inline-element">inline element</span>. Inline elements do not start on a new line and only take up as much width as necessary.</p>
+
+    <!-- Using Class for styling -->
+    <p>Some <span class="highlight">highlighted text</span> uses the class to style it in bold and red.</p>
+
+    <!-- Using ID for styling -->
+    <div id="unique-element">
+        This element has a unique ID and is styled differently using the ID selector.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.external-example {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.external-example h2 {
+    color: #333;
+}

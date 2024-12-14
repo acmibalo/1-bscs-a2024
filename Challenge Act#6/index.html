@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Examples</title>
+
+    <!-- External CSS (linking to an external stylesheet) -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Internal CSS (CSS within the <style> tag) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .highlight {
+            color: #ff6347; /* Tomato color */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Inline CSS (CSS directly on an HTML element) -->
+<div style="background-color: #4CAF50; color: white; padding: 15px; text-align: center;">
+    <h2>Welcome to My Webpage</h2>
+</div>
+
+<!-- Content using Internal CSS -->
+<div class="container">
+    <h1>This is a Sample Webpage</h1>
+    <p>This is an example of how different CSS implementations can be used in HTML. 
+        We have used <span class="highlight">internal</span>, <span style="color: #ff6347;">inline</span>, 
+        and <span style="font-weight: bold; color: #2a9d8f;">external</span> CSS styles to style this webpage.</p>
+</div>
+
+<!-- External CSS Example Section -->
+<div class="external-example">
+    <h2>This section is styled using an external CSS file</h2>
+    <p>The styles for this section come from the "styles.css" file.</p>
+</div>
+
+</body>
+</html>
