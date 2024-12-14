@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ART</title>
+
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="carlo castro">
+        <meta name="description" content="website project">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/cursor.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" async></script>
+        <script src="https://unpkg.com/@barba/core" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+        <script src="script/smoothscroll.js" defer></script>
+        <script src="script/intro.js" defer></script>
+        <script src="script/cursor.js" async></script>
+        <script src="script/pageTransition.js" defer></script>
+        <script src="script/button.js" async></script>
+        <script src="script/contacts.js" async></script>
+    </head>
+
+    <body>
+
+        <div class="contact-form">
+            <div id="close">
+                <p onclick="closeform()" id="p-close">close</p>
+            </div>
+            <form>
+                <div class="form-element">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
+                </div>
+                <div class="form-element">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname">
+                </div>
+                <div class="form-element">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Submit" class="form-element">
+            </form>
+        </div>
+
+        <div class="cursor"></div>
+
+        <div class="marquee">
+            <h1>ART</h1>
+            <h1>ART</h1>
+            <h1>ART</h1>
+            <h1>ART</h1>
+            <h1>ART</h1>
+            <h1>ART</h1>
+            <h1>ART</h1>
+            <h1>ART</h1>
+        </div>
+
+        <div id="image-container">
+            <a href="image1.html"><div class="images"><img src="images/anton1.jpg" alt="rebar"></div></a>    
+            <a href="image2.html"><div class="images"><img src="images/anton2.jpg" alt="skate"></div></a>    
+            <a href="image3.html"><div class="images"><img src="images/anton3.jpg" alt="skate shadow"></div></a> 
+            <a href="image4.html"><div class="images"><img src="images/anton4.jpg" alt="horn"></div></a> 
+            <a href="image5.html"><div class="images"><img src="images/anton5.jpg" alt="hope"></div></a> 
+            <a href="image6.html"><div class="images"><img src="images/anton6.jpg" alt="donut minions"></div></a>    
+            <a href="image7.html"><div class="images"><img src="images/anton7.jpg" alt="man in net"></div></a>   
+            <a href="image8.html"><div class="images"><img src="images/anton8.jpg" alt="yellow wall"></div></a>  
+            <a href="image9.html"><div class="images"><img src="images/anton9.jpg" alt="kids jumping"></div></a> 
+        </div>
+
+        <div class="circle-text-container">
+            <img class="circle-text" src="images/circle-text.png">
+        </div>
+        <div class="pic-container">
+            <a href="https://www.facebook.com/antonbaello" target="_blank"><img class="profile-pic" src="images/anton-profile.jpg"></a>
+        </div>
+
+        <nav class="nav">
+            <div id="contacts" class="nav-item"><a onclick="showform()" class="nav-link">CONTACTS</a></div>
+            <div id="about" class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></div>
+            <div id="author" class="nav-item"><a href="author.html" class="nav-link">AUTHOR</a></div>
+        </nav>
+        
+        <div class="nav-button">
+            <button onclick="show()">
+                <svg class="plus" viewbox="0 0 100 100" width="40">
+                    <rect class="line vert" 
+                    width="80" height="10" x="10" y="45" rx="6">
+                    </rect>
+                    <rect class="line horiz" 
+                    width="10" height="80" x="45" y="10" rx="6">
+                    </rect>
+                </svg>
+            </button>
+        </div>
+
+    </body>
+</html>

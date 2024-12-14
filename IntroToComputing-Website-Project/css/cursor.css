@@ -1,0 +1,23 @@
+.cursor{
+    opacity: 1;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 10;
+    top: -100px;
+    left: -100px;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-timing-function: ease;
+}
+.cursor-hover{
+    transform: scale(2.5);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+.cursor-hover-nav{
+    transform: scale(6);
+}

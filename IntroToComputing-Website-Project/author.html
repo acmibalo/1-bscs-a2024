@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="carlo castro">
+        <meta name="description" content="website project">
+
+        <link rel="stylesheet" href="css/author.css">
+        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+        <script src="script/smoothscroll.js" defer></script>
+        <script src="script/author.js" defer ></script>
+        <script src="script/author_image.js" defer ></script>
+        <script src="script/trail.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="block-container">
+            <div id="blocks"></div>
+        </div>
+
+        <header>
+            <div onclick="openMain()" class="p-wrapper p-wrapper-left">
+                <p class=" head-p left">BACK TO HOME</p>
+            </div>
+            <div class="center"></div>
+            <div class="p-wrapper">
+                <div class="marquee-container">
+                    <p class="head-p right">AUTHOR</p>
+                    <p class="head-p right">AUTHOR</p>
+                    <p class="head-p right">AUTHOR</p>
+                    <p class="head-p right">AUTHOR</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+            <h1 id="h1-left" class="h1-main">I'M</h1>
+            <div class="img-container">
+                <img src="images/posa.jpg" alt="cat">
+            </div>
+            <h1 id="h1-right" class="h1-main" contenteditable>CARLO</h1>
+
+            <div class="scroll-p-wrapper"><p id="scroll-p">scroll down</p></div>
+        </main>
+
+        <section class="page page2">
+            <div class="page2-h1-wrapper">
+                <h1 id="page2-h1">INTERESTS</h1>
+            </div>
+            <div class="page2-p-wrapper">
+                <p class="page2-p">I have tried programming in my highschool years, I specifically
+                    got hooked up on C++ and already tried multiple projects, with 
+                    the next being graphics. As I got into low level programming, 
+                    more things piqued me such as assembly, hardwares, building your own computer
+                    using TTL(transistor-transistor logic), logic gates and such.
+                    I also made some websites to practice my creativity and also for fun, though
+                    building this website was pretty hard for me since I faced some layout challenges
+                    and object models but I can say I definitely learned a lot.
+                </p>
+            </div>
+
+            <div id="cpp-container" class="p2-image-container">
+                <img id="cpp" src="images/cpp.png">
+            </div>
+            <div id="html-container" class="p2-image-container">
+                <img id="html" src="images/html.png">
+            </div>
+        </section>
+
+        <section class="page page3">
+            <div id="p3-h1-wrapper">
+                <h1 id="p3-h1">PHOTOGRAPHY</h1>
+            </div>
+
+            <div id="p3-images-container">
+                <div class="p3-image-wrapper">
+                    <img class="p3-images" id="img1" src="images/commercial.jpg" alt="commercial bldg">
+                </div>
+                <div class="p3-image-wrapper">
+                    <img class="p3-images" id="img2" src="images/cultural.jpg" alt="MASTS cultural dance">
+                </div>
+                <div class="p3-image-wrapper">
+                    <img class="p3-images" id="img3"src="images/cultural-dress.jpg" alt="MASTS cultural dance">
+                </div>
+                <div class="p3-image-wrapper">
+                    <img class="p3-images" id="img4" src="images/forest.jpg" alt="agri forest">
+                </div>
+                <div class="p3-image-wrapper">
+                    <img class="p3-images" id="img5" src="images/framed.jpg" alt="field bench">
+                </div>
+                <div class="p3-image-wrapper">
+                    <img class="p3-images" id="img6" src="images/half-body.jpg" alt="river half body shot">
+                </div>
+                <p id="p3-image-text"></p>
+            </div>
+        </section>
+
+    </body>
+</html>
