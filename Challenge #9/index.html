@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Innovistory</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="ideas, innovations, discover">
+    <meta name="description" content="Inventions|Inventors">
+    <meta name="author" content="Shaine Marie Q. Lucero">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header" style="background-color: #8B5B29; padding: 20px; text-align: center;"> 
+        <nav class="nav container">
+            <h1 class="logo" style="font-size: 2.5rem; margin-bottom: 10px;">INNOVISTORY</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="inventors.html">Inventors</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="home_container" style="text-align: center;"> 
+                <div class="home_data">
+                    <h2 class="home__subtitle" style="color: #8B5B29;">Welcome to Inventors' Hub</h2> 
+                    <h1 class="home__title">
+                        See How Great Minds
+                        Built the Future
+                    </h1>
+
+                    <p class="home_description" style="font-size: 1.1em; margin-top: 10px;"> 
+                        Explore the past, uncover groundbreaking ideas, 
+                        revolutionary inventions, visionary minds, 
+                        and so much more—start your journey through innovation today!
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 style="text-align: center;">Inventors</h2> 
+            
+            <div id="inventors_section" style="display: flex; justify-content: center;">
+                <div class="inventions" style="text-align: center;">
+                    <img src="images/tesla.jpeg" alt="Nikola Tesla" style="max-width: 100%; height: auto; border-radius: 10px;"> 
+                    <h3>Nikola Tesla</h3>
+                    <p>Credited for the design of the alternating current electric system 
+                        that’s still used around the world today.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: center;">Inventions</h2> 
+            
+            <div id="inventions_section" style="display: flex; justify-content: center;"> 
+                <div class="inventions" style="text-align: center;"> 
+                    <img src="images/teslacoil.jpg" alt="Tesla Coil" style="max-width: 100%; height: auto; border-radius: 10px;"> 
+                    <h3>Tesla Coil</h3>
+                    <p>An electrical transformer that uses high-frequency alternating current (AC) to increase voltage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>VIDEOS</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T_Hum446dEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <video controls>
+                <source src="video/tesla_coil.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form action="form.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name" autocomplete="name">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail" required autocomplete="email">
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="What's your message" required autocomplete="off"></textarea>
+            
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+
+    </main>
+    
+    <footer style="background-color: #8B5B29; color: #FDF6E3; text-align: center; padding: 20px;">
+        <p>&copy; Innovistory. All rights reserved</p>
+    </footer>
+</body>
+</html>
