@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Background Image */
+.backimg {
+    position: relative;
+    
+}
+
+.backimg::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000bc;
+    background-image: url("../img/website.jpg");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+    
+}
+
+/* Header */
+nav {
+    font-size: 15px;
+    background-color: rgb(30, 30, 30);
+    padding: 10px;                  /* Increased padding for better touch targets */
+    display: flex;                  /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center;     
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);       /* Center items vertically */
+    margin-bottom: 100px;
+}
+
+.logo-container {
+    display: flex;                  /* Allows for better alignment */
+    align-items: center;            /* Center logo vertically */
+}   
+
+#logotitle {
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;          /* Space between image and title */
+}
+
+#logtitle{
+    color: #FFFFFF;
+}
+
+#logcon {
+    border-radius: 30px;
+}
+
+.menu-container {
+    display: flex;              /* Use flexbox for the menu items */
+    align-items: center;        /* Center menu items vertically */
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;             /* Reduced margin for smaller screens */
+    position: relative;
+    padding: 5px;               /* Added padding for touch targets */
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;               /* Position slightly below the text */
+    width: 0;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: width 0.5s ease-in-out;
+}
+
+.link:hover::after {
+    width: 100%; /* Expands to full width on hover */
+}
+
+.btn-link {
+    margin: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+.btn-link:hover {
+    background-color: #570987;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+/*---------------------------------------------------LOGIN-CONTAINER-----------------------------------------------------------------*/
+.login-container {
+    margin: auto;
+    background-color: #FFFFFF;
+    width: 100%; /* Make the container responsive */
+    max-width: 400px; /* Set a maximum width to prevent it from becoming too wide on larger screens */
+    height: auto; /* Allow the height to adjust based on content */
+    border-radius: 15px;
+    position: relative;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #9d9a9a, #3f424e);
+    box-shadow: 0px 0px 5px 3px rgb(45, 45, 45);
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#login {
+    text-align: center; /* Center the heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#userName, #passWord, #btn, #btn1 {
+    width: 100%; /* Set width to 100% so they fill the container */
+    padding: 15px;
+    margin-bottom: 20px; /* Add space between input fields and buttons */
+    border-radius: 10px;
+    border: 1px inset;
+    font-size: 16px;
+}
+
+#btn, #btn1 {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #abb8e4);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover, #btn1:hover {
+    background-color: rgb(69, 0, 148);
+    background: linear-gradient(to right, #d1d1d1, #bd89f8);
+}
+
+#forgot-pass {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#forgot-pass a {
+    border-bottom: 1px outset black;
+    font-size: 14px;
+    color: #000000;
+}
+
+#forgot-pass a:hover{
+    color: #fff;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; /* Make the login form take more space on smaller screens */
+    }
+
+    #login {
+        font-size: 20px; /* Adjust the font size */
+    }
+
+    #userName, #passWord, #btn, #btn1 {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 730px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .menu-container {
+        width: 100%; /* Full width for the menu on small screens */
+        justify-content: space-around; /* Evenly space items */
+        margin-top: 10px; /* Space above menu */
+    }
+
+    .link {
+        margin: 5px 0; /* Stack links with margin */
+    }
+
+    #logotitle {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+
+    .login-container {
+        width: 90%; /* Make the login form take more space on smaller screens */
+    }
+
+    #login {
+        font-size: 20px; /* Adjust the font size */
+    }
+
+    #userName, #passWord, #btn, #btn1 {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+}
+
+@media (max-width: 520px) {
+    .login-container {
+        width: 100%; /* Ensure it takes full width on very small screens */
+        padding: 15px; /* Reduce padding for smaller devices */
+    }
+
+    #login {
+        font-size: 18px; /* Further reduce the font size */
+    }
+
+    #userName, #passWord, #btn, #btn1 {
+        font-size: 12px; /* Reduce font size further for small screens */
+    }
+
+    #forgot-pass {
+        font-size: 12px; /* Adjust font size */
+    }
+}
+

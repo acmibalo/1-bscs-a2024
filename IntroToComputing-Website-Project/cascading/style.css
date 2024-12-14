@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Background Image */
+.backimg {
+    position: relative;
+    
+}
+
+.backimg::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000bc;
+    background-image: url("../img/website.jpg");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+    
+}
+
+/* Header */
+nav {
+    font-size: 15px;
+    background-color: rgb(30, 30, 30);
+    padding: 10px;                  /* Increased padding for better touch targets */
+    display: flex;                  /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: left;     
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);       /* Center items vertically */
+}
+
+.logo-container {
+    display: flex;                  /* Allows for better alignment */
+    align-items: center;            /* Center logo vertically */
+}   
+
+#logotitle {
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;          /* Space between image and title */
+}
+
+#logtitle{
+    color: #FFFFFF;
+}
+
+#logcon {
+    border-radius: 30px;
+}
+
+.menu-container {
+    display: flex;              /* Use flexbox for the menu items */
+    align-items: center;        /* Center menu items vertically */
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;             /* Reduced margin for smaller screens */
+    position: relative;
+    padding: 5px;               /* Added padding for touch targets */
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;               /* Position slightly below the text */
+    width: 0;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: width 0.5s ease-in-out;
+}
+
+.link:hover::after {
+    width: 100%; /* Expands to full width on hover */
+}
+
+.btn-link {
+    margin: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+.btn-link:hover {
+    background-color: #570987;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+/*------------------------------------------------CONTENT CONTAINER (TITLE, SEARCH BAR, DESCRIPTION)--------------------------------------------------*/
+#content-container {
+    position: relative;
+    top: -10px;
+    left: 160px;
+    height: 340px;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+#background {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    opacity: 0.1; /* Makes only the background transparent */
+    z-index: 1;
+}
+
+#zen2, #search-bar {
+    position: relative;
+    z-index: 2; /* Keeps the image and search bar above the background */
+}
+
+#zen2 {
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    top: 40px;
+    left: 20px;
+    display: inline-block;
+    width: 26%;
+}
+
+#search-bar {
+    font-family: Bookman Old system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    bottom: 105px;
+    left: 40px;
+    width: 50%;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px inset;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #000000;
+    
+}
+
+#top-search{
+    font-family: Bookman system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 60%;
+    left: 255px;
+    bottom: 70px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------NEZUKO---------------------------------------------------------------*/
+.nezuko{
+    width: 24%;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1380px) {
+    #content-container{
+        top: -20px;
+        left: 80px;
+    }
+    
+    #search-bar{
+        width: 50%;
+        left: 40px;
+        top: -90px;
+    }
+
+    #top-search{
+        left: 225px;
+    }
+
+    .nezuko{
+        left: 150px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1180px) {
+    #search-bar{
+        width: 55%;
+        left: 40px;
+        top: -70px;
+    }
+
+    #top-search{
+        top: -30px;
+        left: 200px;
+        color: rgb(255, 255, 255);
+    }
+
+    #content-container{
+        top: 20px;
+        left: 80px;
+    }
+
+    .nezuko{ 
+        width: 23%;
+        height: 400px;
+        left: 150px;
+        top: 130px;
+    }
+}
+
+@media (max-width: 1030px) {
+    #content-container{
+        top: -30px;
+    }
+
+    #search-bar{
+        width: 55%;
+        left: 40px;
+        top: -20px;
+    }
+
+    #top-search{
+        width: 90%;
+        top: 45px;
+        left: 30px;
+    }
+
+    .nezuko{
+        width: 28%;
+        left: 130px;
+    }
+}
+
+@media (max-width: 790px) {
+    #search-bar{
+        width: 53%;
+        left: 40px;
+        top: -10px;
+    }
+
+    .nezuko{
+        bottom: 6px;
+        right: 90px;
+    }
+}
+
+@media (max-width: 730px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .menu-container {
+        width: 100%; /* Full width for the menu on small screens */
+        justify-content: space-around; /* Evenly space items */
+        margin-top: 10px; /* Space above menu */
+    }
+
+    .link {
+        margin: 5px 0; /* Stack links with margin */
+    }
+
+    #logotitle {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+
+    /*------------------------------------Image-------------------------------------------*/
+
+    #content-container{
+        position: relative;
+        top: 30px;
+        left: 155px;
+        width: 60%;
+        height: 500px;
+    }
+
+    #zen2{
+        width: 20%;
+        margin: 0;
+    }
+
+    #search-bar{
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+        width: 75%;
+        left: -40px;
+        top: 130px;
+    }
+
+    #top-search{
+        top: 180px;
+        left: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    .nezuko{
+        width: 10%;
+        height: 100px;
+        opacity: 0;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    /*------------------------------------Image-------------------------------------------*/
+
+    #content-container{
+        position: relative;
+        top: 40px;
+        left: 120px;
+        width: 60%;
+        height: 500px;
+    }
+
+    #search-bar{
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+        left: -25px;
+        top: 130px;
+        width: 75%;
+    }
+
+    #top-search{
+        top: 170px;
+        left: 30px;
+    }
+
+}
