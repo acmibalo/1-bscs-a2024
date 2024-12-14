@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    height: 140vh;
+    width: 100vw;
+}
+
+.home {
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/hd/ufc-4k-qz1oyca8xcz1oeef.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(75, 74, 74);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mew {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.mew a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.mew a:hover {
+    color: #e50914;
+    transform: scale(1.1);
+}
+
+
+#hero {
+    width: 100%;
+    height: 60vh;
+    background: url('https://wallpapers.com/images/hd/ufc-4k-qz1oyca8xcz1oeef.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    
+}
+
+.hero-content:hover {
+    transform: translateY(-10px);
+}
+
+.hero-content{
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 60vw;
+    height: 30vh;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    color: #e50914;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    color: #e50914;
+   
+
+}
+
+
+.box, .box1 {
+    background-color: rgba(240, 248, 255, 0.781);
+    border-radius: 5%;
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 80%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.box:hover, .box1:hover {
+    transform: translateY(-10px);
+}
+
+.box h1{
+    color: #e50914;
+}
+
+.box p, .box1 p {
+    color: black;
+    font-size: 1rem;
+}
+
+
+.welcome h1 {
+    color: #e50914;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: rgb(240, 9, 9);
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.footer-social {
+    margin-top: 2px;
+}
+
+.footer-social .social-icon {
+    color: white;
+    font-size: 1rem;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-social .social-icon:hover {
+    color: #e50914;
+}
+
+.about-b{
+height: 100vh;
+width: 100vw;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.about h1{
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+
+.contact-b{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .contact h1{
+        font-size: 2.5rem;
+        color: #fff;
+    
+    }
+
+    .news-b{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .news h1{
+            font-size: 2.5rem;
+            color: #fff;
+        
+        }
+
+
+@media screen and (max-width: 768px) {
+    #hero {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .box, .box1 {
+        width: 90%;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    .footer-social .social-icon {
+        font-size: 0.9rem;
+    }
+}
