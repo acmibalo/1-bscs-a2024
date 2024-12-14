@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Game</title>
+    <style>
+        @font-face {
+            font-family: "RetroGaming";
+            src: url("../fonts/Retro\ Gaming.ttf") format("truetype");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #ff0000;
+            font-family: "RetroGaming", sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            background: #222;
+        }
+
+        .nav {
+            width: 20%;
+            background: #444;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav a {
+            display: block;
+            color: #1500ff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">About The Game</div>
+
+    <div class="main">
+        <div class="nav">
+            <a href="#">Level 1</a>
+            <a href="#">Level 2</a>
+            <a href="#">Level 3</a>
+        </div>
+
+        <div class="content">
+            <h1>Game Details</h1>
+            <p>So I made this game to not fail my class. Game is widely inspired by the scary maze game meme that was popular back in early 2020's. It was known for scaring you when nearing the end of the game. I tried to do the same with this game but changed stuff since I'm a beginner programmer and have no clue what I'm doing most of the time.</p>
+            <p>Instead of having multiple levels, I chose to have only one decently sized level. And instead of a jumpscare only when nearing the end, I chose to have a rickroll when reaching the end and touching any of the walls would proc the jumpscare instead.</p>
+            <p>Still a work in progress.... I think.</p>
+        </div>
+    </div>
+
+    <div class="footer">Footer</div>
+
+</body>
+</html>
