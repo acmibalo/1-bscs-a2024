@@ -1,0 +1,92 @@
+/* Alignemnt CSS */
+.hfe-nav-menu__align-right .hfe-nav-menu {
+  margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+          -moz-box-pack: end;
+          justify-content: flex-end; }
+
+.hfe-nav-menu__align-right .hfe-nav-menu__layout-vertical li a.hfe-menu-item,
+.hfe-nav-menu__align-right .hfe-nav-menu__layout-vertical li a.hfe-sub-menu-item {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          -webkit-justify-content: flex-end;
+          -moz-box-pack: end;
+          justify-content: flex-end; }
+
+.hfe-nav-menu__align-right .hfe-nav-menu__layout-vertical li.hfe-has-submenu .elementor-button-wrapper,
+.rtl .hfe-nav-menu__align-left .hfe-nav-menu__layout-vertical li.hfe-has-submenu .elementor-button-wrapper,
+.hfe-nav-menu__align-right .hfe-nav-menu__layout-vertical li.elementor-button-wrapper,
+.rtl .hfe-nav-menu__align-left .hfe-nav-menu__layout-vertical li.elementor-button-wrapper{
+    text-align: right;
+}
+.hfe-nav-menu__align-left .hfe-nav-menu__layout-vertical li.hfe-has-submenu .elementor-button-wrapper,
+.rtl .hfe-nav-menu__align-right .hfe-nav-menu__layout-vertical li.hfe-has-submenu .elementor-button-wrapper,
+.hfe-nav-menu__align-left .hfe-nav-menu__layout-vertical li.elementor-button-wrapper,
+.rtl .hfe-nav-menu__align-right .hfe-nav-menu__layout-vertical li.elementor-button-wrapper{
+    text-align: left;
+}
+.hfe-nav-menu__align-center .hfe-nav-menu__layout-vertical li.hfe-has-submenu .elementor-button-wrapper,
+.hfe-nav-menu__align-center .hfe-nav-menu__layout-vertical li.elementor-button-wrapper{
+    text-align: center;
+}
+.hfe-nav-menu__align-left .hfe-nav-menu {
+  margin-right: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+          -moz-box-pack: start;
+          justify-content: flex-start; }
+
+.hfe-nav-menu__align-left .hfe-nav-menu__layout-vertical li a.hfe-menu-item,
+.hfe-nav-menu__align-left .hfe-nav-menu__layout-vertical li a.hfe-sub-menu-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+          -moz-box-pack: start;
+          justify-content: flex-start; }
+
+.hfe-nav-menu__align-center .hfe-nav-menu {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          justify-content: center; }
+
+.hfe-nav-menu__align-center .hfe-nav-menu__layout-vertical li a.hfe-menu-item,
+.hfe-nav-menu__align-center .hfe-nav-menu__layout-vertical li a.hfe-sub-menu-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          justify-content: center; }
+
+.hfe-nav-menu__layout-horizontal .hfe-nav-menu {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+}
+.hfe-nav-menu__align-justify .hfe-nav-menu__layout-horizontal .hfe-nav-menu {
+    width: 100%; 
+}
+  .hfe-nav-menu__align-justify .hfe-nav-menu__layout-horizontal .hfe-nav-menu li.menu-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            -webkit-flex-grow: 1;
+            -moz-box-flex: 1;
+            flex-grow: 1; }
+    .hfe-nav-menu__align-justify .hfe-nav-menu__layout-horizontal .hfe-nav-menu li a.hfe-menu-item {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              -moz-box-pack: center;
+              justify-content: center; }
