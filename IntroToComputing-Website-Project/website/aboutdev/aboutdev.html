@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../icons/about.png">
+    <title>About the Dev</title>
+    <link rel="stylesheet" href="../game/css.css">
+    <style>
+        @font-face {
+            font-family: "RetroGaming";
+            src: url("../fonts/Retro%20Gaming.ttf") format("truetype");
+        }
+
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #ff00cc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .slideshow-image {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: "RetroGaming", sans-serif;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: -50px;
+        }
+
+        .next {
+            right: -50px;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1500ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            font-family: "RetroGaming", sans-serif;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #1e1eff;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1001;
+            font-family: "RetroGaming", sans-serif;
+        }
+
+        .lightbox-close:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #ff0000;
+            font-family: "RetroGaming", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 990px;
+            margin-top: 160vh;
+            padding: 20px;
+            border: 3px solid #1500ff;
+            border-radius: 10px;
+            background: #000000;
+            box-shadow: 0px 0px 15px #1500ff;
+        }
+
+        h1 {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 5vw;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 2vw;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: invert(1);
+        }
+
+        .back-button:hover img {
+            filter: invert(1) brightness(1.2);
+        }
+
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: #1500ff;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <a href="../home/home.html" class="back-button">
+        <img src="../icons/backarrow.svg" alt="Back">
+    </a>
+
+    <div class="scroll-indicator"></div>
+
+    <div class="container">
+        <label for="text-color-picker" style="margin: 10px; display: block; color: white;">Change Text Color:</label>
+        <input type="color" id="text-color-picker" value="#ff0000" style="margin-bottom: 20px;">
+
+        <h1>About the Dev <br>(huge wall of text warning)</h1>
+        <p>18, male, USM Kabacan</p>
+        <p>Single and absolutely not ready to pringle. Women scare the shit outta me.</p>
+
+        <div class="slideshow-container">
+            <!--img references for slideshow-->
+            <a href="#lightbox1"><img src="../icons/dev.jpg" alt="Dev image 1" class="slideshow-image active"></a>
+            <a href="#lightbox2"><img src="../icons/dev2.jpg" alt="Dev image 2" class="slideshow-image"></a>
+            <a href="#lightbox3"><img src="../icons/dev3.jpg" alt="Dev image 3" class="slideshow-image"></a>
+
+            <button class="nav-button prev" onclick="changeSlide(-1)">&lt;</button>
+            <button class="nav-button next" onclick="changeSlide(1)">&gt;</button>
+        </div>
+        <!--skill bars-->
+        <div class="skill-bars">
+            <div class="skill-bar">
+                <div class="skill-bar-label">Rizz: -200%</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar-progress negative" style="width: 100%; left: -50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-label">Charisma: -50%</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar-progress negative" style="width: 50%; left: -20%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-label">Intelligence: 50%</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar-progress" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-label">Social skills: -300%</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar-progress negative social-skills"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-bar-label">Pure willpower: 100%</div>
+                <div class="skill-bar-container">
+                    <div class="skill-bar-progress" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <p>I'm a comsci student that did all this so I would still be a comsci student in the following year to come. I enjoy being able to make games, one of my childhood dreams. To be honest after this I might start another project during break and work on another game. Of course it'll be pretty bad but that's fine since it is my first not rushed game. I hope to be able to make more interactive sites in the future and be able to help out other programmers. I didn't really find this project all that difficult since stackoverflow.com exists and there's also chatgpt to answer my questions (and fix my code bc how the hell was I supposed to know how collisions work in javascript.) Regardless of the difficulties I faced I still found all this to be pretty fun and frustrating. Also I like blue.</p>
+        <div id="countdown" style="margin: 20px; color: rgb(255, 65, 220); font-size: 1.5rem;"></div>
+        <!--lightbox for the slideshow-->
+        <div id="lightbox1" class="lightbox">
+            <img src="../icons/dev.jpg" alt="Dev image 1">
+            <button class="lightbox-close" onclick="window.location.hash='';">Close</button>
+        </div>
+        <div id="lightbox2" class="lightbox">
+            <img src="../icons/dev2.jpg" alt="Dev image 2">
+            <button class="lightbox-close" onclick="window.location.hash='';">Close</button>
+        </div>
+        <div id="lightbox3" class="lightbox">
+            <img src="../icons/dev3.jpg" alt="Dev image 3">
+            <button class="lightbox-close" onclick="window.location.hash='';">Close</button>
+        </div>
+        
+    </div>
+    
+
+    <button class="scroll-to-top" onclick="scrollToTop()">Top</button>
+
+  <!--funny scripts-->
+    <script>
+        //slideshow move
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slideshow-image');
+    
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    //scroll to toop
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercentage = (window.scrollY / scrollHeight) * 100;
+        scrollIndicator.style.width = scrollPercentage + '%';
+    });
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const colorPicker = document.getElementById('text-color-picker');
+    colorPicker.addEventListener('input', (event) => {
+    document.body.style.color = event.target.value;
+    });
+
+    //countdown til my bday script
+    function updateCountdown() {
+    const targetDate = new Date('May 6, 2025 00:00:00').getTime(); 
+    const now = new Date().getTime();
+    const timeDifference = targetDate - now;
+
+    if (timeDifference > 0) {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerText =
+            `${days}d ${hours}h ${minutes}m ${seconds}s until May 6 (My birthday)`;
+    } else {
+        document.getElementById('countdown').innerText = "It's MY BIRTHDAY FUCC YEAAA!";
+    }
+    }
+
+    setInterval(updateCountdown, 1000); // update per second
+
+    </script>
+    
+    
+</body>
+</html>
+<!--ok so, How Tos that are in here: 
+1.Slideshow
+2. Slideshow gallery bc I got buttons in
+3. Back button
+4. Back to top button
+5. Lightbox 
+now for the additional 5 for challenge 12 oml im so tired from ts aoifnawuiofnoeiajgvnv
+6. Scroll indicator
+7. Skill bar
+8. The box container should consider as one so there's that
+9. Color picker
+10. BIRTHDAY COUNTDOWN
+HUMANAAA NAJUDDDDAF AEFEUNDFJEWF
+-->

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../icons/about.png">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: "RetroGaming";
+            src: url("../fonts/Retro\ Gaming.ttf") format("truetype");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000000; 
+            color: #ff0000; 
+            font-family: "RetroGaming", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+            margin-top: 240vh;
+            padding: 20px;
+            border: 3px solid #1500ff; 
+            border-radius: 10px;
+            background: #000000; 
+            box-shadow: 0px 0px 15px #1500ff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            margin-top: 0px ;
+            font-size: 5vw;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 2vw;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .back-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: invert(1); 
+        }
+
+        .back-button:hover img {
+            filter: invert(1) brightness(1.2); 
+        }
+        strong {
+        color: #d400ff; 
+        }
+    </style>
+</head>
+<body>
+    <a href="../home/home.html" class="back-button">
+        <img src="../icons/backarrow.svg" alt="Back">
+    </a>
+    
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+            There aren't any "frequently" asked questions since this isn't a widespread project, but here are some assumptions on what those would be:
+        </p>
+        <p>
+            <strong>1. WHY ISN'T THE MAZE RESPONSIVE???</strong><br>
+            I initially coded the maze's walls using absolute units instead of scaling ones (% and such). I did try turning it into responsive but that would mean I had to do a lot of math to scale down each wall to it's relative position that would fit smaller screens. Which is a really tiring and painful so please don't make me do that. I added a sort of fix to that problem, I scaled down the entire game
+        </p>
+        <p>
+            <strong>2. Why are the other about pages and the faq just a wall of text?</strong><br>
+            Rushed project bc I got admitted at the hospital for a good while, but the main appeal of all this is the game itself, the other stuff are just there due to necessity. I do hope you enjoy the game, even though it's not fun.
+        </p>
+        <p>
+            <strong>3. Will there be updates?</strong><br>
+            Nope, absolutely not. This is a one-and-done thing I made so that I wouldn't turn into a one-and-done thing myself.
+        </p>
+        <p>
+            <strong>4. Will you nerf the blue walls?</strong><br>
+            I don't plan on doing so. They seem pretty balanced to me, and if you find them difficult to deal with. Then I suggest you git gud.
+        </p>
+        <p>
+            <strong>5. Is the site (except the maze) responsive?</strong><br>
+            Hell yeah, imnida!
+        </p>
+        <p>
+            <strong>6. What's something I wish I never knew?</strong><br>
+            Orphaned newborn kittens have to be carefully monitored because they seek out the nipple so aggressively that they sometimes suck on the other kittens’ penises to the point of injury.  
+            Also, there are six missing nuclear bombs that we "know of."
+        </p>
+        <p>
+            <strong>7. Why does the site seem so basic and lackluster?</strong><br>
+            It does? then good, because I aimed for a retro sort of look that would resemble something from the early days of the internet. 
+            </nr>
+        </p>
+    </div>
+</body>
+</html>

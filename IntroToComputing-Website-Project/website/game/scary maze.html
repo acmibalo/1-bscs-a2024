@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../icons/game.png">
+    <title>Scary ASF Maze</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        @font-face {
+            font-family: "RetroGaming";
+            src: url("../fonts/Retro\ Gaming.ttf") format("truetype");
+        }
+        /* button styling */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 4px;
+            width: 40px; 
+            height: 40px; 
+            cursor: pointer;
+            z-index: 1000; /* ensures it is above other elements (sigma) */
+        }
+
+        .back-button img {
+            width: 100%; 
+            height: 100%;
+            object-fit: contain; 
+            filter: invert(1); /* invert black to white bc I downloaded a black arrow lmao*/
+        }
+
+        .back-button:hover img {
+            filter: brightness(1.2); /* highlight effect on hover (kewl) */
+        }
+
+        /* Text at the top */
+        .instructions {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: white;
+            font-family: "RetroGaming"; /* Fixed missing semicolon */
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- instructions text -->
+    <div class="instructions">Move using arrow keys</div>
+
+    <!-- button image -->
+    <a href="../home/home.html" class="back-button">
+        <img src="../icons/backarrow.svg" alt="Back">
+    </a>
+    <div class="game-container">
+        <div class="maze">
+            <div class="maze start"></div>
+            <div class="maze end"></div>
+            <div class="playerDot" id="playerDot"></div>
+            
+            <!-- walls -->
+            <div class="wall wall1"></div>
+            <div class="wall wall2"></div>
+            <div class="wall wall3"></div>
+            <div class="wall wall4"></div>
+            <div class="wall wall5"></div>
+            <div class="wall wall6"></div>
+            <div class="wall wall7"></div>
+            <div class="wall wall8"></div>
+            <div class="wall wall9"></div>
+            <div class="wall wall10"></div>
+            <div class="wall wall11"></div>
+            <div class="wall wall12"></div>
+            <div class="wall wall13"></div>
+            <div class="wall wall14"></div>
+            <div class="wall wall15"></div>
+            <div class="wall wall16"></div>
+            <div class="wall wall17"></div>
+            <div class="wall wall18"></div>
+            <div class="wall wall19"></div>
+            <div class="wall wall20"></div>
+            <div class="wall wall21"></div>
+            <div class="wall wall22"></div>
+            <div class="wall wall23"></div>
+            <div class="wall wall24"></div>
+            <div class="wall wall25"></div>
+            <div class="wall wall26"></div>
+            <div class="wall wall27"></div>
+            <div class="wall wall28"></div>
+            <div class="wall wall29"></div>
+            <div class="wall wall30"></div>
+            <div class="wall wall31"></div>
+            <div class="wall wall32"></div>
+            <div class="wall wall33"></div>
+            <div class="wall wall34"></div>
+            <div class="wall wall35"></div>
+            <div class="wall wall36"></div>
+            <div class="wall wall37"></div>
+            <div class="wall wall38"></div>
+            <div class="wall wall39"></div>
+            <div class="wall wall40"></div>
+            <div class="wall wall41"></div>
+            <div class="wall wall42"></div>
+        </div>
+    </div>
+    <script src="src.js"></script>
+</body>
+</html>
