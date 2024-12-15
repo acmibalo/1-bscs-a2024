@@ -1,0 +1,485 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #fdf5e6; /* Neutral background for the body */
+    filter: grayscale(50%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e5959;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .links li {
+    margin: 0 10px;
+}
+
+.navbar .links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navbar .links a:hover {
+    background-color: #655959;
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header styling */
+header {
+    position: relative;
+    background-image: url("images/img_lifting.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 75vh;
+    color: white;
+    display: flex;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.title-sweat {
+    color: white;
+}
+
+.title-session {
+    color: black;
+}
+
+.header-quote {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* About Section */
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-title {
+    text-align: center;
+    padding: 64px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.about-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-quote {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 16px;
+    display: block;
+}
+
+
+/* WorkoutS Section */
+.workout-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.workout-title {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.workout-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.workout-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #312e2e;
+    border: 1px solid #ddd;
+    transition: background 0.3s;
+    color: white;
+}
+
+.tab:hover {
+    background: #e0e0e0;
+}
+
+.tab.active {
+    background: #4caf50;
+    color: white;
+}
+
+.workout-section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.workout-item {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d81616;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.workout-item:hover {
+    color: #4caf50;
+}
+
+.workout-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+/* Image Modal */
+.image-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-modal {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagePopup {
+    width: auto;
+    height: 80%;
+    max-height: 80%;
+    object-fit: contain; /* This ensures the image scales proportionally */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.workout-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 50%;
+    max-height: 100%;
+    margin-top: 16px;
+    display: block;
+}
+
+
+/* Program Section */
+.program-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.program-title {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    color: #025e16;
+    font-weight: 900;
+}
+
+.program-intro {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.program-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.program-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.program-image img:hover {
+    transform: scale(1.1);
+}
+
+.arrow {
+    position: absolute;
+    font-size: 32px;
+    color: #ff5722;
+    animation: bounce 1s infinite;
+}
+
+.arrow.left {
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+}
+
+.arrow.right {
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+}
+
+@keyframes bounce {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+}
+
+.program-note {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #f41010;
+}
+
+
+#program-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+    z-index: 2;
+    text-align: center;
+}
+
+#popup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.popup-close {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-close:hover {
+    background: #45a049;
+}
+
+.program-pic {
+    width: 100%;
+    max-width: none;
+    height: 500px;
+    max-height: 100%;
+    display: block;
+}
+
+
+
+/* Contact Section Styles */
+.contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    color: #025e16;
+}
+.contact-subtitle {
+    font-style: italic;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details {
+    width: 40%;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.icon-container {
+    margin-bottom: 10px;
+}
+
+.icon-link {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    fill: #333; /* Icon color */
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+.icon-link:hover .icon {
+    fill: #0073e6; /* Change color on hover */
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+@media screen {
+    
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="images/carrot.ico">
+        <title>Just Do It</title>
+        <meta charset="UTF-8">
+		<meta name="keywords" content="workouts, exercise">
+		<meta name="description" content="This is my responsive exercise website.">
+		<meta name="author" content="Honey Grace C. Navarra">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="scriptss.js"></script>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="#" class="logo">Sweat Session</a>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+
+<!-- Header Section -->
+        <header id="home">
+            <div class="header-title">
+                <span class="title">
+                    <span class="title-sweat">Sweat</span><br>
+                    <span class="title-session">Session</span>
+                </span>
+            </div>
+            <div class="header-quote">
+                <span>Sweat is just your body applauding your effort – keep moving forward.</span>
+            </div>
+        </header>
+    
+
+<!-- About Container -->
+    <div class="about-content" id="about">
+        <h5 class="about-title">
+            <span class="tag wide">ABOUT SWEAT SESSION</span>
+        </h5>
+            <p class="about-description">
+                &emsp;Sweat Session is your ultimate fitness partner, pushing you beyond your limits and helping you achieve your goals. Stay committed and embrace the journey!
+            </p><br>
+            <p class="about-description">
+                &emsp;Working out is to engaging in physical activities or exercises with the goal of improving or maintaining physical fitness, health, and overall well-being. It can include a variety of activities, such as strength training, cardio, flexibility exercises, and sports. People work out for various reasons, such as building muscle, losing weight, boosting energy, improving mental health, or simply staying active.
+            </p><br>
+            <p class="about-description">
+                Fun Fact:&emsp;Exercise is a Energy Giver. Exercise might make you feel tired immediately after, but it actually boosts overall energy levels by improving oxygen flow and cardiovascular health. ⚡
+            </p><br>
+                <blockquote class="about-quote">
+                    "The only bad workout is the one that didn’t happen."
+                </blockquote>
+        <img src="images/img_people.jpg" alt="5 people doing workout" class="about-image">
+    </div>
+</div>
+
+
+<!-- Workouts Container -->
+    <div class="workout-content" id="workouts">
+        <h5 class="workout-title">THE WORKOUTS</h5>
+
+<!-- Tabs -->
+    <div class="workout-tabs">
+        <div class="workout-tab" onclick="openSection('cardio')">CARDIO</div>
+        <div class="workout-tab" onclick="openSection('yoga')">YOGA</div>
+    </div>
+
+<!-- Cardio Section -->
+    <div id="cardio" class="workout-section">
+        <h5 class="workout-item" onclick="showWorkoutImage('images/jumping_jacks.gif')">Jumping Jacks</h5>
+            <p class="workout-description">A full-body workout that improves cardiovascular endurance, agility, and coordination.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/high_knees.gif')">High Knees</h5>
+            <p class="workout-description">A dynamic cardio move that strengthens the lower body while boosting heart rate for an intense calorie burn.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/knee_to_elbow.gif')">Knee to Elbow</h5>
+            <p class="workout-description">Engages your core and strengthens the obliques while increasing flexibility and stability through controlled movement.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/climbers.gif')">Climbers</h5>
+            <p class="workout-description">A high-intensity exercise that targets multiple muscle groups, improving stamina and enhancing cardiovascular health.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/punches.gif')">Punches</h5>
+            <p class="workout-description">A quick, explosive movement that activates your core, shoulders, and arms while boosting endurance and strength.</p>
+    </div>
+
+<!-- Yoga Section -->
+    <div id="yoga" class="workout-section">
+        <h5 class="workout-item" onclick="showWorkoutImage('images/tree_pose.jpg')">Tree Pose</h5>
+            <p class="workout-description">Enhances balance and concentration while strengthening the legs and improving posture.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/cobra_pose.jpg')">Cobra Pose</h5>
+            <p class="workout-description">Opens the chest and strengthens the back, improving flexibility in the spine and relieving tension in the shoulders.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/triangle_pose.jpg')">Triangle Pose</h5>
+            <p class="workout-description">A powerful stretch for the hamstrings, hips, and back while building strength in the legs and improving flexibility in the torso.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/warrior_ii.jpg')">Warrior II</h5>
+            <p class="workout-description">A dynamic pose that engages the legs, core, and arms while promoting strength, stability, and endurance in the lower body.</p>
+
+        <h5 class="workout-item" onclick="showWorkoutImage('images/extended_side.jpg')">Extended Side Angle Pose</h5>
+            <p class="workout-description">Targets the thighs, hips, and shoulders, stretching the sides of the torso while improving balance and flexibility.</p>
+    </div>
+        <div>
+            <img src="images/img_workout.jpg" alt="different people doing different exercise" class="workout-image">
+        </div>
+
+
+
+<!-- Image Container (Modal Popup) -->
+<div class="image-container" id="imageContainer">
+    <div class="image-modal">
+        <img id="imagePopup" src="" alt="Workout Image">
+        <span class="close-btn" onclick="closeImagePopup()">X</span>
+    </div>
+</div>
+</div>
+
+
+<!-- Program Container -->
+    <div class="program-content" id="program">
+        <h5 class="program-title">Program</h5>
+            <p class="program-intro">Joining our exercise program is the first step to a healthier, happier you. Discover strength, endurance, and confidence through our carefully designed workout routines!</p>
+
+    <div class="program-image" onclick="showPopup()">
+        <img src="images/img_dumbbell.jpg" alt="Dumbbell">
+            <div class="arrow right">⬅</div>
+            <div class="arrow left">➡</div>
+    </div>
+        <p class="program-note"><i>Click me</i></p>
+        <p class="program-note"><i>And Scroll Up</i></p>
+    </div>
+
+<div id="program-overlay">
+    <div class="popup" id="popup">
+        <img src="images/img_program.jpg" alt="Exercise Invitation">
+            <p>You're invited to join our exclusive exercise program! Let's achieve your fitness goals together.</p>
+    <button class="popup-close" onclick="closePopup()">Close</button>
+    </div>
+</div>
+        <div>
+            <img src="images/img_plan.jpg" alt="gym equipments and a workout plan" class="program-pic">
+        </div>
+
+
+<!-- The Contact Section -->
+<div class="contact-content" id="contact">
+    <h2 class="contact-title">CONTACT</h2>
+    <p class="contact-subtitle"><i>ARE YOU READY FOR IT? Drop a note!</i></p>
+    <div class="contact-row">
+        <div class="contact-details">
+            <p><i class="fa-solid fa-map-marker"></i> Kabacan, USM</p>
+            <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-row">
+                    <input class="form-input" type="text" placeholder="Name" required name="Name">
+                    <input class="form-input" type="email" placeholder="Email" required name="Email">
+                </div>
+                <input class="form-input full-width" type="text" placeholder="Message" required name="Message">
+                <button class="form-button" type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="icon-container">
+    <!-- Facebook Icon -->
+    <a href="https://www.facebook.com/honeygrace.navarra" target="_blank" class="icon-link" aria-label="Facebook">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M22 3H2C.9 3 0 3.9 0 5v14c0 1.1.9 2 2 2h10v-7H9v-3h3V8.5c0-3 2.2-4.5 4.8-4.5.9 0 1.8.1 2.6.2v3h-1.8c-1.5 0-1.8.7-1.8 1.7V10h3.6l-.5 3h-3.1v7h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+        </svg>
+    </a>
+    </div>
+
+    <p class="footer-text">&copy; 2024 Just do it.</p>
+</footer>
+
+
+</body>
+</html>
+
+
