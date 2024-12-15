@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #443531;
+}
+
+
+header {
+    background-color: #45271f;
+    color: rgb(194, 174, 174); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+h1{
+    text-align: center;
+    color: rgb(121, 100, 73);
+    font-size: 150%;
+}
+
+p{
+    text-align: center;
+    color: burlywood;
+    font-size: 100%;
+}
