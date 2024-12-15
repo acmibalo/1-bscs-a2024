@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Innovistory</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ideas, innovations, discover">
+  <meta name="description" content="Inventions">
+  <meta name="author" content="Shaine Marie Q. Lucero">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/fonts.css"/>
+  <link rel="stylesheet" href="icons/remixicon.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body class="darkmode">
+    <nav class="main-menu">
+      <div>
+        <div class="user-info">
+          <img
+            src="images/logo.png"
+            alt="user" />
+          <p>Innovistory</p>
+        </div>
+        <ul>
+          <li class="nav-item active">
+            <a href="index.html">
+                <i class="ri-home-4-fill"></i>
+              <span class="tooltip">HOME</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="pages/inventions.html" class="nav__link" aria-label="Go to Inventions">
+                <i class="ri-lightbulb-flash-fill"></i>
+                <span class="tooltip">INVENTIONS</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="pages/inventors.html" class="nav__link" aria-label="Go to Inventors">
+              <i class="ri-team-fill"></i>
+              <span class="tooltip">INVENTORS</span>
+          </a>
+      </li>
+        </ul>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+            <a href="pages/about.html">
+                <i class="ri-user-3-fill"></i>
+              <span class="tooltip">ABOUT</span>
+            </a>
+          </li>
+
+        <li class="nav-item">
+            <a href="pages/contacts.html">
+                <i class="ri-contacts-fill"></i>
+              <span class="tooltip">CONTACTS</span>
+            </a>
+          </li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <div class="left-content">
+        <div class="search-and-check">
+          <form class="search-box">
+            <input type="text" placeholder="Search..." />
+            <i class="ri-search-2-line"></i>
+          </form>
+          <div class="interaction-control-mobile interactions">
+            <div class="toggle" onclick="switchTheme()">
+              <div class="mode-icon moon">
+                <i class="ri-moon-fill"></i>
+              </div>
+              <div class="mode-icon sun hidden">
+                <i class="ri-sun-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header">
+          <picture class="morning-img hidden">
+            <img
+              class="header-mobile"
+              src="images/clip3.png"
+              alt="" />
+            <img
+              class="header-tablet"
+              src="images/clip3.png"
+              alt="" />
+            <img
+              class="header-desktop"
+              src="images/clip3.png"
+              alt="" />
+          </picture>
+
+          <picture class="night-img">
+            <img
+              class="header-mobile"
+              src="images/clip3.png"
+              alt="" />
+            <img
+              class="header-tablet"
+              src="images/clip3.png"
+              alt="" />
+            <img
+              class="header-desktop"
+              src="images/clip3.png"
+              alt="" />
+          </picture>
+        </div>
+
+        <div class="inventors-events">
+          <h1>INVENTORS</h1>
+          <div class="inventors-container">
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/babbage/babbage.jpg"
+                  alt="" />
+                <p>December 26, 1791</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Charles Babbage</h2>
+                <p>"The Father of Computer"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>British</p>
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/bell/bell.jpg"
+                  alt="" />
+                <p>March 3, 1847</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Alexander Graham Bell</h2>
+                <p>"Telephone Inventor"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>Canadian-American</p>
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/eastman/eastman.jpg"
+                  alt="" />
+                <p>July 12, 1854</p>
+              </div>
+              <div class="inventors-content">
+                <h2>George Eastman</h2>
+                <p>"Pioneer of Popular Photography"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>American</p>
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/edison/edison.jpg"
+                  alt="" />
+                <p>February 11, 1847</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Thomas Edison</h2>
+                <p>"One of the Greatest Inventor"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>American</p>
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/farnsworth/farnsworth.jpg"
+                  alt="" />
+                <p>August 19, 1906</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Philo Farnsworth</h2>
+                <p>"American Inventor"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>American</p>
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/hollerith/Hollerith.jpg"
+                  alt="" />
+                <p>February 29, 1860</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Herman Hollerith</h2>
+                <p>"German Statistician, Inventor"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>German-American
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/jobs/jobs.jpg"
+                  alt="" />
+                <p>February 24, 1955</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Steve Jobs</h2>
+                <p>"Pioneer of Personal Computer "</p>
+              </div>
+              <div class="inventors-footer">
+                <p>American
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+              <div class="inventors-header">
+                <img
+                  src="images/tesla/tesla.jpeg"
+                  alt="" />
+                <p>July 10, 1856</p>
+              </div>
+              <div class="inventors-content">
+                <h2>Nikola Tesla</h2>
+                <p>"The Inventor, Engineer, Futurist"</p>
+              </div>
+              <div class="inventors-footer">
+                <p>Serbian-American</p>
+                <div class="btn-group">
+                  <div class="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card inventors-card">
+                <div class="inventors-header">
+                  <img
+                    src="images/whitney/whitney.jpeg"
+                    alt="" />
+                  <p>December 8, 1765</p>
+                </div>
+                <div class="inventors-content">
+                  <h2>Eli Whitney</h2>
+                  <p>"The Inventor of Cotton Gin"</p>
+                </div>
+                <div class="inventors-footer">
+                  <p>American</p>
+                  <div class="btn-group">
+                    <div class="share">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="facts">
+          <h1>FUN FACTS ABOUT INVENTORS</h1>
+          <div class="facts-container">
+            <div class="card facts-card">
+              <h2>Fact 01</h2>
+              <p>
+                The only head coach in University of Kansas basketball 
+                history with a losing career record is James Naismith, 
+                the inventor of basketball.
+              </p>
+            </div>
+
+            <div class="card facts-card">
+              <h2>Fact 02</h2>
+              <p>
+                In 2012, a 10-year-old accidentally created 
+                a new molecule in science class: tetranitratoxycarbon.
+              </p>
+            </div>
+
+            <div class="card facts-card">
+              <h2>Fact 03</h2>
+              <p>
+                Ruth Wakefield, the inventor of the chocolate chip cookie, 
+                sold the idea to Nestle Toll House in return for a 
+                lifetime supply of chocolate.
+              </p>
+            </div>
+
+            <div class="card facts-card">
+                <h2>Fact 04</h2>
+                <p>
+                    Robert Chesebrough, the inventor of petroleum jelly, 
+                    ate a spoonful every day, claiming it had tremendous 
+                    health benefits. He lived to be 96.
+                </p>
+              </div>
+
+              <div class="card facts-card">
+                <h2>Fact 05</h2>
+                <p>
+                    The bubble gum is pink because that was the only dye Walter E.
+                     Diemer (the inventor) had on hand at the time and it was his favorite color.
+                </p>
+              </div>
+
+              <div class="card facts-card">
+                <h2>Fact 06</h2>
+                <p>
+                    The Whoopee cushion was invented by a 14-year-old 
+                    Roman emperor who used it frequently on guests. 
+                    He was assassinated by the time he was 18.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <div class="interaction-control interactions">
+          <div class="toggle" onclick="switchTheme()">
+            <div class="mode-icon moon">
+                <i class="ri-moon-fill"></i>
+            </div>
+            <div class="mode-icon sun hidden">
+                <i class="ri-sun-fill"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="about">
+          <h1>ABOUT US</h1>
+          <div class="about-container">
+            <div class="total-about">
+              <div class="about-number card">
+                <h2>What We Do</h2>
+                <p>Innovistory shares stories about inventors and their amazing 
+                  creations that changed the world.</p>
+              </div>
+              <div class="about-number card">
+                <h2>Our Goal</h2>
+                <p>To inspire and educate future innovators by 
+                  sharing the stories of inventions and their inventors.</p>
+              </div>
+            </div>
+
+            <div class="intro" id="intro-chart">
+              <h2>Discover the Power of Innovation</h2>
+              <p>Welcome to Innovistory, where the past meets the future. 
+                Our platform explores the triumphs, challenges, and legacies of inventors whose work redefined industries and changed the way we live. 
+                Dive into inspiring stories, explore interactive content, and celebrate the spirit of innovation.</p>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <h1>CONTACT US</h1>
+          <div class="contacts-container">
+            <div class="contact-status">
+              <div class="contact-activity">
+                <i class="ri-user-line"></i>
+                <p>Shaine Marie Q. Lucero</p>
+              </div>
+            </div>
+
+            <div class="contact-status">
+              <div class="contact-activity">
+                <i class="ri-phone-line"></i>
+                <p>
+                  +639814193302
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-status">
+              <div class="contact-activity">
+                <i class="ri-mail-send-line"></i>
+                <p>
+                  s.smqlucero@usm.edu.ph
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-status">
+              <div class="contact-activity">
+                <i class="ri-facebook-circle-line"></i>
+                <p>
+                  <a href="https://www.facebook.com/shnmrlcr" target="_blank" class="contacts__social-link">
+                    <span>Shaine Marie Quinones Lucero</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-status">
+              <div class="contact-activity">
+               <i class="ri-instagram-line"></i>
+                <p>
+                  <a href="https://www.instagram.com/strawberriecaso/" target="_blank" class="contacts__social-link">
+                    <span>strawberriecaso</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="contact-status">
+              <div class="contact-activity">
+                <i class="ri-github-line"></i>
+                <p>
+                  <a href="https://github.com/s-shnmrlcr" target="_blank" class="contacts__social-link">
+                  <span> s-shnmrlcr</span>
+                </a>
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
