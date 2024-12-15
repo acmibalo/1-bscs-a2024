@@ -1,62 +1,75 @@
-// Toggle dropdown for navigation menu
+// Toggle dropdown menu
 function toggleDropdown() {
-    var dropdown = document.querySelector(".dropdown-content");
-    if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
-    } else {
-        dropdown.style.display = "block";
-    }
+    const dropdown = document.querySelector('.dropdown-content');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }
 
-// Modal functionality
+// Open modal
 function openModal() {
-    document.getElementById("myModal").style.display = "block";
+    document.getElementById('myModal').style.display = 'block';
 }
 
+// Close modal
 function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+    document.getElementById('myModal').style.display = 'none';
+}
+
+// Open video in modal
+function openVideo(videoSrc) {
+    const videoModal = document.getElementById('videoModal');
+    const videoElement = document.getElementById('videoElement');
+    videoElement.src = videoSrc;
+    videoModal.style.display = 'block';
+}
+
+// Close video modal
+function closeVideoModal() {
+    const videoModal = document.getElementById('videoModal');
+    const videoElement = document.getElementById('videoElement');
+    videoElement.src = '';
+    videoModal.style.display = 'none';
 }
 
 // Accordion functionality
-var acc = document.getElementsByClassName("accordion");
-for (var i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', () => {
+            accordion.classList.toggle('active');
+            const panel = accordion.nextElementSibling;
+            if (panel.style.display === 'block') {
+                panel.style.display = 'none';
+            } else {
+                panel.style.display = 'block';
+            }
+        });
     });
+});
+
+// Slideshow functionality
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-// Virtual tour video functionality
-function openVideo(src) {
-    var modal = document.getElementById("myModal");
-    var modalContent = modal.querySelector(".modal-content");
-    modalContent.innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
-    var video = document.createElement("video");
-    video.src = src;
-    video.controls = true;
-    video.autoplay = true;
-    modalContent.appendChild(video);
-    modal.style.display = "block";
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-document.querySelector(".close").addEventListener("click", closeModal);
-
-// Slideshow functionality for gallery
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var slides = document.getElementsByClassName("mySlides");
-    for (var i = 0; i < slides.length; i++) {
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    dots[slideIndex - 1].className += " active";
 }
