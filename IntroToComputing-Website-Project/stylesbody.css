@@ -1,0 +1,154 @@
+*{
+    animation: show 1s ease-in-out 1 both;
+}
+body.Home, .About, .Contact {
+    margin: 0;
+    padding: 20px 90px; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("images/SA.png");
+    
+}
+@keyframes show{
+    0%{
+      filter: blur(5px);
+    }
+    100%{
+        filter: blur(0);
+    }
+  }
+
+.Countries{
+    background: linear-gradient(135deg, #2c3e50, #7a8dbb);
+}
+
+body.Home::before, .About::before, .Contact::before,
+body.Philippines::before, body.Indonesia::before, body.Vietnam::before, 
+body.Laos::before, body.Brunei::before, body.Thailand::before, 
+body.Myanmar::before, body.Cambodia::before, body.Singapore::before, 
+body.Malaysia::before, body.Timor-Leste::before {
+    
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: -1; 
+}
+body.Philippines {
+    background-image: url("images/ph/Philippines2.jpg");  
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Indonesia {
+    background-image: url("images/indo/Indonesia.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+  
+}
+
+body.Vietnam {
+    background-image: url("images/viet/Vietnam.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Laos {
+    background-image: url("images/lao/Laos.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Brunei {
+    background-image: url("images/bru/Brunei.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Thailand {
+    background-image: url("images/thai/Thailand.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+
+body.Myanmar {
+    background-image: url("images/myan/Myanmar.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Cambodia {
+    background-image: url("images/cam/Cambodia.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Singapore {
+    background-image: url("images/sing/Singapore.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+body.Malaysia {
+    background-image: url("images/malay/Malaysia.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+body.Timor-Leste {
+    background-image: url("images/tim/Timor-Leste2.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+
+}
+aside{
+    text-align: center;
+    margin: 1%;
+    color:#f1f1f1;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.4); 
+    border: 1px solid rgb(200, 200, 200);
+
+}   
+
+footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 10px;
+  }
