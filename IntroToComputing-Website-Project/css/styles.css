@@ -78,7 +78,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 1000px;
+  width: 100px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -120,13 +120,13 @@ body {
   display: block;
   position: relative;
   align-items: center;
-  margin-right: 23px;
+  margin-right: 1px;
 }
 .tooltip {
   display: none; 
   position: absolute;
   bottom: 100%; 
-  left: 100%;
+  left: 65%;
   top: 75%;
   transform: translateX(-50%);
   background-color: transparent;
@@ -165,13 +165,6 @@ body {
 
 .nav-item i {
   font-size: 2rem;
-}
-
-.nav-text {
-  display: block;
-  width: 70px;
-  height: 20px;
-  letter-spacing: 0;
 }
 
 .content {
