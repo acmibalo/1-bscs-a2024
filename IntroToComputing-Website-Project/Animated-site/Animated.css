@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, Georgia;
+  background-color: rgb(190, 157, 5);
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px 20px;
+  background-color: transparent;
+  box-shadow: none;
+  top: 0;
+  z-index: 1000;
+}
+
+.back-arrow {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+  margin-right: auto;
+}
+
+.back-arrow:hover {
+  color: #fdfdfd;
+}
+
+.navlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #6F8C4F;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scrollToTopBtn.show {
+  opacity: 1;
+}
+
+.scrollToTopBtn:hover {
+  background-color: #4C6538;
+}
+
+.a-container {
+  max-width: 800px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.a-text {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.a-imagecon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.a-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bottom-bar {
+  background: #C2A83E;
+  text-align: center;
+  padding: 2px 0;
+  margin-top: auto;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+.bottom-bar p {
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+  padding: 7px;
+}
+
+@media (max-width: 768px) {
+  .wc-image {
+    max-width: 70%;
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Quiz.css">
+  <title>Little Prince: Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <ul class="navlist">
+      <li><a href="../Home.html#sec6" class="back-arrow"><i class="fa fa-arrow-circle-left"></i></a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="start-btn">
+    <button> Start Quiz </button>
+  </div>
+  <div class="info-box">
+    <div class="info-title">
+      <span>Some Rules of this Quiz</span>
+    </div>
+    <div class="info-list">
+      <div class="info">1. You will only have <span>15 seconds</span> per each qustion.</div>
+      <div class="info">2. Once you select your answer, you can't reselect.</div>
+      <div class="info">3. You can't select any option once time goes off.</div>
+      <div class="info">4. You'll get points on the basis of your correct answers.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <div class="quiz-box">
+    <header>
+      <div class="title">Quiz Application</div>
+      <div class="timer">
+        <div class="time">Time Left</div>
+        <div class="timer-sec">15</div>
+      </div>
+    </header>
+
+    <section class="question active">
+      <div class="que-text">
+        <span>Who tells the story of the Little Prince?</span>
+      </div>
+      <div class="option-list">
+        <div class="option">
+          <span>A pilot</span>
+        </div>
+        <div class="option">
+          <span>A fox</span>
+        </div>
+        <div class="option">
+          <span>A rose</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="que-text">
+        <span>What does the Little Prince ask someone to draw?</span>
+      </div>
+      <div class="option-list">
+        <div class="option">
+          <span>A star</span>
+        </div>
+        <div class="option">
+          <span>A sheep</span>
+        </div>
+        <div class="option">
+          <span>A rose</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="que-text">
+        <span>What is the Little Prince&#x27;s home planet?</span>
+      </div>
+      <div class="option-list">
+        <div class="option">
+          <span>Earth</span>
+        </div>
+        <div class="option">
+          <span>A desserted planet</span>
+        </div>
+        <div class="option">
+          <span>A small Asteroid</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="que-text">
+        <span>What does the Little Prince love the most?</span>
+      </div>
+      <div class="option-list">
+        <div class="option">
+          <span>A rose</span>
+        </div>
+        <div class="option">
+          <span>A star</span>
+        </div>
+        <div class="option">
+          <span>A tree</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="que-text">
+        <span>What is the famous quote about the heart from The Little Prince?</span>
+      </div>
+      <div class="option-list">
+        <div class="option">
+          <span>Only the heart can see clearly</span>
+        </div>
+        <div class="option">
+          <span>The heart knows no bounds</span>
+        </div>
+        <div class="option">
+          <span>What is essential is invisible to the eye</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="total-que">
+        <span>
+          <p>1</p>of<p>5</p>Questions
+        </span>
+      </div>
+      <button class="next-btn">Next Question</button>
+    </footer>
+  </div>
+
+  <div class="result-box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete-text">You've completed the Quiz!</div>
+    <div class="score-text">
+      <span>You got <p>1</p></span>
+    </div>
+    <div class="buttons">
+      <button class="restart">Replay Quiz</button>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <p>&copy; 2024 The Little Prince Showcase. This project is for educational purposes only</p>
+  </div>
+
+  <script src="Quiz.js"></script>
+</body>
+
+</html>
