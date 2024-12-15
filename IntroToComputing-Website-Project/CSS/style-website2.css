@@ -1,0 +1,1028 @@
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+.header {
+  position: relative;
+  padding: 100px;
+  text-align: left;
+  color: white;
+  height: 100vh; 
+  margin: 0;
+  overflow: hidden; 
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+h1, .p1 {
+  position: relative;
+  z-index: 1; /* Keeps the text above the video */
+}
+
+
+.header h1 {
+  font-size: 60px;
+  position: absolute; 
+  top: 15px;
+  left: 15px;
+  margin: 0; /* Removes any default margins */
+  text-align: left;
+  color:#f1f1f1;
+  font-family: 'Fonthome', sans-serif; /* Add the custom font */
+  text-shadow: 0 0 5px rgb(118, 9, 9), 0 0 10px rgb(137, 19, 19), 0 0 15px rgb(224, 112, 112); /* Glowing text shadow */
+  font-family: cursive;
+}
+
+.p1 {
+  
+  font-size: 20px;
+  position: absolute; 
+  top: 265px;
+  left: 15px;
+  margin: 0; /* Removes any default margins */
+  text-align: left;
+  color: #fca0a0;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(155, 155, 155), 0 0 15px rgb(120, 88, 88); /* Glowing text shadow */
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgb(195, 176, 138), #b74424);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: flex-start; /* Space between links */
+  align-items: center; /* Align items vertically */
+  row-gap: 0%;
+
+}
+
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    align-items: flex-end; /* Align items to the right */
+    padding: 15px; /* Add extra padding for touch-friendly design */
+    width: 100%; /* Ensure the navbar doesn't exceed screen width */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .navbar a {
+    font-size: 10px; /* Adjust font size to prevent breaking */
+    width: auto; /* Adjust width dynamically */
+    text-align: left; /* Align text to the left */
+    margin: 5px 0; /* Add spacing between links */
+    overflow: hidden; /* Prevent content overflow */
+  }
+}
+
+
+
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #575d7c; /* Grey background color */
+  color: rgb(255, 255, 255); /* White text color */
+}
+
+/* Add padding to the body to prevent overlap with the fixed navbar */
+body {
+  margin: 0;
+  padding-top: 60px; /* Adjust this value based on your navbar's height */
+}
+
+/* Adjusting content layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Row container for layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background:linear-gradient(#a5a846, #ed6948,#50b496,#6a9f49 );
+}
+
+
+
+/* Sidebar (left) */
+.side {
+    background-size: auto; /* Ensures the image covers the entire sidebar */
+    background-position: 100% 40%; /* Centers the image in the sidebar */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 30%; /* Makes the sidebar 30% of the row */
+    min-height: 100vh; /* Makes the sidebar extend the full height of the screen */
+    padding: 20px; /* Adds some padding for content inside the sidebar */
+    color: white; /* Ensures text is readable on the background */
+    float: left; /* Aligns the sidebar to the left */
+    height: fit-content;
+}
+
+
+
+
+
+/* About me section styling */
+.about {
+  text-align: center;
+  font-size: 40px;
+  color: #85d58b;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(10, 35, 15), 0 0 15px rgb(31, 57, 29); /* Glowing text shadow */
+}
+
+/* Image styling */
+.ME {
+  width: 100%;
+  height: fit-content;
+}
+.intro
+{
+  text-indent: 30px;
+  text-align: justify;
+}
+.aboutspanish
+{
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(95, 182, 155);
+  text-shadow: 0 0 5px rgb(12, 59, 50), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(16, 57, 53); /* Glowing text shadow */
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+
+/* Main content (right) */
+.main {
+  flex: 70%;
+  background: linear-gradient(#a5a846, #ed6948,#50b496,#6a9f49);
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.h2
+{
+  color: rgb(200, 63, 63);
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+  font-size: 40px;
+}
+
+.culturepic
+{
+  max-width: 80%; /* Ensures the image scales properly */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.w3-class-4
+{
+  width: 100%;
+}
+
+.culture
+{
+  font-size: 20px;
+text-align: justify;
+  text-indent: 50px;
+}
+
+.main2
+{
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Famous
+{
+  color: #6f9aff;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  font-size: 45px;
+}
+
+.mariachi
+{
+  background-color: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(230, 255, 108), 0 0 10px rgb(192, 161, 61), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+}
+
+.mariachiP1, .mariachiP2
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.content1 {
+  width: 100%;
+}
+
+.paragraph1 {
+  margin-bottom: 20px;
+}
+.title2
+{
+  color: #d0ef5e;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(90, 68, 68); /* Glowing text shadow */
+  font-size: 40px;
+}
+
+.mariachiclip {
+  align-self: flex-end; /* Places the video on the right */
+  width: 90%; /* 70% of the parent container */
+  max-width: 100%; /* Ensures it doesn't exceed the intended width */
+  border-radius: 20px; /* Optional styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.ranchera
+{
+  background-color: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(255, 98, 158), 0 0 10px rgb(192, 161, 61), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+}
+
+.rancheraP1 
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.rancheraP2
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.content2 {
+  width: 100%;
+}
+
+.paragraph2 {
+  margin-bottom: 20px;
+}
+.title3
+{
+color: #9aaaff;
+text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(90, 68, 68); /* Glowing text shadow */
+font-size: 40px;
+}
+
+.rancheraclip {
+  align-self: flex-end; /* Places the video on the right */
+  width: 90%; /* 70% of the parent container */
+  max-width: 100%; /* Ensures it doesn't exceed the intended width */
+  border-radius: 20px; /* Optional styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+
+
+
+.sonjarocho
+{
+  background-color: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(255, 59, 59), 0 0 10px rgb(192, 161, 61), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+}
+
+.jarochoP1
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.jarochoP2
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.content3 {
+  width: 100%;
+}
+
+.paragraph3 {
+  margin-bottom: 20px;
+}
+.title4
+{
+  color: #db8497;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(90, 68, 68); /* Glowing text shadow */
+  font-size: 40px;
+}
+
+.jarochoclip {
+  align-self: flex-end; /* Places the video on the right */
+  width: 90%; /* 70% of the parent container */
+  max-width: 100%; /* Ensures it doesn't exceed the intended width */
+  border-radius: 20px; /* Optional styling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+
+
+
+
+
+.main3
+{
+  background: linear-gradient(#ba806e,#ffbd80,#e5c271,#b2ba7a);
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.h3
+{
+  font-size: 35px;
+  color: #d95151;
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(25, 21, 21), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+  font-size: 50px;
+}
+
+
+.DíadelosMuertos
+{
+  background-color: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0%;
+  text-shadow: 0 0 5px rgb(255, 126, 46), 0 0 10px rgb(192, 161, 61), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+}
+
+.arawngpatay
+{
+  background-color: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0%;
+}
+
+.arawngpatayP1
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+
+
+
+/* General slideshow container styling */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: block; /* Make the slideshow container visible */
+}
+
+/* Each slide styling */
+.mySlides {
+  display: none; /* Hide all slides by default */
+  position: relative;
+  animation-name: fade; /* Fade animation for all slides */
+  animation-duration: 1.5s;
+}
+
+/* Ensure the first slide is visible initially */
+.mySlides:first-child {
+  display: block;
+}
+
+/* Fade animation for slides */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Image styling */
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+}
+
+/* Number text (e.g., "1 / 3") */
+.numbertext {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Navigation buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  user-select: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Dots/circles container */
+.dots-container {
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+
+.Fiestaspatrias
+{
+  background-color: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0%;
+  text-shadow: 0 0 5px rgb(90, 131, 255), 0 0 10px rgb(192, 161, 61), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+}
+
+.kalayaan
+{
+  background-color: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0%;
+}
+
+.kalayaanP1
+{
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+
+
+
+
+
+
+/* General slideshow container styling */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Second slideshow container differentiation */
+.second-slideshow {
+  margin-top: 20px; /* Add some space between slideshows */
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Each slide styling for the second slideshow */
+.mySlides {
+  display: none; /* Hide all slides by default */
+  position: relative;
+  width: 100%; /* Ensure slides take up full container width */
+}
+
+/* Images inside the slides */
+.mySlides img {
+  width: 100%; /* Ensure images scale to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Rounded corners for images */
+}
+
+/* Ensure the first slide is visible initially */
+.mySlides:first-child {
+  display: block;
+}
+
+/* Fade animation for the second slideshow */
+.fade {
+  animation-name: fade2;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade2 {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navigation buttons specifically for the second slideshow */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  user-select: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Dots for the second slideshow */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Dots container */
+.dots-container {
+  text-align: center;
+  padding: 15px 0;
+  background: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
+/* Card for contact section */
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.me
+{
+color: rgb(0, 0, 0);
+text-shadow: 0 0 5px rgb(235, 164, 164), 0 0 10px rgb(210, 210, 210), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+}
+
+
+.stickercontact
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+.title {
+  color: rgb(254, 254, 254);
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.quotes
+{
+  text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(0, 0, 0); /* Glowing text shadow */
+  font-size: 25px;
+  font-weight: bold;
+  color: #47c792;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  width: fit-content;
+  font-style: italic;
+  
+}
+
+
+/* Card for contact section */
+.card2 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+h1
+{
+  color: #000000;
+  text-shadow: 0 0 5px rgb(183, 128, 255), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(222, 139, 95); /* Glowing text shadow */
+}
+.pic2
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.pic3
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+    margin: auto;
+}
+h2
+{
+  color: #000000;
+  text-shadow: 0 0 5px rgb(190, 224, 88), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(187, 169, 99); /* Glowing text shadow */
+  font-size: 35px;
+}
+
+
+.card4 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.pic4
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+h3
+{
+  color: #000;
+  text-shadow: 0 0 5px rgb(236, 57, 45), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(201, 48, 46); /* Glowing text shadow */
+  font-size: 30px;
+}
+
+
+.card5 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.pic5
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+h4{
+  color: #000;
+  text-shadow: 0 0 5px rgb(226, 136, 63), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(222, 139, 95); /* Glowing text shadow */
+  font-size: 30px;
+}
+
+
+.card6 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.pic6
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+h5
+{
+  color: #000;
+  text-shadow: 0 0 5px rgb(183, 128, 255), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(222, 139, 95); /* Glowing text shadow */
+  font-size: 30px;
+}
+
+
+.card7 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.pic7
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+h6
+{
+  color: #000;
+  text-shadow: 0 0 5px rgb(255, 95, 185), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(222, 139, 95); /* Glowing text shadow */
+  font-size: 30px;
+}
+
+.card8 {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.pic8
+{
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    width: 100%; /* Make it full width (or adjust as needed) */
+    text-align: center;       /* Ensure text is centered */
+}
+.h7
+{
+color: #000;
+text-shadow: 0 0 5px rgb(63, 210, 40), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(222, 139, 95); /* Glowing text shadow */
+font-size: 30px;
+}
+
+.bye
+{
+  font-size: 60px;
+  align-items: center;
+  font-weight: bold;
+color: #d0ef5e;
+text-shadow: 0 0 5px rgb(45, 7, 93), 0 0 10px rgb(36, 31, 31), 0 0 15px rgb(58, 10, 99); /* Glowing text shadow */
+}
+
+
+
+/* Footer Style */
+.footer {
+  background: linear-gradient( rgb(250, 255, 118), rgb(172, 149, 149), rgb(161, 77, 161));
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Adjust width to match sidebar */
+  margin-left: 0%; /* Ensure it aligns with the left side of the page */
+  margin-right: auto; /* Center the footer on the page */
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.footer a {
+  color: #000000;
+  text-decoration: none;
+  padding: 0 10px;
+  text-shadow: #9aaaff;
+}
+
+.footer a:hover {
+  color: #ffd700;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  color: #000000;
+}
+.links
+{
+  color: #000;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+  .footer {
+      font-size: 14px;
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .side, .main {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 700px){
+  .guitarculturepic{
+    max-width: 100%;  /* Prevents the image from exceeding its container's width */
+    height: auto;     /* Maintains the aspect ratio of the image */
+  }
+}
+  
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    align-items: flex-end; /* Align items to the left */
+    padding: 15px; /* Add extra padding for touch-friendly design */
+  }
+
+  .navbar a {
+    font-size: 10px; /* Reduce font size for smaller screens */
+    width: 50%; /* Make links full width */
+    text-align: left; /* Align text to the left */
+    margin: 5px 0; /* Add spacing between links */
+
+  }
+}
+
