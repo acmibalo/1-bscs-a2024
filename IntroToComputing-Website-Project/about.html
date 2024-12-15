@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-ico" href="images/favicon.ico">
+
+</head>
+<body >
+    <section class ="header">
+    <nav class="nav">
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="Trailers.html">TRAILERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+    </nav>        
+    <section class="Movies">
+        <h1>ABOUT THIS WEBSITE</h1>
+        <p>Welcome to our website dedicated to the enchanting world of Studio Ghibli!</p>
+    
+        <div class="row">
+            <div class="movies-col">
+                <h3>STUDIO GHIBLI</h3>
+                <P>Studio Ghibli, founded by directors Hayao Miyazaki and Isao Takahata, is a world-renowned Japanese animation studio that has brought to life some of the most beloved animated films of all time.<br> Known for its stunning artistry, intricate storytelling, and strong themes of environmentalism, family, and adventure, Studio Ghibli has captured the hearts of audiences worldwide.<br> From the whimsical landscapes of The Secret World of Arrietty to the fantastical realms of Howl's Moving Castle, Ghibli movies inspire wonder, emotion, and nostalgia in viewers of all ages.</P>
+            </div>
+            <div class="movies-col">
+                <h3>GOAL</h3>
+                <p>This website is dedicated to celebrate and share the magic of Studio Ghibli with fans new and old. Our goal is to create a space where people can explore and watch about Ghibli’s films, discover new favorites, and connect with a community that cherishes these timeless stories. Whether you're here to find movie recommendations, deepen your knowledge, or simply enjoy beautiful art, we hope to inspire your love for Studio Ghibli's creations.</p>
+            </div>
+            <div class="movies-col">
+                <h3>REASON</h3>
+                <p>Studio Ghibli movies are more than just animations; they’re immersive experiences that explore universal themes through beautifully crafted worlds. Each film carries a unique blend of heartwarming characters, mesmerizing visuals, and powerful life lessons that resonate with viewers across cultures. Fans are drawn to Ghibli films for their attention to detail, moral storytelling, and the deep emotional connection that lingers long after the credits roll. These movies celebrate imagination, encourage respect for nature, and embrace the beauty in everyday life.</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-------JavaScript for Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function ShowMenu (){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+        
+    }
+</script>
+
+</body>
+</html>

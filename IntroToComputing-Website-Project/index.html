@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-ico" href="images/favicon.ico">
+
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="movies.html">MOVIES</a></li>
+                    <li><a href="Trailers.html">TRAILERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>        
+<div class="text-box">
+    <h1>STUDIO GHIBLI MOVIES</h1>
+    <p>This website is all about studio ghibli movies</p>
+    <a href="movies.html" class="hero-btn">Visit us to know more</a>
+</div>
+</section>
+    
+<!-------JavaScript for Menu------>
+<script>
+     var navLinks = document.getElementById("navLinks");
+    function ShowMenu (){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+        
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-ico" href="images/favicon.ico">
+
+</head>
+<body>
+    <section class="header">
+    <nav class="nav">
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="Trailers.html">TRAILER</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+    </nav>         
+    <section class="idk">
+        <h1>MOVIES YOU MIGHT LIKE</h1>
+        <p>Here are some Studio Ghibli classics you won't want to miss.</p>
+
+        <div class="row"> 
+            <div class="idk-col">  
+                <img src="images/howl's moving castle.jpeg">
+                <div class="layer">
+                    <h3> <strong>SYNOPSIS</strong><br><br> Sophie (Emily Mortimer) has an uneventful life at her late father's hat shop, but all that changes when she befriends wizard Howl (Christian Bale), who lives in a magical flying castle. However, the evil Witch of Waste (Lauren Bacall) takes issue with their budding relationship and casts a spell on young Sophie, which ages her prematurely. Now Howl must use all his magical talents to battle the jealous hag and return Sophie to her former youth and beauty.<br><br>
+                        <strong>Release date</strong>: November 20, 2004 (Japan)<br><br>
+                       <strong>Director</strong>: Hayao Miyazaki<br><br>
+                       <strong>Adapted from</strong>: Howl's Moving Castle<br><br>
+                       <strong> Distributed by</strong>: Walt Disney Pictures, Toho Co., Ltd., Walt Disney Studios Home Entertainment, StudioCanal UK <br><br>
+                       <strong>Ratings</strong>: 8.6/10 <br><br>
+                       <a href="https://9animetv.to/watch/howls-moving-castle-49?ep=58207" target="_blank"><strong>WATCH THE MOVIE HERE</strong></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="idk-col">  
+                <img src="images/arrietty.jpeg">
+                <div class="layer">
+                    <h3> <strong>SYNOPSIS</strong><br><br> Arrietty, a tiny teenager, lives with her parents in the recesses of a suburban home, unbeknown to the homeowner and housekeeper. Like others of her kind, Arrietty remains hidden from her human hosts, but occasionally ventures forth from beneath the floorboards to borrow sugar cubes and other supplies. A secret friendship forms when 12-year-old Shawn meets Arrietty, but their relationship could spell danger for Arrietty's family.<br><br>
+                       <strong> Release date</strong>: July 17, 2010 (Japan)<br><br>
+                        <strong>Director</strong>: Hiromasa Yonebayashi<br><br>
+                        <strong> Adapted from</strong>: The Borrowers<br><br>
+                        <strong>Distributed by</strong>: Walt Disney Pictures, Toho Co., Ltd., StudioCanal<br><br>
+                        <strong>Ratings</strong>: 7.9/10<br><br>
+                        <a href="https://9animetv.to/watch/the-secret-world-of-arrietty-570?ep=57984" target="_blank"><strong>WATCH THE MOVIE HERE</strong></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="idk-col">  
+                <img src="images/ponyo.jpeg">
+                <div class="layer">
+                    <h3> <strong>SYNOPSIS</strong><br><br> During a forbidden excursion to see the surface world, a goldfish princess encounters a human boy named Sosuke, who gives her the name Ponyo. Ponyo longs to become human, and as her friendship with Sosuke grows, she becomes more humanlike. Ponyo's father brings her back to their ocean kingdom, but so strong is Ponyo's wish to live on the surface that she breaks free, and in the process, spills a collection of magical elixirs that endanger Sosuke's village.
+                        <strong>Release date</strong>: July 19, 2008 (Japan)<br><br>
+                       <strong>Director</strong>: Hayao Miyazaki<br><br>
+                        <strong>Distributed by</strong>: Walt Disney Pictures, Toho Co., Ltd., StudioCanal UK<br><br>
+                        <strong>Ratings</strong>: 7.8/10 <br><br>
+                        <a href="https://9animetv.to/watch/ponyo-671?ep=58068" target="_blank"><strong>WATCH THE MOVIE HERE</strong></a>
+                        </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-------JavaScript for Menu------>
+    <script>
+         var navLinks = document.getElementById("navLinks");
+    function ShowMenu (){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+        
+    }
+    </script>
+</body>
+</html>
