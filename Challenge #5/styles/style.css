@@ -1,0 +1,46 @@
+/*Body*/
+body {
+    background-color: #fae3e3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header*/
+header {
+    background-color: #ff8c94;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph*/
+p {
+    color: #333;
+    margin: 20px;
+    line-height: 1.8;
+}
+
+/* Links */
+a {
+    color: #0066cc; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
