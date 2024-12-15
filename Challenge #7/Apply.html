@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attack on titan</title>
+    <style>
+        
+        .block-style {
+            background-color: lightgray;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        
+        .inline-style {
+            color: blue;
+            font-weight: bold;
+        }
+
+        
+        .shared-style {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        
+        #unique-element {
+            background-color: lightgreen;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Block Element with a Unique ID -->
+    <div id="unique-element" class="block-style shared-style">
+        A Story of Sacrifice and Survival
+    </div>
+
+    <!-- Block Element with a Class -->
+    <p class="block-style shared-style">
+        This is a block paragraph with an <span class="inline-style shared-style">inline styled text</span> inside it.
+    </p>
+
+    <!-- Block Element with Another Class -->
+    <section class="block-style">
+        This is a block section with <span id="inline-unique" class="inline-style">unique inline text</span> demonstrating how IDs and classes work together.
+    </section>
+</body>
+</html>
