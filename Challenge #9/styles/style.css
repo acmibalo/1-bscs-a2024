@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fae3e3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  background: #ff8c94;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  margin: 0.5rem  1.5rem;
+}
+/*Songs Style*/
+.song {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f5dada;
+}
+
+.song h3 {
+  margin: 0 0 5px;
+  justify-content: center;
+}
+
+button.play-button {
+  background: #555;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.play-button:hover {
+  background: #555;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+form input, form textarea, form button {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  background: #ff8c94;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff5a60;
+}
+
