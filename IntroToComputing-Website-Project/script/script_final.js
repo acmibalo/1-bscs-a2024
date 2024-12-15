@@ -1,5 +1,14 @@
+// Wait for the document to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    // Adjust the video playback speed
+    adjustVideoPlayback();
+    initializeTimeUpdate();
+    populateBloomTrackerTable();
+    addSearchIconClickListener();
+    addMousemoveListener();
+});
+
+// Adjust the video playback speed
+function adjustVideoPlayback() {
     var video = document.getElementById("backgroundVideo");
     if (video) {
         video.playbackRate = 0.5; // Slow down the video playback to half speed
@@ -12,12 +21,16 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 1000); // Adjust the delay as needed
         });
     }
+}
 
-    // Set the initial time and update every second
+// Initialize time update every second
+function initializeTimeUpdate() {
     updateTime();
     setInterval(updateTime, 1000); // Update every second
+}
 
-    // Populate the bloom tracker table
+// Populate the bloom tracker table
+function populateBloomTrackerTable() {
     const bloomData = [
         { location: "Tokyo, Japan", bloom: "75%" },
         { location: "Kyoto, Japan", bloom: "60%" },
@@ -32,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
     
     const tableBody = document.getElementById('bloom-table');
-    
     if (tableBody) {
         bloomData.forEach(data => {
             const row = document.createElement('tr');
@@ -48,37 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
             tableBody.appendChild(row);
         });
     }
+}
 
-    // Add event listener for the search icon
+// Add click listener for the search icon
+function addSearchIconClickListener() {
     const searchIcon = document.getElementById('searchIcon');
     if (searchIcon) {
         searchIcon.addEventListener('click', toggleSearchBar);
     }
+}
 
-    // Handle photo upload functionality
-    const uploadPhotoButton = document.getElementById('uploadPhotoButton');
-    if (uploadPhotoButton) {
-        uploadPhotoButton.addEventListener('click', function() {
-            const photoInput = document.createElement('input');
-            photoInput.type = 'file';
-            photoInput.accept = 'image/*';
-            photoInput.onchange = function(event) {
-                const file = event.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        document.getElementById('photoContainer').appendChild(img);
-                    };
-                    reader.readAsDataURL(file);
-                }
-            };
-            photoInput.click();
-        });
-    }
-});
-
+// Download a photo
 function downloadPhoto(url) {
     const a = document.createElement('a');
     a.href = url;
@@ -88,6 +80,7 @@ function downloadPhoto(url) {
     document.body.removeChild(a);
 }
 
+// Toggle the dropdown menu
 function toggleDropdown() {
     var dropdown = document.querySelector('.dropdown-content');
     if (dropdown) {
@@ -95,6 +88,7 @@ function toggleDropdown() {
     }
 }
 
+// Toggle the search bar
 function toggleSearchBar() {
     var searchBar = document.querySelector('.search-bar');
     if (searchBar) {
@@ -102,6 +96,7 @@ function toggleSearchBar() {
     }
 }
 
+// Update the time display
 function updateTime() {
     var now = new Date();
     var formattedTime = now.toLocaleString();
@@ -113,10 +108,14 @@ function updateTime() {
     }
 }
 
-document.addEventListener('mousemove', function(e) {
-    createParticle(e.clientX, e.clientY);
-});
+// Add mouse move listener to create particles
+function addMousemoveListener() {
+    document.addEventListener('mousemove', function(e) {
+        createParticle(e.clientX, e.clientY);
+    });
+}
 
+// Create a particle effect at the given coordinates
 function createParticle(x, y) {
     const particle = document.createElement('div');
     particle.classList.add('particle');
@@ -134,27 +133,29 @@ function createParticle(x, y) {
     });
 }
 
+// Show a popup alert
+function showPopup() {
+    alert("Upload button function is coming soon!");
+}
+
+// Open a video in a popup
 function openVideo(src) {
     document.getElementById('video-popup').style.display = 'flex';
     document.getElementById('popup-video').src = src;
 }
 
+// Close the video popup
 function closeVideo() {
     document.getElementById('video-popup').style.display = 'none';
     document.getElementById('popup-video').src = '';
 }
 
+// Scroll to the bloom tracker table
 function scrollToBloomTracker() {
     document.getElementById('bloom-tracker-table').scrollIntoView({ behavior: 'smooth' });
 }
 
+// Scroll to a specific section
 function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
-
-document.querySelector('a[href^="#"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  document.querySelector(this.getAttribute('href')).scrollIntoView({
-    behavior: 'smooth'
-  });
-});
