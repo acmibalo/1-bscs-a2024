@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Valorant</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts and Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom style for collapsible sections */
+    .collapsible {
+      background-color: #f1f1f1;
+      color: #444;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    /* Tooltip */
+    .tooltip-inner {
+      background-color: #6c757d;
+      color: #fff;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Valorant</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <button type="button" class="btn btn-getstarted" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-toggle="tooltip" title="Click to Login">Login</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <!-- Your existing carousel code here -->
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>About Us</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <button class="collapsible">Click to Read More</button>
+          <div class="content">
+            <p>Welcome to Valorant, where precision, strategy, and teamwork collide in the ultimate tactical shooter! Developed by Riot Games...</p>
+          </div>
+
+          <!-- Code Snippet with Copy Button -->
+          <div class="col-12 mt-3">
+            <h4>Example Code</h4>
+            <pre>
+              <code id="codeSnippet">
+                &lt;div class="hero"&gt;
+                  &lt;h1&gt;Valorant&lt;/h1&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+            <button class="btn btn-primary" onclick="copyCode()">Copy Code</button>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="col-12 mt-4">
+            <h4>Frequently Asked Questions</h4>
+            <button class="collapsible">What is Valorant?</button>
+            <div class="content">
+              <p>Valorant is a fast-paced tactical shooter game developed by Riot Games, blending strategy with precise shooting mechanics.</p>
+            </div>
+            <button class="collapsible">How do I play?</button>
+            <div class="content">
+              <p>Players are divided into two teams of five, each playing as an agent with unique abilities, aiming to complete various objectives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal and Footer (your existing code remains) -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Collapsible functionality
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(collapsible => {
+      collapsible.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+
+    // Code Copy function
+    function copyCode() {
+      const code = document.getElementById("codeSnippet").innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        alert("Code copied to clipboard!");
+      });
+    }
+  </script>
+
+</body>
+
+</html>
