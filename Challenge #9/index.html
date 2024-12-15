@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Video Example</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; 
+            padding-bottom: 56.25%; 
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe 
+            src="nissan-skyline-takes-the-track_480p.mp4" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+<footer>
+    <footer class="text-center bg-body-tertiary" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>This website is for my final project</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>Email: s.vjcbaguio@usm.edu.ph</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/wako.lolz.1" class="me-2">Facebook</a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; <a href="https://www.nissan.ph">www.nissan.ph</a>. All rights reserved.</p>
+        </div>
+    </footer>
+</footer>
+</html>
