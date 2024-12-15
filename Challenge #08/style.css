@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header, section, footer {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.book-title {
+    display: inline;
+    margin-right: 10px;
+}
+
+.bookshelf {
+    background-color: #e0e0e0;
+    padding: 15px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#main-header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#about-us {
+    background-color: #ddd;
+    padding: 15px;
+}
+
+#footer-section {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    header, section, footer {
+        padding: 30px;
+        margin: 15px;
+    }
+
+    .bookshelf {
+        padding: 25px;
+    }
+
+    .book-title {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    header, section, footer {
+        padding: 40px;
+    }
+
+    .bookshelf {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .book-title {
+        display: block;
+        margin-right: 30px;
+    }
+}
