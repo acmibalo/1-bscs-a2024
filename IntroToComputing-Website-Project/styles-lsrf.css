@@ -1,0 +1,396 @@
+body {
+    font-family: "PT Serif", serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 2px solid #7ba6de;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+    font-family: "PT Serif", serif;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+#home {
+    background-image: url('website_img/lecrazy1.jpg');
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home p {
+    margin: 0 auto; 
+    max-width: 600px; 
+    line-height: 1.6;
+    font-family: "PT Serif", serif;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#discography, #contacts {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+#about {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    color: #333;
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #7ba6de;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+#about p {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "PT Serif", serif; 
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.about-content img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+    max-width: 600px;
+    text-align: left;
+}
+
+.timeline h3 {
+    color: #7ba6de;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+}
+
+.fun-facts {
+    margin-top: 20px;
+}
+
+.fun-facts h3 {
+    color: #7ba6de;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fun-facts ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "PT Serif", serif; 
+}
+
+button {
+    background-color: #7ba6de;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e05555;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px; 
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #7ba6de; 
+}
+
+
+#members {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    font-size: 16px; 
+    margin: 10px 0;
+    font-family: "PT Serif", serif;
+    color: #333;
+}
+
+.member-card p {
+    font-size: 14px;
+    line-height: 1.5; 
+    color: #666;
+}
+
+.member-card strong {
+    color: #444;
+}
+
+
+
+#discography {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.album img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    margin-right: 30px;
+    box-shadow: 0 6px 8px #bbbbbb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.album:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 8px 12px #888888;
+}
+
+.album-description {
+    flex: 1;
+    max-width: 500px;
+    font-family: "PT Serif", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #222222;
+}
+
+.album-description h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.album-description p {
+    text-align: center;
+}
+
+.album-description a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.album-description a:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+#contacts {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #7ba6de;
+}
+
+#contacts h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#contacts p {
+    font-size: 18px;
+    color: #555;
+    font-family: "PT Serif", serif;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.intro {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.intro h3 {
+    font-size: 22px;
+    color: #7ba6de;
+    margin-bottom: 10px;
+}
+
+#contacts a {
+    display: inline-block;
+    font-size: 18px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#contacts a:hover {
+    background-color: #7ba6de;
+    color: white;
+    border-color: #7ba6de;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 2px solid #575757;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "PT Serif", serif; 
+}
