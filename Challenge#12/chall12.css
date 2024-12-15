@@ -83,6 +83,7 @@ body {
     border-radius: 10px;
     background-size: contain;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin: 10px;
 }
