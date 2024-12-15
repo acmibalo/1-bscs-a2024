@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Van Baguio">   
+    <title>March 7th</title>  
+    <link rel="icon" type="image.jpg" href="march.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .first-div{
+            height: 50px;
+        }
+        .mt-12{
+            margin-top: 50rem; 
+        }
+        .custom-h{
+            height: 100px;
+            background-color: blanchedalmond;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+
+        <a class="navbar-brand" onclick="location.reload();"><img src="march.png" alt="" width="60" height="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#evolution">Evolution</a></li>
+                <li><a class="dropdown-item" href="#first-gtr">First GT-R</a></li>
+                <li><a class="dropdown-item" href="#specs">Specs</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#footer">Contact Us!</a></li>
+                </ul>
+            </li>
+            </ul>
+
+            <h4 class="display-6"><em>Gran Turismo–Racing</em> </h4>
+
+        </div>
+        </div>
+    </nav>
+</header>   
+
+<main>
+    <div class="text-center first-div" style="background-color: rgb(255, 188, 246);" >
+        this is a block level element(div), which also has the class of "text-center first-div"
+    </div>
+
+        <p class="text-center first-div mt-3" style="background-color: rgb(255, 188, 246);">this is also a block level element(p),which has the class of "text-center first-div mt-3</p>
+
+
+    <div class="text-center mt-6" id="home" style="background-color: rgb(255, 188, 246);">
+        <h1>This block level element has an id of home,which also has the class of "text-center mt-6"</h1>
+    </div>
+
+    <p class="mt-6 text-center custom-h">This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+</main>
+</html>
