@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #45271f;
+}
+
+/* Header styles */
+header {
+    background-color: #80858a;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #4e4234;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: rgb(192, 178, 178);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #caaf9c;
+}
+
+/* Main content area styles */
+.main-content {
+    padding: 20px;
+    background-color: rgb(192, 178, 178);
+    margin: 20px;
+}
