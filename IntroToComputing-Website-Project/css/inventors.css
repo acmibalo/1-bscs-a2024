@@ -100,7 +100,9 @@ body::-webkit-scrollbar-thumb:hover {
     background-color:#A76D4D; 
     color: #F0E6D2;
     padding: 1rem 2rem;
-    position: relative; 
+    position: sticky;
+    top:0;
+    z-index: 1000;
 }
 
 .section {

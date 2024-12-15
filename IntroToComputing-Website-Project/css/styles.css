@@ -87,6 +87,7 @@ body {
   padding: 12px 0 10px;
   overflow: hidden;
   font-family: inherit;
+  position: fixed;
 }
 
 .user-info {
