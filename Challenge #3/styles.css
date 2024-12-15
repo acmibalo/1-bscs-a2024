@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for contrast */
+    color: #e0e0e0; /* Light text for readability */
+}
+
+header {
+    background-color: #1e1e1e; /* Slightly lighter dark shade */
+    color: #ff3b3b; /* Vibrant red for gaming vibe */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #1a1a1a; /* Darker background for navigation bar */
+    border-top: 2px solid #ff3b3b; /* Vibrant red border */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff3b3b; /* Red links for gaming aesthetic */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+/* Hover Effect for Navigation */
+nav ul li a:hover {
+    background-color: #ff3b3b; /* Red background on hover */
+    color: #121212; /* Dark text for contrast */
+}
+
+/* Layout with Flexbox */
+main .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 3; /* takes 3 parts of the available space */
+    background-color: #1e1e1e; /* Dark gray content box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.sidebar {
+    flex: 1; /* takes 1 part of the available space */
+    background-color: #1e1e1e; /* Dark gray sidebar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Sidebar Styling */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    color: #ff3b3b; /* Red text for links in sidebar */
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ff3b3b; /* Red footer text */
+    padding: 20px;
+    border-top: 2px solid #ff3b3b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
