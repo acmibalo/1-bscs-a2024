@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding-top:  0;
+}   
+body {
+    background-image: url('bimage.webp'); 
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .logo {
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.title{
+    color:#fff;
+    font-size: 42px;
+}
+
+nav{
+    display: flex;
+    padding: 2% 1%;
+    align-items: center;
+}
+.main{
+    position: relative;
+    width: 100%;
+    background-position: center center;
+    height: 90vh;
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  
+}
+.header nav ul li{
+    list-style: none;
+}
+h1{
+    font-size: 42px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.al-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow albums to wrap to the next line on smaller screens */
+    gap: 20px;
+    justify-content: center; /* Center albums within the container */
+  }
+  
+  /* Styling for each album container */
+  .album {
+    width: 200px; /* Fixed width for each album */
+    height: auto; /* Adjust height automatically */
+    border: 2px solid #660087; /* Optional: Add a border around each album */
+    border-radius: 10px; /* Optional: Rounded corners */
+    overflow: hidden; /* Hide overflow from elements that exceed the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow around the album */
+    background-color: #000; /* Optional: Background color */
+    display: flex;
+    flex-direction: column; /* Stack the album content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 10px; /* Add some padding inside the album */
+  }
+  
+  .album img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio of the image */
+    border-radius: 5px;
+  }
+  
+  .alcontent {
+    text-align: center;
+    padding: 10px 0; /* Add padding for spacing */
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center the buttons within the container */
+    margin-top: 10px; /* Space above the controls */
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #000; 
+    color: #660087; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s; /*hover effect */
+  }
+  
+  button:hover {
+    background-color: #660087; /*purple when hovering */
+  }
+  .tracklist {
+    display: none; /* Hidden by default */
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .tracklist.visible {
+    display: block; /* Show tracks when it's visible */
+  }
