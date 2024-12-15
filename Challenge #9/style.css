@@ -1,0 +1,235 @@
+/* Style Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.page {
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+  justify-items: space-between;
+  background: radial-gradient(#f7e6d7, rgb(136, 71, 38));
+  height: 100vh;
+  background-color: #f7e6d7;
+  color: #8b5e3c;
+}
+.page-header {
+  margin: 3rem;
+  padding: 2rem 2rem;
+  width: 85%;
+  text-align: center;
+  background-color: #f7e6d7;
+  border: solid 2px #8b5e3c;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.page-header h2 {
+  font-size: 3rem;
+}
+.page-content {
+  padding: 1rem 1rem;
+  width: 85%;
+  height: 60%;
+  background-color: #f7e6d7;
+  border: solid 2px #8b5e3c;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: row wrap;
+}
+footer {
+  color: #f7e6d7;
+  background-color: #8b5e3c;
+  border-top: solid 4px #6f4b30;
+  padding: 1rem;
+  height: 8vh;
+  text-align: center;
+}
+
+/* Navigation Styles */
+
+nav {
+  border-bottom: solid 4px #6f4b30;
+}
+ul {
+  background-color: #8b5e3c;
+  right: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  padding: 10px 10px;
+  width: 16.66%;
+  color: #f7e6d7;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.15s, background-color 0.15s, opacity 0.15s;
+}
+ul li:hover {
+  color: #8b5e3c;
+  background-color: #f7e6d7;
+}
+ul li:active {
+  opacity: 0.5;
+}
+nav a {
+  padding: 20px 20px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 50%;
+}
+
+/* About Section */
+.gameplay-video {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #8b5e3c;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto 1rem;
+}
+.video-caption {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.video {
+  margin: 0.5rem;
+  flex: 8;
+  padding: 1rem;
+  position: relative;
+}
+.video iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 15px;
+}
+
+.game-cover {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #8b5e3c;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto 1rem;
+}
+.game-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Contact Section*/
+
+.contact-form,
+.contact-note {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  flex: 1;
+  background-color: #f7e6d7;
+  border: solid 2px #8b5e3c;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3,
+.contact-note h3,
+.contact-form legend,
+.contact-note legend {
+  font-size: 1rem;
+  color: #8b5e3c;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form form,
+.contact-note form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label,
+.contact-note label {
+  font-size: 0.5rem;
+  color: #8b5e3c;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contact-note textarea {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  border: solid 1px #8b5e3c;
+  border-radius: 10px;
+  background-color: #fdf5e6;
+  color: #8b5e3c;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.contact-form button,
+.contact-note button {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #8b5e3c;
+  color: #f7e6d7;
+  border: solid 2px #6f4b30;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.contact-form button:hover,
+.contact-note button:hover {
+  background-color: #f7e6d7;
+  color: #8b5e3c;
+}
+
+.contact-form button:active,
+.contact-note button:active {
+  opacity: 0.8;
+}
+
+/* Local Video Section*/
+.local-video-sec {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
