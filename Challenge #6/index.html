@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Prince</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Poppins, Georgia;
+      background-color: #BED68A;
+      color: #fff;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      z-index: 1001;
+      background-color: #6F8C4F;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navlist {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      position: relative;
+      background-color: #6F8C4F;
+      padding: 12px 20px;
+    }
+
+    .nav-menu {
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-menu li {
+      width: auto;
+      text-align: center;
+      list-style-type: none;
+      padding: 3px;
+      position: relative;
+    }
+
+    .nav-menu li a {
+      padding: 7px;
+    }
+
+    .nav-menu li::before {
+      content: '';
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 100%;
+      width: 0;
+      height: 2px;
+      background: #F5F5F5;
+      transition-duration: 0.5s;
+    }
+
+    .nav-menu li:hover::before {
+      width: 70px;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: #000;
+    }
+
+    .close-menu,
+    .open-menu {
+      position: absolute;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.5rem;
+      display: none;
+    }
+
+    .open-menu {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    .close-menu {
+      top: 20px;
+      right: 20px;
+    }
+
+    #check {
+      display: none;
+    }
+
+    .section1 {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      min-height: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title,
+    .qoute {
+      color: #B8860B;
+      text-shadow: 2px 2px 5px #d4bb7b;
+    }
+
+    .title {
+      font-size: 700;
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .qoute {
+      font-weight: 500;
+      font-size: 25px;
+      margin-top: 1rem;
+    }
+
+    .hp-pictures {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hp-pictures img {
+      position: absolute;
+    }
+
+    .moon,
+    .planet,
+    .star1,
+    .star2,
+    .star3,
+    .star4 {
+      max-width: 30px;
+      min-width: 350px;
+      height: auto;
+    }
+
+    .moon {
+      margin-top: 5rem;
+      left: 3rem;
+    }
+
+    .planet {
+      bottom: 1rem;
+      left: -5rem;
+    }
+
+    .star1 {
+      margin-top: 26rem;
+      left: -22rem;
+    }
+
+    .star2 {
+      margin-top: -10rem;
+      left: -25rem;
+    }
+
+    .star3 {
+      margin-top: -25rem;
+      left: -18rem;
+    }
+
+    .star4 {
+      margin-top: 25rem;
+      left: -2rem;
+    }
+
+    .section2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      padding: 1rem;
+      background: linear-gradient(to bottom, rgba(211, 173, 6, 0) 0%, rgba(211, 173, 6, 1) 100%);
+    }
+
+    .section2-text {
+      flex: 1 1 600px;
+      margin: 4rem;
+    }
+
+    .intro {
+      color: #2B2B2B;
+      font-weight: 700;
+      font-size: 30px;
+      text-shadow: 2px 2px 5px #bea535;
+    }
+
+    .intro-sub {
+      color: #2B2B2B;
+      font-size: 25px;
+      text-shadow: 2px 2px 5px #a38a19;
+      margin-top: 1rem;
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 60px 35px;
+      padding: 20px 10px;
+      overflow: hidden;
+    }
+
+    .list .item .link {
+      user-select: none;
+      padding: 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      border: 2px solid transparent;
+      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+      transition: 0.2 ease;
+    }
+
+    .item {
+      list-style: none;
+    }
+
+    .list .item .link:hover {
+      border-color: #205c20;
+    }
+
+    .list .link .image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .list .link .badge {
+      color: #5372f0;
+      padding: 8px 16px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin: 16px 0 18px;
+      background: #dde4ff;
+      width: fit-content;
+      border-radius: 50px;
+    }
+
+    .list .link .title {
+      font-size: 1.19rem;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .list .link .badge.novel {
+      color: #205c20;
+      background-color: #d6f8d6;
+    }
+
+    .list .link .badge.animated {
+      color: #856404;
+      background-color: #fff3cd;
+    }
+
+    .wrapper .swiper-pagination-bullet {
+      height: 13px;
+      width: 13px;
+      opacity: 0.30;
+      background: #205c20;
+    }
+
+    .wrapper .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    .wrapper .swiper-slide-button {
+      color: #205c20;
+      margin-top: -35px;
+    }
+
+    .section3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+      background: linear-gradient(to bottom, rgba(211, 173, 6, 1) 0%, rgb(190, 157, 5) 100%);
+    }
+
+    .section3-picture {
+      flex: 1 0 300px;
+      order: 2;
+    }
+
+    .section3-picture img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .section3-text {
+      flex: 1 1 600px;
+      order: 1;
+      margin: 2rem;
+    }
+
+    .intro2 {
+      color: #2B2B2B;
+      font-weight: 700;
+      font-size: 30px;
+      text-shadow: 2px 2px 5px #bea535;
+    }
+
+    .time {
+      color: #2B2B2B;
+      font-weight: 700;
+      font-size: 15px;
+      text-shadow: 2px 2px 5px #bea535;
+    }
+
+    .intro-sub2 {
+      margin-top: 1rem;
+      color: #2B2B2B;
+      font-weight: 500;
+      font-size: 25px;
+      text-shadow: 2px 2px 5px #bea535;
+      width: 90%;
+    }
+
+    .section4 {
+      display: flex;
+      flex-wrap: wrap;
+      place-items: center;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100vw;
+      background: linear-gradient(to bottom, rgb(190, 157, 5) 0%, rgba(120, 200, 170) 100%);
+    }
+
+    .section4-text {
+      align-items: center;
+      margin: 3rem;
+      flex: 1 1 600px;
+    }
+
+    .intro3 {
+      color: #2B2B2B;
+      font-weight: 700;
+      font-size: 30px;
+      text-shadow: 2px 2px 5px #bea535;
+    }
+
+    .intro-sub3 {
+      color: #2B2B2B;
+      font-weight: 500;
+      font-size: 25px;
+      text-shadow: 2px 2px 5px #bea535;
+    }
+
+    .slider {
+      height: 250px;
+      margin: auto;
+      position: relative;
+      width: 90%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 18);
+      animation: scroll 40s linear infinite;
+    }
+
+    .slide-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translate(0);
+      }
+
+      100% {
+        transform: translateX(calc(-250px * 9));
+      }
+    }
+
+    .slide {
+      height: 200px;
+      width: 600px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      perspective: 100px;
+    }
+
+    .slider img {
+      width: 100%;
+      transition: transform 1s;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    img:hover {
+      transform: translateZ(20px);
+    }
+
+    .slider::before .slider::after {
+      height: 100%;
+      position: absolute;
+      width: 15%;
+      z-index: 2;
+    }
+
+    .slider::before {
+      left: 0;
+      top: 0;
+    }
+
+    .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .section5 {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .section5-text {
+      text-align: center;
+      flex: 1;
+      padding: 4rem;
+    }
+
+    .intro4 {
+      color: #2B2B2B;
+      font-weight: 700;
+      font-size: 30px;
+      text-shadow: 2px 2px 5px rgba(50, 150, 130, 0.6);
+    }
+
+    .watercolor,
+    .animation {
+      max-height: 500px;
+      border-radius: 12px;
+      object-fit: contain;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+    @media(max-width: 610px) {
+      header {
+        padding-bottom: 20px;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #6F8C4F;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-menu li {
+        margin-top: 40px;
+      }
+
+      .nav-menu li a {
+        padding: 10px;
+      }
+
+      .open-menu,
+      .close-menu {
+        margin-top: 10px;
+      }
+
+      #check:checked~.nav-menu {
+        right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul class="navlist">
+      <input type="checkbox" id="check">
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      <span class="nav-menu">
+        <li><a href="#sec1" class="active">Home</a></li>
+        <li><a href="#sec2">Showcase</a></li>
+        <li><a href="#sec5">Gallery</a></li>
+        <li><a href="#sec6">Quiz</a></li>
+        <li><a href="#foot">Contact</a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+    </ul>
+  </header>
+
+  <section id="sec1" class="section1">
+    <p class="title">
+      The Little Prince
+    </p>
+    <p class="qoute">
+      A journey to the stars straight to the heart
+    </p>
+    <div class="hp-pictures">
+      <img class="moon" src="Home-Pictures/lp-moon.png">
+      <img class="planet" src="Home-Pictures/planet.png">
+      <img class="star1" src="Home-Pictures/star1.png">
+      <img class="star2" src="Home-Pictures/star2.png">
+      <img class="star3" src="Home-Pictures/star3.png">
+      <img class="star4" src="Home-Pictures/star4.png">
+  </section>
+
+  <section id="sec2" class="section2">
+    <div class="section2-text">
+      <p class="intro">
+        A Timeless Tale Reimagined
+      </p>
+      <p class="intro-sub">
+        The Little Prince's whimsical journey, narrated by the aviator in the novel and
+        brought to life with stop-motion animation in the movie, is paired with a modern story of a little girl and an
+        elderly aviator, exploring imagination and the rediscovery of childhood.
+    </div>
+    <div class="container swiper">
+      <div class="wrapper">
+        <ul class="list swiper-wrapper">
+          <li class="item swiper-slide">
+            <a class="link">
+              <img src="Home-Pictures/lp-novel.JPG" alt="image" class="image">
+              <p class="badge novel">Novel</p>
+              <h4 class="title">
+                Slider pictures
+              </h4>
+            </a>
+          </li>
+          <li class="item swiper-slide">
+            <a class="link">
+              <img src="Home-Pictures/a-princeplanet.png" alt="image" class="image">
+              <p class="badge animated">Animated</p>
+              <h4 class="title">
+                A stop-motion version of the Little Prince on his textured planet,
+                surrounded by a colorful, lively universe.
+              </h4>
+            </a>
+          </li>
+          <li class="item swiper-slide">
+            <a class="link">
+              <img src="Home-Pictures/sheep.png" alt="image" class="image">
+              <p class="badge novel">Novel</p>
+              <h4 class="title">
+                The aviator sketches a sheep for the Little Prince in a fun and
+                simple style.
+              </h4>
+            </a>
+          </li>
+          <li class="item swiper-slide">
+            <a class="link">
+              <img src="Home-Pictures/a-sheep.jpg" alt="image" class="image">
+              <p class="badge animated">Animated</p>
+              <h4 class="title">
+                A moment in the desert where The aviator shows the Little Prince a
+                picture of the sheep in the desert, a scene full of wonder and imagination.
+              </h4>
+            </a>
+          </li>
+          <li class="item swiper-slide">
+            <a class="link">
+              <img src="Home-Pictures/rose.jpg" alt="image" class="image">
+              <p class="badge novel">Novel</p>
+              <h4 class="title">
+                A soft drawing of the Rose, showing its beauty and gentle nature.
+              </h4>
+            </a>
+          </li>
+          <li class="item swiper-slide">
+            <a class="link">
+              <img src="Home-Pictures/a-rose.jpg" alt="image" class="image">
+              <p class="badge animated">Animated</p>
+              <h4 class="title">
+                A glowing 3D version of the Rose, with the Little Prince watching it,
+                showing love and care.
+              </h4>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec3" class="section3">
+    <div class="section3-picture">
+      <img src="Home-Pictures/author.png">
+    </div>
+    <div class="section3-text">
+      <p class="intro2">
+        Antoine de Saint-Exupéry: Pilot, Poet, Dreamer
+      </p>
+      <p class="time">
+        (June 29, 1900&ndash;July 31, 1944)
+      </p>
+      <p class="intro-sub2">
+        A French aviator and writer whose works reflect the unique perspective of a pilot and
+        warrior who viewed adventure and danger with poetic insight.
+        His fable, &apos;The Little Prince&apos; (&apos;Le Petit Prince&apos;), is now a modern classic.
+        Published in 1943 with his own illustrations, it tells the story of a young prince
+        who travels the universe, gaining wisdom.
+    </div>
+  </section>
+
+  <section id="sec4" class="section4">
+    <div class="section4-text">
+      <p class="intro3">
+        What Is Essential Is Invisible to the Eye
+      </p>
+      <p class="intro-sub3">
+        ""The Little Prince" goes beyond being a children's story; it offers
+        a deep reflection on life, love, and human connections, with iconic quotes
+        from the book and movie that hold timeless wisdom, touching both adults and children alike.
+      </p>
+    </div>
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="Home-Pictures/image-slider1.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider2.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider3.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider4.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider5.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider6.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider11.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider22.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider33.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider44.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider55.jpg"></div>
+        <div class="slide"><img src="Home-Pictures/image-slider66.jpg"></div>
+      </div>
+    </div>
+
+    <section id="sec5" class="section5">
+      <a href="Watercolor-site/Watercolor.html">
+        <img class="watercolor" src="Home-Pictures/lp-watercolor.jpg">
+      </a>
+      <div class="section5-text">
+        <p class="intro4">
+          Art That Captures the Heart
+        </p>
+      </div>
+      <a href="Animated-site/Animated.html">
+        <img class="animation" src="Home-Pictures/lp-animated.jpg">
+      </a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/transition.js"></script>
+</body>
+
+</html>
