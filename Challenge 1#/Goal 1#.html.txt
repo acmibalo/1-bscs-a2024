@@ -1,0 +1,1 @@
+The goal and purpose of my website is to showcase the world of Valorant to the user and give them a brief discussion on what it is all about. With the given information provided by w3schools, I can develop a simple program that can present a small piece of what valorant is.
