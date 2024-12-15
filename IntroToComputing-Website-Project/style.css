@@ -1,0 +1,13 @@
+.video-container{
+    flex-direction: row;
+}
+
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20PX;
+    border-radius: 5px;
+}
