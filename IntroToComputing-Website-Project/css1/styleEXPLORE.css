@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 20px; 
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+
+
+}
+
+.room1{
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+nav a {
+    text-decoration: none; 
+    color: #000; 
+    padding: 10px 20px; 
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+
+nav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;  
+} 
+    
+ 
+.option {
+    float: left;
+    margin-top: 60px; 
+    width: 15%; 
+    background: #f4f4f4; 
+    padding: 20px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); 
+}
+
+.option nav {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: flex-start; /* Align to the left (or use center for centered items) */
+    gap: 20px; /* Space between the buttons */
+
+}
+
+.option nav a {
+    display: block; /* Ensure each link takes up a full line */
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.option nav a:hover {
+    background-color: #8c87a0;
+}
+
+.paragraph-container{
+    align-items: justify;
+    float: right;
+    width: 85%;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #d9bdbd;
+    border-radius: 15px;
+}
+
+
+#culture2 {
+float: right;
+ width: 85%;
+ 
+}
+
+@media (max-width: 1000px){
+    #culture2 {
+        width: 80%;
+       }
+
+    .paragraph-container{
+        width: 80%;
+    }
+
+    .option nav {
+        width: 20%;
+    }
+}
+
+@media (max-width: 555px){
+    #culture2{
+        width: 75%;
+    }
+
+    .paragraph-container{
+        width: 75%;
+    }
+
+    #mine{
+        width: 25%;
+    }
+
+    option nav{
+        width: 25%;
+    }
+
+    .room1{
+        padding: 1px;
+    }
+}
+
+@media (max-width: 480px){
+    #culture2{
+        width: 75%;
+    }
+    option nav{
+        width: 70%;
+    }
+
+}
+  
+
+
+
+/*part 2*/
+#cuisine2 {
+    float: right;
+     width: 85%;
+     
+    }
+
+    @media (max-width: 1000px){
+        #cuisine2 {
+            width: 80%;
+           }
+    
+        .paragraph-container{
+            width: 80%;
+        }
+    
+        .option nav {
+            width: 20%;
+        }
+    }
+    
+    @media (max-width: 555px){
+        #cuisine2{
+            width: 75%;
+        }
+    
+        .paragraph-container{
+            width: 75%;
+        }
+    
+        #mine{
+            width: 25%;
+        }
+    
+        option nav{
+            width: 25%;
+        }
+    
+        .room1{
+            padding: 1px;
+        }
+    }
+    
+    @media (max-width: 480px){
+        #cuisine2{
+            width: 75%;
+        }
+        option nav{
+            width: 70%;
+        }
+    
+    }

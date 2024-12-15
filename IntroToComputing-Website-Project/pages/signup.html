@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="../image1/flag.png">
+		<title>Project Website | Sign Up </title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Project, Website, Final requirement, sign up button">
+		<meta name="description" content="This is all about Login button .">
+		<meta name="author" content="Renzo Luis A. Ballesteros">
+		
+		<link rel="stylesheet" href="../css1/signupSTYLE.css">
+
+        
+       
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="homebutton"> Home </a>
+        <a href="../pages/aboutUS.html" class="aboutUSbutton">About </a>
+        <a href="../pages/contact.html" class="CONTACTbutton">Contact </a>
+        <a href="../pages/login.html" class="LOGINbutton">Log in</a>
+        <a href="../pages/signup.html" class="SIGNUPbutton">Sign up</a>
+
+    </nav>
+    
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form action="signup-process.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿   /* General Reset */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Page Background */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../image1/31.jpg') no-repeat center center/cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contact Container */
+.contact-container {
+    background: rgba(77, 80, 147, 0.8); /* Semi-transparent white */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: center;
+}
+
+.contact-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-container textarea {
+    height: 120px;
+}
+
+.contact-container button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+    background: #0056b3;
+}
