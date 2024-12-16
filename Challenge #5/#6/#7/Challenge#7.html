@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Website Layout with Block, Inline, Class, and ID Implementation">
+    <meta name="keywords" content="HTML, CSS, block, inline, class, id, layout">
+    <meta name="author" content="Your Name">
+    
+    <title>Website Layout with Block, Inline, Class, and ID</title>
+    
+    <style>
+        /* General Reset and Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Main Content Section */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 30%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card-content h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Block and Inline Elements */
+        .block-element {
+            display: block;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+        }
+
+        .inline-element {
+            display: inline;
+            margin-right: 15px;
+            padding: 5px 10px;
+            background-color: #f39c12;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* IDs for Specific Styles */
+        #special-heading {
+            color: #e74c3c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #footer-text {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Website Layout with Block, Inline, Class, and ID</h1>
+        <p>Explore different HTML and CSS concepts.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Card 1">
+            <div class="card-content">
+                <h2>Card Title 1</h2>
+                <p>This is a description of the card. It provides some basic information about the content.</p>
+                <div class="inline-element">New</div>
+                <div class="inline-element">Featured</div>
+                <p class="block-element">This is a block-level element with more detailed information.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Card 2">
+            <div class="card-content">
+                <h2>Card Title 2</h2>
+                <p>This is another card description. Cards can be used for displaying content in a grid layout.</p>
+                <div class="inline-element">New</div>
+                <div class="inline-element">Popular</div>
+                <p class="block-element">More details can go here. This paragraph spans the full width of the container.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Card 3">
+            <div class="card-content">
+                <h2>Card Title 3</h2>
+                <p>This is a third card description with additional content. Cards are flexible for different types of information.</p>
+                <div class="inline-element">Featured</div>
+                <div class="inline-element">Updated</div>
+                <p class="block-element">Block elements take up the full width available, while inline elements do not.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Special Heading Section with ID -->
+    <section>
+        <h2 id="special-heading">Special Heading with ID</h2>
+        <p>This section uses an ID to style the heading differently.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p id="footer-text">Website &copy; 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
