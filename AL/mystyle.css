@@ -1,0 +1,225 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(158, 176, 179);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b7b88;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+/* Navigation Menu */
+.classnavbar {
+    background-color: #191e1f;
+    padding: 10px;
+}
+
+.classnavbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.classnavbar ul li {
+    margin: 0 15px;
+}
+
+.classnavbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.classnavbar ul li a:hover {
+    color: black;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    color: #333;
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+    color: #3b7b88;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #3b7b88;
+    font-size: 1.1em;
+}
+
+.sidebar ul li a:hover {
+    color: #f7a105;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #f7a105;
+    font-size: 1.8em;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    background-color: #3b7b88;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.cta-section p {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f7a105;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.cta-button:hover {
+    background-color: #ffbb33;
+}
+
+/* Card Section */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h4 {
+    font-size: 1.2em;
+    color: #3b7b88;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1em; 
+}
+
+        nav {
+            background-color: #333; 
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0; 
+            z-index: 1000; 
+        }
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        nav {
+            background-color: #333; 
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease; 
+        }
+        nav:hover {
+            background-color: #444; 
+        }
+        .cta-button:hover {
+            background-color: #ffbb33;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        footer .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        footer .social-media a:hover {
+            color: #f7a105;
+        }
+                                
+        

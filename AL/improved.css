@@ -1,0 +1,283 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(158, 176, 179);
+    color: #fff;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b7b88;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+.classnavbar {
+    background-color: #1b201a;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.classnavbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.classnavbar ul li {
+    margin: 0 20px;
+}
+
+.classnavbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.classnavbar ul li a:hover {
+    color: #f7a105;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    font-size: 1.6em;
+    color: #3b7b88;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #3b7b88;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #f7a105;
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px 20px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #f7a105;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    background-color: #3b7b88;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section h2 {
+    font-size: 2.8em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta-section p {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #f7a105;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffbb33;
+    transform: translateY(-5px);
+}
+
+/* Card Section */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.card-body h4 {
+    font-size: 1.5em;
+    color: #3b7b88;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-body .cta-button {
+    padding: 10px 20px;
+    background-color: #f7a105;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.card-body .cta-button:hover {
+    background-color: #ffbb33;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3b7b88;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+footer .social-media a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #f7a105;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .classnavbar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 30px;
+        box-shadow: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .cta-section h2 {
+        font-size: 2.4em;
+    }
+}

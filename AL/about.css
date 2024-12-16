@@ -1,0 +1,247 @@
+/* General Reset */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #3b7b88;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+.intro, .details, .history {
+    margin-bottom: 20px;
+}
+
+/* Image Styling and Hover Effect */
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+img:hover {
+    transform: scale(1.1); /* Zoom-in effect on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3b7b88;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+img{
+    display: inline-block;
+    position: relative;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%; /* Make links full-width */
+        text-align: center; /* Center-align text */
+    }
+}
+.breadcrumb-nav {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb-nav li {
+    display: inline;
+    color: #555;
+}
+
+.breadcrumb-nav li a {
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-nav li a:hover {
+    color: #0056b3;
+}
+
+.breadcrumb-nav li:last-child {
+    color: #999;
+    pointer-events: none; /* Makes the current page unclickable */
+    font-weight: bold;
+}
+.interactive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.interactive-image {
+    width: 100%;
+    max-width: 200px; /* Adjust based on preference */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interactive-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    margin-top: auto;
+}
+nav {
+    background-color: #333; /* Dark background for contrast */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; /* Makes the navbar stick to the top on scroll */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center align the navigation links */
+    gap: 20px; /* Space between links */
+}
+
+nav li {
+    display: inline; /* Ensures the list items are inline */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for readability */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #ff5722; /* Highlight color */
+    color: white;
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+nav a:focus {
+    outline: 2px solid #2196F3; /* Focus indicator for accessibility */
+}
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation Menu Container */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Links */
+        .nav-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            background-color: #555;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Link Icon Placeholder */
+        .nav-link img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        /* Hover Effects */
+        .nav-link:hover {
+            background-color: #ff5722;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Active Link Styling */
+        .nav-link.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+
