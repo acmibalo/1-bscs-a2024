@@ -1,0 +1,43 @@
+/* General body styles */
+body {
+    background-color: #f9f3f3; /* Light pink background */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Header styles */
+h1 {
+    color: #ff69b4; /* Hot pink color for the header */
+    text-align: center; /* Center the header */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    margin-top: 50px; /* Space above the header */
+}
+
+/* Horizontal rule styles */
+hr {
+    border: 1px solid #ff69b4; /* Hot pink color for the horizontal rule */
+    margin: 20px auto; /* Center the horizontal rule */
+    width: 50%; /* Width of the horizontal rule */
+}
+
+/* Paragraph styles */
+p {
+    color: #ff1493; /* Deep pink color for the paragraph */
+    text-align: center; /* Center the paragraph */
+    font-size: 1.2em; /* Slightly larger font size */
+    margin-top: 20px; /* Space above the paragraph */
+}
+
+/* Add some animation to the header */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    animation: bounce 1s infinite; /* Bouncing animation */
+}
