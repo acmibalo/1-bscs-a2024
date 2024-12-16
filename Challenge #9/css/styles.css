@@ -1,0 +1,159 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+nav img{
+    width:100%;
+}
+
+div .myNavbar div {
+    width:25% !important;
+}
+
+.hobbies .images ,.n,.b,.v .m{
+    width:80px;
+    height: 80px;
+}
+
+.hobbies .images img ,.mid .mud{
+    width:80px;
+    height: 80px;
+}
+
+.hobbies, .images{
+    width:25% !important;
+}
+
+
+
+.home {
+    height: 90vh;
+    width: 100%;
+    
+}
+
+.home .main-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    align-items: center;
+   
+}
+
+.home .main-container .w3-container{
+    width: 450px;
+    height: 80vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #b74b4b;
+}
+
+.home .main-container .w3-container img{
+    width: inherit;
+    height: inherit;
+}
+.main-container .w3-container:hover{
+    animation: animate 1.5s ease-in-out ;
+}
+
+@keyframes animate{
+    0%{
+        scale:1 ;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.main-container .w3-content {
+    width: 40%;
+}
+
+@media (max-width:900px) {
+    .home .main-container{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .home .main-container .w3-container{
+        width: 300px;
+        height: 50vh;}
+     .main-container .w3-content {
+         width: 100%;
+    }
+    .home .main-container .w3-container img{
+        width: 500;
+        height: 50vh;
+        shape-image-threshold: inherit;
+    }
+}
+
+
+  .w3-circle {
+    border-radius: 50%;
+  }
+  
+  .w3-padding-large {
+    padding: 16px;
+  }
+  
+  .w3-content {
+    margin: auto;
+    max-width: 980px;
+  }
+  
+  .w3-opacity {
+    opacity: 0.75;
+  }
+  
+  .w3-hover-opacity:hover {
+    opacity: 1;
+  }
+  
+  .w3-light-grey {
+    color: #f1f1f1;
+  }
+  
+  .w3-text-light-grey {
+    color: #d5d5d5;
+  }
+  
+  .w3-text-grey {
+    color: #bbbbbb;
+  }
+  
+  .w3-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .w3-bar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .w3-bar-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .w3-hover-black:hover {
+    background-color: black;
+  }
+
+
+.hobbies .game{
+  margin: 0 -16px;
+}
+  
