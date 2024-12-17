@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Project Finish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- #1: Sticky Navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Arachne Gallery</a>
+    <a href="#faq">FAQs</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <!-- #2: Slideshow Gallery -->
+  <section id="gallery">
+    <h2 style="text-align: center;">Arachne Gallery</h2>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="images/1.jpg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="images/2.jpg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="images/3.jpg" alt="Image 3">
+      </div>
+      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>
+  </section>
+
+  <!-- #3: Accordion FAQ -->
+  <section id="faq">
+    <h2 style="text-align: center;">FAQs</h2>
+    <button class="accordion">What is The Project Finish?</button>
+    <div class="panel">We are a community that helps writers complete their stories.</div>
+
+    <button class="accordion">How do I join?</button>
+    <div class="panel">You can join us by reaching out through the Contact Us form.</div>
+
+    <button class="accordion">Is it free?</button>
+    <div class="panel">Yes, joining our community is completely free.</div>
+  </section>
+
+  <!-- #4: Contact Form -->
+  <section id="contact">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <div class="contact-form">
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Message:</label>
+      <textarea rows="5" placeholder="Your message here..."></textarea>
+
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <!-- #5: Hover Effects -->
+  <section class="hover-effect">
+    <h2 style="text-align: center;">Hover Effect Example</h2>
+    <div style="text-align: center;">
+      <img src="images/2.jpg" alt="Hover Image">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
