@@ -1,0 +1,117 @@
+body
+{
+                background-color: #f4f4f4;
+                color: #d47e7e;
+                font-family: 'Montserrat';
+            }
+
+            header {
+                background-color: #714593;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+
+            section h2 {
+                font-size: 2em;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            h1 {
+                font-family: 'Lora';
+            
+            }
+            
+            nav {
+                background-color: #220839;
+                padding: 10px 0;
+            }
+            
+            nav ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+            }
+            
+            nav ul li {
+                margin: 0 20px;
+            }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.1em;
+                padding: 10px;
+                transition: background-color 0.3s ease;
+            }
+            
+            nav ul li a:hover {
+                background-color: #314f5d;
+                border-radius: 5px;
+            }
+            
+            main {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            
+            section {
+                background-color: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                justify-content: center;
+                justify-items: center;
+                text-align: center;
+            }
+            
+            section img {
+                justify-content: center;
+                max-width: 100%;
+                height: 500px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            
+            .artist, .artwork {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            
+            #artist-section, #artwork-section {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                width: 100%;
+            }
+            
+            
+            
+            
+            footer {
+                background-color: #9771aa;  
+                color: white; 
+                text-align: center;  
+                padding: 20px;  
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+            
+            footer p {
+                margin: 0;
+                font-size: 1em;
+                color: #fff;
+            }
