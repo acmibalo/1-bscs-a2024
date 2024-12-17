@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: "Dancing Script ", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General styles for the header */
+header {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-bottom: 2px solid #ccc; /* Subtle border for separation */
+}
+
+/* Button styles */
+.w3-button {
+    font-family: 'Cursive', sans-serif; /* Use a cursive font for a calligraphy feel */
+    font-size: 18px; /* Adjust font size */
+    padding: 10px 20px; /* Padding for buttons */
+    margin: 5px; /* Margin for spacing */
+    border: 2px solid transparent; /* Initial border */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover effect */
+.w3-button:hover {
+    background-color: #e0e0e0; /* Light background on hover */
+    color: #333; /* Dark text color on hover */
+    border-color: #888; /* Change border color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Active effect */
+.w3-button:active {
+    transform: translateY(1px); /* Slight press down effect */
+    box-shadow: none; /* Remove shadow on active */
+}
+
+/* Focus effect for accessibility */
+.w3-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+}
+
+
+
+h2 {
+    font-family: 'Luminari', Georgia, 'Times New Roman', Times, serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #8d2f8d;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #ffccff; /* Light pink background */
+    border-bottom: 2px solid #ff69b4; /* Hot pink border at the bottom */
+    position: relative; /* For positioning child elements */
+}
+
+/* Button Styles */
+.w3-button {
+    background-color: #ffffff; /* White background for buttons */
+    color: #ff69b4; /* Hot pink text color */
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Button Hover Effects */
+.w3-button:hover {
+    background-color: #ff69b4; /* Change background to hot pink on hover */
+    color: #ffffff; /* Change text color to white on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Left and Right Alignment */
+.w3-left {
+    float: left; /* Align to the left */
+}
+
+.w3-right {
+    float: right; /* Align to the right */
+}
+
+/* Clearfix for the header */
+header::after {
+    content: "";
+    display: table;
+    clear: both; /* Clear floats */
+}
+
+.w3-large {
+    font-family: 'Dancing Script', cursive; /* or 'Great Vibes', cursive */
+    font-size: 2em; /* Adjust size as needed */
+}
+/* Photo Grid Styles */
+.w3-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.w3-half {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.w3-half img {
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+footer img {
+    border-radius: 50%;
+}
+
+.w3-large {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.w3-section {
+    margin-top: 20px;
+}
