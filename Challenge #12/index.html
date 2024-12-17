@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Glam Mee</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="batch2, responsive, 1bscs, batch2024">
+    <meta name="description" content="This is the layout example of responsive Design.">
+    <meta name="author" content="Jaymee Rosales">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to external JS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Glam Mee</h1>
+        <nav>
+            <ul class="icon-bar">
+                <li><a href="index.html" class="nav-link active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fa fa-info-circle"></i> About</a></li>
+                
+                <!-- Dropdown for Products -->
+                <li class="dropdown">
+                    <a href="products.html" class="nav-link"><i class="fa fa-shopping-cart"></i> Products</a>
+                    <div class="dropdown-content">
+                        <a href="product1.html">Product 1</a>
+                        <a href="product2.html">Product 2</a>
+                        <a href="product3.html">Product 3</a>
+                    </div>
+                </li>
+
+                <li><a href="gallery.html" class="nav-link"><i class="fa fa-image"></i> Gallery</a></li>
+                <li><a href="contacts.html" class="nav-link"><i class="fa fa-envelope"></i> Contacts</a></li>
+
+                <li class="search-container">
+                    <form action="/search" method="GET">
+                        <input type="text" placeholder="Search..." name="search" class="search-bar">
+                        <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2>Glam Mee</h2>
+        <p>This website is a student make-up guide.</p>
+        <img src="img/p1.jpg" alt="P1" class="center">
+    </section>
+
+    <section id="explore-section">
+        <button class="explore-btn">
+            Explore
+            <div class="ribbon">Lez g!</div>
+        </button>
+                <p>Click explore to know more!</p>
+    </section>
+
+    <section id="video-section">
+        <h2>Watch Our Videos</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/skiXzuAme-8" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+        <div class="local-video-container">
+            <video controls>
+                <source src="vid/makeuptuts.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="table-section">
+        <h2>Product Comparison Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Features</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Foundation</td>
+                    <td>Lightweight, natural finish</td>
+                    <td>P150</td>
+                </tr>
+                <tr>
+                    <td>Mascara</td>
+                    <td>Waterproof, volumizing</td>
+                    <td>P120</td>
+                </tr>
+                <tr>
+                    <td>Eyeshadow Palette</td>
+                    <td>Vibrant, long-lasting</td>
+                    <td>P165</td>
+                </tr>
+                <tr>
+                    <td>Lipstick</td>
+                    <td>Matte finish, 10 shades</td>
+                    <td>P99</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="read-more-section">
+        <h2>More About Our Products</h2>
+        <p>This website offers various cosmetic products, from foundations to lipsticks. We strive to provide top-quality, affordable makeup for everyone.</p>
+        <p id="dots">...</p>
+        <span id="more">
+            <p>Our products are carefully selected to ensure they meet the needs of our customers. Whether you're looking for something simple or more bold, we've got something for everyone. Explore our collection to find what suits your beauty needs best!</p>
+        </span>
+        <button onclick="toggleReadMore()" id="read-more-btn">Read More</button>
+    </section>
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Glam Mee. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+    </footer>   
+
+</body>
+</html>
