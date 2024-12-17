@@ -2,7 +2,7 @@ const games = [
   {
     id: 1,
     title: "Dota 2",
-    imageUrl: "/images/games_banner/Dota2.webp",
+    imageUrl: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
     description: "A free-to-play multiplayer online battle arena (MOBA) video game developed and published by Valve.",
     genre: "MOBA",
     players: "800K",
@@ -16,7 +16,7 @@ const games = [
   {
     id: 2,
     title: "Genshin Impact", 
-    imageUrl: "/images/games_banner/genshinimpact.jpeg",
+    imageUrl: "https://th.bing.com/th/id/OIP.mIWCOWxyK1aKmtOG1tpjzgHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain",
     description: "An open-world action RPG developed and published by miHoYo.",
     genre: "Action RPG",
     players: "1M",
@@ -30,7 +30,7 @@ const games = [
   {
     id: 3,
     title: "Honkai Impact 3rd",
-    imageUrl: "/images/games_banner/hi3rd.webp",
+    imageUrl: "https://img2.tapimg.net/post/etag/FpSix8-nIw-2VIqVLBcSRvXhTeSw.jpg?imageMogr2/thumbnail/720x9999%3E/quality/80/format/jpg/interlace/1/ignore-error/1",
     description: "An action role-playing game developed and published by miHoYo.",
     genre: "Action RPG",
     players: "500K",
@@ -44,7 +44,7 @@ const games = [
   {
     id: 4,
     title: "Honkai: Star Rail",
-    imageUrl: "/images/games_banner/Star_rail.jpeg",
+    imageUrl: "https://cdn1.epicgames.com/offer/a2dcbb9e34204bda9da8415f97b3f4ea/2560x1440_EN_2560x1440-1295c4399099873d0d329e1c39d12ed5",
     description: "A space fantasy RPG with strategic turn-based combat developed by miHoYo.",
     genre: "Turn-based RPG",
     players: "750K",
@@ -58,7 +58,7 @@ const games = [
   {
     id: 5,
     title: "Honor of Kings",
-    imageUrl: "/images/games_banner/HOK.jpg",
+    imageUrl: "https://revolutionarena.com/pt-br/wp-content/uploads/sites/2/2024/03/Honor-of-Kings.jpg",
     description: "A multiplayer online battle arena developed by TiMi Studio Group and published by Tencent Games.",
     genre: "MOBA",
     players: "100M",
@@ -72,7 +72,7 @@ const games = [
   {
     id: 6,
     title: "League of Legends",
-    imageUrl: "/images/games_banner/LOL.jpg",
+    imageUrl: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1b6d25026621fdf9befdf85f5f2f88ee7319f0f0-1920x1080.jpg?auto=format&fit=fill&q=80&w=483",
     description: "A highly competitive, fast paced MOBA developed by Riot Games.",
     genre: "MOBA",
     players: "180M",
@@ -86,7 +86,7 @@ const games = [
   {
     id: 7,
     title: "Mobile Legends: Bang Bang",
-    imageUrl: "/images/games_banner/mlbb.png",
+    imageUrl: "https://dailyspin.id/wp-content/uploads/2024/02/jucqgcb14o.jpg",
     description: "A mobile MOBA game developed and published by Moonton.",
     genre: "MOBA",
     players: "75M",
@@ -100,7 +100,7 @@ const games = [
   {
     id: 8,
     title: "Roblox",
-    imageUrl: "/images/games_banner/roblox.jpg",
+    imageUrl: "https://techcrunch.com/wp-content/uploads/2021/07/roblox-logo.png",
     description: "An online game platform and game creation system developed by Roblox Corporation.",
     genre: "Platform",
     players: "150M",
@@ -114,7 +114,7 @@ const games = [
   {
     id: 9,
     title: "Terraria",
-    imageUrl: "/images/games_banner/terraria.jpg",
+    imageUrl: "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltdba49ca0a895ae36/669163d6e6031cd88be0f15b/terraria.jpg",
     description: "An action-adventure sandbox game developed by Re-Logic.",
     genre: "Sandbox",
     players: "200K",
@@ -128,7 +128,7 @@ const games = [
   {
     id: 10,
     title: "Valorant",
-    imageUrl: "/images/games_banner/valo.jpg",
+    imageUrl: "https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg",
     description: "A free-to-play multiplayer tactical first-person shooter developed by Riot Games.",
     genre: "Tactical FPS",
     players: "1.2M",
@@ -142,7 +142,7 @@ const games = [
     {
     id: 11,
     title: "Minecraft",
-    imageUrl: "/images/games_banner/minecraft.jpg",
+    imageUrl: "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/bedrock_header.jpg",
     description: "A sandbox game focused on building and exploration, developed by Mojang Studios.",
     genre: "Sandbox & Survival",
     players: "300M",

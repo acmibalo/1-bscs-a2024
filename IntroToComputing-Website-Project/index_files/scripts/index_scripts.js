@@ -1,5 +1,4 @@
-        // Mobile menu toggle
-        const menuToggle = document.querySelector('.menu-toggle');
+    const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
         
         menuToggle.addEventListener('click', () => {
@@ -9,7 +8,7 @@
         const gamesData = [
             {
                 name: "Dota 2",
-                image:"/images/games_banner/Dota2.webp",
+                image:"./images/games_banner/Dota2.webp",
                 description: "A multiplayer online battle arena (MOBA) game developed by Valve Corporation",
                 developer: "Valve Corporation",
                 releaseDate: "July 9, 2013",
@@ -26,7 +25,7 @@
             },
             {
                 name: "Genshin Impact",
-                image: "/images/games_banner/genshinimpact.jpeg",
+                image: "./images/games_banner/genshinimpact.jpeg",
                 description: "An open-world action RPG developed by miHoYo featuring anime-style characters and elemental combat",
                 developer: "miHoYo",
                 releaseDate: "September 28, 2020",
@@ -43,7 +42,7 @@
             },
             {
                 name: "Honor of Kings",
-                image: "/images/games_banner/HOK.jpg",
+                image: "./images/games_banner/HOK.jpg",
                 description: "A mobile MOBA game developed by TiMi Studio Group and published by Tencent Games",
                 developer: "TiMi Studio Group",
                 releaseDate: "November 26, 2015",
@@ -59,7 +58,7 @@
             },
             {
                 name: "Honkai Impact 3rd",
-                image: "/images/games_banner/hi3rd.webp",
+                image: "./images/games_banner/hi3rd.webp",
                 description: "An action RPG developed by miHoYo featuring dynamic combat and anime-style graphics",
                 developer: "miHoYo",
                 releaseDate: "March 28, 2018",
@@ -75,7 +74,7 @@
             },
             {
                 name: "Honkai: Star Rail",
-                image: "/images/games_banner/Star_rail.jpeg",
+                image: "./images/games_banner/Star_rail.jpeg",
                 description: "A space fantasy RPG with turn-based combat system, developed by miHoYo",
                 developer: "miHoYo",
                 releaseDate: "April 26, 2023",
@@ -91,7 +90,7 @@
             },
             {
                 name: "Minecraft",
-                image: "/images/games_banner/minecraft.jpg",
+                image: "./images/games_banner/minecraft.jpg",
                 description: "A sandbox game focused on building and exploration, developed by Mojang Studios",
                 developer: "Mojang Studios",
                 releaseDate: "November 18, 2011",
@@ -107,7 +106,7 @@
             },
             {
                 name: "Mobile Legends: Bang Bang",
-                image: "/images/games_banner/mlbb.png",
+                image: "./images/games_banner/mlbb.png",
                 description: "A mobile MOBA game developed by Moonton featuring 5v5 battles",
                 developer: "Moonton",
                 releaseDate: "July 14, 2016",
@@ -123,7 +122,7 @@
             },
             {
                 name: "Roblox",
-                image: "/images/games_banner/roblox.jpg",
+                image: "./images/games_banner/roblox.jpg",
                 description: "An online game platform and game creation system that allows users to program games",
                 developer: "Roblox Corporation",
                 releaseDate: "September 1, 2006",
@@ -139,7 +138,7 @@
             },
             {
                 name: "Terraria",
-                image: "/images/games_banner/terraria.jpg",
+                image: "./images/games_banner/terraria.jpg",
                 description: "A 2D sandbox action-adventure game developed by Re-Logic featuring exploration, crafting, and combat",
                 developer: "Re-Logic",
                 releaseDate: "May 16, 2011",
@@ -155,7 +154,7 @@
             },
             {
                 name: "Valorant",
-                image: "/images/games_banner/valo.jpg",
+                image: "./images/games_banner/valo.jpg",
                 description: "A free-to-play tactical first-person shooter developed by Riot Games",
                 developer: "Riot Games",
                 releaseDate: "June 2, 2020",
