@@ -2,7 +2,7 @@ new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween:30,
 
-  // If we need pagination
+  // Pagination dots
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -19,9 +19,6 @@ new Swiper('.card-wrapper', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
     },
     1024: {
       slidesPerView: 2,
