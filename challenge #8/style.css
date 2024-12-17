@@ -1,0 +1,163 @@
+
+
+            /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+}
+
+#artist-section,
+#artwork-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.artist, .artwork {
+    flex: 1 1 30%; /* Allow items to take 30% of the container width */
+    box-sizing: border-box;
+}
+
+.artist img, .artwork img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: 'Lora', serif;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #artist-section,
+    #artwork-section {
+        flex-direction: column;
+    }
+
+    .artist, .artwork {
+        flex: 1 1 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
