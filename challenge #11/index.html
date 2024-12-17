@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title></title>
+        <link rel="icon" type="image/x-icon" href="img/favicon (1).ico">
+        <meta charset="UTF-8">
+        <meta name="author" content="Beverly ompog">
+        <meta name="keywords" content="mexico, genres, ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="ST">stranger things</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about.html">About</a></li>
+                    <li><a href="#contacts.html">Contacts</a></li>
+                    <li><a href="#strangerThings.html"> </a>Stranger Things</li>
+                    <li><a href="#Casts.html">Casts</a></li><br><br>
+                </ul>    
+            </nav>
+
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button onclick="performSearch()">Search</button><br><br>
+                </div>
+                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            </div><br>
+
+
+        </header>
+
+        <main style="padding: 20px;">
+            
+            <section>
+                <h2>Stranger Things</h2>
+                <div id="#strangerThings">
+                    <div class="artist">
+                        <img src="img/ST.jpg">
+                        <h3 style="font-size: 1.8em; margin-bottom: 10px; font-family: 'Lora';">Stranger Things</h3>
+                    </div>
+                
+                </div>
+            </section>
+
+
+            <section>
+                <h2>Casts</h2>
+                
+                <div id="#Casts>
+                    <div class="artwork">
+                        <img src="img/ST3.jpg" alt="Mona Lisa">
+                        <h3 style="font-size: 1.8em; margin-bottom: 10px; font-family: 'Lora';"></h3>
+                    </div>
+                    
+                    <div class="artwork">
+                        <img src="img/ST5.jpg" alt="Starry Night">
+                        <h3 style="font-size: 1.8em; margin-bottom: 10px; font-family: 'Lora';">"friends don't lie"</h3>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section>
+                <h2>Videos</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h-2LIjOt0rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe><br><br><br>
+                </div>
+                <video controls>
+                    <source src="videos/ST.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section>
+                <h2>Contact Us</h2 id="#contacts"> 
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="What's your message" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+
+
+        
+        </main>
+        
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            }
+
+            let slideIndex = 1;
+            showSlides(slideIndex); 
+
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n); 
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n); 
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length} 
+
+            
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+
+            
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                
+                this.classList.toggle("active");
+
+               
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+
+            function performSearch() {
+                let input = document.getElementById("search-input").value.toLowerCase();
+                let content = document.body.innerText.toLowerCase();
+                
+                if (content.includes(input)) {
+                    alert(`Found results for: "${input}"`);
+                } else {
+                    alert(`No results found for: "${input}"`);
+                }
+            }
+            
+            window.onscroll = function() {
+                let button = document.getElementById("scrollTopBtn");
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+
+            function scrollToTop() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+
+            document.getElementById("dark-mode-toggle").addEventListener("click", function () {
+                document.body.classList.toggle("dark-mode");
+            });
+
+
+            document.head.insertAdjacentHTML(
+                "beforeend",
+                `<style>
+                .dark-mode {
+                    background-color: #121212;
+                    color: #fff;
+                }
+                </style>`
+            );
+        </script>
+
+<footer>
+    <p class="footer">&copy; 2024 stranger things. All Rights Reserved.</p>
+</footer>
+
+    </body>
+</html>
