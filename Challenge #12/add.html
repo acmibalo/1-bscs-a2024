@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- #1: Responsive Top Navigation -->
+<div class="topnav" id="myTopnav">
+  <a href="#myBtn">Modal</a>  
+  <a href="#dropit">Dropdown</a>  
+  <a href="#tabs">Tabs</a>  
+  <a href="#myProgress" class="active">Progress</a>
+  <a href="#myImg">Cat Image</a>  
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+    &#9776;
+  </a>
+</div>
+
+<!-- #2: Modal Box -->
+<button id="myBtn">Open Modal</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nemo quibusdam molestiae nisi, sequi accusantium enim assumenda provident, voluptatum veritatis alias suscipit eligendi soluta eum quis atque, officia libero quisquam?.</p>
+  </div>
+</div>
+
+<!-- #3: Dropdown Menu -->
+<div id="dropit" class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<!-- #4: Tabs -->
+<div id="tabs" class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+</div>
+
+<div id="Tab1" class="tabcontent">
+    <h3>Overview of The Project Finish</h3>
+    <p>Welcome to The Project Finish! We are a community dedicated to helping writers complete their stories, whether you're just starting or are looking for that final push to finish your manuscript. Our goal is to provide the support, motivation, and resources that writers need to reach their creative potential and finish what they started.</p>
+</div>
+
+<div id="Tab2" class="tabcontent">
+    <h3>Our Achievements</h3>
+    <p>At The Project Finish, we are proud of the countless writers who have successfully completed their stories with the help of our community. We’ve seen novels, short stories, poetry collections, and more come to life. Our achievements include:</p>
+    <ul>
+        <li>Over 200 writers who have published their works after receiving support from our community.</li>
+        <li>Completed writing challenges and workshops, with more than 100 participants each year.</li>
+        <li>A thriving online platform with weekly writing prompts, feedback sessions, and accountability groups.</li>
+    </ul>
+    <p>We celebrate every writer's journey and strive to offer more resources to help even more complete their projects in the future.</p>
+</div>
+
+<div id="Tab3" class="tabcontent">
+    <h3>Join The Project Finish</h3>
+    <p>Are you ready to finish your story? Join us at The Project Finish! Whether you're a first-time writer or an experienced author, we offer a welcoming environment where you can connect with like-minded individuals, share your work, and receive guidance. Here’s how you can get involved:</p>
+    <ul>
+        <li>Sign up for our free writing challenges to get started with a structured writing routine.</li>
+        <li>Become a member of our online forums where you can exchange feedback and motivation with fellow writers.</li>
+        <li>Attend our workshops and writing sessions to deepen your craft and finish your story.</li>
+    </ul>
+    <p>Join today and start turning your writing dreams into reality!</p>
+</div>
+
+<!-- #5: Progress Bar -->
+<progress id="myProgress" value="0" max="100"></progress>
+<button onclick="move()">Start Progress</button>
+
+<!-- #6: Image Lightbox -->
+<img id="myImg" src="images/cat.jpg" alt="Image" width="300">
+<div id="myModalImg" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
