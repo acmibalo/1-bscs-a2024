@@ -1,0 +1,165 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IntroToComputing-Website-Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="personal website">
+    <meta name="keywords" content="photos, hobbies, home, about, contact">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.mincss">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="icon" href="images/favicon (1).ico">
+    <!-- External CSS File -->
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/IMG_20241214_205931.jpg" class="w3-left w3-circle">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <br>
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#hobbies" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bars w3-xxlarge"></i>
+    <p>HOBBIES</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#hobbies" class="w3-bar-item w3-button">HOBBIES</a>
+    <a href="#photos" class="w3-bar-item w3-button">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <section class="home">
+    <div class="main-container w3-circle">
+      <div class="w3-container">
+        <img src="images/IMG_20241212_185504.jpg" alt="me" class="w3-circle">
+      </div>
+      <div class="w3-content">
+        <h1>Hi, I'm Renier Apal</h1>
+        <h3>BS Computer Science Student</h3>
+        <p>This website aimed to comply as a final requirement for completion specifically on the Intro to Computing Subject.</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <hr>
+    <h2 class="w3-text-light-grey">Intro to Computing Final Project Website</h2>
+    <hr  class="w3-opacity">
+    <h3 class="w3-padding-24 w3-text-light-grey">About Me</h3>
+    <img src="images/1720091560179.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:120px">
+    <p><span class="w3-large w3-margin-right w3-center">Renier Apal.</span><br> An Average Student.</p>
+    <p>Not a fan of crowded places.</p><br>
+  </div>
+  <br><br><br><hr>
+
+  <!-- Hobbies Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="hobbies">
+    <hr>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Hobbies</h3>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-opacity w3-hover-opacity-off w3-center w3-small w3-margin-bottom" id="images">
+      <div class="w3-half w3-section">
+        <img src="images/asura.png" alt="asura" class="n w3-circle"><br>
+        <a href="https://asuracomic.net/" class="w3-button">Manhwas</a>
+      </div>
+      <div class="w3-half w3-section">
+        <a href="#"><img src="images/download.jpeg" alt="Anime" class="b w3-circle"></a><br>
+        <a href="https://www.crunchyroll.com/?srsltid=AfmBOoqRQg_U1uMXi2AEQ3H9KkA4UEYjzlqK5g3xAWzTLs10KtUA2tn2" class="w3-button">Anime</a>
+      </div><br>
+    </div>
+    <div class="w3-row-padding" id="game">
+      <div class="w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic Games</li>
+         <a href="games/snake game/snek.html"><li class="w3-padding-16 w3-button">Sneck</li></a>
+         <a href="games/budget pacman/pac.html"><li class="w3-padding-16 w3-button">Low-Budget PacMan</li></a>
+         <a href="games/wps game/wps.html"><li class="w3-padding-16 w3-button">Word per/min</li></a>
+         <a href="games/wps game/wps.html"><li class="w3-padding-16 w3-button">Typing</li></a>
+          <li class="w3-padding-16">
+            <h2>Have Fun:></h2>
+          </li>
+      </div>
+  </div><hr>
+
+  <!-- Other Sections here... -->
+</div>
+<div class="w3-padding-64 w3-content" id="photos">
+  <hr><h2 class="w3-text-light-grey">Random Photos</h2>
+  <hr  class="w3-opacity">
+
+  <!-- Grid for photos -->
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half" >
+      <img src="images/random3.jpg" style="width: 100%;">
+      <img src="images/random1.jpg" style="width: 100%;">
+      <img src="images/random8.jpg" style="width: 100%;">
+      <img src="images/random2.jpg" style="width: 100%;">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/random7.jpg"  style="width: 100%;">
+      <img src="images/random5.jpg"  style="width: 100%;">
+      <img src="images/random4.jpg"  style="width: 100%;">
+      <img src="images/random7.jpg" style="width: 100%;">
+    </div>
+  <!-- End photo grid -->
+  </div><hr>
+<!-- End Portfolio Section -->
+</div>
+
+<!-- Contact Section -->
+<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+<hr>  <h2 class="w3-text-light-grey">Contact</h2>
+  <hr  class="w3-opacity">
+
+  <div class="w3-section">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kabacan, North Cotabato</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +63 951-020-5393</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: renierapl@gmail.com</p>
+  </div><br>
+<!-- End Contact Section -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xxxlarge">
+  <a href="https://web.facebook.com/re.nier.853311"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="#"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="#"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+  <a href="https://www.youtube.com/@renzbox-b7v"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <a href="#"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://github.com/Apal-RP"><i class="fa fa-github w3-hover-opacity"></i></a>
+</footer>
+
+</body>
+</html>
