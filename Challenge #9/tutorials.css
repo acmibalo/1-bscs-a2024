@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f3; /* Light pink background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Center all text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Container */
+.video-container {
+    margin: 20px 0;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff6f61; /* Coral color */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #ff3b30; /* Bright red on focus */
+    outline: none; /* Remove default outline */
+}
+
+.contact-form button {
+    background-color: #ff6f61; /* Coral color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for button */
+}
+
+.contact-form button:hover {
+    background-color: #ff3b30; /* Bright red on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ff6f61; /* Coral color */
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for links */
+}
+
+.social-links a:hover {
+    color: #ff3b30; /* Bright red on hover */
+    transform: scale(1.1); /* Slightly enlarge link on hover */
+}
+
+/* Responsive Video */
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for video */
+}

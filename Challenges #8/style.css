@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f3f3;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+h1, h2 {
+    color: #d5006d;
+}
+
+/* Header and Navigation */
+#header {
+    background-color: #ffccf2;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #d5006d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a i {
+    margin-right: 5px; 
+}
+
+.nav-item a:hover {
+    color: #ff69b4;
+}
+
+/* Main Sections */
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #ffe6f2;
+}
+
+#about {
+    background-color: #ffccf2;
+}
+
+#gallery {
+    background-color: #ffb3e6;
+}
+
+#contact {
+    background-color: #ff99cc;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffccf2;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}

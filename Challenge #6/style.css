@@ -1,0 +1,66 @@
+/* General body styles */
+body {
+    background-color: #fce4ec; /* Light pink background */
+    font-family: 'Raleway', sans-serif; /* Use Raleway font */
+    color: #333; /* Dark text color for contrast */
+    background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Cover the entire body */
+}
+
+/* Header styles */
+h2 {
+    color: #d81b60; /* Deep pink color for the header */
+    text-align: center; /* Center the header */
+    font-size: 2.5em; /* Larger font size for the header */
+    margin-top: 20px; /* Space above the header */
+}
+
+/* Image styles */
+.w3-image {
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #f48fb1; /* Light pink border around the image */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Paragraph styles */
+p {
+    color: #880e4f; /* Darker pink color for the paragraph */
+    text-align: left; /* Align text to the left */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.6; /* Increase line height for readability */
+    margin: 20px auto; /* Space around the paragraph */
+    max-width: 800px; /* Limit the width of the paragraph */
+}
+
+/* Form styles */
+form {
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Button styles (if you add buttons in the future) */
+button {
+    background-color: #f48fb1; /* Light pink button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8bbd0; /* Light pink footer */
+    padding: 40px 0; /* Padding for the footer */
+    text-align: center; /* Center text in footer */
+}

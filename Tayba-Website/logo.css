@@ -1,0 +1,43 @@
+/* Body styling */
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    margin-top: 50px;
+}
+
+/* Logo Styling */
+.logo {
+    font-family: 'Thuluth Deewanie', cursive;
+    font-size: 4rem; /* Large size for the logo */
+    color: #ff6f61; /* Soft coral color */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+    margin: 0;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight transparency */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Other content */
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #555;
+}
