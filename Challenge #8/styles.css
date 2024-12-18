@@ -1,0 +1,71 @@
+/*skill*/
+.skills {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.skill-items{
+    text-align: center;
+}
+
+/*tournaments*/
+#tournaments{
+    background-color: #deebee;
+    padding: 110px 85px;
+    font-family: cursive;
+}
+
+#tournaments #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#tournaments #portfo-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#tournaments #portfo-items #item{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 6px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+#tournaments #portfo-items #item:hover{
+    border-color: #5e3bee;
+}
+
+
+#tournaments #portfo-items #item #info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+#tournaments #portfo-items #item #info p{
+    font-size: 13px;
+}
+
+#tournaments #portfo-items #item #info a{
+    text-decoration: underline;
+    text-decoration-color: #5e3bee;
+    color: black;
+}
+
+#tournaments #portfo-items #item #info h4{
+    font-size: 18px;
+}
+
+#tournaments #header h5 {
+    font-size: 20px;
+}
+#tournaments #header h3 {
+    font-size: 30px;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninjas in Pyjamas rlo</title>
+    <link rel="icon" href="icon/niplog.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* header */
+        header {
+            background-color: yellowgreen;
+            position: sticky;
+            top: 0;
+            padding: 0 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header h1 {
+            color: black;
+        } 
+        header ul {
+            display: flex;
+            gap: 40px;
+        }
+        header li {
+            list-style: none;
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        header li:hover {
+            color: blue;
+        }
+    
+        /* sections */
+        section {
+            background-color: white;
+            padding: 90px 85px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        section h5 {
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        section h3 {
+            margin-top: -30px;
+            font-weight: normal;
+            font-size: 46px;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        section h3 span {
+            color: yellowgreen;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        section h4 {
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        section p {
+            margin-top: -50px;
+            color: black;
+            font-size: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* footer */
+        footer {
+            background-color: yellowgreen;
+            padding: 0 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+        }
+        footer li {
+            list-style: none;
+            color: white;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;      
+        }
+        footer li:hover {
+            color: blue;
+        }
+        footer a:hover {
+            color: blue;
+        }
+    
+        .skills {
+            padding: 110px 85px 0;
+        }
+        .skills h3 {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .skills .skill-items {
+            display: flex;
+            margin-top: 70px;
+            gap: 30px;
+        }
+        .skills .skill-items .item {
+            background-color: #deebee;
+            width: 25%;
+            border-radius: 10px;
+            padding: 32px;
+            border-bottom: 4px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .skills .skill-items .item:hover {
+            border-color: #5e3bee;
+        }
+        .skills .skill-items .item h4 {
+            font-size: 18px;
+            color: rgba(255, 0, 0, 0.637);
+        }
+        .skills .skill-items .item p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 22px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Ninjas in Pyjamas - rlo</h1>
+        <ul>
+            <li id="intro">Introduction</li>
+            <li id="_tournaments">Tournaments</li>
+            <li id="contact">Contact</li>
+        </ul>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h5>Hey, I am Gerard</h5>
+            <h3>Publicly known as <span>rlo</span></h3>
+            <p>Welcome to my page! Here you will find information about my journey and achievements.</p>
+        </section>
+
+        <!-- Skills -->
+        <div class="skills">
+            <h3>My Expertise</h3>
+            <div class="skill-items">
+                <div class="item">   
+                    <h4>Skill 1</h4>
+                    <p>Description of skill 1...</p>
+                </div>
+                <div class="item">   
+                    <h4>Skill 2</h4>
+                    <p>Description of skill 2...</p>
+                </div>
+                <div class="item">   
+                    <h4>Skill 3</h4>
+                    <p>Description of skill 3...</p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+          
+        <!-- Tournaments -->
+        <div id="tournaments">
+        <div id="header">
+            <div id="info">
+                <h5>Events</h5>
+                <h3>Recent Tournaments</h3>
+            </div>
+        </div>
+        <div id="portfo-items">
+            <div id="item">
+                <div id="info">
+                    <h4>Tournament Name</h4>
+                        <p>Tournament Prizes</p>
+                        <a href="">View</a>
+                </div>
+            </div>
+            <div id="item">
+                <div id="info">
+                    <h4>Tournament Name</h4>
+                        <p>Tournament Prizes</p>
+                        <a href="">View</a>
+                </div>
+            </div>
+            <div id="item">
+                <div id="info">
+                        <h4>Tournament Name</h4>
+                        <p>Tournament Prizes</p>
+                        <a href="">View</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h1>Ninjas in Pyjamas - rlo</h1>
+        <ul>
+            <li>Introduction</li>
+            <li>Tournaments</li>
+            <li>Contact</li>
+        </ul>
+        <p>Follow me: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <hr>
+        <p>
+            <span>Made by Gerard Carl Q. Palma</span> — BSCS Student
+        </p>
+    </footer>
+</body>
+</html>
