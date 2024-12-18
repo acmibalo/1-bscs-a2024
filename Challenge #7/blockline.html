@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#contacts" class="nav-link">Contacts</a>
+            <a href="#info" class="nav-link">Info</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="images/abbey.jpg" alt="Abbey Road">
+                <div class="content">
+                    <div class="author">CATHERINE</div>
+                    <div class="title">ABBEY ROAD</div>
+                    <div class="topic">THE BEATLES</div>
+                    <div class="des">
+                        Abbey Road is one of the most iconic albums by The Beatles, released on September 26, 1969...
+                    </div>
+                    <div class="buttons">
+                        <button class="btn">SEE MORE</button>
+                        <button class="btn">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional items here... -->
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images/abbey.jpg" alt="Abbey Road">
+                <div class="content">
+                    <div class="title">Name Slider</div>
+                    <div class="description">Description</div>
+                </div>
+            </div>
+            <!-- Additional items here... -->
+        </div>
+
+        <!-- next prev -->
+        <div class="arrows">
+            <button id="prev"> &lt; </button>
+            <button id="next"> &gt; </button>
+        </div>
+
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
