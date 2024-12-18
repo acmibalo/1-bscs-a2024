@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f0f9; /* Soft background color */
+    color: #333; /* Dark text for readability */
+    text-align: center; /* Center text for the entire body */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+header {
+    padding: 20px;
+    background-color: #f1e1f1; /* Softer header background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1, h2 {
+    color: #3a0a56; /* Darker color for headings */
+    font-family: cursive; /* Cursive font for elegance */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.accordion {
+    margin: 20px auto; /* Center the accordion */
+    width: 80%; /* Set a width for the accordion */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.accordion-item {
+    border: 1px solid #d5006d; /* Soft border color */
+    margin: 5px 0;
+    border-radius: 5px; /* Rounded corners for items */
+}
+
+.accordion-header {
+    background-color: #f1e1f1; /* Softer background for headers */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #d5006d; /* Darker pink on hover */
+    color: white; /* White text on hover */
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff; /* White background for content */
+    border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center; /* Center the gallery items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin: 20px;
+}
+
+.gallery-item {
+    margin: 10px; /* Add margin between gallery items */
+}
+
+.gallery-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slightly smaller scale for a subtle effect */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #181617; /* Dark background for tooltip */
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the tooltip */
+    left: 50%;
+    margin-left: -60px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.progress {
+    margin: 20px auto; /* Center the progress section */
+    text-align: center;
+}
+
+.progress-container {
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the progress bar */
+}
+
+.progress-bar {
+    background-color: #d5006d; /* Darker pink for the filled portion */
+    height: 30px; /* Height of the progress bar */
+    border-radius: 25px; /* Rounded corners */
+    transition: width 0.4s ease; /* Smooth transition for width change */
+}
+
+.progress {
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    line-height: 30px; /* Center text vertically */
+    font-weight: bold; /* Make text bold */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for the modal */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888; /* Border for the modal */
+    border-radius: 10px; /* Rounded corners */
+    width: 80%; /* Width of the modal */
+    max-width: 600px; /* Maximum width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    animation: fadeIn 0.3s; /* Fade-in animation */
+}
+
+.modal h2 {
+    color: #d5006d; /* Dark pink for the title */
+    text-align: center; /* Center the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.modal p {
+    color: #333; /* Dark gray for text */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.modal button {
+    background-color: #d5006d; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.modal button:hover {
+    background-color: #a2004d; /* Darker shade on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Close button styling */
+.close {
+    color: #aaa; /* Light gray for close button */
+    float: right; /* Align to the right */
+    font-size: 28px; /* Size of the close button */
+    font-weight: bold; /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: #d5006d; /* Change color on hover/focus */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
