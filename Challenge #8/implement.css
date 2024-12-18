@@ -1,0 +1,206 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Block-level Elements (header, nav, div) */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    display: block; /* Block-level element */
+    text-align: center;
+}
+
+nav a {
+    display: inline-block; /* Inline-block elements for links */
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* ID Selector for Main Header */
+#main-header {
+    background-color: #222; /* Unique styling for header */
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* List and Item */
+.list {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.item {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+}
+
+.item:hover .content {
+    transform: translateY(0);
+}
+
+/* Class Selector for Content Elements */
+.author, .title, .topic {
+    font-weight: bold;
+}
+
+.des {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+/* Class for Buttons */
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Thumbnail Section */
+.thumbnail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.thumbnail .item {
+    width: 23%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.thumbnail .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.thumbnail .title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.thumbnail .description {
+    font-size: 14px;
+}
+
+/* Arrows for Carousel Navigation */
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.arrows button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrows button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Time Indicator */
+.time {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .list {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .thumbnail {
+        flex-direction: column;
+    }
+
+    .thumbnail .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
