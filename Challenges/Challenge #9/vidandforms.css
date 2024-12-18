@@ -1,0 +1,113 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    display: block;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Embedded Video Section */
+.video-container {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.embed-video {
+    margin-bottom: 30px;
+}
+
+.local-video {
+    margin-top: 30px;
+}
+
+h2, h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-container {
+        padding: 10px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
