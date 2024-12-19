@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Just Do It</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Honey Grace C. Navarra">
+        <meta name="keywords" content="workout, exercise">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/carrot.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Just Do It</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button onclick="performSearch()">Search</button>
+                </div>
+                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <main>
+
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img src="images/img_dumbell.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="images/img_lifting.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="images/img_squat.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/img_yoga.jpg" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            
+            <section>
+                <h2>Workout</h2>
+                <div id="workout-section">
+                    <div class="workout">
+                        <img src="images/jumping_jacks.gif" alt="the person is doing jumping jacks"/>
+                        <h3>Jumping Jacks</h3>
+                        <p>Jumping jacks are a full-body exercise that improve cardiovascular fitness, strengthen muscles, and boost endurance.</p>
+                    </div>
+
+                    <div class="workout">
+                        <img src="images/high_knees.gif" alt="the person is doing high knee"/>
+                        <h3>High Knee</h3>
+                        <p>A dynamic cardio move that strengthens the lower body while boosting heart rate for an intense calorie burn.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Program</h2>
+
+                <div id="program-section">
+                    <div class="program">
+                        <img src="images/img_program.jpg" alt="Program Invitation">
+                        <h3>Joining our exercise program is the first step to a healthier, happier you. Discover strength, endurance, and confidence through our carefully designed workout routines!</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Videos</h2>
+                <div class="video-container">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/cbKkB3POqaY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <video controls>
+                    <source src="videos/cardio workout.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section>
+                <h2>Contact Us</h2>
+                <form action="submit_info.php" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="What's your message" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+    </main>
+
+        <footer>
+            <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+        </footer>
+
+        <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            }
+
+            let slideIndex = 1;
+            showSlides(slideIndex); 
+
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n); 
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n); 
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length} 
+
+            
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+
+            
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                
+                this.classList.toggle("active");
+
+               
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+
+            function performSearch() {
+                let input = document.getElementById("search-input").value.toLowerCase();
+                let content = document.body.innerText.toLowerCase();
+                
+                if (content.includes(input)) {
+                    alert(`Found results for: "${input}"`);
+                } else {
+                    alert(`No results found for: "${input}"`);
+                }
+            }
+            
+            window.onscroll = function() {
+                let button = document.getElementById("scrollTopBtn");
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+
+            function scrollToTop() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+
+            document.getElementById("dark-mode-toggle").addEventListener("click", function () {
+                document.body.classList.toggle("dark-mode");
+            });
+
+
+            document.head.insertAdjacentHTML(
+                "beforeend",
+                `<style>
+                .dark-mode {
+                    background-color: #121212;
+                    color: #fff;
+                }
+                </style>`
+            );
+        </script>
+
+    </body>
+</html>
