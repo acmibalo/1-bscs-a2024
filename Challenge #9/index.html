@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Just Do It</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Honey Grace C. Navarra">
+        <meta name="keywords" content="workout, exercise">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/carrot.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1 class="logo" style="font-size: 2.5rem; margin-bottom: 10px;">Just Do It</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Workout</h2>
+                <div id="workout-section">
+                    <div class="workout">
+                        <img src="images/jumping_jacks.gif" alt="the person is doing jumping jacks"/>
+                        <h3>Jumping Jacks</h3>
+                        <p>Jumping jacks are a full-body exercise that improve cardiovascular fitness, strengthen muscles, and boost endurance.</p>
+                    </div>
+
+                    <div class="workout">
+                        <img src="images/high_knees.gif" alt="the person is doing high knee"/>
+                        <h3>High Knee</h3>
+                        <p>A dynamic cardio move that strengthens the lower body while boosting heart rate for an intense calorie burn.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Program</h2>
+
+                <div id="program-section">
+                    <div class="program">
+                        <img src="images/img_program.jpg" alt="Program Invitation">
+                        <h3>Joining our exercise program is the first step to a healthier, happier you. Discover strength, endurance, and confidence through our carefully designed workout routines!</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Videos</h2>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/cbKkB3POqaY" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <video controls>
+                    <source src="videos/cardio workout.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section>
+                <h2>Contact Us</h2>
+                <form action="submit_info.php" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="What's your message" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+    </main>
+
+        <footer>
+            <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
