@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* White text for readability */
+    text-align: left;
+
+    /* Refined Background Image */
+    background-color: #1c1c1c; /* Dark background for contrast */
+    background-image: url('images/gamingbg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1a1a1a; /* Dark background for the header */
+    color: #ff5733; /* Warm color for header */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #f8f8f8; /* Light color for navigation links */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #444444; /* Slightly lighter grey for hover effect */
+    color: #ffffff;
+    border-color: #ff5733; /* Red accent color */
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333333;
+    border-top: 2px solid #ff5733;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #ff5733;
+    color: #121212;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Russo One', sans-serif;
+    color: #ff5733; /* Warm orange-red for headings */
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+/* Main Content and Layout */
+.main-content, .sidebar {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.main-content {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.block-style {
+    background-color: #121212;
+    padding: 15px;
+    border: 1px solid #ff5733;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.inline-style {
+    color: #ffcc00;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.highlighted-text {
+    color: #ff5733;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#special-highlight {
+    color: #00ffcc; /* Teal for contrast */
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ff5733; /* Consistent footer color */
+    padding: 20px;
+    border-top: 2px solid #ff5733;
+}
+
+/* Button Styling */
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff9900; /* Bright orange for buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68900; /* Darker orange for hover effect */
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: #ff5733; /* Consistent red color for links */
+    background-color: #1a1a1a; /* Dark background to contrast the text */
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #ff5733; /* Light up background on hover */
+    color: #1a1a1a; /* Dark text for readability */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Screenshots Layout */
+.screenshot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.game-screenshot {
+    width: 100%;                        /* Ensures images take full width of their grid item */
+    aspect-ratio: 16 / 9;               /* Sets a consistent aspect ratio (e.g., 16:9) */
+    object-fit: cover;                  /* Crops the image to fit within the aspect ratio */
+    border-radius: 8px;                 /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; /* Ensure no overflow */
+}
+
+.game-screenshot:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center; /* Optional: centers the content */
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content, .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .game-screenshot {
+        max-width: 100%;
+    }
+}
+
+/* Styling for the Contact Form */
+#contact {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#contact h2 {
+    font-family: 'Russo One', sans-serif;
+    color: #ff5733;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #ff5733;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff5733;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Show hamburger menu on small screens */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-align: left;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact input,
+    #contact textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+body {
+    font-size: 1rem; /* Base font size */
+}
+
+h1 {
+    font-size: 2.25rem; /* 36px */
+}
+
+h2 {
+    font-size: 1.75rem; /* 28px */
+}
+
+h3 {
+    font-size: 1.375rem; /* 22px */
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    h3 {
+        font-size: 1.25rem; /* 20px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+        padding: 18px 30px;
+    }
+}
+
+.lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .lightbox-img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for Images */
+.carousel-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-arrow.left-arrow {
+    left: 10px;
+}
+
+.carousel-arrow.right-arrow {
+    right: 10px;
+}
+
+.carousel-arrow:hover {
+    background-color: #ff5733;
+}
+
+/* Navigation Arrows Styling */
+.carousel-arrow {
+    position: absolute;
+    top: 50%; /* Align vertically at the center */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    background-color: rgba(0, 0, 0, 0.5); /* Circle background color */
+    border: none;
+    border-radius: 50%; /* Circle shape */
+    color: #ffffff; /* Arrow color */
+    font-size: 24px; /* Arrow size */
+    width: 50px; /* Circle width */
+    height: 50px; /* Circle height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Perfect centering */
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(255, 87, 51, 0.8); /* Brighter hover effect */
+    transform: translateY(-50%) scale(1.1); /* Subtle zoom on hover */
+}
+
+.carousel-arrow.left {
+    left: 10px; /* Position left arrow */
+}
+
+.carousel-arrow.right {
+    right: 10px; /* Position right arrow */
+}
+
