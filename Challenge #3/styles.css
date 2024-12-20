@@ -1,0 +1,111 @@
+/* General reset and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 30px;
+    background-color: white;
+}
+
+main h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Section padding for spacing */
+section {
+    margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Container class to center content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+}
