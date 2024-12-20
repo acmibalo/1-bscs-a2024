@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FFE1E1, #FFDDE4, #FFB7C5, #C89BD7, #8A2BE2); /* Cherry Blossom Palette */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#header {
+    background: #FFB7C5; /* Cherry Blossom Pink */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header h1 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Events Calendar */
+.events-calendar {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 5px solid #FFB7C5; /* Cherry Blossom Pink Border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #FFF2F4; /* Light Cherry Blossom White Background */
+}
+
+.events-calendar h2 {
+    background: linear-gradient(to bottom, #FFB7C5, #FFC1CC, #FFF2F4); /* Gradient Background */
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.events-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.events-calendar th, .events-calendar td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #FFE1E1;
+}
+
+.events-calendar th {
+    background: linear-gradient(to bottom, #FFB7C5, #FFC1CC, #FFF2F4); /* Gradient Background */
+    color: #FFFFFF;
+}
+
+.events-calendar tr:nth-child(even) {
+    background-color: #FFDDE4; /* Light Pink */
+}
+
+.events-calendar tr:hover {
+    background: linear-gradient(to bottom, #FFB7C5, #FFC1CC, #FFF2F4); /* Gradient Background */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Block Elements */
+.block-element {
+    background: #FFF2F4; /* Light Cherry Blossom White */
+    border: 2px solid #FFC1CC;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.block-element h2 {
+    margin-top: 0;
+    color: #8A2BE2;
+}
+
+/* Inline Elements */
+.inline-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #8A2BE2; /* Deep Purple */
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.inline-button:hover {
+    background: #7B1FA2;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+#footer {
+    background: #FFB7C5; /* Cherry Blossom Pink */
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}

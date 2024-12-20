@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#header {
+    background-color: #ffcccc; /* Light cherry blossom pink */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cc0052; /* Dark cherry blossom pink */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff66b2; /* Brighter pink for hover effect */
+	text-decoration: underline;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffe6e6; /* Very light pink */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #ffe6e6; /* Very light pink */
+}
+
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #cc0052; /* Dark cherry blossom pink */
+}
+
+section p {
+    color: #666;
+}
+
+/* Footer */
+#footer {
+    background-color: #ffcccc; /* Light cherry blossom pink */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #header {
+        padding: 10px;
+    }
+}

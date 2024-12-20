@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petal Journey | Website🌸</title>
+  <link rel="icon" type="image/x-icon" href="img&vid/icon_final.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="keywords" content="Cherry Blossom, Sakura, Petal Journey, Hana no Tabi, Bloom Tracker, Festivals, Travel Tips, Cultural Significance, Gallery, Shop, Seeds, Care, Viewing Spots, Community, Photography, Wallpapers">
+  <meta name="description" content="Petal Journey (Hana no Tabi) explores the beauty and cultural significance of cherry blossoms with guides, galleries, and a lively community for enthusiasts.">
+  <meta name="author" content="Armie Joy U. Tangalin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navigation">
+    <div class="menu-icon" onclick="toggleDropdown()">
+      <i class="fas fa-bars"></i>
+      <span class="brand-name">Petal Journey</span> 
+      <ul class="dropdown-content">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#cherry-blossom-guide">Gallery</a></li>
+        <li><a href="#virtual-tour">Virtual Tour</a></li>
+        <li><a href="#contactModal">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Us -->
+  <section id="about-us">
+    <button class="accordion"><img src="img&vid/icon_final.ico" alt="About Us Icon" style="width:20px;"/> About Us</button>
+    <div class="panel">
+      <p>Welcome to Petal Journey, your ultimate guide to cherry blossom beauty and cultural significance. Dive into our comprehensive resources and connect with a vibrant community of blossom enthusiasts!</p>
+    </div>
+
+    <button class="accordion"><img src="img&vid/icon_final.ico" alt="Our Mission Icon" style="width:20px;"/> Our Mission</button>
+    <div class="panel">
+      <p>Our mission is to celebrate the beauty of cherry blossoms and provide valuable information, including bloom tracking, viewing spots, and cultural insights. Join us on this journey to explore and appreciate the stunning blossoms.</p>
+    </div>
+
+    <button class="accordion"><img src="img&vid/icon_final.ico" alt="Join the Community Icon" style="width:20px;"/> Join the Community</button>
+    <div class="panel">
+      <p>Become a part of our growing community of cherry blossom enthusiasts. Share your experiences, photos, and tips with fellow blossom lovers.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="cherry-blossom-guide">
+    <h2>Gallery</h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade" style="transition: opacity 1s ease-in-out;">
+        <img src="img&vid/image_1.jpg" alt="Cherry Blossom 1">
+        <div class="text">Cherry Blossoms in Full Bloom at Mount Fuji.</div>
+      </div>
+      <div class="mySlides fade" style="transition: opacity 1s ease-in-out;">
+        <img src="img&vid/image_2.jpg" alt="Cherry Blossom 2">
+        <div class="text">A Serene Blossom Park in Kyoto.</div>
+      </div>
+      <div class="mySlides fade" style="transition: opacity 1s ease-in-out;">
+        <img src="img&vid/image_3.jpg" alt="Cherry Blossom 3">
+        <div class="text">Night Cherry Blossoms with Lanterns in Tokyo.</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </section>
+
+  <!-- Virtual Tour -->
+  <div id="virtual-tour" class="virtual-tour-container w3-container">
+    <h2>🌸 Virtual Tour 🌸</h2>
+    <div class="video-container">
+      <div class="video-thumbnail" onclick="openVideo('img&vid/Virtual_Tour_1.mp4')">
+        <div class="thumbnail-wrapper">
+          <img src="img&vid/thumbnail1.png" alt="Virtual Tour 1">
+          <div class="overlay"><i class="fas fa-play-circle" style="font-size:48px; color:white;"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeVideoModal()">&times;</span>
+    </div>
+  </div>
+
+  <!-- Contact Us Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeContactModal()">&times;</span>
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

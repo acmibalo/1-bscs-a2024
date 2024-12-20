@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff0f5; /* Light pink background */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #ffb7c5; /* Cherry blossom pink */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background: #ff99aa; /* Darker pink for hover */
+}
+
+/* Main Styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+/* Aside Styling */
+aside {
+    flex: 0 1 300px;
+    padding: 20px;
+    background: #ffd4e5; /* Light pink for aside */
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background: #ffb7c5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    footer {
+        position: relative;
+    }
+}
