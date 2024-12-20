@@ -1,0 +1,501 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    background-color: #3498DB;
+    padding: 0.5em 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #00BCD4;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+pre {
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+#main-heading {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content-section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.heading {
+    font-family: 'Arial Black', sans-serif;
+    color: #333;
+}
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+    }
+    nav li {
+        display: block;
+        margin: 0.5em 0;
+    }
+    main {
+        max-width: 95%;
+    }
+    section {
+        margin-bottom: 0.5em;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+    video {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Challenge #9 Styles */
+
+#contact-form form {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+#contact-form input[type="submit"] {
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Challenge #11: How Tos Styles */
+
+.accordion {
+    margin-bottom: 2em;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #f0f0f0;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.accordion-content {
+    padding: 1em;
+    display: none; /* Initially hidden */
+}
+
+.tabs {
+    margin-bottom: 2em;
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-link {
+    display: inline-block;
+    padding: 1em;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.tab-link.active {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.tab-content {
+    padding: 1em;
+}
+
+.tab {
+    display: none; /* Initially hidden */
+}
+
+.tab.active {
+    display: block;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Black with opacity */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on your needs */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    margin-bottom: 2em;
+}
+
+.progress {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #4CAF50;
+    height: 20px;
+    width: 0%; /* Initial width */
+    border-radius: 5px; 
+}body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #FF5733;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    background-color: #3498DB;
+    padding: 0.5em 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: inline;
+    margin: 0 1em;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #00BCD4;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+pre {
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+#main-heading {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content-section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.heading {
+    font-family: 'Arial Black', sans-serif;
+    color: #333;
+}
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+    }
+    nav li {
+        display: block;
+        margin: 0.5em 0;
+    }
+    main {
+        max-width: 95%;
+    }
+    section {
+        margin-bottom: 0.5em;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+    video {
+        width: 100%;
+        height: 200px;
+    }
+}
+/* Challenge #9 Styles */
+#contact-form form {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+#contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Challenge #11: How Tos Styles */
+.accordion {
+    margin-bottom: 2em;
+}
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+.accordion-header {
+    background-color: #f0f0f0;
+    padding: 1em;
+    cursor: pointer;
+}
+.accordion-content {
+    padding: 1em;
+    display: none;
+}
+.tabs {
+    margin-bottom: 2em;
+}
+.tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+.tab-link {
+    display: inline-block;
+    padding: 1em;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 1em;
+}
+.tab-link.active {
+    background-color: #3498DB;
+    color: #fff;
+}
+.tab-content {
+    padding: 1em;
+}
+.tab {
+    display: none;
+}
+.tab.active {
+    display: block;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.progress-bar {
+    margin-bottom: 2em;
+}
+.progress {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar {
+    background-color: #4CAF50;
+    height: 20px;
+    width: 0%;
+    border-radius: 5px;
+}

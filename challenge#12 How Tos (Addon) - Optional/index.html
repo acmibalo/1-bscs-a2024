@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML Application with Layout</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic HTML application demonstrating fundamental web elements and layout principles.">
+    <meta name="keywords" content="HTML, CSS, web development, layout, basic, elements, semantic">
+    <link rel="stylesheet" href="styles11.css"> 
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">Basic HTML Application</h1>
+        <p>Created by: Christian Jayb M. Lucañas</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Elements</a></li>
+            <li><a href="#" class="nav-link">Semantic Elements</a></li>
+            <li>
+                <a href="#" class="nav-link">Language</a>
+                <ul>
+                    <li><a href="index.html" lang="en">English</a></li>
+                    <li><a href="index_es.html" lang="es">Español</a></li>
+                    <li><a href="index_fr.html" lang="fr">Français</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content-section">
+            <h2>Document Structure</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;  Content goes here...&lt;/body&gt;&lt;/html&gt;            </code></pre>
+        </section>
+        <section class="content-section">
+            <h2>Basic Elements</h2>
+            <h3>Headings</h3>
+            <h1 class="heading">This is h1</h1>
+            <h2 class="heading">This is h2</h2>
+            <h3 class="heading">This is h3</h3>
+            <h4 class="heading">This is h4</h4>
+            <h5 class="heading">This is h5</h5>
+            <h6 class="heading">This is h6</h6>
+            <h3>Paragraphs</h3>
+            <p>This is a paragraph element. Paragraphs are defined with the &lt;p&gt; tag.</p>
+            <h3>Links</h3>
+            <p>This is a <a href="https://www.w3schools.com">link to W3Schools</a></p>
+            <h3>Lists</h3>
+            <h4>Unordered List:</h4>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h4>Ordered List:</h4>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+        <section class="content-section">
+            <h2>HTML5 Semantic Elements</h2>
+            <p>
+                <code>&lt;header&gt;</code> - Defines a header section<br>
+                <code>&lt;nav&gt;</code> - Defines navigation links<br>
+                <code>&lt;section&gt;</code> - Defines a section<br>
+                <code>&lt;article&gt;</code> - Defines an article
+            </p>
+        </section>
+        <section class="content-section">
+            <h2>Embedded Video</h2>
+            <h3>From YouTube:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Local Video (MP4):</h3>
+            <video width="320" height="240" controls>
+                <source src="videos/myVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="content-section" id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+
+        <!-- Challenge #11: How Tos -->
+        <section class="content-section">
+            <h2>W3Schools How Tos</h2>
+
+            <h3>1. Accordion</h3>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Section 1</h3>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Section 2</h3>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">Section 3</h3>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>2. Tabs</h3>
+            <div class="tabs">
+                <ul class="tab-links">
+                    <li class="tab-link active" data-tab="tab1">Tab 1</li>
+                    <li class="tab-link" data-tab="tab2">Tab 2</li>
+                    <li class="tab-link" data-tab="tab3">Tab 3</li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab active">
+                        <p>Content for Tab 1</p>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <p>Content for Tab 2</p>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <p>Content for Tab 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>3. Modal</h3>
+            <button id="openModalBtn">Open Modal</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Modal content goes here...</p>
+                </div>
+            </div>
+
+            <h3>4. Image Gallery</h3>
+            <div class="image-gallery">
+                <img src="images/image1.jpg" alt="Image 1">
+                <img src="images/image2.jpg" alt="Image 2">
+                <img src="images/image3.jpg" alt="Image 3">
+            </div>
+
+            <h3>5. Progress Bar</h3>
+            <div class="progress-bar">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p>Task Completion: 60%</p>
+            </div>
+
+            <!-- Challenge #12: How Tos (Addon) -->
+            <h3>6. Tooltip</h3>
+            <button class="tooltip-button" data-tooltip="This is a tooltip!">Hover Me</button>
+
+            <h3>7. Dropdown</h3>
+            <div class="dropdown">
+                <button class="dropdown-button">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <h3>8. Sidebar</h3>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">Sidebar Link 1</a></li>
+                    <li><a href="#">Sidebar Link 2</a></li>
+                    <li><a href="#">Sidebar Link 3</a></li>
+                </ul>
+            </div>
+
+            <h3>9. Carousel</h3>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="images/carousel1.jpg" alt="Carousel Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel2.jpg" alt="Carousel Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel3.jpg" alt="Carousel Image 3">
+                </div>
+            </div>
+
+            <h3>10. Sticky Navigation</h3>
+            <nav class="sticky-nav">
+                <ul>
+                    <li><a href="#">Sticky Link 1</a></li>
+                    <li><a href="#">Sticky Link 2</a></li>
+                    <li><a href="#">Sticky Link 3</a></li>
+                </ul>
+            </nav>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

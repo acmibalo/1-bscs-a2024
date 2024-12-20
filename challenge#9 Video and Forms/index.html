@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML Application with Layout</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic HTML application demonstrating fundamental web elements and layout principles.">
+    <meta name="keywords" content="HTML, CSS, web development, layout, basic, elements, semantic">
+    <link rel="stylesheet" href="styles9.css"> 
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">Basic HTML Application</h1>
+        <p>Created by: Christian Jayb M. Lucañas</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Elements</a></li>
+            <li><a href="#" class="nav-link">Semantic Elements</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content-section">
+            <h2>Document Structure</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;  &lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;  Content goes here...&lt;/body&gt;&lt;/html&gt;            </code></pre>
+        </section>
+        <section class="content-section">
+            <h2>Basic Elements</h2>
+            <h3>Headings</h3>
+            <h1 class="heading">This is h1</h1>
+            <h2 class="heading">This is h2</h2>
+            <h3 class="heading">This is h3</h3>
+            <h4 class="heading">This is h4</h4>
+            <h5 class="heading">This is h5</h5>
+            <h6 class="heading">This is h6</h6>
+            <h3>Paragraphs</h3>
+            <p>This is a paragraph element. Paragraphs are defined with the &lt;p&gt; tag.</p>
+            <h3>Links</h3>
+            <p>This is a <a href="https://www.w3schools.com">link to W3Schools</a></p>
+            <h3>Lists</h3>
+            <h4>Unordered List:</h4>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h4>Ordered List:</h4>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+        <section class="content-section">
+            <h2>HTML5 Semantic Elements</h2>
+            <p>
+                <code>&lt;header&gt;</code> - Defines a header section<br>
+                <code>&lt;nav&gt;</code> - Defines navigation links<br>
+                <code>&lt;section&gt;</code> - Defines a section<br>
+                <code>&lt;article&gt;</code> - Defines an article
+            </p>
+        </section>
+        <section class="content-section">
+            <h2>Embedded Video</h2>
+            <h3>From YouTube:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Local Video (MP4):</h3>
+            <video width="320" height="240" controls>
+                <source src="videos/myVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="content-section" id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>
