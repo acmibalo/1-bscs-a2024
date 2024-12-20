@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <title>Login | RoadTripReady</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="loginF/styles.css">
+  <link rel="stylesheet" href="aboutF/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon//site.webmanifest">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <a class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 16l6-6 4 4 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
+        </svg>
+        RoadTripReady
+      </a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="browse.html">Browse</a>
+        <a href="contacts.html">Contact Us</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="login-container">
+    <div class="login-card">
+      <h1>Welcome Back</h1>
+
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+        <div id="errorMessage" class="error" style="display: none;">
+          Invalid email or password. Please try again.
+        </div>
+
+        <button type="submit" class="login-button">Log In</button>
+      </form>
+
+      <div class="social-login">
+        <button class="social-login-button">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z" />
+          </svg>
+          Continue with Google
+        </button>
+
+        <button class="social-login-button">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+          Continue with Facebook
+        </button>
+      </div>
+
+      <div class="login-footer">
+        Don't have an account? <a href="signup">Sign up</a>
+        <br>
+        <a href="forgot-password">Forgot your password?</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="loginF/scripts.js"> </script>
+</body>
+
+</html>
