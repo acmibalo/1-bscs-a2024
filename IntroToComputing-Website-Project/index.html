@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+  <title>RoadTripReady.com.ph | Ang Kasama Mo Sa Bawat Pakikipagsapalaran</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Find your perfect motorcycle in the Philippines. New and used bikes from top brands like Honda, Yamaha, Suzuki and more.">
+  <meta name="keywords"
+    content="motorcycles philippines, buy motorcycle, used motorcycles, new motorcycles, honda philippines, yamaha philippines">
+  <link rel="stylesheet" href="aboutF/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" href="indexF/styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <a class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 16l6-6 4 4 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="12" cy="12" r="10" stroke-width="2" />
+        </svg>
+        RoadTripReady
+      </a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="browse.html">Browse</a>
+        <a href="contacts.html">Contact Us</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Lakbayin ang Pilipinas!</h1>
+      <p>Find your perfect ride for adventure on RoadTripReady.com.ph</p>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search by make, model, or location..." class="search-input"
+          aria-label="Search motorcycles">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Motorcycles</h2>
+
+    <div class="filter-controls">
+      <select class="filter-select" id="brandFilter">
+        <option value="">All Brands</option>
+        <option value="yamaha">Yamaha</option>
+        <option value="honda">Honda</option>
+        <option value="suzuki">Suzuki</option>
+      </select>
+
+      <select class="filter-select" id="priceFilter">
+        <option value="">All Prices</option>
+        <option value="0-100000">Under ₱100,000</option>
+        <option value="100000-150000">₱100,000 - ₱150,000</option>
+        <option value="150000+">Over ₱150,000</option>
+      </select>
+
+      <select class="filter-select" id="yearFilter">
+        <option value="">All Years</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+      </select>
+    </div>
+
+    <div class="motorcycle-grid">
+      <div class="motorcycle-card" data-brand="yamaha" data-price="119900" data-year="2023">
+        <button class="heart-button">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </button>
+        <img src="indexF/image/yamaha-nmax.jpg"
+          alt="Yamaha NMAX" class="motorcycle-image" loading="lazy">
+        <div class="motorcycle-details">
+          <h3>Yamaha NMAX ABS</h3>
+          <p>2022 Model | 1,500 km</p>
+          <p class="motorcycle-price">₱151900</p>
+        </div>
+        <input type="checkbox" class="compare-checkbox" aria-label="Add to compare">
+      </div>
+
+      <div class="motorcycle-card" data-brand="honda" data-price="139900" data-year="2023">
+        <button class="heart-button">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </button>
+        <img src="indexF/image/honda_adv160_20231001_02.webp"
+          class="motorcycle-image" loading="lazy">
+        <div class="motorcycle-details">
+          <h3>Honda ADV 160</h3>
+          <p>2024 Model | 2,300 km</p>
+          <p class="motorcycle-price">₱166,900</p>
+        </div>
+        <input type="checkbox" class="compare-checkbox" aria-label="Add to compare">
+      </div>
+
+      <div class="motorcycle-card" data-brand="yamaha" data-price="112900" data-year="2023">
+        <button class="heart-button">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </button>
+        <img src="indexF/image/yamaha-aerox.jpg"
+          alt="Yamaha Aerox" class="motorcycle-image" loading="lazy">
+        <div class="motorcycle-details">
+          <h3>Yamaha Aerox V2</h3>
+          <p>2023 Model | 800 km</p>
+          <p class="motorcycle-price">₱145,000</p>
+        </div>
+        <input type="checkbox" class="compare-checkbox" aria-label="Add to compare">
+      </div>
+    </div>
+  </section>
+
+  <div class="compare-panel">
+    <div class="compare-grid"></div>
+    <button class="compare-close">Close</button>
+  </div>
+
+  <section class="cta">
+    <h2>Ready for Your Next Adventure?</h2>
+    <p>RoadTripReady.com.ph makes planning your Philippine road trip easy. We help you find vehicles, routes, and places
+      to stay, all in one spot. It's safe, simple, and fun.</p>
+    <a href="about.html" class="cta-button">Get Started Today</a>
+  </section>
+  <script src="indexF/scripts.js"> </script>
+</body>
+
+</html>
