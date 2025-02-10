@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    height: 90vh;
+    width: 100vw;
+}
+
+.home {
+    
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/hd/ufc-4k-qz1oyca8xcz1oeef.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+
+.h-background{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffd4;
+    display: flex;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+   
+    z-index: 1000;
+    
+}
+
+.logo-con{
+    display:flex;
+    flex-direction: row;
+   
+   position: absolute;
+   top: 2vh;
+   left: 5vw;
+
+    
+}
+.logo{
+font-size: 1.5rem;
+font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+}
+
+.label{
+    font-size: 1.5rem;
+    padding-left: 5vw;
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    transition: all 0.5s ease-out;
+}
+
+.logo:hover{
+    color: #000000bb; 
+}
+
+.label:hover{
+    color: #000000bb; 
+}
+
+
+#nav-container {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.mew {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.mew a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex: 1;
+    background-color: #e1d2d24a;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    border: #f50606;
+    border-radius: 10%;
+    font-weight: 700;
+}
+
+
+
+.mew a:hover,a:focus {
+    color: #000000bb; 
+  
+  
+    
+}
+
+
+main{padding-top: 20vh;
+    padding-left: 10vw; 
+}
+ 
+.box1{
+    height: 56.5vh;
+    width: 60vw;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+   
+}
+
+.vid-con iframe{
+    width: 60vw;
+    height: 46vh;
+    border-radius: 5%;
+}
+.box1 h1{
+padding-left: 20px;
+font-size: 1.0rem;
+}
+
+.side-pic{
+    width: 20vw;
+    height:49vh;
+    border: 2px solid black;
+    position: absolute;
+    right: 5vw;
+    top: 20vh;
+background-image: url(https://pbs.twimg.com/media/FPx0ADHXMAI_Aoo.jpg:large);
+background-position: center;
+background-size: contain;
+
+padding: 0%;
+border-radius: 5%;
+}
+
+
+ 
+
+
+footer {
+    background-color: #f50606;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer h2 {
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+@media screen and (max-width: 768px) {
+    
+   
+    
+    
+    
+    #nav-container {
+        flex-direction: row;
+    }
+
+    
+
+    .home {
+        height: 100vh;
+    }
+}

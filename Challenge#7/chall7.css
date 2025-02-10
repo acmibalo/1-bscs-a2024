@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    height: 90vh;
+    width: 100vw;
+}
+
+.home {
+    
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/hd/ufc-4k-qz1oyca8xcz1oeef.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(75, 74, 74);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.box{
+    height: 50vh;
+    width: 50vw;
+    background-color: rgba(240, 248, 255, 0.781);
+    border-radius: 5%;
+    padding: 5px;
+     flex-direction: column;
+   
+    margin: 6px;
+}
+
+.box1{
+    height: 50vh;
+    width: 40vw;
+    background-color: rgba(240, 248, 255, 0.781);
+    border-radius: 5%;
+    padding: 5px;
+    
+}
+
+.box p{
+    color: black;
+    font-size: 40%;
+}
+
+.box1 p{
+    color: black;
+    font-size: 80%;
+}
+
+.mew {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.mew a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+.mew a:hover {
+    color: #e50914; 
+    transform: scale(1.1);
+}
+
+
+.w-con{
+    justify-content: center;
+    
+}
+.welcome {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 30vw;
+    height: 100vh;
+    
+    display: flex; 
+    justify-content: center;  
+    align-items: center;      
+}
+
+.welcome h1{
+    color: #e50914;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section, article {
+    width: 25vw;
+    height: 100vh;
+    font-size: 30px;
+    color: #e50914;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer h2 {
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+@media screen and (max-width: 768px) {
+    
+   
+    
+    
+    
+    #container {
+        flex-direction: row;
+    }
+
+    
+
+    .home {
+        height: 100vh;
+    }
+}

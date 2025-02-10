@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #111111a3;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 14vh;
+    text-align: center;
+
+    
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f90101;
+   
+    font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  
+}
+
+
+
+nav .navmenu {
+   
+   text-align: center;
+   display: flexbox;
+  
+   
+ }
+ 
+ nav .navmenu a {
+     color: white;
+     text-decoration: none;
+     padding: 0px 20px 0px 20px;
+     flex-direction: row;
+     font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    font-size: large;
+    
+    
+ }
+ 
+nav .navmenu a:hover {
+    background-color: #f60d0d;
+    border-radius: 5px;
+    height: 2%;
+    animation: ease-in-out;
+   
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+   
+    text-align: center;}
+    
+
+/* ----------------------------------------------------------------Home Section---------------------------------------------------------------------------------- */
+#Home {
+    height: 110vh;
+    width: 100vw;
+    background-color: #eaeaea;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url(https://wallpapercave.com/wp/wp2805442.jpg);
+background-size: 100vw 100vh;
+
+}
+
+.h-body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h3 {
+    font-size: 7rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 11vh;
+    font-family: "Anton SC", sans-serif;
+        font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #f60d0d;
+    background-color: #f3e8e885;
+    border-radius: 23%;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.container h3:hover{
+    transform: scale(1.05);
+}
+.h-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+
+#login-form, #signup-form {
+    background-color: #f40707b3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+#login-form h2{
+    color: #f4f0f0;
+}
+
+form label {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #111;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+/* ----------------------------------------------------------------About Section---------------------------------------------------------------------------------- */
+#About {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    background-image: url(https://wallpapers.com/images/hd/ufc-silva-iconic-front-kick-9g1u1mb1o3atcmli.jpg);
+    height: 120vh;
+    width: 100%;
+}
+
+.a-tittle h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    display: flex;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+justify-content: center;
+}
+
+.a-tittle h2:hover{
+    transform: scale(1.05);
+    color: red;
+}
+
+.a-body {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+margin-top: 10vh;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+
+.a-box {
+    background-color: #ffffffd7;
+    padding: 20px;
+    margin: 15px;
+    width: 30%;
+    height: 60vh;
+    border-radius: 8px;
+    text-align: left;
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-size: clamp(12px, 1vw, 100vw);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+display: flex;
+    
+}
+
+.a-box:hover{  
+
+transform: scale(1.1);
+}
+
+.a-box p {
+   
+    color: #555;
+}
+
+/* ----------------------------------------------------------------Highlights Section---------------------------------------------------------------------------------- */
+#highlights {
+    background-color: #f8f6f6;
+    padding: 50px 0;
+    text-align: center;
+height: 140vh;
+width: 100vw;
+margin-top: 10vh;
+background-image: url(https://wallpaperaccess.com/full/4487498.jpg);
+
+}
+
+.h-body{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+.h-video iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.h-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.i-box {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #d4d1d1eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.i-box:hover{
+    transform: scale(1.05);
+}
+
+.i-thumbnail {
+    width: 100%;
+    height: 150px;
+    background-color: #333;
+    border-radius: 8px 8px 0 0;
+    background-image: url(https://www.thesun.ie/wp-content/uploads/sites/3/2018/08/NINTCHDBPICT000428335245.jpg?strip=all&w=883&quality=100);
+background-position: center;
+background-size: 13vw 19vh;
+
+}
+
+.h-tittle{
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    font-size: 5vh;
+}
+
+.h-tittle h2{
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    color: #ddd;
+    display: flex;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+
+}
+
+.h-tittle h2:hover{
+    transform: scale(1.05);
+    color: red;
+}
+
+
+
+.i-p {
+    text-align: center;
+    padding: 10px;
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+}
+
+.i-p a {
+    color: #030101;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.i-p a:hover {
+    color: #ff0000;
+}
+
+/* ----------------------------------------------------------------News Section---------------------------------------------------------------------------------- */
+#news{
+    background-image: url(https://grabakahitman.files.wordpress.com/2019/01/whitt0000.jpeg);
+height: 130vh;
+width: 100vw;
+}
+
+.n-body{
+    margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .n-container{
+        align-items: center; 
+        justify-content: center;
+
+        display: grid;
+        display: grid;
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: 1fr 1fr;    
+       gap: 50px 10px;
+      margin-left: 5%;
+      margin-top: 10%;
+
+    }
+    h1{
+        color: #fc0101;
+        font-size: clamp(12px, 1vw, 54px)
+    }
+
+    p{
+font-size:clamp(12px, 1vw, 54px);
+    }
+
+    .n-box{
+        height: 47vh;
+        width: 40vw;
+       border:solid;
+       padding: 18px;
+       display: flex; 
+       background-color: #e5e5e5c3;
+       border-radius: 5%;
+       border-color: #ccc;
+       display: flex;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .n-box:hover{
+        transform: scale(1.05);
+    }
+
+    .n-text{
+        height: 25vh;
+        font-size: clamp(12px, 1vw, 54px)
+    }
+
+    .n-pic1,.n-pic2,.n-pic3,.n-pic4{
+       height: 30vh;
+       width: 100vw;
+    }
+    .n-pic1{
+background-image: url(https://www.bjpenn.com/wp-content/uploads/2023/03/Tom-Aspinall-and-Jon-Jones.jpg);
+  background-position: center;
+       background-size: 100%;
+       margin-right: 2%;
+      
+  
+}
+
+
+    .n-pic2{
+        background-image: url(https://preview.redd.it/kpzyxliceuf41.jpg?auto=webp&s=05e0e496cdf6e3d0e9aa8cb6546f79a4844d0baa);
+        background-position: center;
+        background-size: 100%;
+        margin-right: 2%;
+    }
+    .n-pic3{
+        background-image: url(https://staticg.sportskeeda.com/editor/2022/12/06c06-16706758800827-1920.jpg);
+        background-position: center;
+        background-size: 100%;
+        margin-right: 2%;
+    }
+    .n-pic4{
+        background-image: url(https://i.ytimg.com/vi/xpQQC3r5_zA/maxresdefault.jpg);
+        background-position: center;
+        background-size: 100%;
+        margin-right: 2%;
+    }
+    
+
+    
+
+
+
+
+/*------------------------------------------------------CONTACT------------------------------------------------------------------------------------------------------------------*/
+/* Contact Section */
+#contact {
+background-image: url(https://c4.wallpaperflare.com/wallpaper/425/469/186/sports-conor-mcgregor-conor-mcgregor-ufc-hd-wallpaper-preview.jpg);  
+background-repeat: no-repeat;
+background-size: 100%;
+padding: 100px 20px; 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; 
+border-top: 55px solid #f90606;  
+border-bottom: 5px solid #fb0707; 
+
+}
+
+.c-body {
+width: 100%;
+max-width: 600px; 
+text-align: center;
+font-family: "Poppins", sans-serif;
+color: #333; 
+ justify-content: center;
+}
+
+.c-h2:hover{
+transform: translateY(-10px);  
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+background-color: #f01313dc; 
+transition: background-color 0.3s ease, transform 0.3s ease; 
+transform: scale(1.1);
+}
+
+.c-h2{ height:15vh;
+align-items: center;
+justify-items: center;
+padding: 5px;
+background-color: #130606;
+border-radius: 15%;
+}
+
+
+.c-body h2 {
+font-size: 2.5rem;
+font-weight: 600;
+color: #efe8e8; 
+margin-bottom: 30px;
+font-family: "Anton SC", sans-serif;
+    font-style: normal;
+}
+
+.c-body p {
+font-size: 1.2rem;
+font-weight: 400;
+margin-bottom: 40px;
+}
+
+.c-body ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.c-body li {
+font-size: 1.1rem;
+font-weight: 400;
+margin: 15px 0;
+padding: 10px;
+border: 1px solid #e5e5e5;  
+border-radius: 10px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+background-color: #f9f9f9;
+}
+
+.c-body li strong {
+font-weight: 600;
+color: #333;  
+}
+
+.c-body li:hover {
+transform: translateY(-5px);  
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+background-color: #f01313dc; 
+transition: background-color 0.3s ease, transform 0.3s ease; 
+transform: scale(1.1);
+}
+
+.c-body a {
+color: #3498db; 
+text-decoration: none;
+font-weight: 500;
+}
+
+.c-body a:hover {
+color: #2980b9;
+text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------media---------------------------------------------------------------------------------- */
+/*------------------Home Section---------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .navmenu {
+        flex-direction: row;
+        align-items: center;
+}
+.container h3{
+    font-size: 15vw;
+}
+
+/* ---------------  -Home Section---------------------------------------------------------------------------------- */
+
+header .logo{
+    font-size: 3vw;
+}
+
+
+/* -------------- --About Section---------------------------------------------------------------------------------- */
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+    .a-box {
+ height: 70vh;
+    }
+
+
+
+/* ---------------Highlights Section---------------------------------------------------------------------------------- */
+
+
+    .h-login {
+        flex-direction: column;
+    }
+
+    .h-login #login-form, .h-login #signup-form {
+        width: 70%;
+    }
+
+    .h-video iframe {
+        height: 250px;
+    }
+
+    .h-container {
+        flex-direction: row;
+    }
+
+    .i-box {
+        width: 30vw;
+        
+       
+    }
+
+/* ---------------News Section---------------------------------------------------------------------------------- */
+.n-container{
+    width: 10vw;
+    position: relative;
+    left:35vw;
+
+
+
+} 
+
+.n-box {
+        width: 48vh;
+    }
+
+    
+
+/* --------------Contact Section---------------------------------------------------------------------------------- */
+
+
+}
