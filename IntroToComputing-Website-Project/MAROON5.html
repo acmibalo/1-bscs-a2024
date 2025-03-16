@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAROOON 5 Music List">
+    <title>MAROOON 5 Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/MAROON5.jpg" alt="MAROOON 5" class="artist-image">
+            <h2>MAROOON 5</h2>
+            <p class="artist-description">
+                Maroon 5 is a Grammy-winning pop rock band known for their chart-topping hits, soulful vocals, and genre-blending sound. With Adam Levine's unmistakable voice and the band's infectious melodies, they have become one of the most iconic and enduring acts in modern music.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Explore Maroon 5's biggest hits, from romantic ballads to upbeat anthems. Their music captures themes of love, heartbreak, and self-reflection, resonating with audiences across the globe.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/maps.jpeg" alt="Maps" class="song-image">
+                <div class="song-details">
+                    <h3>Maps</h3>
+                    <audio controls>
+                        <source src="audio/Maps - Maroon 5 (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/animals.jpeg" alt="Animals" class="song-image">
+                <div class="song-details">
+                    <h3>Animals</h3>
+                    <audio controls>
+                        <source src="audio/Maroon 5 - Animals (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/cold.jpeg" alt="Cold" class="song-image">
+                <div class="song-details">
+                    <h3>Cold</h3>
+                    <audio controls>
+                        <source src="audio/Maroon 5 - Cold (Lyrics) ft. Future.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/SUGAR.jpeg" alt="Sugar" class="song-image">
+                <div class="song-details">
+                    <h3>Sugar</h3>
+                    <audio controls>
+                        <source src="audio/Maroon 5 - Sugar (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/payphone.jpeg" alt="Payphone" class="song-image">
+                <div class="song-details">
+                    <h3>Payphone</h3>
+                    <audio controls>
+                        <source src="audio/Maroon 5 Ft. Wiz Khalifa - Payphone (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/shewillbeloved.jpeg" alt="She Will Be Loved" class="song-image">
+                <div class="song-details">
+                    <h3>She Will Be Loved</h3>
+                    <audio controls>
+                        <source src="audio/She Will Be Loved - Maroon 5 (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

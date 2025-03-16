@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imagine Dragons Music List">
+    <title>Imagine Dragons Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/IMAGINE DRAGONS.jpg" alt="Imagine Dragons" class="artist-image">
+            <h2>Imagine Dragons</h2>
+            <p class="artist-description">
+                Imagine Dragons is an American pop rock band known for their electrifying sound, poignant lyrics, and anthemic hits. With a unique blend of alternative rock and pop influences, they have captivated audiences worldwide and become one of the most iconic bands of their generation.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Dive into Imagine Dragons' most celebrated tracks, from powerful ballads to adrenaline-pumping anthems. Their music inspires and connects with fans through its emotional depth and energetic vibes.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/badliar.jpeg" alt="Bad Liar" class="song-image">
+                <div class="song-details">
+                    <h3>Bad Liar</h3>
+                    <audio controls>
+                        <source src="audio/Imagine Dragons - Bad Liar (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/bones.jpeg" alt="Bones" class="song-image">
+                <div class="song-details">
+                    <h3>Bones</h3>
+                    <audio controls>
+                        <source src="audio/Imagine Dragons - Bones (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/demons.jpeg" alt="Demons" class="song-image">
+                <div class="song-details">
+                    <h3>Demons</h3>
+                    <audio controls>
+                        <source src="audio/Imagine Dragons - Demons (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/natural.jpeg" alt="Natural" class="song-image">
+                <div class="song-details">
+                    <h3>Natural</h3>
+                    <audio controls>
+                        <source src="audio/Imagine Dragons - Natural (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/radioactive.jpeg" alt="Radioactive" class="song-image">
+                <div class="song-details">
+                    <h3>Radioactive</h3>
+                    <audio controls>
+                        <source src="audio/Imagine Dragons - Radioactive (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/enemy.jpeg" alt="Enemy" class="song-image">
+                <div class="song-details">
+                    <h3>Enemy</h3>
+                    <audio controls>
+                        <source src="audio/Imagine Dragons x JID - Enemy (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

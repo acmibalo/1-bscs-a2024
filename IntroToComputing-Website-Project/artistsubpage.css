@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gantari', sans-serif;
+  background: linear-gradient(45deg, #574BCD,#2999AD);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Base styles */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.webname {
+  color: #41E975;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .branding {
+    flex-direction: column; /* Stack elements vertically if necessary */
+    align-items: flex-start;
+  }
+
+  .webname {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+}
+
+/* Navigation Styles */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #41E975;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show menu when toggled */
+.menu.show {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this to fit your header */
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .menu.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Main Content Layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Change to single column by default */
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Left Section - Image and Description */
+.left-section {
+    padding: 25px;
+    text-align: center; /* Center-align all content in the left section */
+}
+
+.artist-image {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    padding: 15px;
+    border: 5px solid #fff;
+    margin: 0 auto; /* Center horizontally */
+}
+
+h2{
+  text-align: center;
+}
+
+.artist-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* Music Section */
+.music-section {
+    padding: 10px;
+}
+
+.music-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.section-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.song {
+    display: flex;
+    flex-direction: row; /* Place image and controls side by side */
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    gap: 20px; /* Add space between image and controls */
+}
+
+.song-image {
+    width: 100%;
+    max-width: 120px; /* Maintain a standard size for all images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove unnecessary bottom margin */
+    border-radius: 8px; /* Slight rounding for better visuals */
+}
+
+.song-details {
+    flex: 1; /* Let controls take the remaining space */
+    text-align: left; /* Align controls to the left */
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Audio Player Styles */
+audio {
+    width: 100%; /* Full width */
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 2fr; /* Two-column layout */
+    }
+
+    .left-section {
+        text-align: left; /* Align text to the left */
+    }
+
+    .song-image {
+        max-width: 150px; /* Adjust size for larger screens */
+    }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #41E975;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #41E975;
+}

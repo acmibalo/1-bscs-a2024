@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Us page for SBSOUNDTRACK">
+  <title>Contact Us | SBSOUNDTRACK</title>
+  <link rel="stylesheet" href="contactus.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="branding">
+            <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+            <h1 class="webname">SB | SOUNDTRACK</h1>
+        </div>
+        <nav>
+            <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="favorites.html">FAVORITES</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 SBSOUNDTRACK. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://web.facebook.com/shanagravebesto/" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/shaunbuu/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

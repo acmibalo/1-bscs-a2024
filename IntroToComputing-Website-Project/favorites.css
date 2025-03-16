@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gantari', sans-serif;
+  background: linear-gradient(45deg, #574BCD,#2999AD);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Base styles */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.webname {
+  color: #41E975;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .branding {
+    flex-direction: column; /* Stack elements vertically if necessary */
+    align-items: flex-start;
+  }
+
+  .webname {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+}
+
+/* Navigation Styles */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #41E975;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show menu when toggled */
+.menu.show {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this to fit your header */
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .menu.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+  
+  /* css for menu favorites*/
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+  }
+  
+  .heading-favsong{
+    color: #ffffff;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .video-section::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+    transform: rotate(-3deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video {
+    width: 100%;
+    border: 2px solid #41E975;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-description {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    main {
+      padding: 50px;
+    }
+  
+    .video-section {
+      padding: 30px;
+    }
+  
+    .video-description {
+      font-size: 20px;
+    }
+  }
+  
+  /* Responsive Design for Polaroid Effect */
+  @media (max-width: 768px) {
+    .video-section {
+      max-width: 90%; /* Adjust width for smaller screens */
+      padding: 15px; /* Reduce padding */
+      border-radius: 8px; /* Slightly smaller border radius */
+    }
+  
+    .video {
+      border: 1px solid #41E975; /* Thinner border for smaller view */
+      border-radius: 8px; /* Match the reduced border radius */
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5); /* Softer shadow */
+    }
+  
+    .video-description {
+      font-size: 16px; /* Smaller text size */
+      margin-top: 10px; /* Reduced margin for compact spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-section {
+      max-width: 100%; /* Full width on very small screens */
+      padding: 10px; /* Minimized padding */
+    }
+  
+    .video-description {
+      font-size: 14px; /* Further reduce text size */
+    }
+  }
+
+  /* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #41E975;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #41E975;
+}

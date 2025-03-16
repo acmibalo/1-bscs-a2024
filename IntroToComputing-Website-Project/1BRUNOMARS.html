@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno Mars Music List">
+    <title>Bruno Mars Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/BRUNOMARS.jpg" alt="Bruno Mars" class="artist-image">
+            <h2>Bruno Mars</h2>
+            <p class="artist-description">Bruno Mars is an American singer, songwriter, record producer, and performer known for his catchy pop songs and energetic performances. His music blends R&B, funk, soul, and pop influences.</p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">Explore Bruno Mars' most iconic tracks. From his romantic ballads to dance anthems, Bruno Mars' versatility shines in every song.</p>
+            
+            <div class="song">
+                <img src="images/songimages/lockedoutofheaven.jpeg" alt="Locked Out of Heaven" class="song-image">
+                <div class="song-details">
+                    <h3>Locked Out of Heaven</h3>
+                    <audio controls>
+                        <source src="audio/Locked Out Of Heaven - Bruno Mars [LyricsVietsub].mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/grenade.jpeg" alt="Bruno Mars - Grenade" class="song-image">
+                <div class="song-details">
+                    <h3>Grenade</h3>
+                    <audio controls>
+                        <source src="audio/Bruno Mars - Grenade (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/thatswhatilike.jpeg" alt="Thats What I Like" class="song-image">
+                <div class="song-details">
+                    <h3>Thats What I Like</h3>
+                    <audio controls>
+                        <source src="audio/Bruno Mars - Thats What I Like [Official Music Video].mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/versace.jpeg" alt="Versace On The Floor" class="song-image">
+                <div class="song-details">
+                    <h3>Versace On The Floor</h3>
+                    <audio controls>
+                        <source src="audio/Bruno Mars - Versace On The Floor.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/wheniwasyourman.jpeg" alt="When I Was Your Man" class="song-image">
+                <div class="song-details">
+                    <h3>When I Was Your Man</h3>
+                    <audio controls>
+                        <source src="audio/Bruno Mars - When I Was Your Man.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/diewithasmile.jpeg" alt="Die With A Smile" class="song-image">
+                <div class="song-details">
+                    <h3>Die With A Smile</h3>
+                    <audio controls>
+                        <source src="audio/Lady Gaga, Bruno Mars - Die With A Smile.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

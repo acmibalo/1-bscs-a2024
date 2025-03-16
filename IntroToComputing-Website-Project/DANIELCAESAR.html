@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Caesar Music List">
+    <title>Daniel Caesar Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/DanielCaesar.jpg" alt="Daniel Ceasar" class="artist-image">
+            <h2>Daniel Caesar</h2>
+            <p class="artist-description">
+                Daniel Caesar is a Canadian singer-songwriter celebrated for his soulful voice, heartfelt lyrics, and genre-blending music that fuses R&B, soul, and gospel influences. Known for his emotive storytelling and smooth melodies, he has captivated audiences with songs that explore themes of love, vulnerability, and personal growth.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Dive into Daniel Caesar's most cherished tracks, including the Grammy-winning "Best Part" featuring H.E.R., the introspective "Japanese Denim," and the soul-stirring "Get You." His music connects deeply with fans around the globe.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/always.jpeg" alt="Alway" class="song-image">
+                <div class="song-details">
+                    <h3>Alway</h3>
+                    <audio controls>
+                        <source src="audio/Daniel Caesar - Always (Official Audio).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/getyou.jpeg" alt="Get You" class="song-image">
+                <div class="song-details">
+                    <h3>Get You</h3>
+                    <audio controls>
+                        <source src="audio/Daniel Caesar - Get You (Lyrics) ft. Kali Uchis.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/superpowers.jpeg" alt="Superpowers" class="song-image">
+                <div class="song-details">
+                    <h3>Superpowers</h3>
+                    <audio controls>
+                        <source src="audio/Daniel Caesar - Superpowers (Official Audio).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/japanesedenim.jpeg" alt="Japanese Denim" class="song-image">
+                <div class="song-details">
+                    <h3>Japanese Denim</h3>
+                    <audio controls>
+                        <source src="audio/Daniel Caeser Japanese Denim.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/loose.jpeg" alt="Loose" class="song-image">
+                <div class="song-details">
+                    <h3>Loose</h3>
+                    <audio controls>
+                        <source src="audio/Daniel CaeserLoose.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="images/songimages/bestpart.jpeg" alt="Best Part" class="song-image">
+                <div class="song-details">
+                    <h3>Best Part</h3>
+                    <audio controls>
+                        <source src="audio/H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

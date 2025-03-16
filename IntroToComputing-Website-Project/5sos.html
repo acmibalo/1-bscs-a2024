@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="5 Second of Summer Music List">
+    <title>5 Second of Summer Music List</title>
+    <link rel="stylesheet" href="artistsubpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Gantari' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="images/Black_Orange_Modern_Creative_Initial_AW_Letter_Logo-removebg-preview.png" alt="Logo" class="logo-icon">
+                <h1 class="webname">SB | SOUNDTRACK</h1>
+            </div>
+            <nav>
+                <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="favorites.html">FAVORITES</a></li>
+                    <li><a href="categories.html">CATEGORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-section">
+            <img src="images/5SOS.jpg" alt="5 Second of Summer" class="artist-image">
+            <h2>5 Second of Summer</h2>
+            <p class="artist-description">
+                5 Seconds of Summer, often abbreviated as 5SOS, is an Australian pop-rock band known for their high-energy performances, catchy hooks, and relatable lyrics. Rising to fame with their breakout hit "She Looks So Perfect," the band has continually evolved their sound, blending elements of pop, punk, and rock to create music that resonates with fans worldwide.
+            </p>
+        </div>
+
+        <div class="music-section">
+            <h1>Top Songs</h1>
+            <p class="section-description">
+                Dive into 5 Seconds of Summer's top hits, including the anthemic "Youngblood," the heartfelt "Amnesia," and the infectious "Teeth." Their music captures themes of love, youth, and self-discovery, offering a soundtrack for life's highs and lows.
+            </p>
+
+            <div class="song">
+                <img src="images/songimages/badomens.jpeg" alt="Bad Omens" class="song-image">
+                <div class="song-details">
+                    <h3>Bad Omens</h3>
+                    <audio controls>
+                        <source src="audio/5SOS - Bad Omens (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/easier.jpeg" alt="Easier" class="song-image">
+                <div class="song-details">
+                    <h3>Easier</h3>
+                    <audio controls>
+                        <source src="audio/5 Seconds Of Summer - Easier (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/memyself&i.jpeg" alt="Me Myself & I" class="song-image">
+                <div class="song-details">
+                    <h3>Me Myself & I</h3>
+                    <audio controls>
+                        <source src="audio/5 Seconds of Summer - Me Myself & I (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/movingalong.jpeg" alt="Moving Along" class="song-image">
+                <div class="song-details">
+                    <h3>Moving Along</h3>
+                    <audio controls>
+                        <source src="audio/5 Seconds Of Summer - Moving Along (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/teeth.jpeg" alt="Teeth" class="song-image">
+                <div class="song-details">
+                    <h3>Teeth</h3>
+                    <audio controls>
+                        <source src="audio/5 Seconds of Summer - Teeth (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="song">
+                <img src="images/songimages/wantyouback.jpeg" alt="Want You Back" class="song-image">
+                <div class="song-details">
+                    <h3>Want You Back</h3>
+                    <audio controls>
+                        <source src="audio/Want You Back  5 Seconds Of Summer Lyrics.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="song">
+                <img src="images/songimages/dontstop.jpeg" alt="Don't Stop" class="song-image">
+                <div class="song-details">
+                    <h3>Don't Stop</h3>
+                    <audio controls>
+                        <source src="audio/Don't Stop - 5 Seconds of Summer (Lyrics).mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Select the elements
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    
+    // Toggle the menu when the hamburger is clicked
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+    
+    // Automatically hide the menu when the screen is resized to larger than 768px
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        menu.classList.remove('show');
+      }
+    });
+          </script>
+</body>
+</html>

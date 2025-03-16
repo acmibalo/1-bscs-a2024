@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gantari', sans-serif;
+  background: linear-gradient(45deg, #574BCD, #2999AD);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Base styles */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.webname {
+  color: #41E975;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Navigation Styles */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #41E975;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show menu when toggled */
+.menu.show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this to fit your header */
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .menu.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .heading-favsong {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Adjust margins as needed */
+    font-size: 36px; /* Optional: adjust size */
+    color: #fff; /* Optional: adjust color */
+  }
+  
+  .contact-section,
+  .video-section {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .contact-section h2,
+  .video-description {
+    font-size: 20px;
+  }
+
+  .video {
+    width: 100%;
+    border: none; /* Removed border */
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section,
+  .video-section {
+    padding: 10px;
+  }
+
+  .contact-section h2,
+  .video-description {
+    font-size: 16px;
+  }
+
+  .video {
+    border: none; /* Removed border */
+    border-radius: 8px;
+  }
+}
+
+/* Centering the video and form */
+.video-section {
+  margin: 30px auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.contact-section {
+  margin: 30px auto;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 600px; /* Set a narrower width */
+}
+
+/* Contact Form */
+.contact-section h2 {
+  color: #41E975;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contact-section label {
+  display: block;
+  margin: 8px 0 4px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+  width: 100%; /* Full width to align inputs */
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-section button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #41E975;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #33c153;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #41E975;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #41E975;
+}
