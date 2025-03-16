@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url('images/bimage.webp'); 
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #bb00ff;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .logo {
+        width: 115px; 
+        height: 115px;
+        border-radius: 50%;
+        object-fit: cover;
+        transition:2s ease-in-out;
+    }
+    .logo:hover{
+        transform: rotate(360deg);
+    }
+    .logo-container{
+        display: flex;
+        align-items: center;
+    }
+}
+.title{
+    color:#fff;
+    font-size: 42px;
+}
+nav{
+    display: flex;
+    padding: 2% 1%;
+    align-items: center;
+}
+.header{
+background-color: rgba(0, 0, 0, 0.5);
+}
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 30px;
+    background-color: #000; /* Black background */
+    color: #fff;
+}
+
+.about-content {
+    max-width: 600px; /* Limit content width for readability */
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #660087; 
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px; 
+    line-height: 1.8; /* Increase line spacing for readability */
+    color: #d3d3d3;
+}
+
+.about-image {
+    display: flex; 
+    flex-wrap: wrap; /* Wrap images on smaller screens */
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #660087;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7); 
+}
+.about-me {
+    padding: 50px 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.about-me h2 {
+    color: #660087;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-me ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-me ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #d3d3d3;
+}
+
+.about-me ul li strong {
+    color: #660087;
+}
+footer a{
+    font-size: 18px;
+    text-decoration: none;
+}
+footer p{
+    font-size: 18px;
+}

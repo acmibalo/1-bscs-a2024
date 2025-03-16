@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url('bimage.webp'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #bb00ff;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .logo {
+        width: 115px; 
+        height: 115px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .logo-container{
+        display: flex;
+        align-items: center;
+    }
+}
+.title{
+    color:#fff;
+    font-size: 42px;
+}
+nav{
+    display: flex;
+    padding: 2% 1%;
+    align-items: center;
+}
+.header{
+background-color: rgba(0, 0, 0, 0.5);
+} 
+  .container {
+    display: flex;
+    margin-top: -33px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+  }
+  
+  .logo-img {
+    display: flex;
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #0005;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #bb00ff;
+  }
+ 

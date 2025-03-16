@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prince Bryan Dandin">
+    <title>Albums and Songs</title>
+    <meta name='keywords' content="website, music,">
+    <link rel="stylesheet" href="css's/album.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="but"><a href="#he"><svg class="svg-icon" viewBox="0 0 20 20">
+        <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+    </svg></a></div>
+    <section class="header" id="he">
+        <nav class="nav-container">
+            <a href="madSounds.html"c1>
+                <img src="images/logo.png" class="logo" alt="madSounds Logo">
+            </a>
+            <p class="title">madSounds</p>
+            <div class="links" id="mobile-menu">
+                <ul>
+                    <li><a class="nav" href="Albums and Songs.html"><i class="fa-solid fa-compact-disc"></i>ALBUMS
+                    </a>
+                    </li>
+                    <li>
+                        <a href="musicvids.html"><i class="fa fa-fw fa-play"></i>MUSIC VIDEOS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i>CONTACT
+                        </a>
+                    </li>
+                    <li><a href="login.html"><i class="fa fa-fw fa-user"></i>LOGIN
+                    </a>
+                </li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+    <div>
+        <h1 class="text">Hit play and groove like never before!</h1>
+    </div>
+    
+    <section class="albums">
+        <div class="al-wrapper">
+<!-- Slippery When Wet -->
+            <div class="album" data-album-id="1" data-current-track-index="0">
+                <img class="toggle-cover" src="images/Bon_jovi_slippery.jpg" alt="Album 1 Cover">
+                <div class="alcontent">
+                    <h4>Slippery When Wet</h4>
+                    <h6>August 16, 1986</h6>
+                    <h2>Bon Jovi</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="slippery when wet/Let It Rock.mp3">Let it Rock</li>
+                        <li data-src="slippery when wet/You Give Love A Bad Name.mp3">You Give Love a Bad Name</li>
+                        <li data-src="slippery when wet/Livin' On A Prayer.mp3">Livin' On A Prayer</li>
+                        <li data-src="slippery when wet/Social Disease.mp3">Social Disease</li>
+                        <li data-src="slippery when wet/Wanted Dead Or Alive.mp3">Wanted Dead Or Alive</li>
+                        <li data-src="slippery when wet/Raise Your Hands.mp3">Raise Your Hands</li>
+                        <li data-src="slippery when wet/Without Love.mp3">Without Love</li>
+                        <li data-src="slippery when wet/I'd Die For You.mp3">I'd Die For You</li>
+                        <li data-src="slippery when wet/Never Say Goodbye.mp3">Never Say Goodbye</li>
+                        <li data-src="slippery when wet/Wild In The Streets.mp3">Wild In The Streets</li>
+                        
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Led Zeppelin -->
+        <div class="album" data-album-id="2" data-current-track-index="0">
+            <img class="toggle-cover" src="images/led zeppelin II.jpg" alt="Album 2 Cover">
+            <div class="alcontent">
+                <h4>Led Zeppelin II</h4>
+                <h6>October 22, 1969</h6>
+                <h2>Led Zeppelin</h2>
+                <button onclick="toggleTracklist(this)">Tracks</button>
+                <ul class="tracklist">
+                    <li data-src="led zeppelin II/Led Zeppelin - Whole Lotta Love (Official Audio).mp3">Whole Lotta Love </li>
+                    <li data-src="led zeppelin II/Led Zeppelin - What Is and What Should Never Be (Official Audio).mp3"> What Is and What Should Never Be</li>
+                    <li data-src="led zeppelin II/Led Zeppelin - The Lemon Song (Official Audio).mp3">The Lemon Song </li>
+                    <li data-src="led zeppelin II/Led Zeppelin - Thank You (Official Audio).mp3">Thank You </li>
+                    <li data-src="led zeppelin II/Led Zeppelin - Heartbreaker (Official Audio).mp3"> Heartbreaker</li>
+                    <li data-src="led zeppelin II/Led Zeppelin - Living Loving Maid (She's Just a Woman) (Official Audio).mp3">Living Loving Maid (She's Just a Woman)</li>
+                    <li data-src="led zeppelin II/Led Zeppelin - Ramble On (Official Audio).mp3">Ramble On</li>
+                    <li data-src="led zeppelin II/Led Zeppelin - Moby Dick (Official Audio).mp3">Moby Dick</li>
+                    <li data-src="led zeppelin II/Led Zeppelin - Bring It on Home (Official Audio).mp3">Bring It on Home</li>
+                    
+                </ul>
+                <div class="controls">
+                    <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                    <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                </div>
+                <audio></audio>
+                <script src="Javascripts/script.js"></script>
+            </div>
+        </div>
+<!-- Electric Ladyland -->
+        <div class="album" data-album-id="3" data-current-track-index="0">
+            <img class="toggle-cover" src="images/electric ladyland.jpg" alt="Album 3 Cover">
+            <div class="alcontent">
+                <h4>Electric Ladyland</h4>
+                <h6>October 25, 1968</h6>
+                <h2>Jimi Hendrix</h2>
+                <button onclick="toggleTracklist(this)">Tracks</button>
+                <ul class="tracklist">
+                    <li data-src="electric ladyland/_And the Gods Made Love.mp3">_And the Gods Made Love</li>
+                    <li data-src="electric ladyland/Have You Ever Been (To Electric Ladyland).mp3">Have You Ever Been (To Electric Ladyland)</li>
+                    <li data-src="electric ladyland/Crosstown Traffic.mp3">Crosstown Traffic</li>
+                    <li data-src="electric ladyland/Voodoo Chile.mp3">Voodoo Chile</li>
+                    <li data-src="electric ladyland/Little Miss Strange.mp3">Little Miss Strange</li>
+                    <li data-src="electric ladyland/Long Hot Summer Night.mp3">Long Hot Summer Night</li>
+                    <li data-src="electric ladyland/Come On (Let the Good Times Roll).mp3">Come On (Let the Good Times Roll)</li>
+                    <li data-src="electric ladyland/Gypsy Eyes.mp3">Gypsy Eyes</li>
+                    <li data-src="electric ladyland/Burning of the Midnight Lamp.mp3">Burning of the Midnight Lamp</li>
+                    <li data-src="electric ladyland/Rainy Day, Dream Away.mp3">Rainy Day, Dream Away</li>
+                    <li data-src="electric ladyland/1983... (A Merman I Should Turn to Be).mp3">1983... (A Merman I Should Turn to Be)</li>
+                    <li data-src="electric ladyland/Moon, Turn the Tides... Gently Gently Away.mp3">Moon, Turn the Tides... Gently Gently Away</li>
+                    <li data-src="electric ladyland/Still Raining, Still Dreaming.mp3">Still Raining, Still Dreaming</li>
+                    <li data-src="electric ladyland/House Burning Down.mp3">House Burning Down</li>
+                    <li data-src="electric ladyland/All Along the Watchtower.mp3">All Along the Watchtower</li>
+                    <li data-src="electric ladyland/Voodoo Child (Slight Return).mp3">Voodoo Child (Slight Return)</li>
+                </ul>
+                <div class="controls">
+                    <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                    <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                </div>
+                <audio></audio>
+                <script src="Javascripts/script.js"></script>
+            </div>
+        </div>
+<!-- Thriller -->
+            <div class="album" data-album-id="4" data-current-track-index="0">
+                <img class="toggle-cover" src="images/thriller.jpg" alt="Album 4 Cover">
+                <div class="alcontent">
+                    <h4>Thriller</h4>
+                    <h6>November 30, 1982</h6>
+                    <h2>Michael Jackson</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="Thriller/Michael Jackson - Wanna Be Startin' Somethin' (Official Lyric Video).mp3">Wanna Be Startin' Somethin'</li>
+                        <li data-src="Thriller/Michael Jackson - Baby Be Mine (Audio).mp3">Baby Be Mine</li>
+                        <li data-src="Thriller/Michael Jackson - The Girl Is Mine ft. Paul McCartney.mp3">The Girl Is Mine ft. Paul McCartney</li>
+                        <li data-src="Thriller/Michael Jackson - Thriller - Thriller.mp3">Thriller</li>
+                        <li data-src="Thriller/Michael Jackson - Thriller - Beat It.mp3">Beat It</li>
+                        <li data-src="Thriller/Michael Jackson - Thriller - Billie Jean.mp3">Billie Jean</li>
+                        <li data-src="Thriller/Michael Jackson - Human Nature (Official Audio).mp3">Human Nature</li>
+                        <li data-src="Thriller/Michael Jackson - P.Y.T. (Pretty Young Thing) (Audio).mp3">P.Y.T. (Pretty Young Thing)</li>
+                        <li data-src="Thriller/Michael Jackson - The Lady in My Life (Audio).mp3">The Lady in My Life </li>
+                        
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Boston -->
+            <div class="album" data-album-id="5" data-current-track-index="0">
+                <img class="toggle-cover" src="images/boston.jpg" alt="Album 5 Cover">
+                <div class="alcontent">
+                    <h4>Boston</h4>
+                    <h6>August 25, 1976</h6>
+                    <h2>Boston</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="boston/Boston - More Than A Feeling - Remastered.mp3">More Than A Feeling</li>
+                        <li data-src="boston/Boston - Peace of Mind (Official Audio).mp3">Peace of Mind </li>
+                        <li data-src="boston/Boston - Foreplay  Long Time (Official Audio).mp3">Foreplay  Long Time</li>
+                        <li data-src="boston/Boston - Rock & Roll Band (Official Audio).mp3"> Rock & Roll Band</li>
+                        <li data-src="boston/Boston - Smokin' (Official Audio).mp3">Smokin'</li>
+                        <li data-src="boston/Boston - Hitch a Ride (Official Audio).mp3">Hitch a Ride </li>
+                        <li data-src="boston/Boston - Something About You (Official Audio).mp3">Something About You </li>
+                        <li data-src="boston/Boston - Let Me Take You Home Tonight (Official Audio).mp3">Let Me Take You Home Tonight</li>
+                        
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Abbey Road -->
+            <div class="album" data-album-id="6" data-current-track-index="0">
+                <img class="toggle-cover" src="images/abbey road.jpg" alt="Album 6 Cover">
+                <div class="alcontent">
+                    <h4>Abbey Road</h4>
+                    <h6>September 26,1969</h6>
+                    <h2>The Beatles</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="abbeyroad/Come Together (Remastered 2009).mp3">Come Together</li>
+                        <li data-src="abbeyroad/Something (Remastered 2009).mp3">Something</li>
+                        <li data-src="abbeyroad/Maxwell's Silver Hammer (Remastered 2009).mp3">Maxwell's Silver Hammer</li>
+                        <li data-src="abbeyroad/Oh! Darling (Remastered 2009).mp3">Oh! Darling</li>
+                        <li data-src="abbeyroad/Octopus's Garden (Remastered 2009).mp3">Octopus's Garden</li>
+                        <li data-src="abbeyroad/I Want You (She's So Heavy) (Remastered 2009).mp3">I Want You (She's So Heavy)</li>
+                        <li data-src="abbeyroad/Because (Remastered 2009).mp3">Because</li>
+                        <li data-src="abbeyroad/You Never Give Me Your Money (Remastered 2009).mp3">You Never Give Me Your Money</li>
+                        <li data-src="abbeyroad/Sun King (Remastered 2009).mp3">Sun King</li>
+                        <li data-src="abbeyroad/Mean Mr Mustard (Remastered 2009).mp3">Mean Mr Mustard</li>
+                        <li data-src="abbeyroad/Polythene Pam (Remastered 2009).mp3">Polythene Pam</li>
+                        <li data-src="abbeyroad/She Came In Through The Bathroom Window (Remastered 2009).mp3">She Came In Through The Bathroom Window</li>
+                        <li data-src="abbeyroad/Golden Slumbers (Remastered 2009).mp3">Golden Slumbers</li>
+                        <li data-src="abbeyroad/Carry That Weight (Remastered 2009).mp3">Carry That Weight</li>
+                        <li data-src="abbeyroad/The End (Remastered 2009).mp3">The End</li>
+                        <li data-src="abbeyroad/Her Majesty (Remastered 2009).mp3">Her Majesty</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Paranoid -->            
+            <div class="album" data-album-id="7" data-current-track-index="0">
+                <img class="toggle-cover" src="images/paranoid.jpg" alt="Album 7 Cover">
+                <div class="alcontent">
+                    <h4>Paranoid</h4>
+                    <h6>September 18, 1970</h6>
+                    <h2>Black Sabbath</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="paranoid/Black Sabbath - War Pigs.mp3">Whole Lotta Love </li>
+                        <li data-src="paranoid/Black Sabbath - Paranoid.mp3"> What Is and What Should Never Be</li>
+                        <li data-src="paranoid/Black Sabbath - Planet Caravan.mp3">The Lemon Song </li>
+                        <li data-src="paranoid/Black Sabbath - Iron Man.mp3">Thank You </li>
+                        <li data-src="paranoid/Black Sabbath - Electric Funeral.mp3"> Heartbreaker</li>
+                        <li data-src="paranoid/Black Sabbath - Hand of Doom.mp3">Living Loving Maid (She's Just a Woman)</li>
+                        <li data-src="paranoid/Black Sabbath - Rat Salad.mp3">Ramble On</li>
+                        <li data-src="paranoid/Black Sabbath - Fairies Wear Boots.mp3">Moby Dick</li>       
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Eagles -->
+            <div class="album" data-album-id="8" data-current-track-index="0">
+                <img class="toggle-cover" src="images/eagles.jpg" alt="Album 8 Cover">
+                <div class="alcontent">
+                    <h4>Eagles</h4>
+                    <h6>June 1, 1972</h6>
+                    <h2>Eagles</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="eagles/Take It Easy (2013 Remaster).mp3">Let it Rock</li>
+                        <li data-src="eagles/Witchy Woman (2013 Remaster).mp3">You Give Love a Bad Name</li>
+                        <li data-src="eagles/Chug All Night (2013 Remaster).mp3">Livin' On A Prayer</li>
+                        <li data-src="eagles/Most of Us Are Sad (2013 Remaster).mp3">Social Disease</li>
+                        <li data-src="eagles/Nightingale (2013 Remaster).mp3">Wanted Dead Or Alive</li>
+                        <li data-src="eagles/Train Leaves Here This Morning (2013 Remaster).mp3">Raise Your Hands</li>
+                        <li data-src="eagles/Take the Devil (2013 Remaster).mp3">Without Love</li>
+                        <li data-src="eagles/Earlybird (2013 Remaster).mp3">I'd Die For You</li>
+                        <li data-src="eagles/Peaceful Easy Feeling (2013 Remaster).mp3">Never Say Goodbye</li>
+                        <li data-src="eagles/Tryin' (2013 Remaster).mp3">Wild In The Streets</li>
+                        
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Nevermind -->
+            <div class="album" data-album-id="9" data-current-track-index="0">
+                <img class="toggle-cover" src="images/nevermind.jpg" alt="Album 9 Cover">
+                <div class="alcontent">
+                    <h4>Nevermind</h4>
+                    <h6>September 26, 1991</h6>
+                    <h2>Nirvana</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="nevermind/Nirvana - Smells Like Teen Spirit [Nevermind] [HQ Sound].mp3">Smells Like Teen Spirit</li>
+                        <li data-src="nevermind/Nirvana - In Bloom [Nevermind] [HQ Sound].mp3">In Bloom </li>
+                        <li data-src="nevermind/Nirvana - Come as You Are [Nevermind] [HQ Sound].mp3">Come as You Are</li>
+                        <li data-src="nevermind/Nirvana - Lithium [Nevermind] [HQ Sound].mp3"></li>Lithium</li>
+                        <li data-src="nevermind/Nirvana - Polly [Nevermind] [HQ Sound].mp3">Polly</li>
+                        <li data-src="nevermind/Nirvana - Territorial Pissings [Nevermind] [HQ Sound].mp3"> Territorial Pissings</li>
+                        <li data-src="nevermind/Nirvana - Drain You (Audio).mp3">Drain You</li>
+                        <li data-src="nevermind/Nirvana - Lounge Act (Audio).mp3">Lounge Act</li>
+                        <li data-src="nevermind/Nirvana - Stay Away [Nevermind] [HQ Sound].mp3">Stay Away</li>
+                        <li data-src="nevermind/Nirvana - On A Plain [Nevermind] [HQ Sound].mp3">On A Plain</li>
+                        <li data-src="nevermind/Nirvana - Something In The Way [Nevermind] [HQ Sound].mp3">Something In The Way</li>
+                        <li data-src="nevermind/Nirvana - Endless, Nameless (Audio).mp3">Endless, Nameless</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Van Halen -->
+            <div class="album" data-album-id="10" data-current-track-index="0">
+                <img class="toggle-cover" src="images/van halen.jpg" alt="Album 10 Cover">
+                <div class="alcontent">
+                    <h4>Van Halen</h4>
+                    <h6>February 10, 1978</h6>
+                    <h2>Van Halen</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="van halen/Van Halen - Van Halen - Runnin' With The Devil.mp3">Runnin' With The Devil</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Eruption.mp3">Eruption</li>
+                        <li data-src="van halen/Van Halen - Van Halen - You Really Got Me.mp3">You Really Got Me</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Ain't Talkin' 'Bout Love.mp3">Ain't Talkin' 'Bout Love</li>
+                        <li data-src="van halen/Van Halen - Van Halen - I'm The One.mp3">I'm The One</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Jamie's Cryin'.mp3">Jamie's Cryin'</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Atomic Punk.mp3">Atomic Punk</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Feel Your Love Tonight.mp3">Feel Your Love Tonight</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Little Dreamer.mp3">Little Dreamer</li>
+                        <li data-src="van halen/Van Halen - Van Halen - Ice Cream Man.mp3">Ice Cream Man</li>
+                        <li data-src="van halen/Van Halen - Van Halen - On Fire.mp3">On Fire</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>                  
+<!-- Vol.3 Subliminal Verses -->
+            <div class="album" data-album-id="11" data-current-track-index="0">
+                <img class="toggle-cover" src="images/subliminal verses.jpg" alt="Album 11 Cover">
+                <div class="alcontent">
+                    <h4>Vol.3 The Subliminal Verses</h4>
+                    <h6>May 25, 2004</h6>
+                    <h2>Slipknot</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="Subliminal verses/Prelude 3.0.mp3">Prelude 3.0</li>
+                        <li data-src="Subliminal verses/The Blister Exists.mp3">The Blister Exists</li>
+                        <li data-src="Subliminal verses/Three Nil.mp3">Three Nil</li>
+                        <li data-src="Subliminal verses/Duality.mp3">Duality</li>
+                        <li data-src="Subliminal verses/Opium of the People.mp3">Opium of the People</li>
+                        <li data-src="Subliminal verses/Circle.mp3">Circle</li>
+                        <li data-src="Subliminal verses/Welcome.mp3">Welcome</li>
+                        <li data-src="Subliminal verses/Pulse of the Maggots.mp3">Pulse of the Maggots</li>
+                        <li data-src="Subliminal verses/Before I Forget.mp3">Before I Forget</li>
+                        <li data-src="Subliminal verses/Vermilion, Pt. 2.mp3">Vermilion, Pt. 2</li>
+                        <li data-src="Subliminal verses/The Nameless.mp3">The Nameless</li>
+                        <li data-src="Subliminal verses/The Virus of Life.mp3">The Virus of Life</li>
+                        <li data-src="Subliminal verses/Danger - Keep Away.mp3">Danger - Keep Away</li>
+                        <li data-src="Subliminal verses/Don't Get Close.mp3">Don't Get Close</li>
+                        <li data-src="Subliminal verses/Scream.mp3">Scream</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Rumours -->
+            <div class="album" data-album-id="12" data-current-track-index="0">
+                <img class="toggle-cover" src="images/dreams.jpg" alt="Album 12 Cover">
+                <div class="alcontent">
+                    <h4>Rumours</h4>
+                    <h6>February 4, 1977</h6>
+                    <h2>Fleetwood Mac</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="rumours/Second Hand News (2004 Remaster).mp3">Second Hand News</li>
+                        <li data-src="rumours/Dreams (2004 Remaster).mp3">Dreams</li>
+                        <li data-src="rumours/Never Going Back Again (2004 Remaster).mp3">Never Going Back Again</li>
+                        <li data-src="rumours/Don't Stop (2004 Remaster).mp3">Don't Stop</li>
+                        <li data-src="rumours/Go Your Own Way (2004 Remaster).mp3">Go Your Own Way</li>
+                        <li data-src="rumours/Songbird (2004 Remaster).mp3">Songbird</li>
+                        <li data-src="rumours/The Chain (2004 Remaster).mp3">The Chain</li>
+                        <li data-src="rumours/You Make Loving Fun (2004 Remaster).mp3">You Make Loving Fun </li>
+                        <li data-src="rumours/I Don't Want to Know (2004 Remaster).mp3">I Don't Want to Know</li>
+                        <li data-src="rumours/Oh Daddy (2004 Remaster).mp3">Oh Daddy</li>
+                        <li data-src="rumours/Gold Dust Woman (2004 Remaster).mp3">Gold Dust Woman</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>           
+<!-- Girls, Girls, Girl -->
+            <div class="album" data-album-id="13" data-current-track-index="0">
+                <img class="toggle-cover" src="images/girls3x.jpg" alt="Album 13 Cover">
+                <div class="alcontent">
+                    <h4>Girls, Girls, Girls</h4>
+                    <h6>May 15, 1987</h6>
+                    <h2>Mötley Crüe</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="girls, girls, girls/Wild Side.mp3">Wild Side</li>
+                        <li data-src="girls, girls, girls/Girls, Girls, Girls.mp3">Girls, Girls, Girls</li>
+                        <li data-src="girls, girls, girls/Dancing On Glass.mp3">Dancing On Glass</li>
+                        <li data-src="girls, girls, girls/Bad Boy Boogie.mp3">Bad Boy Boogie</li>
+                        <li data-src="girls, girls, girls/Nona.mp3">Nona</li>
+                        <li data-src="girls, girls, girls/Five Years Dead.mp3">Five Years Dead</li>
+                        <li data-src="girls, girls, girls/All In The Name Of....mp3">All In The Name Of Rock n Roll</li>
+                        <li data-src="girls, girls, girls/You're All I Need.mp3">You're All I Need</li>
+                        <li data-src="girls, girls, girls/Rodeo.mp3">Rodeo</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>          
+<!-- Metallica -->
+            <div class="album" data-album-id="14" data-current-track-index="0">
+                <img class="toggle-cover" src="images/black.jpg" alt="Album 14 Cover">
+                <div class="alcontent">
+                    <h4>Metallica</h4>
+                    <h6>August 12, 1991</h6>
+                    <h2>Metallica</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="metallica/Enter Sandman (Remastered).mp3">Enter Sandman</li>
+                        <li data-src="metallica/Sad But True (Remastered).mp3">Sad But True</li>
+                        <li data-src="metallica/Holier Than Thou (Remastered).mp3">Holier Than Thou</li>
+                        <li data-src="metallica/The Unforgiven (Remastered).mp3">The Unforgiven</li>
+                        <li data-src="metallica/Wherever I May Roam (Remastered).mp3">Wherever I May Roam</li>
+                        <li data-src="metallica/Don't Tread on Me (Remastered).mp3">Don't Tread on Me</li>
+                        <li data-src="metallica/Through the Never (Remastered).mp3">Through the Never</li>
+                        <li data-src="metallica/Nothing Else Matters (Remastered).mp3">Nothing Else Matters</li>
+                        <li data-src="metallica/Of Wolf and Man (Remastered).mp3">Of Wolf and Man </li>
+                        <li data-src="metallica/The God That Failed (Remastered).mp3">The God That Failed</li>
+                        <li data-src="metallica/My Friend of Misery (Remastered).mp3">My Friend of Misery</li>
+                        <li data-src="metallica/The Struggle Within (Remastered).mp3">The Struggle Within</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Strange Days -->
+            <div class="album" data-album-id="15" data-current-track-index="0">
+                <img class="toggle-cover" src="images/strangedays.jpg" alt="Album 15 Cover">
+                <div class="alcontent">
+                    <h4>Strange Days</h4>
+                    <h6>September 15, 1967</h6>
+                    <h2>The Doors</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="Strange Days/Strange Days.mp3">Strange Days</li>
+                        <li data-src="Strange Days/You're Lost Little Girl.mp3">You're Lost Little Girl</li>
+                        <li data-src="Strange Days/Love Me Two Times.mp3">Love Me Two Times</li>
+                        <li data-src="Strange Days/Unhappy Girl.mp3">Unhappy Girl</li>
+                        <li data-src="Strange Days/Horse Latitudes.mp3">Horse Latitudes</li>
+                        <li data-src="Strange Days/Moonlight Drive.mp3">Moonlight Drive</li>
+                        <li data-src="Strange Days/People Are Strange.mp3">People Are Strange</li>
+                        <li data-src="Strange Days/My Eyes Have Seen You.mp3">My Eyes Have Seen You</li>
+                        <li data-src="Strange Days/I Can't See Your Face in My Mind.mp3">I Can't See Your Face in My Mind</li>
+                        <li data-src="Strange Days/When the Music's Over.mp3">When the Music's Over</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- The World We Knew -->
+            <div class="album" data-album-id="16" data-current-track-index="0">
+                <img class="toggle-cover" src="images/thewwk.jpg" alt="Album 16 Cover">
+                <div class="alcontent">
+                    <h4>The World We Knew</h4>
+                    <h6>August 1967</h6>
+                    <h2>Frank Sinatra</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="thewwk/The World We Knew (Over And Over).mp3">The World We Knew (Over And Over)</li>
+                        <li data-src="thewwk/Somethin' Stupid.mp3">Somethin' Stupid</li>
+                        <li data-src="thewwk/This Is My Love.mp3">This Is My Love</li>
+                        <li data-src="thewwk/Born Free.mp3">Born Free</li>
+                        <li data-src="thewwk/Don't Sleep In The Subway.mp3">Don't Sleep In The Subway</li>
+                        <li data-src="thewwk/This Town.mp3">This Town</li>
+                        <li data-src="thewwk/This Is My Song.mp3">This Is My Song</li>
+                        <li data-src="thewwk/You Are There.mp3">You Are There</li>
+                        <li data-src="thewwk/Drinking Again.mp3">Drinking Again</li>
+                        <li data-src="thewwk/Some Enchanted Evening.mp3">Some Enchanted Evening</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Highway To Hell -->
+            <div class="album" data-album-id="17" data-current-track-index="0">
+                <img class="toggle-cover" src="images/highway to hell.jpg" alt="Album 17 Cover">
+                <div class="alcontent">
+                    <h4>Highway To Hell</h4>
+                    <h6>July 27,1979</h6>
+                    <h2>AC/DC</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="highway/Highway to Hell.mp3">Highway to Hell</li>
+                        <li data-src="highway/Girls Got Rhythm.mp3">Girls Got Rhythm</li>
+                        <li data-src="highway/Walk All Over You.mp3">Walk All Over You</li>
+                        <li data-src="highway/Touch Too Much.mp3">Touch Too Much</li>
+                        <li data-src="highway/Beating Around the Bush.mp3">Beating Around the Bush</li>
+                        <li data-src="highway/Shot Down in Flames.mp3">Shot Down in Flames</li>
+                        <li data-src="highway/Get It Hot.mp3">Get It Hot</li>
+                        <li data-src="highway/If You Want Blood (You've Got It).mp3">If You Want Blood (You've Got It)</li>
+                        <li data-src="highway/Love Hungry Man.mp3">Love Hungry Man</li>
+                        <li data-src="highway/Night Prowler.mp3">Night Prowler</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- The One That You Love -->
+            <div class="album" data-album-id="18" data-current-track-index="0">
+                <img class="toggle-cover" src="images/t1ul.jpg" alt="Album 18 Cover">
+                <div class="alcontent">
+                    <h4>The One That You Love</h4>
+                    <h6>July 1981</h6>
+                    <h2>Air Supply</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="the one that you love/Don't Turn Me Away.mp3">Don't Turn Me Away</li>
+                        <li data-src="the one that you love/Here I Am (Just When I Thought I Was Over You).mp3">Here I Am (Just When I Thought I Was Over You)</li>
+                        <li data-src="the one that you love/Keeping the Love Alive.mp3">Keeping the Love Alive</li>
+                        <li data-src="the one that you love/The One That You Love.mp3">The One That You Love</li>
+                        <li data-src="the one that you love/This Heart Belongs to Me.mp3">This Heart Belongs to Me</li>
+                        <li data-src="the one that you love/Sweet Dreams.mp3">Sweet Dreams</li>
+                        <li data-src="the one that you love/I Want to Give It All.mp3">I Want to Give It All</li>
+                        <li data-src="the one that you love/I'll Never Get Enough of You.mp3">I'll Never Get Enough of You</li>
+                        <li data-src="the one that you love/Tonite.mp3">Tonite</li>
+                        <li data-src="the one that you love/I've Got Your Love.mp3">I've Got Your Love</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>
+<!-- Grace -->
+            <div class="album" data-album-id="19" data-current-track-index="0">
+                <img class="toggle-cover" src="images/grace.jpg" alt="Album 19 Cover">
+                <div class="alcontent">
+                    <h4>Grace</h4>
+                    <h6>August 23, 1994</h6>
+                    <h2>Jeff Buckley</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="grace/Mojo Pin.mp3">Mojo Pin</li>
+                        <li data-src="grace/Grace.mp3">Grace</li>
+                        <li data-src="grace/Last Goodbye.mp3">Last Goodbye</li>
+                        <li data-src="grace/Lilac Wine.mp3">Lilac Wine</li>
+                        <li data-src="grace/So Real.mp3">So Real</li>
+                        <li data-src="grace/Hallelujah.mp3">Hallelujah</li>
+                        <li data-src="grace/Lover, You Should've Come Over.mp3">Lover, You Should've Come Over</li>
+                        <li data-src="grace/Corpus Christi Carol.mp3">Corpus Christi Carol</li>
+                        <li data-src="grace/Eternal Life.mp3">Eternal Life</li>
+                        <li data-src="grace/Dream Brother.mp3">Dream Brother</li>
+                        <li data-src="grace/Forget Her.mp3">Forget Her</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="Javascripts/script.js"></script>
+                </div>
+            </div>                                                                           
+<!-- Machine Head -->   
+            <div class="album" data-album-id="20" data-current-track-index="0">
+                <img class="toggle-cover" src="images/machine head.jpg" alt="Album 20 Cover">
+                <div class="alcontent">
+                    <h4>Machine Head</h4>
+                    <h6>March 25, 1972</h6>
+                    <h2>Deep Purple</h2>
+                    <button onclick="toggleTracklist(this)">Tracks</button>
+                    <ul class="tracklist">
+                        <li data-src="Machine Head/Highway Star (Remastered 2012).mp3">Highway Star</li>
+                        <li data-src="Machine Head/Maybe I'm A Leo (Remastered 2012).mp3">Maybe I'm A Leo</li>
+                        <li data-src="Machine Head/Pictures Of Home (Remastered 2012).mp3">Pictures Of Home</li>
+                        <li data-src="Machine Head/Never Before (Remastered 2012).mp3">Never Before</li>
+                        <li data-src="Machine Head/Smoke On The Water (Remastered 2012).mp3">Smoke On The Water</li>
+                        <li data-src="Machine Head/Lazy (Remastered 2012).mp3">Lazy</li>
+                        <li data-src="Machine Head/Space Truckin' (Remastered 2012).mp3">Space Truckin'</li>
+                        <li data-src="Machine Head/When A Blind Man Cries (Remastered).mp3">When A Blind Man Cries</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="prevbtn" onclick="playPrevTrack(this)">&laquo;</button>
+                        <button class="playPauseBtn" onclick="togglePlayPause(this)">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="nextbtn" onclick="playNextTrack(this)">&raquo;</button>
+                    </div>
+                    <audio></audio>
+                    <script src="javascripts/script.js"></script>
+                </div>
+            </div>    
+    </section>
+<footer>
+    <p>&copy; 2024 madSounds. All Rights Reserved.</p>
+</footer>
+<script src="Javascripts/madjs.js"></script>
+    </body>
+</html> 
