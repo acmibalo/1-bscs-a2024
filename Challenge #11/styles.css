@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Fullscreen Video Background */
+#myVideo {
+    position: fixed; /* Fixes the video to the background */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width */
+    height: 100%; /* Cover the entire height */
+    object-fit: cover; /* Ensures proportional scaling */
+    z-index: -1; /* Keeps the video behind all other content */
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container's width */
+    max-height: 500px;
+    /* Limit the height to 500px */
+    width: auto;
+    /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+    display: block;
+    /* Center the image within its container */
+    margin: auto;
+    /* Center alignment */
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Icon Bar Styling */
+.icon-bar {
+    position: fixed; /* Fixes the bar to the bottom of the viewport */
+    bottom: 0; /* Places the icon bar at the bottom */
+    z-index: 10; /* Higher than the video (z-index: -1) */
+    width: 100%; /* Stretches the icon bar across the viewport */
+    background-color: rgba(85, 85, 85, 0.9); /* Semi-transparent background */
+    overflow: hidden; /* Prevents content overflow issues */
+    display: flex; /* Aligns the icons horizontally */
+    justify-content: space-around; /* Spreads the icons evenly */
+}
+
+/* Icon Links */
+.icon-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 0;
+    text-align: center;
+    flex: 1; /* Makes each link occupy equal space */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effects */
+.icon-bar a:hover {
+    background-color: black;
+}
+
+/* Active Link */
+.icon-bar .active {
+    background-color: #04AA6D; /* Green for the active page */
+}
+
+
+/* Buttons */
+/* Buttons Styling */
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.success {
+    background-color: #04AA6D;
+}
+
+/* Green */
+.success:hover {
+    background-color: #46a049;
+}
+
+.info {
+    background-color: #2196F3;
+}
+
+/* Blue */
+.info:hover {
+    background-color: #0b7dda;
+}
+
+.warning {
+    background-color: #ff9800;
+}
+
+/* Orange */
+.warning:hover {
+    background-color: #e68a00;
+}
+
+.danger {
+    background-color: #f44336;
+}
+
+/* Red */
+.danger:hover {
+    background-color: #da190b;
+}

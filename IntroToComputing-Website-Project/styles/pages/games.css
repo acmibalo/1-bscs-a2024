@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+    overflow: auto;
+    text-align: center;
+    background-image: none;
+    margin: 10px;
+}
+
+#games-list {
+    font-size: 1.25em; /* A slightly smaller and more balanced font size */
+    width: 90%; /* Reduced width to create space around the element */
+    height: 100%; /* Set height to fill the container */
+    margin: 0 auto; /* Center the list horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distribute the links evenly within the container */
+    align-items: center; /* Center the links horizontally */
+    gap: 27px; /* Adjusted spacing between the links */
+    padding: 10px; /* Added some padding for internal spacing */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+    line-height: 120%;
+}

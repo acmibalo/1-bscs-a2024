@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRTUAL DIVA</title>
+    <meta name="title" content="VIRTUAL DIVA">
+    <meta name="description" content="A Hatsune Miku inspired site!">
+    <meta name="theme-color" content="#4cd4de">
+    <link rel="shortcut icon" href="images/bullet.gif">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VIRTUAL DIVA">
+    <meta property="og:description" content="A Hatsune Miku inspired site!">
+    <meta property="og:image:type" content="image/gif">
+</head>
+
+<body>
+    <div class="lines"></div>
+    <div id="wrapper">
+        <div id="miku">
+            <div class="virtualdiva"><img src="images/virtualdiva.png" alt="Virtual Diva"></div>
+        </div>
+        <div class="container">
+            <div class="links">
+                <div class="title">
+                    <header>DIRECTORY</header>
+                </div>
+
+                <div class="inner">
+                    <div class="inner">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/bullet2.gif" class="bullet" alt="Bullet"></td>
+                                    <td><a href="pages/home.html" target="frame">Home</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bullet2.gif" class="bullet" alt="Bullet"></td>
+                                    <td><a href="pages/about.html" target="frame">About</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bullet2.gif" class="bullet" alt="Bullet"></td>
+                                    <td><a href="pages/songs.html" target="frame">Songs</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bullet2.gif" class="bullet" alt="Bullet"></td>
+                                    <td><a href="pages/games.html" target="frame">Games</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/bullet2.gif" class="bullet" alt="Bullet"></td>
+                                    <td><a href="pages/credits.html" target="frame">Credits</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <iframe title="mainframe" id="mainframe" src="pages/home.html" name="frame"></iframe>
+                <div class="banner"><img src="images/banner.jpeg" alt="Banner"></div>
+            </div>
+
+            <!-- Updated Jukebox -->
+            <div class="jukebox">
+                <div class="title">
+                    <header>JUKEBOX</header>
+                </div>
+                <div class="inner">
+                    <div id="musicplayer">
+                        <div class="player-top">
+                            <div class="now-playing">Playing 3 of 7</div>
+                            <div class="track-info">
+                                <div class="track-name">The Religion of Loneliness</div>
+                                <div class="track-artist">syudou</div>
+                            </div>
+                        </div>
+
+                        <div class="player-controls">
+                            <div class="seeking">
+                                <div class="current-time">0:46</div>
+                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                <div class="total-duration">3:24</div>
+                            </div>
+
+                            <table class="controls">
+                                <tr>
+                                    <td>
+                                        <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="playpause-track" onclick="playpauseTrack()"><i
+                                                class="fas fa-play"></i></div>
+                                    </td>
+                                    <td>
+                                        <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="volume">
+                                <div class="volume-icon"><i class="fas fa-volume-up"></i></div>
+                                <input type="range" min="1" max="100" value="100" class="volume_slider"
+                                    onchange="setVolume()">
+                            </div>
+                            <audio id="music" src=""></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Final Project on Intro to Computing &lt;3 coded with love &lt;3 rodnee 2024
+        </div>
+    </div>
+    <div class="bg"></div>
+    <!-- Include scripts -->
+    <script src="scripts/music.js"></script>
+    <script src="scripts/cursor.js"></script>
+    <script src="scripts/closeSite.js"></script>
+</body>
+
+</html>

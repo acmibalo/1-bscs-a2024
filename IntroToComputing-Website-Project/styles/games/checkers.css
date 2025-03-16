@@ -1,0 +1,247 @@
+.column{
+    height:100%;
+    width:100%;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#menu{
+    height:85%;
+    width:100%;
+    margin:5em;
+    background:rgb(233, 233, 233);
+    display:flex;
+    flex-flow:column;
+    padding:1em;
+}
+
+.buttons button:nth-child(odd){
+    margin-right:0.5em;
+}
+
+#menu button{
+    width:100%;
+    border:none;
+    font-size:1.25em;
+    padding:1em;
+}
+
+.buttons{
+    display:flex;
+    align-items:center;
+    flex-flow:row;
+}
+
+#menu button:hover{
+    background:#cacaca;
+    transition-duration:0.3s;
+}
+
+#menu button:focus{
+    outline:0;
+}
+
+#menu button:active{
+    outline:0;
+    background:#929292;
+    transition-duration:0.3s;
+}
+
+#menu h1{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    font-size:2.5em;
+    margin:0.5em;
+}
+
+#menu p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    font-style:italic;
+    margin:0;
+}
+
+#log p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:left;
+    font-style:normal;
+    margin:0.5em 0 0.5em 1em;
+}
+
+#log{
+    overflow:scroll;
+    overflow-x:hidden;
+    padding:0.5em 0 0.5em 0;
+    width:100%;
+    margin:1em 0 1em 0;
+    height:75%;
+    background:white;
+}
+
+#board{
+    width:535px;
+    height:535px;
+    max-width:100%;
+    max-height:100%;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.tiles{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    border:var(--bw) solid var(--bc);
+}
+
+.tileRow{
+    width:100%;
+    display:flex;
+}
+
+.tileRow:nth-child(odd) .tile:nth-child(odd){
+    background-color:#fff;
+}
+
+.tileRow:nth-child(even) .tile:nth-child(even){
+    background-color:#fff;
+}
+
+.tileRow:nth-child(even) .tile:nth-child(odd){
+    background-color:#000;
+}
+
+.tileRow:nth-child(odd) .tile:nth-child(even){
+    background-color:#000;
+}
+
+.tileRow, .tile{
+    flex:0.5;
+}
+
+.tile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.checkers{
+    width:40em;
+    height:40em;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+}
+
+.checker{
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.selected{
+    box-shadow:inset 0 0 0 0.55em #e74492 !important;
+    transition-duration:0.3s;
+}
+
+.black, .white{
+    transition-duration:0.3s;
+}
+
+.black{
+    background:radial-gradient(circle, rgb(0, 0, 0), rgb(0, 0, 0));
+    box-shadow:inset 0 0 0 4px var(--bc);
+}
+
+.help{
+    background:radial-gradient(circle, yellow, red) !important;
+    transition-duration:0.3s;
+}
+
+.white:hover{
+
+    transition-duration:0.3s;
+}
+
+.white{
+    background:radial-gradient(circle, rgb(255, 255, 255), rgb(255, 255, 255));
+    box-shadow:inset 0 0 0 4px var(--pink);
+}
+
+.tooltiptext{
+    visibility:hidden;
+    width:45px;
+    background-color:rgba(29, 29, 29, 0.65);
+    color:#fff;
+    text-align:center;
+    margin-top:28px;
+    padding:5px 0;
+    position:absolute;
+    z-index:1;
+    opacity:0;
+    transition:opacity 0.4s;
+    user-select:none;
+    pointer-events:none;
+    display:none;
+}
+
+.tile:hover .tooltiptext{
+    visibility:visible;
+    transition-delay:0.55s;
+    opacity:1;
+}
+
+.beenhereallalong{
+    box-shadow:inset 0 0 0.75em 0.25em #e74492;
+    transition-duration:0.3s;
+}
+
+#wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.message{
+    width:100%;
+    position:absolute;
+    will-change:opacity, visibility;
+    z-index:99999999;
+}
+
+.message.hide{
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 300ms, opacity 300ms;
+}
+
+.message.show{
+    visibility:visible;
+    opacity:1;
+    transition:visibility 0s linear 0s, opacity 300ms;
+}
+
+.text{
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background:var(--pink);
+    letter-spacing:0.2rem;
+    margin:10px;
+}
+
+.king{
+    background:#FFD700;
+}

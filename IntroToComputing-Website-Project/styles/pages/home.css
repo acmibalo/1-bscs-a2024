@@ -1,0 +1,97 @@
+body{
+    background-color:var(--bg);
+    overflow:auto;
+    text-align:center;
+    background-image:none;
+    margin:10px;
+}
+
+@keyframes fadeEffect{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+#mikumiku{
+    height:400px;
+    width:auto;
+    margin-bottom:20px;
+}
+
+.appearances{
+    border:var(--bw) var(--bt) var(--bc);
+    box-sizing:border-box;
+    padding:4px;
+    background-color:var(--b);
+    margin-bottom:5px;
+}
+
+.software{
+    border:var(--bw) var(--bt) var(--bc);
+    box-sizing:border-box;
+    padding:4px;
+    background-color:var(--b);
+    margin-bottom:5px;
+}
+
+.appearances img{
+    height:250px;
+    width:242.5px;
+    max-width:100%;
+    max-height:100%;
+    object-fit:scale-down;
+    background:white;
+    display:block;
+    transition:0.3s;
+}
+
+table{
+    margin:auto;
+}
+
+.thumbnail{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}
+
+.software img{
+    width:153px;
+    height:153px;
+    object-fit:scale-down;
+    background:white;
+    display:block;
+    transition:0.3s;
+    max-width:100%;
+    max-height:100%;
+}
+
+.thumbnail:hover{
+    letter-spacing:0;
+}
+
+.wrap img:hover{
+    opacity:0.8;
+    transition:0.3s;
+}
+
+.wrap{
+    flex-wrap:wrap;
+    gap:10px;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+@media only screen and (max-width:500px){
+    .mobile{
+        margin-top:15px;
+    }
+    #mikumiku{
+        height:300px;
+    }
+}

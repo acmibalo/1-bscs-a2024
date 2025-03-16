@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VIRTUAL DIVA</title>
+        <link rel="shortcut icon" href="../../images/bullet.gif">
+        <script src="../../scripts/checkers/Checker.js"></script>
+        <script src="../../scripts/checkers/Tile.js"></script>
+        <script src="../../scripts/checkers/Board.js"></script>
+        <script src="../../scripts/checkers/DrawManager.js"></script>
+        <script src="../../scripts/checkers/GameManager.js"></script>
+        <script src="../../scripts/checkers/AI.js"></script>
+        <script src="../../scripts/checkers/ButtonController.js"></script>
+        <script src="../../scripts/checkers/Message.js"></script>
+        <script src="../../scripts/checkers/Logger.js"></script>
+        <script src="../../scripts/checkers/index.js"></script>
+        <link href="../../styles/games/checkers.css" rel="stylesheet">
+        <link href="../../styles/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../scripts/closeSite.js"></script>
+
+    </head>
+    <body style="text-align:center">
+        <header>CHECKERS</header>
+        <div style="text-align:center"><b>Directions:</b> Move the white pieces and capture the black pieces.</div>
+
+        <br><br>
+
+        <div style="display:flex; flex-direction:column; gap:10px;">
+
+            <div id="log" style="display:none"></div>
+
+            <div id="wrap">
+                <div id="board" style="margin:auto;">
+                    <div class="tiles"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="Play()" style="margin:auto;">New Game</button>
+            </div>
+
+            <div><b>Source code:</b> <a href="https://github.com/stroibot/Checkers" target="_blank">GitHub</a></div>
+        </div>
+    </body>
+</html>

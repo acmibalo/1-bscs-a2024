@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>VIRTUAL DIVA</title>
+        <link rel="shortcut icon" href="../../images/bullet.gif">
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/games/quiz.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../scripts/jquery.min.js" type="text/javascript"></script>
+        <script src="../../scripts/dom-to-image.js"></script>
+        <script src="../../scripts/fileSaver.js"></script>
+        <script src="../../scripts/closeSite.js"></script>
+    </head>
+    <body>
+       
+        <!-- personalities
+
+        miku: sweet, cute, bright, happy, kind, friendly, childish
+        rin: brash, loud, excitable, bright, silly, childish, stubborn
+        len: shy, responsible, calm, childish
+        luka: smart, shy, kind, calm, responsible
+        meiko: strong, chill, stubborn, brash, loud
+        kaito: kind, friendly, bright, silly
+        teto: weird, childish, stubborn, loud, excitable
+        gakupo: weird, brash, loud
+        ia: cute, bright, friendly, calm
+        gumi: smart, calm, responsible, friendly
+
+        -->
+        
+        <header>VOCALOID QUIZ</header>
+        <div class="description">Ever wondered what VOCALOID you would be? No? Find out anyway by taking this quiz! (Disclaimer: Not all VOCALOIDS are available. Maybe one day...)</div>
+        
+        <br><br id="start">
+        
+        <div id="quiz">
+            <form id="f" name="f" autocomplete="off">
+                <div class="question">
+                    QUESTION 1<br>
+                    Let's start with a simple question! How are you doing?
+                </div>
+                <label><input type="radio" name="one" value="1"><span class="checkmark"></span>I'm doing great!</label>
+                <label><input type="radio" name="one" value="2"><span class="checkmark"></span>Alright, I think.</label>
+                <label><input type="radio" name="one" value="3"><span class="checkmark"></span>It could be better...</label>
+                <label><input type="radio" name="one" value="4"><span class="checkmark"></span>Bad. I'm doing bad.</label>
+
+                <br>&nbsp;<br>
+                
+                <div class="question">
+                    QUESTION 2<br>
+                    Good for you! Or sorry that happened. Anyway, another basic question! Which of these colors do you like the most?
+                </div>
+                <label><input type="radio" name="two" value="1"><span class="checkmark"></span>Blue</label>
+                <label><input type="radio" name="two" value="2"><span class="checkmark"></span>Green</label>
+                <label><input type="radio" name="two" value="3"><span class="checkmark"></span>Purple</label>
+                <label><input type="radio" name="two" value="4"><span class="checkmark"></span>Red</label>
+                <label><input type="radio" name="two" value="5"><span class="checkmark"></span>Orange</label>
+                <label><input type="radio" name="two" value="6"><span class="checkmark"></span>Yellow</label>
+                <label><input type="radio" name="two" value="7"><span class="checkmark"></span>Pink</label>
+                <label><input type="radio" name="two" value="8"><span class="checkmark"></span>Black</label>
+                <label><input type="radio" name="two" value="9"><span class="checkmark"></span>White</label>
+                <label><input type="radio" name="two" value="10"><span class="checkmark"></span>Brown</label>
+
+                <br>&nbsp;<br>
+
+                <div class="question">
+                    QUESTION 3<br>
+                    Which of these genres of music do you prefer?
+                </div>
+                <label><input type="radio" name="three" value="1"><span class="checkmark"></span>Pop</label>
+                <label><input type="radio" name="three" value="2"><span class="checkmark"></span>Rock</label>
+                <label><input type="radio" name="three" value="3"><span class="checkmark"></span>Metal</label>
+                <label><input type="radio" name="three" value="4"><span class="checkmark"></span>Electronic</label>
+                <label><input type="radio" name="three" value="5"><span class="checkmark"></span>Folk</label>
+                <label><input type="radio" name="three" value="6"><span class="checkmark"></span>Hip-hop</label>
+                <label><input type="radio" name="three" value="7"><span class="checkmark"></span>Classical</label>
+                <label><input type="radio" name="three" value="8"><span class="checkmark"></span>Jazz</label>
+                <label><input type="radio" name="three" value="9"><span class="checkmark"></span>I listen to a bit of everything!</label>
+
+                <br>&nbsp;<br>
+
+                <div class="question">
+                    QUESTION 4<br>
+                    Choose a Hatsune Miku Nendoroid!
+                </div>
+                <label><input type="radio" name="four" value="1"><span class="checkmark"></span><span class="imgwrap"><img src="../../images/games/quiz/absolutehmo.png"></span></label>
+                <label><input type="radio" name="four" value="2"><span class="checkmark"></span><span class="imgwrap"><img src="../../images/games/quiz/15thanniversary.png"></span></label>
+                <label><input type="radio" name="four" value="3"><span class="checkmark"></span><span class="imgwrap"><img src="../../images/games/quiz/sweetpumpkin.png"></span></label>
+                <label><input type="radio" name="four" value="4"><span class="checkmark"></span><span class="imgwrap"><img src="../../images/games/quiz/serenewinter.png"></span></label>
+                <label><input type="radio" name="four" value="5"><span class="checkmark"></span><span class="imgwrap"><img src="../../images/games/quiz/magicalmirai2020.png"></span></label>
+
+                <br>&nbsp;<br>
+
+                <div class="question">
+                    QUESTION 5<br>
+                    Time for some syudou propaganda! Pick the song you like the most! Links have been added for your listening pleasure.
+                </div>
+                <label><input type="radio" name="five" value="1"><span class="checkmark"></span>Bitter Choco Decoration <a href="https://www.youtube.com/watch?v=XCyKJD6uQyg" target="_blank">@YouTube</a></label>
+                <label><input type="radio" name="five" value="2"><span class="checkmark"></span>Call Boy <a href="https://www.youtube.com/watch?v=FXnzOGTEcuc" target="_blank">@YouTube</a></label>
+                <label><input type="radio" name="five" value="3"><span class="checkmark"></span>Amazing Happy Halloween Night <a href="https://www.youtube.com/watch?v=CeqLqlr5ba4" target="_blank">@YouTube</a></label>
+                <label><input type="radio" name="five" value="4"><span class="checkmark"></span>Her Boyfriend, Jude <a href="https://www.youtube.com/watch?v=8r-_K32fsSU" target="_blank">@YouTube</a></label>
+                <label><input type="radio" name="five" value="5"><span class="checkmark"></span>Days by Days <a href="https://www.youtube.com/watch?v=p00a6QGVjP0" target="_blank">@YouTube</a></label>
+                <label><input type="radio" name="five" value="6"><span class="checkmark"></span>Annoyance <a href="https://www.youtube.com/watch?v=GTgMgxtl0Eg" target="_blank">@YouTube</a></label>
+
+                <br>&nbsp;<br>
+                
+                <div class="question">
+                    QUESTION 6<br>
+                    What do you like to do in your free time?
+                </div>
+                <label><input type="radio" name="six" value="1"><span class="checkmark"></span>Sleep</label>
+                <label><input type="radio" name="six" value="2"><span class="checkmark"></span>Read</label>
+                <label><input type="radio" name="six" value="3"><span class="checkmark"></span>Play video games</label>
+                <label><input type="radio" name="six" value="4"><span class="checkmark"></span>Watch shows/videos/movies</label>
+                <label><input type="radio" name="six" value="5"><span class="checkmark"></span>Go out</label>
+                <label><input type="radio" name="six" value="6"><span class="checkmark"></span>Use my computer</label>
+                <label><input type="radio" name="six" value="7"><span class="checkmark"></span>None of these apply to me</label>
+                
+                <br>&nbsp;<br>
+                
+                <div class="question">
+                    QUESTION 7<br>
+                    Which of these positive personality traits would you say best applies to you?
+                </div>
+                <label><input type="radio" name="seven" value="1"><span class="checkmark"></span>Friendly</label>
+                <label><input type="radio" name="seven" value="2"><span class="checkmark"></span>Energetic</label>
+                <label><input type="radio" name="seven" value="3"><span class="checkmark"></span>Kind</label>
+                <label><input type="radio" name="seven" value="4"><span class="checkmark"></span>Calm</label>
+                <label><input type="radio" name="seven" value="5"><span class="checkmark"></span>Funny</label>
+                <label><input type="radio" name="seven" value="6"><span class="checkmark"></span>I have no redeeming qualities</label>
+                
+                <br>&nbsp;<br>
+                
+                <div class="question">
+                    QUESTION 8<br>
+                    What - Ahhhhh! Hatsune Miku suddenly pulls out a gun and points it at you!
+                    <div class="imgwrap" style="margin-top:5px;"><img src="../../images/games/quiz/watchout.jpg"></div>
+                </div>
+                <label><input type="radio" name="eight" value="1"><span class="checkmark"></span>What the hell Miku, I thought we were friends!</label>
+                <label><input type="radio" name="eight" value="2"><span class="checkmark"></span>I knew I shouldn't have trusted you, Miku. Not after what happened last time.</label>
+                <label><input type="radio" name="eight" value="3"><span class="checkmark"></span>It's too late, Miku! I've already planted the bombs!</label>
+                <label><input type="radio" name="eight" value="4"><span class="checkmark"></span>Just shoot me, Miku. I've had enough.</label>
+                <label><input type="radio" name="eight" value="5"><span class="checkmark"></span>Put the gun down, Miku. We can talk this out.</label>
+                <label><input type="radio" name="eight" value="6"><span class="checkmark"></span>*Pulls out my own gun*</label>
+
+                <br>&nbsp;<br>
+                
+                <div class="question">
+                    QUESTION 9<br>
+                    Phew, she put it away. Moving on... What Project Voltage illustration did you like the most?
+                </div>
+                <label><input type="radio" name="nine" value="1"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/psychic.png"></span></label>
+                <label><input type="radio" name="nine" value="2"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/grass.png"></span></label>
+                <label><input type="radio" name="nine" value="3"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/fire.png"></span></label>
+                <label><input type="radio" name="nine" value="4"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/water.png"></span></label>
+                <label><input type="radio" name="nine" value="5"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/electric.png"></span></label>
+                <label><input type="radio" name="nine" value="6"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/normal.png"></span></label>
+                <label><input type="radio" name="nine" value="7"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/ice.png"></span></label>
+                <label><input type="radio" name="nine" value="8"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/rock.png"></span></label>
+                <label><input type="radio" name="nine" value="9"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/ground.png"></span></label>
+                <label><input type="radio" name="nine" value="10"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/flying.png"></span></label>
+                <label><input type="radio" name="nine" value="11"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/fairy.png"></span></label>
+                <label><input type="radio" name="nine" value="12"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/bug.png"></span></label>
+                <label><input type="radio" name="nine" value="13"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/poison.png"></span></label>
+                <label><input type="radio" name="nine" value="14"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/ghost.png"></span></label>
+                <label><input type="radio" name="nine" value="15"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/dark.png"></span></label>
+                <label><input type="radio" name="nine" value="16"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/steel.png"></span></label>
+                <label><input type="radio" name="nine" value="17"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/fighting.png"></span></label>
+                <label><input type="radio" name="nine" value="18"><span class="checkmark"></span><span class="circwrap"><img src="../../images/games/quiz/dragon.png"></span></label>
+                
+                <br>&nbsp;<br>
+
+                <div class="question">
+                    QUESTION 10<br>
+                    The final question! Thanks for making it this far! This is a free question!<br>Which VOCALOID do you hope you'll get?
+                </div>
+                <label><input type="radio" name="ten" value="1"><span class="checkmark"></span>Hatsune Miku</label>
+                <label><input type="radio" name="ten" value="2"><span class="checkmark"></span>Kagamine Rin</label>
+                <label><input type="radio" name="ten" value="3"><span class="checkmark"></span>Kagamine Len</label>
+                <label><input type="radio" name="ten" value="4"><span class="checkmark"></span>Megurine Luka</label>
+                <label><input type="radio" name="ten" value="5"><span class="checkmark"></span>MEIKO</label>
+                <label><input type="radio" name="ten" value="6"><span class="checkmark"></span>KAITO</label>
+                <label><input type="radio" name="ten" value="7"><span class="checkmark"></span>Kasane Teto</label>
+                <label><input type="radio" name="ten" value="8"><span class="checkmark"></span>Kamui Gakupo</label>
+                <label><input type="radio" name="ten" value="9"><span class="checkmark"></span>IA</label>
+                <label><input type="radio" name="ten" value="10"><span class="checkmark"></span>GUMI</label>
+                <label><input type="radio" name="ten" value="11"><span class="checkmark"></span>It doesn't matter to me!</label>
+                
+                <br>&nbsp;<br>
+            </form>
+            
+            <div id="submit">
+                <button id="submitButton" onclick="process()" disabled>Submit</button>
+            </div>
+
+            <div>
+                <b>Source code:</b> <a href="https://web.archive.org/web/20020808072522if_/http://www.peachie.nu/quiztutorial.html" target="_blank">peachie.nu</a> (archived)
+            </div>
+            
+        </div>
+        
+        <script>
+            function checkAllAnswered() {
+                const questions = document.forms['f'].querySelectorAll('input[type="radio"]');
+                const groups = [...new Set([...questions].map(q => q.name))];
+
+                const allAnswered = groups.every(group => 
+                    document.querySelector(`input[name="${group}"]:checked`)
+                );
+
+                document.getElementById('submitButton').disabled = !allAnswered;
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const radios = document.querySelectorAll('input[type="radio"]');
+                radios.forEach(radio => {
+                    radio.addEventListener('change', checkAllAnswered);
+                });
+
+                checkAllAnswered();
+            });
+        </script>
+
+        <script src="../../scripts/quiz.js"></script>
+    </body>
+</html>

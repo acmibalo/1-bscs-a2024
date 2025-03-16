@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Virtual Diva - Songs</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <script src="../scripts/songs.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1>Virtual Diva</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.xhtml">Home</a></li>
+                <li><a href="about.xhtml">About</a></li>
+                <li><a href="games.xhtml">Games</a></li>
+                <li><a href="songs.xhtml">Songs</a></li>
+                <li><a href="credits.xhtml">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Iconic Hatsune Miku Songs</h2>
+            <label for="genreFilter">Filter by Genre:</label>
+            <select id="genreFilter" onchange="filterSongs()">
+                <option value="">All</option>
+                <option value="pop">Pop</option>
+                <option value="electronic">Electronic</option>
+                <option value="rock">Rock</option>
+            </select>
+            
+            <div class="song-list">
+                <div class="song" data-genre="Pop">
+                    <h3>World is Mine</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jhl5afLEKdo" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <div class="song" data-genre="Electronic">
+                    <h3>Tell Your World</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B2fRMQUxnyw" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Virtual Diva. All rights reserved.</p>
+    </footer>
+</body>
+</html>

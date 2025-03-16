@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* General container styling */
+    .main-container {
+      width: 100%;
+      overflow: auto;
+    }
+
+    /* Styling for individual sections */
+    .section {
+      width: 30%;
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      background-color: #F0F8FF;
+      border: 2px solid #00BFFF;
+      text-align: center;
+    }
+
+    /* Styling for the main header */
+    #mainHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Styling for important elements */
+    .highlight {
+      font-size: 120%;
+      color: #FF69B4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Header -->
+  <h1 id="mainHeader">Welcome to Virtual Diva - A Hatsune Miku Experience</h1>
+
+  <!-- Home Section -->
+  <div class="section" id="home">
+    <h2>Home</h2>
+    <p>Discover the vibrant culture of <span class="highlight">Hatsune Miku</span>. Learn about her music, origins, and the impact she has had in the world of technology and entertainment.</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2>About</h2>
+    <p>Hello, I'm the creator of Virtual Diva! I love <span class="highlight">coding</span>, web design, and capybaras. Explore why Hatsune Miku inspires me and join this journey with other fans!</p>
+  </div>
+
+  <!-- Games Section -->
+  <div class="section" id="games">
+    <h2>Games</h2>
+    <p>Check out some amazing <span class="highlight">Hatsune Miku-themed</span> games! Enjoy our selection and play to your heart's content!</p>
+    <a href="#game1">Game 1</a><br>
+    <a href="#game2">Game 2</a><br>
+    <a href="#game3">Game 3</a>
+  </div>
+
+  <!-- Songs Section -->
+  <div class="section" id="songs">
+    <h2>Songs</h2>
+    <p>Listen to iconic <span class="highlight">Hatsune Miku</span> songs right here. Enjoy while browsing through Virtual Diva!</p>
+    <p>My favorite song: <a href="https://www.youtube.com/watch?v=9DXL9vIUbWg" target="_blank">World is Mine</a></p>
+  </div>
+
+  <!-- Credits Section -->
+  <div class="section" id="credits">
+    <h2>Credits</h2>
+    <p>Thanks to <span class="highlight">W3Schools</span> and many more resources for the knowledge that helped create Virtual Diva. Shout-out to my fellow fans and contributors!</p>
+  </div>
+
+  <!-- JavaScript Function for interactivity -->
+  <script>
+    function changeHeader() {
+      document.getElementById("mainHeader").innerHTML = "Virtual Diva - Let the Music Connect Us!";
+    }
+    // Trigger the changeHeader function on window load
+    window.onload = changeHeader;
+  </script>
+</body>
+</html>
