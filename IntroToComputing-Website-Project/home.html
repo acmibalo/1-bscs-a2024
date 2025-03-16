@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Percy Jackson, Heroes of Olympus, Greek mythology">
+    <meta name="description" content="Explore the world of Percy Jackson and the Heroes of Olympus series.">
+    <meta name="author" content="Lloyd Vitudio">
+    <title>Percy Jackson</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/x-icon" href="images/trident.png">
+</head>
+<body>
+    <h1 class="title"><strong>Percy Jackson</strong></h1>
+    <div class="w3-bar">
+        <a href="home.html" class="w3-bar-item w3-button"><strong>Home</strong></a>
+        <a href="percy-jackson.html" class="w3-bar-item w3-button"><strong>Percy Jackson Series</strong></a>
+        <a href="heroes-of-olympus.html" class="w3-bar-item w3-button"><strong>Heroes of Olympus Series</strong></a>
+        <a href="about-us.html" class="w3-bar-item w3-button"><strong>About</strong></a>
+        <a href="contact.html" class="w3-bar-item w3-button"><strong>Contact</strong></a>
+    </div>
+
+    <h2 class="intro" id="demo"></h2>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+    <img class="home-pic" src="images/home.jpg" alt="percy jackson header">
+    <p class="intro-p">This is your gateway to the thrilling adventures of Percy Jackson and the Heroes of Olympus series.</p>
+    <p class="intro-p">Explore their journeys and discover more about the characters and Greek mythology.</p>
+
+    <h1 class="intro">Movie Trailers</h1>
+    <button class="button" onclick="myFunction()">Toggle Content</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>   
+
+    
+    <div id="myDIV">
+        <h2 class="intro">Percy Jackson and the Olympians: The Lightning Thief</h2>
+        <video class="vid" controls poster="images/lt-thumbnail.jpg">
+          <source src="videos/Percy Jackson and the Lightning Thief.mp4" type="video/mp4">
+        </video>
+        <h2 class="intro">Percy Jackson and the Olympians: The Sea of Monsters</h2>
+        <video class="vid" controls poster="images/som-thumbnail.jpg">
+        <source src="videos/Percy Jackson Sea of Monsters.mp4" type="video/mp4">
+        </video>    
+    </div>
+    <h1 class="author">The Author</h1>  
+        <div class="author-section">  
+            <img class="rick" src="images/rick.jpg" alt="Rick Riordan">
+            <div class="author-text">
+                <p>Rick Riordan, the #1 New York Times bestselling author, has written over twenty novels for young readers, including the widely acclaimed Percy Jackson series. 
+                    <br><br>Before becoming a full-time writer,<span id="dots">...</span><span id="more"> Riordan taught English and history at middle schools in the San Francisco Bay Area and Texas for 15 years. During his time teaching in San Antonio, he received the Master Teacher Award from Saint Mary's Hall. 
+                        <br><br>Riordan initially wrote mystery novels for adults while working as a teacher. His Tres Navarre series earned prestigious honors, including the Edgar, Anthony, and Shamus awards. His journey into children's literature began when he created The Lightning Thief as a bedtime story for his eldest son.
+                            <br><br>Today, Riordan's books have sold over 190 million copies worldwide and have been translated into more than 37 languages. Along with his wife Becky, he serves as an executive producer for TV and film adaptations of his works, such as Percy Jackson, The Kane Chronicles, and Daughter of the Deep.
+                                <br><br>Now writing full-time, Riordan resides in Boston with his wife and their two sons.</p></span>
+                                <button onclick="moreFunction()" id="moreBtn">Read more</button>
+            </div>
+        </div>
+    <footer class="disclaimer">
+        <p><strong>Fair Use Disclaimer:</strong></p>
+        <p>The videos, images, and other media content displayed on this website are used for educational and entertainment purposes only. All content is the property of its respective copyright holders. This site is not associated with any official Percy Jackson or Heroes of Olympus franchise. No copyright infringement is intended, and all rights remain with the original owners. If any content on this site violates copyright laws, please contact us and we will remove it promptly.</p>
+    </footer>
+    <script src="general.js"></script>
+</body>
+</html>
