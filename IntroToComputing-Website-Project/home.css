@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(232,238,241);
+    background: radial-gradient(circle, rgba(232,238,241,1) 0%, rgba(149,205,238,1) 100%);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/airplaine2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:-500px;
+}
+
+section nav{
+    width: 100%;
+    height: 12vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px black;
+    background: rgb(190,197,201);
+    background: radial-gradient(circle, rgba(190,197,201,1) 7%, rgba(232,238,241,1) 88%);
+    position: fixed;
+    z-index: 100;
+}
+section nav .logo img{
+    width: 150px;
+    cursor: pointer;
+    
+  }
+  section nav ul{
+    list-style: none;
+    margin-right: 60%;
+  }
+  section nav li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 23px;
+    
+  }
+  section nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+    padding:15px;
+  }
+  section nav li a:hover{
+    color:  rgb(247, 248, 248);
+    background-color: #43b0f1;
+    border-bottom:  3px solid #032133;
+
+  }
+
+
+
+
+  /* Welcome */
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 0;
+}
+
+section .main h1{
+    position: relative;
+    width: 700px;
+    font-size: 90px;
+    top: 130px;
+    left: 25px;
+    color: #f5f6f7;
+    text-align: center;
+}
+
+section .main h1 span{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+}
+section .main p{
+    width: 700px;
+    text-align: justify;
+    line-height: 25px;
+    position: relative;
+    top: 125px;
+    left: 40px;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+
+section .main .row {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    padding: 300px 0 0 0;
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+  section .main .row img {
+    width: 27rem;
+    height: 15rem;
+    margin-right: 20px;
+    animation: slideImage 30s linear infinite;
+    cursor: pointer;
+    transition: transform 20s ease-out;
+  }
+
+  section .main .row img:hover {
+    animation-play-state:running;
+  }
+
+  @keyframes slideImage {
+    
+    0% {
+      transform: translateX(0); /* Change translateY to translateX */
+    }
+    25% {
+      transform: translateX(-100%); /* Change translateY to translateX */
+    }
+    25% {
+        transform: translateX(100%); /* Change translateY to translateX */
+      }
+    50% {
+      transform: translateX(-200%); /* Change translateY to translateX */
+    }
+    50% {
+        transform: translateX(200%); /* Change translateY to translateX */
+      }
+    75% {
+      transform: translateX(-300%); /* Change translateY to translateX */
+    }
+    75% {
+        transform: translateX(300%); /* Change translateY to translateX */
+      }
+    100% {
+      transform: translateX(-400%); /* Change translateY to translateX */
+    }
+    0%, 100% {
+      transform: translateX(-400%); /* Change translateY to translateX */
+    }
+  }
+  
+
+
+
+/* about */
+.about{
+    width: 95%;
+    height:auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about-image img{
+    width: 650px;
+}
+
+.about .about-tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.about .about-tag p{
+    line-height: 27px;
+    width: 700px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about .about-tag .about-btn{
+    padding: 10px 20px;
+    background: darkgreen;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+
+/* My Favorites Books */
+.aufave {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+  }
+
+  .aufave h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+
+  .aufave .aufave-box {
+    width: 95%;
+    height: 70vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .aufave .aufave-box .aufave-card {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    border: 5px solid rgb(151, 206, 223);
+    border-radius: 20px;
+    margin: auto 30px;
+    overflow: hidden;
+  }
+
+  .aufave .aufave-box .aufave-card .aufave-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Works Like Coverpage */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .aufave .aufave-box .aufave-card .aufave-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height:90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .aufave .aufave-box .aufave-card:hover .aufave-image {
+    transform: scale(1.1);
+  }
+
+  .aufave .aufave-box .aufave-card:hover .aufave-overlay {
+    transform: translateY(0);
+  }
+
+  .aufave .aufave-box .aufave-card .aufave-overlay h1{
+    text-align: center;
+    color:#93b1e4;
+    font-size: 25px;
+
+
+  }
+  .aufave .aufave-box .aufave-card .aufave-overlay p {
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 15px;
+    margin: auto;
+    position: relative;
+    top: -20px;
+  }
+
+  .aufave .aufave-box .aufave-card .aufave-overlay a{
+    padding: 5px 5px;
+    background: darkgreen;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    ;
+  }
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #071d2a;
+    border-radius: 10px;
+}
+
+
+/* Books */
+.arvls{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+}
+
+.arvls h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 150px;
+
+}
+
+.arvls .arvls-box{
+    width: 80%;
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 70px 15px;
+}
+
+.arvls .arvls-box .arvls-cards{
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    margin: auto 20px;
+    box-shadow: 0 0 10px #43b0f1;
+}
+
+.arvls .arvls-box .arvls-cards:hover{
+    box-shadow: 0 0 10px rgb(47, 108, 230);
+}
+
+.arvls .arvls-box .arvls-cards .arvls-image{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.arvls .arvls-box .arvls-cards .arvls-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arvls .arvls-box .arvls-cards:hover .arvls-image img{
+    transform: scale(1.2);
+}
+
+
+
+/* Authors Quotes*/
+.rvs{
+    width: 100%;
+    height: auto;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+}
+
+.rvs h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.rvs .rvs-box{
+    width: 100%;
+    height: 60vh;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rvs .rvs-box .rvs-card{
+    width: 25vw;
+    height: 60vh;
+    box-shadow: 0 0 8px #43b0f1;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 5%;
+    margin-top: 70px;
+}
+
+
+.rvs .rvs-box .rvs-card .card-top img{
+  display: block;
+    width: 350px;
+    height: 250px;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.rvs .rvs-box .rvs-card .card p{
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+
+/* Banner */
+.bnr{
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/airplaine.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* Footer */
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    background: rgb(101, 110, 116);
+    /* background: radial-gradient(circle, rgba(190,197,201,1) 7%, rgba(232,238,241,1) 88%); */
+}
+
+footer .ftr-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .ftr-main .tag{
+    margin: 10px 0;
+    margin-left: -15%;
+}
+
+footer .ftr-main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .ftr-main .tag p{
+    width: 300px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .ftr-main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .ftr-main .tag a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .ftr-main .tag .scl-link i{
+    margin: 0 5px;
+
+}
+
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: rgb(180, 177, 190);
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+footer .end .fa-copyright{
+    color: rgb(51, 60, 72);
+}
+

@@ -1,0 +1,57 @@
+
+* {box-sizing: border-box;}
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  header {
+    background-color: rgb(255, 185, 255);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(71, 7, 62);
+  }
+  
+ 
+  nav {
+    float: left;
+    width: 30%;
+    background: rgb(219, 219, 219);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(238, 142, 142);
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    color:  rgb(71, 7, 62);
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  footer {
+    background-color: rgb(255, 185, 255);
+    padding: 10px;
+    text-align: center;
+    color: rgb(71, 7, 62);
+  }
+  
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
