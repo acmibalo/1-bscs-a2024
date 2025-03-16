@@ -1,0 +1,317 @@
+:root{
+	--lavander: #E6E6FA;
+	--box-shadow: 0 10px 20px rgba(0 0 0 0 19) 0 6px 6px rgba(0 0 0 0 23);
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	transform: all .1s linear;
+}
+html{
+	font-size: 100%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5px;
+}
+header{
+	padding: 10px;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #9966CB;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+.logo{
+  color: #4B0082;
+  font-size: 25px;
+}
+.navbar ul{
+  float: right;
+}
+.navbar li{
+  display: inline-block;
+  list-style: none;
+}
+.navbar li a{
+	font-size: 20px;
+	padding: 0px 15px;
+	color: #4B0082;
+}
+.navbar a:hover{
+	color: #fff; 
+	text-decoration: underline;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+#home{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url('images/lavandre.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 200px 0;
+}
+.title h1{
+  color: #E6E6FA;
+	font-size: 60px;
+	text-align: center;
+	font-style: sans-serif;
+}
+#about{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/lavandula.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content h2{
+  font-size: 50px;
+  background: linear-gradient(to right, #673AB7, #512DA8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  letter-spacing: 2px;
+  top: 10px;
+}
+.details p{
+  font-size: 30px;
+  color: #E6E6FA;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  text-align: center;
+}
+.tour h1{
+  font-size: 30px;
+  color: #E6E6FA;
+  display: inline-block;
+}
+.tour p{
+  font-size: 18px;
+  color: #D7BFDC;
+  margin-top: 20px;
+  border: 2px solid #D7BFDC;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.tour p:hover {
+  color: #E6E6FA;
+  background-color: #D7BFDC;
+  transition: 0.3s;
+}
+#explore{
+	background: linear-gradient(to right, #6F2DA8,#9966CB,#6F2DA8);
+	-webkit-background-clip: background;
+    -webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 1px 0;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container h3{
+  color: #E6E6FA;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  margin: 10px 0;
+  display: flex;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.img-box{
+  width: 140px;
+  height: 350px;
+  margin: 25px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderfrance.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+.img-box:nth-child(2){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderjapan.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(3){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavendergermany.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(4){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderuk.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(5){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderaustralia.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:hover{
+  width: 290px;
+  cursor: pointer;
+}
+.img-box h4{
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  padding-top: 20px;
+  margin-left: 7px;
+}
+.img-box h4:hover{
+  transition: 0.5s;
+}
+.img-box p{
+  font-size: 16px;
+  color: #fff;
+  padding-top: 150px;
+  margin-left: 10px;
+  opacity: 0;
+}
+.img-box p:hover{
+  opacity: 1;
+}
+.img-box a{
+  display: inline-block;
+  padding: 5px 5px;
+  text-decoration: none;
+  background-color: #E6E6FA;
+  border-radius: 4px;
+  margin: 10px 0 5px;
+  color: #6F2DA8;
+  align-items: right;
+  opacity: 0.1;
+}
+.img-box a:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+#images{
+  background: linear-gradient(to right, #AF69EE,#D7BFDC);
+	-webkit-background-clip: background;
+  --webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 15px 0;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content h5{
+  font-size: 35px;
+  color: #4B0082;
+  top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 20px;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+.container img{
+  height: 280px;
+  width: 280px;
+  border: 3px solid #fff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.container img:hover{
+  transform: scale(1.1);
+}
+#videos{
+  background: linear-gradient(to right, #9966CB,#AF69EE);
+	-webkit-background-clip: background;
+  --webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 5px 0;
+}
+.title{
+  font-size: 50px;
+  color: #4B0082;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.video{
+  display: relative;
+  justify-content: center;
+  align-items: center;
+}
+.video iframe{
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 100px 20px;
+}
+.video iframe:hover{
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+#contact{
+  background: linear-gradient(to right, #6F2DA8,#9966CB,#6F2DA8);
+	-webkit-background-clip: background;
+    -webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 10px 0;
+	text-align: center;
+}
+.contact h6{
+  font-size: 30px;
+  background: linear-gradient(to right,#E6E6FA,#fff);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.social-icon{
+  text-align: center;
+  color: #E6E6FA;
+  font-size: 25px;
+  margin: 20px 0 20px;
+  border: 2px solid #D7BFDC;
+  border-radius: 10px;
+  display: inline-block;
+}
+.social-icon p{
+  color: #E6E6FA;
+  font-size: 35px;
+  text-align: center;
+}
+.social-icon:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}

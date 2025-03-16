@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ <head> 
+  <meta name="description" content="A beautiful flower that make me fall in love - Lavender">
+  <meta name="author" content="Joanah Kate M. Mantiquilla">
+  <title>Lavender Fields!</title>
+  <link rel="icon" href="images/favicon.ico">
+ </head> 
+
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	transform: all .1s linear;
+}
+html{
+	font-size: 100%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5px;
+}
+header{
+	padding: 10px;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #9966CB;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+.logo{
+  color: #4B0082;
+  font-size: 25px;
+}
+.navbar ul{
+  float: right;
+}
+.navbar li{
+  display: inline-block;
+  list-style: none;
+}
+.navbar li a{
+	font-size: 20px;
+	padding: 0px 15px;
+	color: #4B0082;
+}
+.navbar a:hover{
+	color: #fff; 
+	text-decoration: underline;
+}
+body{
+  padding:  0;
+  margin: 0;
+}
+#home{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),url('images/lavandre.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 180px 0;
+}
+.title{
+  color: #E6E6FA;
+  font-size: 50px;
+  text-align: center;
+  font-style: sans-serif;
+}
+#about{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('images/lavandula.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content h2{
+  font-size: 50px;
+  background: linear-gradient(to right, #673AB7, #512DA8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  letter-spacing: 2px;
+  top: 10px;
+}
+.details p{
+  font-size: 30px;
+  color: #E6E6FA;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+#explore{
+	background: linear-gradient(to right, #6F2DA8,#9966CB,#6F2DA8);
+	-webkit-background-clip: background;
+  -webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 1px 0;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container h3{
+  color: #E6E6FA;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  margin: 10px 0;
+  display: flex;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.img-box{
+  width: 140px;
+  height: 350px;
+  margin: 25px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderfrance.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+.img-box:nth-child(2){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderjapan.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(3){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavendergermany.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(4){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderuk.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(5){
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url('images/lavenderaustralia.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.img-box:hover{
+  width: 290px;
+  cursor: pointer;
+}
+.img-box h4{
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  padding-top: 20px;
+  margin-left: 7px;
+}
+.img-box h4:hover{
+  transition: 0.5s;
+}
+.img-box p{
+  font-size: 16px;
+  color: #fff;
+  padding-top: 150px;
+  margin-left: 10px;
+  opacity: 0;
+}
+.img-box p:hover{
+  opacity: 1;
+}
+#images{
+  background: linear-gradient(to right, #AF69EE,#D7BFDC);
+	-webkit-background-clip: background;
+  --webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 15px 0;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content h5{
+  font-size: 35px;
+  color: #4B0082;
+  top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+#videos{
+  Background: linear-gradient(to right, #9966CB,#AF69EE);
+	-webkit-background-clip: background;
+  --webkit-background-fill-color: transparent;
+	Background-position: top;
+	Background-size: cover;
+	Padding: 5px 0;
+}
+.title{
+  Font-size: 50px;
+  Color: #4B0082;
+  Font-weight: bold;
+  Text-align: center;
+  Justify-content: center;
+  Margin: 10px 0;
+}
+#contact{
+  background: linear-gradient(to right, #6F2DA8,#9966CB,#6F2DA8);
+	-webkit-background-clip: background;
+  -webkit-background-fill-color: transparent;
+	background-position: top;
+	background-size: cover;
+	padding: 10px 0;
+}
+.contact h6{
+  font-size: 30px;
+  background: linear-gradient(to right,#E6E6FA,#fff);
+	  -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+.social-icon p{
+  color: #E6E6FA;
+  font-size: 30;
+}
+</style>
+ 
+ <body> 
+  <header> 
+   <h1 class="logo">JK_V</h1> 
+   <div class="navbar">
+     <ul>
+   <li><a href="#home">Home</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#explore">Explore</a></li>
+   <li><a href="#images">Images</a></li>
+   <li><a href="#videos">Videos</a></li>
+   <li><a href="#contact">Contact</a></li>
+     </ul>
+   </div> 
+  </header> 
+  
+  <section class="home" id="home"> 
+   <div class="title"> 
+    <h1>LAVENDRE</h1>
+   </div> 
+  </section> 
+  
+  <section class="about" id="about"> 
+   <div class="content">
+    <h2>ABOUT</h2>
+   </div>
+   <div class="details">
+    <p>Lavender is known for its beautifully scented flowers and soothing properties, has a rich and fascinating history. Lavender originated in the Mediterranean, Middle East, and India. Lavender derives its name from the Latin ‘lavare’ meaning ‘to wash." The Romans used lavender to scent their baths, beds, clothes, and hair. They also discovered its medicinal benefits, using it to soothe tired muscles. The south of France is top of mind for most when it comes to lavender fields. In Nice and Marseille, street markets offer a wide selection of lavender soaps and other goods.</p>
+ </div>
+  </section>
+  
+  <section class="explore" id="explore">
+   <div class="container">
+     <h3>LAVENDER FIELDS</h3></div>
+      <div class="gallery">
+      <div class="img-box"><h4>France</h4><p>The lavender fields of Provence are a famous attraction, with symmetrical fields that stretch as far as the eye can see. Lavender start blooming from late June to early August, but peak in early to mid-July.</p></div>
+      <div class="img-box"><h4>Japan</h4><p>One of the largest lavender fields is in the Higashinaka District of Kamifurano Town. Lavender start blooming from late June to early August, but peak in early to mid-July and Lavender festivals can last for more than a month.</p></div>
+      <div class="img-box"><h4>Germany</h4><p>Germany also has beautiful lavender fields, it is typically found in regions with suitable soil and climate, such as Lüneburg Heath. Lavender in Germany typically blooms from late June to August, but peak bloom is usually July.</p></div>
+      <div class="img-box"><h4>United Kindom</h4><p>Lavender fields in the United Kingdom, such as those in the Cotswolds, are popular attractions. They typically bloom from mid-June to August, offering stunning views.</p></div>
+      <div class="img-box"><h4>Australia</h4><p>Australia is home to breathtaking lavender fields, such as the famous Bridestowe Lavender Estate in Tasmania. Lavender blooms from December to February during the southern hemisphere summer.</p></div>
+   </div>
+  </section>
+  
+  <section class="images" id="images">
+    <div class="content">
+     <h5>IMAGES</h5>
+    </div>
+  </section>
+  
+  <section class="videos" id="videos">
+    <div class="title">
+      <h7>Videos</h7>
+    </div>
+  </section>
+  
+  <section class="contact" id="contact">
+    <h6>Contact us:</h6> 
+  <div class="social-icon">
+    <p>Facebook</p>
+    <p>Instagram</p>
+   <p>Youtube</p>
+   <p>Gmail</p>
+  </div>
+  </section> 
+  
+  <footer>
+   <p>© 2024 Lavender Fields</p>
+  </footer>
+ </body>
+</html>
